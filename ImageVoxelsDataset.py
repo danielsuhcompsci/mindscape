@@ -5,8 +5,7 @@ import os.path
 import nilearn.image
 import gc
 import nibabel as nib
-
-from torch.utils.data import Dataset, DataLoader
+from torch.utils.data import Dataset
 
 class ImageVoxelsDataset(Dataset):
     def __init__(self, nsd_dir, subject, transform=None, target_transform=None, cache_size=0):
