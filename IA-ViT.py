@@ -114,4 +114,5 @@ class ImageVoxelsDataset(Dataset):
 
 # Define the dataset and create DataLoader
 some_dataset = ImageVoxelsDataset(nsd_dir, subject, transform=None, target_transform=None, cache_size=0)
-dataloader = DataLoader(some_dataset, batch_size
+dataloader = DataLoader(some_dataset, batch_size=4, shuffle=True, num_workers=0)
+
