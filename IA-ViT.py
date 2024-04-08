@@ -2,74 +2,116 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.utils.data import DataLoader, Dataset
+import pandas as pd
+import h5py
+import os.path
+import nilearn.image
+import gc
+import nibabel as nib
+from transformers import ViTConfig, ViTModel
+import numpy as np
 
-class IAViT(nn.Module):
-    def __init__(self, image_size, patch_size, num_rois, num_classes, num_layers, d_model, num_heads, mlp_dim, channels=3):
-        super(IAViT, self).__init__()
-        self.patch_dim = channels * patch_size ** 2
-        self.num_patches = (image_size // patch_size) ** 2
-        self.roi_embeddings = nn.Embedding(num_rois, d_model)
-        self.patch_embeddings = nn.Embedding(self.num_patches, d_model)
-        self.position_embeddings = nn.Embedding(self.num_patches, d_model)
-        self.cls_token = nn.Parameter(torch.randn(1, 1, d_model))
-        
-        # Transformer Encoder
-        self.encoder_layers = nn.ModuleList([nn.TransformerEncoderLayer(d_model, num_heads, mlp_dim) for _ in range(num_layers)])
-        self.transformer_encoder = nn.TransformerEncoder(self.encoder_layers, num_layers)
-        
-        # MLP for each ROI
-        self.mlp_layers = nn.ModuleList([nn.Linear(d_model, d_model) for _ in range(num_rois)])
-        
-        # Classifier head
-        self.fc = nn.Linear(d_model, num_classes)
+class MatrixViTModel(ViTModel):
+    def __init__(self, output_dimensions, config=None):
+        if config is None:
+            config = ViTConfig()
+        super().__init__(config)
 
-    def forward(self, images):
-        batch_size = images.size(0)
         
-        # Patch embeddings
-        patches = F.unfold(images, kernel_size=(self.patch_size, self.patch_size), stride=(self.patch_size, self.patch_size))
-        patches = patches.permute(0, 2, 1).reshape(batch_size, -1, self.patch_dim)
-        patch_embeddings = self.patch_embeddings(patches)
-        
-        # Positional embeddings
-        positions = torch.arange(self.num_patches).unsqueeze(0).repeat(batch_size, 1).to(images.device)
-        position_embeddings = self.position_embeddings(positions)
-        
-        # CLS token
-        cls_token = self.cls_token.expand(batch_size, -1, -1)
-        
-        # Add positional embeddings to patch embeddings
-        embeddings = patch_embeddings + position_embeddings
-        
-        # Transformer Encoder
-        transformer_output = self.transformer_encoder(embeddings)
-        
-        # Attention computation for each ROI
-        roi_activations = []
-        for i in range(self.num_rois):
-            # Apply attention computation for each ROI
-            roi_embedding = self.roi_embeddings(torch.tensor(i).to(images.device))
-            attention_output = self.mlp_layers[i](transformer_output + roi_embedding.unsqueeze(1))
-            roi_activations.append(attention_output)
-        
-        # Concatenate and apply MLP for each ROI
-        voxel_activations = [self.fc(roi_activation) for roi_activation in roi_activations]
-        
-        return voxel_activations
+        self.regression_head = torch.nn.Sequential(
+            torch.nn.Linear(config.hidden_size, np.prod(output_dimensions)), #linear projection layer
+            torch.nn.Unflatten(1, output_dimensions), #reshaping layer, not always necessary
+        )
 
-class FMRIImageDataset(Dataset):
-    def __init__(self, images, voxel_activations):
-        self.images = images
-        self.voxel_activations = voxel_activations
     
+    def forward(self, x, **kwargs):
+        outputs = super().forward(x, **kwargs)
+        
+        class_token = outputs.last_hidden_state[:, 0, :]  # class token is first token
+        regression_output = self.regression_head(class_token)
+        
+        # include attentions if requested
+        if 'return_dict' in kwargs and kwargs['return_dict'] == True:
+            res = {
+                "regression_output": regression_output
+            }
+
+            if 'output_attentions' in kwargs and kwargs['output_attentions'] == True:
+                res['attentions'] = outputs.attentions
+            return res
+        else:
+            return regression_output
+
+class ImageVoxelsDataset(Dataset):
+    def __init__(self, nsd_dir, subject, transform=None, target_transform=None, cache_size=0):
+        self.transform = transform
+        self.target_transform = target_transform
+        self.responses_frame = pd.read_csv(os.path.join(
+            nsd_dir, 'nsddata/ppdata/subj{:02n}/behav/responses.tsv'.format(subject)), 
+            delimiter='\t', usecols=[1, 5])
+        self.betas_dir = os.path.join(nsd_dir, 
+            'nsddata_betas/ppdata/subj{:02n}/func1pt8mm/betas_fithrf_GLMdenoise_RR/'.format(subject))
+        self.images = h5py.File(os.path.join(
+            nsd_dir, 'nsddata_stimuli/stimuli/nsd/nsd_stimuli.hdf5'), 'r')
+        self.prf_atlas = nilearn.image.get_data(os.path.join(
+            nsd_dir, 'nsddata/ppdata/subj{:02n}/func1pt8mm/roi/prf-visualrois.nii.gz'.format(subject)))
+        self.floc_atlas = nilearn.image.get_data(os.path.join(
+            nsd_dir, 'nsddata/ppdata/subj{:02n}/func1pt8mm/roi/floc-faces.nii.gz'.format(subject)))
+
+
+        #Basic LRU for session imgs
+        self.cache = {}   
+        self.cache_order = [] 
+        self.cache_size = cache_size  
+
+
+    def _load_voxel_data(self, session, idx):
+        cache_key = session
+        
+        if cache_key in self.cache:
+            # Retrieve from cache if present
+            self.cache_order.remove(cache_key) #update cache order
+            self.cache_order.append(cache_key)
+            session_image = self.cache[cache_key] #retrieve img from cache
+        else:
+            voxels_path = os.path.join(self.betas_dir, f'betas_session{session:02d}.nii.gz')
+             
+            session_image = nib.load(voxels_path)  # load img from disk
+            self.cache[cache_key] = session_image #update cache
+            self.cache_order.append(cache_key)
+
+            #enforce cache size
+            if len(self.cache_order) > self.cache_size:
+                lru_key = self.cache_order.pop(0)
+                del self.cache[lru_key]
+                gc.collect()
+        
+
+        specific_idx = idx - 750 * (session - 1)
+        voxels = nilearn.image.get_data(nilearn.image.index_img(session_image, specific_idx))
+        voxels = torch.tensor(voxels[((self.prf_atlas > 0) & (self.prf_atlas != 7)) | (self.floc_atlas > 0)])
+        return voxels
+
+
     def __len__(self):
-        return len(self.images)
-    
-    def __getitem__(self, idx):
-        image = self.images[idx]
-        voxel_activation = self.voxel_activations[idx]
-        return image, voxel_activation
+        return len(self.responses_frame)
 
-# Define your dataset and create DataLoader
-some_dataset = FMRIImageDataset(images, voxel_activations)
-dataloader = DataLoader(some_dataset, batch_size=4, shuffle=True, num_workers=0)
+    def __getitem__(self, idx):
+        if torch.is_tensor(idx):
+            idx = idx.tolist()
+
+        session = self.responses_frame.iloc[idx, 0]
+        voxels = self._load_voxel_data(session, idx)
+        image_id = self.responses_frame.iloc[idx, 1]
+        image = self.images.get('imgBrick')[image_id]
+
+        if self.transform:
+            image = self.transform(image)
+        if self.target_transform:
+            voxels = self.target_transform(voxels)
+
+        return image, voxels
+
+# Define the dataset and create DataLoader
+some_dataset = ImageVoxelsDataset(nsd_dir, subject, transform=None, target_transform=None, cache_size=0)
+dataloader = DataLoader(some_dataset, batch_size
