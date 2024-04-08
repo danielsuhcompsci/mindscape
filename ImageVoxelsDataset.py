@@ -18,8 +18,10 @@ class ImageVoxelsDataset(Dataset):
             'nsddata_betas/ppdata/subj{:02n}/func1pt8mm/betas_fithrf_GLMdenoise_RR/'.format(subject))
         self.images = h5py.File(os.path.join(
             nsd_dir, 'nsddata_stimuli/stimuli/nsd/nsd_stimuli.hdf5'), 'r')
-        self.atlas = nilearn.image.get_data(os.path.join(
-            nsd_dir, 'nsddata/ppdata/subj{:02n}/func1pt8mm/roi/streams.nii.gz'.format(subject)))
+        self.prf_atlas = nilearn.image.get_data(os.path.join(
+            nsd_dir, 'nsddata/ppdata/subj{:02n}/func1pt8mm/roi/prf-visualrois.nii.gz'.format(subject)))
+        self.floc_atlas = nilearn.image.get_data(os.path.join(
+            nsd_dir, 'nsddata/ppdata/subj{:02n}/func1pt8mm/roi/floc-faces.nii.gz'.format(subject)))
 
 
         #Basic LRU for session imgs
@@ -52,9 +54,7 @@ class ImageVoxelsDataset(Dataset):
 
         specific_idx = idx - 750 * (session - 1)
         voxels = nilearn.image.get_data(nilearn.image.index_img(session_image, specific_idx))
-        voxels = torch.cat((torch.tensor(voxels[self.atlas == 1]),
-                            torch.tensor(voxels[self.atlas == 2]),
-                            torch.tensor(voxels[self.atlas == 5])))
+        voxels = torch.tensor(voxels[((self.prf_atlas > 0) & (self.prf_atlas != 7)) | (self.floc_atlas > 0)])
         return voxels
 
 
