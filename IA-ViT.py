@@ -17,7 +17,7 @@ class MatrixViTModel(ViTModel):
             config = ViTConfig()
         super().__init__(config)
 
-        
+        # Initialize ROI tokens as learnable parameters
         self.regression_head = torch.nn.Sequential(
             torch.nn.Linear(config.hidden_size, np.prod(output_dimensions)), #linear projection layer
             torch.nn.Unflatten(1, output_dimensions), #reshaping layer, not always necessary
@@ -26,8 +26,10 @@ class MatrixViTModel(ViTModel):
     
     def forward(self, x, **kwargs):
         outputs = super().forward(x, **kwargs)
-        
+
+        # Extract class token from the output of the transformer encoder
         class_token = outputs.last_hidden_state[:, 0, :]  # class token is first token
+        # Apply linear projection to the class token to predict voxel activations
         regression_output = self.regression_head(class_token)
         
         # include attentions if requested
