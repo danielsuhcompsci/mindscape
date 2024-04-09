@@ -13,7 +13,7 @@ class ImageVoxelsDataset(Dataset):
         self.target_transform = target_transform
         self.responses_frame = pd.read_csv(os.path.join(
             nsd_dir, 'nsddata/ppdata/subj{:02n}/behav/responses.tsv'.format(subject)), 
-            delimiter='\t', usecols=[1, 5])
+            delimiter='\t', usecols=[1, 4])
         self.betas_dir = os.path.join(nsd_dir, 
             'nsddata_betas/ppdata/subj{:02n}/func1pt8mm/betas_fithrf_GLMdenoise_RR/'.format(subject))
         self.images = h5py.File(os.path.join(
