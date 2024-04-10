@@ -4,7 +4,6 @@ import h5py
 import os.path
 import nilearn.image
 import gc
-import nibabel as nib
 from torch.utils.data import Dataset
 
 class ImageVoxelsDataset(Dataset):
@@ -12,16 +11,15 @@ class ImageVoxelsDataset(Dataset):
         self.transform = transform
         self.target_transform = target_transform
         self.responses_frame = pd.read_csv(os.path.join(
-            nsd_dir, 'nsddata/ppdata/subj{:02n}/behav/responses.tsv'.format(subject)), 
-            delimiter='\t', usecols=[1, 4])
+            nsd_dir, f'nsddata/ppdata/subj{subject:02n}/behav/responses.tsv'), delimiter='\t', usecols=[1, 4])
         self.betas_dir = os.path.join(nsd_dir, 
-            'nsddata_betas/ppdata/subj{:02n}/func1pt8mm/betas_fithrf_GLMdenoise_RR/'.format(subject))
+            f'nsddata_betas/ppdata/subj{subject:02n}/func1pt8mm/betas_fithrf_GLMdenoise_RR/')
         self.images = h5py.File(os.path.join(
             nsd_dir, 'nsddata_stimuli/stimuli/nsd/nsd_stimuli.hdf5'), 'r')
         self.prf_atlas = nilearn.image.get_data(os.path.join(
-            nsd_dir, 'nsddata/ppdata/subj{:02n}/func1pt8mm/roi/prf-visualrois.nii.gz'.format(subject)))
+            nsd_dir, f'nsddata/ppdata/subj{subject:02n}/func1pt8mm/roi/prf-visualrois.nii.gz'))
         self.floc_atlas = nilearn.image.get_data(os.path.join(
-            nsd_dir, 'nsddata/ppdata/subj{:02n}/func1pt8mm/roi/floc-faces.nii.gz'.format(subject)))
+            nsd_dir, f'nsddata/ppdata/subj{subject:02n}/func1pt8mm/roi/floc-faces.nii.gz'))
 
 
         #Basic LRU for session imgs
@@ -41,7 +39,7 @@ class ImageVoxelsDataset(Dataset):
         else:
             voxels_path = os.path.join(self.betas_dir, f'betas_session{session:02d}.nii.gz')
              
-            session_image = nib.load(voxels_path)  # load img from disk
+            session_image = nilearn.image.get_data(voxels_path)  # load img from disk
             self.cache[cache_key] = session_image #update cache
             self.cache_order.append(cache_key)
 
@@ -53,7 +51,7 @@ class ImageVoxelsDataset(Dataset):
         
 
         specific_idx = idx - 750 * (session - 1)
-        voxels = nilearn.image.get_data(nilearn.image.index_img(session_image, specific_idx))
+        voxels = session_image[:,:,:,specific_idx]
         voxels = torch.tensor(voxels[((self.prf_atlas > 0) & (self.prf_atlas != 7)) | (self.floc_atlas > 0)])
         return voxels
 
