@@ -18,7 +18,7 @@ betas = np.load(os.path.join(nsd_dir, f'nsddata_betas/masked/subj{subject:02n}.n
 headers = []
 
 
-for i in range(30000):
+for i in range(betas.shape[0]):
     threshold = np.percentile(betas[i], 95)
     betas[i] = betas[i] > threshold
 
@@ -41,7 +41,7 @@ for cat_id in cat_ids:
     catImgIds = np.concatenate((cocoval.getImgIds(catIds=[cat_id]), cocotrain.getImgIds(catIds=[cat_id])))
     csv.insert(csv.shape[1], categories[categories['id']==cat_id]['name'].iloc[0], viewedImgIds.isin(catImgIds) * 1)
 
-csv.insert(csv.shape[1], 'x-coord', np.random.randint(2, size=(30000,1)))
-csv.insert(csv.shape[1], 'y-coord', np.random.randint(2, size=(30000,1)))
+csv.insert(csv.shape[1], 'x-coord', np.random.randint(2, size=(betas.shape[0],1)))
+csv.insert(csv.shape[1], 'y-coord', np.random.randint(2, size=(betas.shape[0],1)))
 
 csv.to_csv(os.path.join(out_dir, f'subj{subject:02n}.csv'))
