@@ -44,4 +44,4 @@ for cat_id in cat_ids:
 csv.insert(csv.shape[1], 'x-coord', np.random.randint(2, size=(30000,1)))
 csv.insert(csv.shape[1], 'y-coord', np.random.randint(2, size=(30000,1)))
 
-csv.to_csv(os.path.join(out_dir, 'subj{subject:02n}.csv'))
+csv.to_csv(os.path.join(out_dir, f'subj{subject:02n}.csv'))
