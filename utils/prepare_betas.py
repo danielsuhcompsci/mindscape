@@ -17,7 +17,7 @@ out_dir = os.path.join(nsd_dir, 'nsddata_betas/masked')
 prf_atlas = nilearn.image.get_data(os.path.join(nsd_dir, f'nsddata/ppdata/subj{subject:02n}/func1pt8mm/roi/prf-visualrois.nii.gz'))
 floc_atlas = nilearn.image.get_data(os.path.join(nsd_dir, f'nsddata/ppdata/subj{subject:02n}/func1pt8mm/roi/floc-faces.nii.gz'))
 
-maskedImages = np.empty((0, 5246))
+maskedImages = np.empty((0, np.zeros(prf_atlas.shape)[((prf_atlas > 0) & (prf_atlas < 7)) | (floc_atlas > 0)].shape[0]))
 for session in range(1, 41):
     session_file = os.path.join(betas_dir, f'betas_session{session:02n}.nii.gz')
     if not os.path.isfile(session_file):
@@ -26,5 +26,6 @@ for session in range(1, 41):
     for trial in range(750):
         trial_image = session_image[:,:,:,trial][((prf_atlas > 0) & (prf_atlas < 7)) | (floc_atlas > 0)]
         maskedImages = np.concatenate((maskedImages, [trial_image]), 0)
+    print('session: ', session)
 os.makedirs(out_dir, exist_ok=True)
 np.save(os.path.join(out_dir, f'subj{subject:02n}.npy'), maskedImages)
