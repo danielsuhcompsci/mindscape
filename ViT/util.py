@@ -1,6 +1,15 @@
 import torch
 from torch.utils.data import DataLoader
 from tqdm import tqdm
+import numpy as np
+import random
+
+def set_seed(SEED=47):
+    torch.manual_seed(SEED)
+    np.random.seed(SEED)
+    random.seed(SEED)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed_all(SEED)  # For CUDA devices
 
 
 def find_mean_sd(dataset):
