@@ -1,8 +1,5 @@
 {
   "str_attrs": [
-    
-  ], 
-  "num_attrs": [
     "voxel-1", 
     "voxel-2", 
     "voxel-3", 
@@ -5329,14 +5326,17 @@
     "hair drier", 
     "toothbrush"
   ], 
+  "num_attrs": [
+    
+  ], 
   "flat_rules": [
     
   ], 
   "rule_head": [
-    "person", 
+    "kite", 
     "==", 
-    1
+    "1"
   ], 
-  "label": "person", 
-  "pos_val": 1
+  "label": "kite", 
+  "pos_val": "1"
 }

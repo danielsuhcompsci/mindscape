@@ -1,5 +1,5 @@
 import time
-def load_data(file_name, str_attrs, num_attrs, label, pos_val, amount=-1):
+def load_data(file_name, str_attrs, num_attrs, label, pos_val, amount=-1, debugFlag=False):
 
     print("beginning load_data")
     data_file = open(file_name, 'r')
@@ -9,7 +9,7 @@ def load_data(file_name, str_attrs, num_attrs, label, pos_val, amount=-1):
     initial_time = time.time()
     elapsed_time = 0
     for line in data_file.readlines():
-        if(iteratorIndex%300 == 0):
+        if(debugFlag and iteratorIndex%300 == 0):
             elapsed_time = time.time() - initial_time
             average_time = elapsed_time / iteratorIndex
             time_remaining = (30000 - iteratorIndex) * average_time
@@ -551,8 +551,8 @@ class Foldrpp:
         self.flat_rules = None
         self._asp = None
 
-    def load_data(self, file_name, amount=-1):
-        return load_data(file_name, self.str_attrs, self.num_attrs, self.label, self.pos_val, amount)
+    def load_data(self, file_name, amount=-1, debugFlag=False):
+        return load_data(file_name, self.str_attrs, self.num_attrs, self.label, self.pos_val, amount, debugFlag)
 
     def fit(self, data, ratio=0.5):
         pos_idx, neg_idx = split_index_by_label(data)
