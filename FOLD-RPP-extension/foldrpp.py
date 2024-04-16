@@ -9,10 +9,11 @@ def load_data(file_name, str_attrs, num_attrs, label, pos_val, amount=-1):
     initial_time = time.time()
     elapsed_time = 0
     for line in data_file.readlines():
-        elapsed_time = time.time() - initial_time
-        average_time = elapsed_time/iteratorIndex
-        time_remaining = (30000-iteratorIndex)*average_time
-        print(f'loading line {iteratorIndex}, elapsed time = {elapsed_time} seconds; estimated time remaining to read 30K lines = {time_remaining/60} minutes')
+        if(iteratorIndex%20 == 0):
+            elapsed_time = time.time() - initial_time
+            average_time = elapsed_time / iteratorIndex
+            time_remaining = (30000 - iteratorIndex) * average_time
+            print(f'loading line {iteratorIndex}, elapsed time = {elapsed_time} seconds; estimated time remaining to read 30K lines = {time_remaining / 60} minutes')
         iteratorIndex = iteratorIndex+1
         line = line.strip('\n').split(',')
         if ln == 0:
