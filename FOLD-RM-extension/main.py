@@ -9,7 +9,7 @@ def main(): #minor modifications made for Mindscape purposes by Isaac Philo; the
 
     for category in categories:
         print(f"Beginning analysis on category {category}")
-        model, data = brainVoxels(category, 'mindscape')
+        model, data = brainVoxels(category, '..\..\mindscape\FOLDdata\subj01.csv')
         data_train, data_test = split_data(data, ratio=0.8)
 
         start = timer()
