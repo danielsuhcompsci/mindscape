@@ -9,7 +9,7 @@ def brainVoxels(category, sourceDir): #"category" should hold the COCO category 
     model = Foldrpp(str_attrs, num_attrs, label=category, pos_val=1)
     data = model.load_data(sourceDir)
     print(data[0])#for debugging
-    print('\n% mindscape voxel dataset', len(data), len(str_attrs + num_attrs + 1), np.shape(data))
+    # print('\n% mindscape voxel dataset', len(data), len(str_attrs + num_attrs), np.shape(data))
     return model, data
 
 # def acute():

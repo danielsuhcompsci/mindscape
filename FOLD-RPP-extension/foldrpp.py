@@ -9,7 +9,7 @@ def load_data(file_name, str_attrs, num_attrs, label, pos_val, amount=-1):
     initial_time = time.time()
     elapsed_time = 0
     for line in data_file.readlines():
-        if(iteratorIndex%20 == 0):
+        if(iteratorIndex%300 == 0):
             elapsed_time = time.time() - initial_time
             average_time = elapsed_time / iteratorIndex
             time_remaining = (30000 - iteratorIndex) * average_time
