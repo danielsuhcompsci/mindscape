@@ -5,9 +5,118 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="416ab2a0-d826-477b-94b3-1890688e4ba9" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/FOLDdata/subj08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/acute/acute.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/adult/adult.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/anneal/anneal_test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/anneal/anneal_train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/autism/autism.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/avila/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/avila/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/breastw/breastw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/cars/cars.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/credit/credit.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/credit_card/credit_card.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/drug/drug.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/dry_bean/dry_bean.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/ecoli/ecoli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/eeg/eeg.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/flags/flags.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/glass/glass.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/heart/heart.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/heloc/heloc_dataset_v1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/intention/intention.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/ionosphere/ionosphere.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/kidney/kidney.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/krkp/krkp.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/mushroom/mushroom.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/nursery/nursery.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/page_blocks/page_blocks.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/parkison_disease/parkison_disease.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/pendigits/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/pendigits/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/rain/rain.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/sonar/sonar.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/titanic/asp.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/titanic/template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/titanic/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/titanic/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/voting/voting.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/wall_following_robot/wall_following_robot.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/weight_lifting/weight_lifting.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/wine/wine.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/data/yeast/yeast.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RM-extension/datasets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj01.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj02.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj03.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj04.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj05.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj06.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj07.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/FOLDdata/subj08.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/brainDataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/acute/acute.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/adult/adult.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/anneal/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/anneal/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/autism/autism.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/avila/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/avila/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/breastw/breastw.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/cars/cars.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/credit/credit.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/credit_card/credit_card.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/ecoli/ecoli.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/heart/heart.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/heloc/heloc_dataset_v1.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/ionosphere/ionosphere.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/kidney/kidney.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/krkp/krkp.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/mushroom/mushroom.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/parkison_disease/parkison_disease.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/rain/rain.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/sonar/sonar.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/titanic/template.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/titanic/test.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/titanic/train.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/voting/voting.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/data/wine/wine.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/datasets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/foldrpp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/model.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/algo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/datasets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/example.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/foldrpp.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/scasp_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/translate_utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/old_version/utils.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/paper/2110.07843.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLD-RPP-extension/paper/2202.06913.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FOLD-RM-extension/brainDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RM-extension/brainDataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FOLD-RM-extension/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RM-extension/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLD-RM-extension/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RM-extension/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj01.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj02.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj03.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj04.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj05.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj06.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj07.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj08.csv" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +140,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2d3d6eJTaRdaioH2pOSgEU4E8V9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,7 +153,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/toast/mindscape/FOLD-RM-extension",
+    "last_opened_file_path": "C:/Users/toast/mindscape/FOLD-RPP-extension",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
@@ -49,11 +161,37 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\toast\mindscape\FOLD-RPP-extension" />
       <recent name="C:\Users\toast\mindscape\FOLD-RM-extension" />
       <recent name="C:\Users\toast\mindscape\FOLDexecution" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\toast\mindscape\FOLD-RPP-extension" />
+      <recent name="C:\Users\toast\mindscape\FOLD-RM-extension" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mindscape" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FOLD-RPP-extension" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FOLD-RPP-extension/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mindscape" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,6 +236,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>

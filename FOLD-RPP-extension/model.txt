@@ -1,0 +1,64 @@
+{
+  "str_attrs": [
+    "al", 
+    "su", 
+    "rbc", 
+    "pc", 
+    "pcc", 
+    "ba", 
+    "htn", 
+    "dm", 
+    "cad", 
+    "appet", 
+    "pe", 
+    "ane"
+  ], 
+  "num_attrs": [
+    "age", 
+    "bp", 
+    "sg", 
+    "bgr", 
+    "bu", 
+    "sc", 
+    "sod", 
+    "pot", 
+    "hemo", 
+    "pcv", 
+    "wbcc", 
+    "rbcc"
+  ], 
+  "flat_rules": [
+    {
+      "head": ["label", "==", "ckd"], 
+      "main_items": [["sc", ">", 1.2]], 
+      "ab_items": []
+    }, 
+    {
+      "head": ["label", "==", "ckd"], 
+      "main_items": [["sg", "=<", 1.015]], 
+      "ab_items": []
+    }, 
+    {
+      "head": ["label", "==", "ckd"], 
+      "main_items": [["hemo", "=<", 12.7]], 
+      "ab_items": []
+    }, 
+    {
+      "head": ["label", "==", "ckd"], 
+      "main_items": [["pcv", "==", "?"], ["bgr", ">", 95.0]], 
+      "ab_items": []
+    }, 
+    {
+      "head": ["label", "==", "ckd"], 
+      "main_items": [["al", "==", "1"]], 
+      "ab_items": []
+    }
+  ], 
+  "rule_head": [
+    "label", 
+    "==", 
+    "ckd"
+  ], 
+  "label": "label", 
+  "pos_val": "ckd"
+}
