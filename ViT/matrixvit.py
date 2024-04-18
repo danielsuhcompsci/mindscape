@@ -1,6 +1,8 @@
 import torch
-from vit_pytorch.simple_flash_attn_vit import SimpleViT
+from vit_pytorch.simple_flash_attn_vit import SimpleViT, posemb_sincos_2d
 import numpy as np
+from einops import rearrange
+from einops.layers.torch import Rearrange
 
 class MatrixViTModel(SimpleViT):
     def __init__(self, *, output_dimensions, dim, **kwargs):
@@ -18,13 +20,15 @@ class MatrixViTModel(SimpleViT):
         *_, h, w, dtype = *img.shape, img.dtype
 
         x = self.to_patch_embedding(img)
+        pe = posemb_sincos_2d(x)
+        x = rearrange(x, 'b ... d -> b (...) d') + pe
+
 
         batch_size = img.shape[0]
         class_tokens = self.class_token.expand(batch_size, -1, -1)
+
         x = torch.cat((class_tokens, x), dim=1)
 
-        pe = posemb_sincos_2d(x)
-        x = rearrange(x, 'b ... d -> b (...) d') + pe
 
         x = self.transformer(x)
         
