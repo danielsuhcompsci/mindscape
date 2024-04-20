@@ -40,7 +40,7 @@ class ImageVoxelsDataset(Dataset):
         image_id = self.responses_frame.iloc[idx, 1]
 
         
-        img_index = image_id = 1
+        img_index = image_id - 1
         if self.preload_imgs:
             image = self.loaded_imgs[img_index]
         else:
