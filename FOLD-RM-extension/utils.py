@@ -3,11 +3,13 @@ from algo import evaluate, justify
 
 
 def load_data(file, attrs, label, numerics, amount=-1):
+    print("beginning load_data")
     f = open(file, 'r')
     attr_idx, num_idx, lab_idx = [], [], -1
     ret, i, k = [], 0, 0
     head = ''
-    for line in f.readlines():
+    lines = f.readlines() #moved this up a line to possibly reduce repeated calls
+    for line in lines:
         if i == 0:
             line = line.strip('\n').split(',')
             attr_idx = [j for j in range(len(line)) if line[j] in attrs]

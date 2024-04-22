@@ -6,8 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="416ab2a0-d826-477b-94b3-1890688e4ba9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RM-extension/brainDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RM-extension/brainDataset.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RM-extension/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RM-extension/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/brainDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/brainDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/foldrpp.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/foldrpp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/model.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/model.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/FOLD-RPP-extension/foldrpp.py" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -31,6 +36,9 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2d3d6eJTaRdaioH2pOSgEU4E8V9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -41,7 +49,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/toast/mindscape/FOLD-RM-extension",
+    "last_opened_file_path": "C:/Users/toast/mindscape/FOLD-RPP-extension",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.keymap",
     "vue.rearranger.settings.migration": "true"
@@ -49,11 +57,38 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\toast\mindscape\FOLD-RPP-extension" />
       <recent name="C:\Users\toast\mindscape\FOLD-RM-extension" />
       <recent name="C:\Users\toast\mindscape\FOLDexecution" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\toast\mindscape" />
+      <recent name="C:\Users\toast\mindscape\FOLD-RPP-extension" />
+      <recent name="C:\Users\toast\mindscape\FOLD-RM-extension" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.main (1)">
+    <configuration name="main (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="mindscape" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/FOLD-RPP-extension" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FOLD-RPP-extension/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mindscape" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -98,6 +133,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.main (1)" />
         <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
