@@ -14,8 +14,8 @@ def brainVoxels(category, sourceDir, numVoxels, debugFlag): #"category" should h
     num_attrs = [] #this was the convention used in all the other FOLD-RM datasets
     model = Foldrpp(str_attrs, num_attrs, label=category, pos_val='1')
     data = model.load_data(sourceDir, debugFlag = debugFlag)
-    if(debugFlag):
-        print(data)#for debugging
+    # if(debugFlag):
+        # print(data)#for debugging
     # print('\n% mindscape voxel dataset', len(data), len(str_attrs + num_attrs), np.shape(data))
     return model, data
 
