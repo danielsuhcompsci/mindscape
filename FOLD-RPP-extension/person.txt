@@ -5282,22 +5282,13 @@
     
   ], 
   "flat_rules": [
-    {
-      "head": ["car", "==", "1"], 
-      "main_items": [["voxel-1506", "==", "1"], ["voxel-652", "==", "1"], ["voxel-460", "==", "1"]], 
-      "ab_items": []
-    }, 
-    {
-      "head": ["car", "==", "1"], 
-      "main_items": [["voxel-1488", "==", "1"], ["voxel-61", "==", "1"]], 
-      "ab_items": []
-    }
+    
   ], 
   "rule_head": [
-    "car", 
+    "person", 
     "==", 
     "1"
   ], 
-  "label": "car", 
+  "label": "person", 
   "pos_val": "1"
 }

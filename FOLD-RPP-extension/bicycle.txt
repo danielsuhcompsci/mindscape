@@ -5283,21 +5283,36 @@
   ], 
   "flat_rules": [
     {
-      "head": ["car", "==", "1"], 
-      "main_items": [["voxel-1506", "==", "1"], ["voxel-652", "==", "1"], ["voxel-460", "==", "1"]], 
+      "head": ["bicycle", "==", "1"], 
+      "main_items": [["voxel-4960", "==", "1"], ["voxel-4942", "!=", "1"]], 
+      "ab_items": [["ab1", "==", "True"], ["ab2", "==", "True"], ["ab3", "==", "True"], ["ab4", "==", "True"]]
+    }, 
+    {
+      "head": ["ab1", "==", "True"], 
+      "main_items": [["voxel-4955", "!=", "1"], ["voxel-774", "==", "1"]], 
       "ab_items": []
     }, 
     {
-      "head": ["car", "==", "1"], 
-      "main_items": [["voxel-1488", "==", "1"], ["voxel-61", "==", "1"]], 
+      "head": ["ab2", "==", "True"], 
+      "main_items": [["voxel-4955", "!=", "1"], ["voxel-1614", "==", "1"]], 
+      "ab_items": []
+    }, 
+    {
+      "head": ["ab3", "==", "True"], 
+      "main_items": [["voxel-4411", "==", "1"], ["voxel-775", "!=", "1"]], 
+      "ab_items": []
+    }, 
+    {
+      "head": ["ab4", "==", "True"], 
+      "main_items": [["voxel-193", "==", "1"], ["voxel-49", "!=", "1"]], 
       "ab_items": []
     }
   ], 
   "rule_head": [
-    "car", 
+    "bicycle", 
     "==", 
     "1"
   ], 
-  "label": "car", 
+  "label": "bicycle", 
   "pos_val": "1"
 }

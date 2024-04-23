@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="416ab2a0-d826-477b-94b3-1890688e4ba9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FOLDdata/subj01Trunc.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/brainDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/brainDataset.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/model.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/model.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FOLDdata/subj01.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FOLDdata/subj01.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,20 +44,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/toast/mindscape/FOLD-RPP-extension&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/toast/mindscape/FOLDdata",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\toast\mindscape\FOLDdata" />
       <recent name="C:\Users\toast\mindscape\FOLD-RPP-extension" />
       <recent name="C:\Users\toast\mindscape\FOLD-RM-extension" />
       <recent name="C:\Users\toast\mindscape\FOLDexecution" />

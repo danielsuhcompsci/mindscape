@@ -18,7 +18,7 @@ def main():
     for category in categories:
         print(f"Beginning analysis on category {category}")
         load_start = timer()
-        model, data = brainVoxels(category, '..\FOLDdata\subj01.csv', 5245, True)
+        model, data = brainVoxels(category, '..\FOLDdata\subj01Trunc.csv', 5277, True)
         load_end = timer()
         print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')
 
@@ -46,19 +46,19 @@ def main():
                 print(r)
 
         from foldrpp import save_model_to_file, load_model_from_file
-        save_model_to_file(model, 'model.txt')
-        saved_model = load_model_from_file('model.txt')
+        save_model_to_file(model, category+'.txt')
+        saved_model = load_model_from_file(category+'.txt')
 
         ys_test_hat = saved_model.predict(data_test)
         ys_test = [x['label'] for x in data_test]
         acc, p, r, f1 = get_scores(ys_test_hat, ys_test)
         print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
 
-        # for x in data_test[:10]:
-        #     for r in saved_model.proof_rules(x):
-        #         print(r)
-        #     for r in saved_model.proof_trees(x):
-        #         print(r)
+            # for x in data_test[:10]:
+            #     for r in saved_model.proof_rules(x):
+            #         print(r)
+            #     for r in saved_model.proof_trees(x):
+            #         print(r)
 
 if __name__ == '__main__':
     main()
