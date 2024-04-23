@@ -10,7 +10,7 @@ def brainVoxels(category, sourceDir, numVoxels, debugFlag): #"category" should h
         print("str_attrs = ", str_attrs)
     num_attrs = [] #this was the convention used in all the other FOLD-RM datasets
     model = Foldrpp(str_attrs, num_attrs, label=category, pos_val='1')
-    data = model.load_data(sourceDir, debugFlag = debugFlag)
+    data = model.load_data(sourceDir, debugFlag=debugFlag)
     # if(debugFlag):
         # print(data)#for debugging
     return model, data
