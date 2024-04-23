@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="416ab2a0-d826-477b-94b3-1890688e4ba9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/FOLDdata/subj01Trunc.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/brainDataset.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/brainDataset.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/model.txt" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/model.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FOLDdata/subj01.csv" beforeDir="false" afterPath="$PROJECT_DIR$/FOLDdata/subj01.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
