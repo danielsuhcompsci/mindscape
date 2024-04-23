@@ -5330,13 +5330,17 @@
     
   ], 
   "flat_rules": [
-    
+    {
+      "head": ["airplane", "==", "1"], 
+      "main_items": [["airplane", "==", "1"]], 
+      "ab_items": []
+    }
   ], 
   "rule_head": [
-    "kite", 
+    "airplane", 
     "==", 
     "1"
   ], 
-  "label": "kite", 
+  "label": "airplane", 
   "pos_val": "1"
 }
