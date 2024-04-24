@@ -4,6 +4,7 @@ import pandas as pd
 from pandas import json_normalize
 import os.path
 import argparse
+import nilearn.image
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-s', '--subject', type=int, default=None, help='subject for which csv is made')
@@ -15,6 +16,8 @@ subject = opt.subject
 nsd_dir = opt.nsddir
 out_dir = opt.output
 betas = np.load(os.path.join(nsd_dir, f'nsddata_betas/masked/subj{subject:02n}.npy'))
+prf_atlas = nilearn.image.get_data(os.path.join(nsd_dir, f'nsddata/ppdata/subj{subject:02n}/func1pt8mm/roi/prf-visualrois.nii.gz'))
+floc_atlas = nilearn.image.get_data(os.path.join(nsd_dir, f'nsddata/ppdata/subj{subject:02n}/func1pt8mm/roi/floc-faces.nii.gz'))
 headers = []
 
 
@@ -22,8 +25,28 @@ for i in range(betas.shape[0]):
     threshold = np.percentile(betas[i], 95)
     betas[i] = betas[i] > threshold
 
-for i in range(betas.shape[1]):
-    headers = np.concatenate((headers, [f'voxel-{i}']))
+for i in range(np.sum(prf_atlas == 1)):
+    headers = np.concatenate((headers, [f'V1v-{i}']))
+for i in range(np.sum(prf_atlas == 2)):
+    headers = np.concatenate((headers, [f'V1d-{i}']))
+for i in range(np.sum(prf_atlas == 3)):
+    headers = np.concatenate((headers, [f'V2v-{i}']))
+for i in range(np.sum(prf_atlas == 4)):
+    headers = np.concatenate((headers, [f'V2d-{i}']))
+for i in range(np.sum(prf_atlas == 5)):
+    headers = np.concatenate((headers, [f'V3v-{i}']))
+for i in range(np.sum(prf_atlas == 6)):
+    headers = np.concatenate((headers, [f'V3d-{i}']))
+for i in range(np.sum(floc_atlas == 1)):
+    headers = np.concatenate((headers, [f'OFA-{i}']))
+for i in range(np.sum(floc_atlas == 2)):
+    headers = np.concatenate((headers, [f'FFA_1-{i}']))
+for i in range(np.sum(floc_atlas == 3)):
+    headers = np.concatenate((headers, [f'FFA_2-{i}']))
+for i in range(np.sum(floc_atlas == 4)):
+    headers = np.concatenate((headers, [f'mTL_faces-{i}']))
+for i in range(np.sum(floc_atlas == 5)):
+    headers = np.concatenate((headers, [f'aTL_faces-{i}']))
 
 csv = pd.DataFrame(np.asarray(betas, dtype=np.int32), columns=headers)
 
