@@ -11,8 +11,10 @@ class FlashDropoutTransformer(FlashTransformer):
     
     def forward(self, x):
         for attn, ff in self.layers:
-            x = self.dropout(attn(x)) + x  # apply dropout after attention and add residual
-            x = self.dropout(ff(x)) + x    # apply dropout after feedforward and add residual
+            x = attn(x) + x  # apply attention and add residual
+            x = self.dropout(x)  # apply dropout after residual (optional location)
+            x = ff(x) + x  # apply feed-forward and add residual
+            x = self.dropout(x)  # apply dropout after residual (standard location)
         return x
 
 
