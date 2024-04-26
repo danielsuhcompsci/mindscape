@@ -8,7 +8,7 @@ from tqdm import tqdm
 from torch.utils.data import Dataset
 
 class ImageVoxelsDataset(Dataset):
-    def __init__(self, nsd_dir, subject, transform=None, target_transform=None, preload_imgs = False):
+    def __init__(self, nsd_dir, subject, transform=None, target_transform=None, preload_imgs = False, avg_dupe_stim_vox = False):
         self.transform = transform
         self.target_transform = target_transform
         self.responses_frame = pd.read_csv(os.path.join(
@@ -27,6 +27,8 @@ class ImageVoxelsDataset(Dataset):
             self.image = None
         else:
             self.loaded_imgs = None
+
+        self.avg_dupe_stim_vox = avg_dupe_stim_vox
 
     def __len__(self):
         return len(self.responses_frame)
@@ -49,6 +51,6 @@ class ImageVoxelsDataset(Dataset):
         if self.transform:
             image = self.transform(image)
         if self.target_transform:
-            voxels = self.target_transform(voxels)
+            voxels = self.target_transform(voxels, idx)
 
         return image, voxels
