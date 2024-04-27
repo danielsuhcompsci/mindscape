@@ -41,10 +41,7 @@ class DFWrapper:
     def __setitem__(self, idx, item):
         self.df.iloc[idx] = item
 
-def ken_load(file_name, label):
-
-    skip_first_col = False
-
+def ken_load(file_name, label, skip_first_col = False):
     headers = []
     ret = []
     row_size = None
@@ -61,7 +58,10 @@ def ken_load(file_name, label):
                     line = line[1:]
                 headers = line.split(',')
 
-                if skip_first_col:
+                #modified to deal with leading integers
+                if (not (headers[0] == '1' or headers[0] == '0')):
+                    headers = headers[1:]
+                elif skip_first_col:
                     headers = headers[1:]
 
                 #transform headers
