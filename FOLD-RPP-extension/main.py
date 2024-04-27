@@ -16,19 +16,14 @@ def main():
     #               "cake", "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
     #               "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
     #               "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush", "x-coord", "y-coord"]
-    categories = [ "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie",
-                  "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove",
-                  "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon",
-                  "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "pizza", "donut",
-                  "cake", "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
-                  "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
+    categories = [  "microwave", "oven", "toaster", "sink", "refrigerator", "book",
                   "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
     for category in categories:
         profiler = cProfile.Profile()
         print(f"Beginning analysis on category {category}")
         load_start = timer()
         profiler.enable()
-        model, data = brainVoxels(category, '../FOLDdata/subj01New.csv', 5277, True)
+        model, data = brainVoxels(category, '../FOLDdata/subj01New-500.csv', 5277, True)
         profiler.disable()
         load_end = timer()
         print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')

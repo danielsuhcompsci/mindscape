@@ -74,7 +74,7 @@ def ken_load(file_name, label):
                 row_size = len(headers)
             else:
                 line_dict = {headers[i]: line[2*i] for i in range(line_range_start, row_size)}
-                line_dict['label'] = line[2*ldx]
+                line_dict['label'] = 1 if line[2*ldx] == "1" else 0
                 # print(line_dict)
                 # input()
                 ret.append(line_dict)
@@ -91,7 +91,9 @@ def df_load(file_name, label):
     df['label'] = df[label]
     r = [0] * len(df)
     for i in tqdm(range(len(df))):
-        r[i] = df.iloc[i].to_dict()
+        row_dict = df.iloc[i].to_dict()
+        row_dict = {k: str(v) for k, v in row_dict.items()}  # Casting each value to string
+        r[i] = row_dict
     
     return r
 
