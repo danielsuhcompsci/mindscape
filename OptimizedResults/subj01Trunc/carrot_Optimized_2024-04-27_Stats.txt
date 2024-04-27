@@ -1,0 +1,79 @@
+Beginning analysis on category carrot in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.200854
+
+carrot(X,'1') :- not voxel-371(X,'0'), voxel-49(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 1 #preds 2
+% foldrpp costs: 0:00:00.670214
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-371': '0', 'voxel-49': '1'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [F]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '1'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '1' which should equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-371': '0', 'voxel-49': '1'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [F]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '1'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '1' which should equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-371': '0', 'voxel-49': '0'}
+[F]carrot(X,'1') :- not [T]voxel-371(X,'0'), [T]voxel-49(X,'0').
+{'voxel-371': '0', 'voxel-49': '0'}
+carrot(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+% acc 1.0 p 0 r 0 f1 0

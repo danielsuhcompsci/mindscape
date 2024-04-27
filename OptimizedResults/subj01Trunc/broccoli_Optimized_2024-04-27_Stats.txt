@@ -1,0 +1,130 @@
+Beginning analysis on category broccoli in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.204957
+
+broccoli(X,'1') :- not voxel-526(X,'0'), not voxel-5261(X,'0').
+broccoli(X,'1') :- not voxel-267(X,'0'), not voxel-57(X,'0').
+% acc 0.95 p 0.0 r 0 f1 0
+% #rules 2 #preds 4
+% foldrpp costs: 0:00:01.439461
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '1', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [F]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '1', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '1' which should not equal '0' does hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '1', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [F]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '1', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '1' which should not equal '0' does hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '0'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '1'}
+[F]broccoli(X,'1') :- not [T]voxel-526(X,'0'), not [T]voxel-5261(X,'0').
+[F]broccoli(X,'1') :- not [T]voxel-267(X,'0'), not [F]voxel-57(X,'0').
+{'voxel-526': '0', 'voxel-5261': '0', 'voxel-267': '0', 'voxel-57': '1'}
+broccoli(X,'1') does not hold because
+	the value of voxel-526 is '0' which should not equal '0' does not hold and
+	the value of voxel-5261 is '0' which should not equal '0' does not hold 
+
+broccoli(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should not equal '0' does hold 
+
+% acc 0.95 p 0.0 r 0 f1 0

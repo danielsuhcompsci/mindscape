@@ -1,0 +1,135 @@
+Beginning analysis on category bowl in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.194012
+
+bowl(X,'1') :- not voxel-1556(X,'0'), voxel-1578(X,'0'), voxel-57(X,'0').
+bowl(X,'1') :- not voxel-4958(X,'0'), not voxel-46(X,'0').
+% acc 0.933 p 0.0 r 0 f1 0
+% #rules 2 #preds 5
+% foldrpp costs: 0:00:01.278881
+
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [F]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '1' which should equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '1'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [F]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [F]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '1'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '1' which should equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '1' which should not equal '0' does hold 
+
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '1', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [F]voxel-1578(X,'0'), [F]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '1', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '1' which should equal '0' does not hold and
+	the value of voxel-57 is '1' which should equal '0' does not hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [T]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '0' which should equal '0' does hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+{'voxel-1556': '1', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '1'}
+[T]bowl(X,'1') :- not [F]voxel-1556(X,'0'), [T]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+{'voxel-1556': '1', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '1'}
+bowl(X,'1') does hold because
+	the value of voxel-1556 is '1' which should not equal '0' does hold and
+	the value of voxel-1578 is '0' which should equal '0' does hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [T]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '0' which should equal '0' does hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [T]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '0' which should equal '0' does hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [T]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '0' which should equal '0' does hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [T]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '0', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '0' which should equal '0' does hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+[F]bowl(X,'1') :- not [T]voxel-1556(X,'0'), [F]voxel-1578(X,'0'), [T]voxel-57(X,'0').
+[F]bowl(X,'1') :- not [T]voxel-4958(X,'0'), not [T]voxel-46(X,'0').
+{'voxel-1556': '0', 'voxel-1578': '1', 'voxel-57': '0', 'voxel-4958': '0', 'voxel-46': '0'}
+bowl(X,'1') does not hold because
+	the value of voxel-1556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1578 is '1' which should equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+bowl(X,'1') does not hold because
+	the value of voxel-4958 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should not equal '0' does not hold 
+
+% acc 0.933 p 0.0 r 0 f1 0

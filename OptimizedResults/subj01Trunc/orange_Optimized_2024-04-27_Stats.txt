@@ -1,0 +1,79 @@
+Beginning analysis on category orange in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.191530
+
+orange(X,'1') :- not voxel-4608(X,'0'), not voxel-349(X,'0').
+% acc 0.967 p 0 r 0.0 f1 0
+% #rules 1 #preds 2
+% foldrpp costs: 0:00:00.679879
+
+{'voxel-4608': '0', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+{'voxel-4608': '0', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+{'voxel-4608': '0', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+{'voxel-4608': '0', 'voxel-349': '1'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [F]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '1'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '1' which should not equal '0' does hold 
+
+{'voxel-4608': '0', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+{'voxel-4608': '1', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [F]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '1', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '1' which should not equal '0' does hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+{'voxel-4608': '0', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+{'voxel-4608': '0', 'voxel-349': '1'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [F]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '1'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '1' which should not equal '0' does hold 
+
+{'voxel-4608': '0', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+{'voxel-4608': '0', 'voxel-349': '0'}
+[F]orange(X,'1') :- not [T]voxel-4608(X,'0'), not [T]voxel-349(X,'0').
+{'voxel-4608': '0', 'voxel-349': '0'}
+orange(X,'1') does not hold because
+	the value of voxel-4608 is '0' which should not equal '0' does not hold and
+	the value of voxel-349 is '0' which should not equal '0' does not hold 
+
+% acc 0.967 p 0 r 0.0 f1 0

@@ -1,0 +1,69 @@
+Beginning analysis on category apple in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.184706
+
+apple(X,'1') :- not voxel-1600(X,'0').
+% acc 0.983 p 0.0 r 0 f1 0
+% #rules 1 #preds 1
+% foldrpp costs: 0:00:00.623346
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '1'}
+[T]apple(X,'1') :- not [F]voxel-1600(X,'0').
+{'voxel-1600': '1'}
+apple(X,'1') does hold because
+	the value of voxel-1600 is '1' which should not equal '0' does hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+{'voxel-1600': '0'}
+[F]apple(X,'1') :- not [T]voxel-1600(X,'0').
+{'voxel-1600': '0'}
+apple(X,'1') does not hold because
+	the value of voxel-1600 is '0' which should not equal '0' does not hold 
+
+% acc 0.983 p 0.0 r 0 f1 0

@@ -1,0 +1,79 @@
+Beginning analysis on category banana in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.204431
+
+banana(X,'1') :- not voxel-345(X,'0'), voxel-1931(X,'0').
+% acc 0.833 p 0.2 r 0.143 f1 0.167
+% #rules 1 #preds 2
+% foldrpp costs: 0:00:01.400646
+
+{'voxel-345': '0', 'voxel-1931': '0'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [T]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '0'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '0' which should equal '0' does hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '1', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [F]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '1', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '1' which should not equal '0' does hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+{'voxel-345': '0', 'voxel-1931': '1'}
+[F]banana(X,'1') :- not [T]voxel-345(X,'0'), [F]voxel-1931(X,'0').
+{'voxel-345': '0', 'voxel-1931': '1'}
+banana(X,'1') does not hold because
+	the value of voxel-345 is '0' which should not equal '0' does not hold and
+	the value of voxel-1931 is '1' which should equal '0' does not hold 
+
+% acc 0.833 p 0.2 r 0.143 f1 0.167

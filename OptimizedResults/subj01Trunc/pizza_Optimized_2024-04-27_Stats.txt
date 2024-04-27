@@ -1,0 +1,69 @@
+Beginning analysis on category pizza in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.202681
+
+pizza(X,'1') :- not voxel-2294(X,'0').
+% acc 0.983 p 0.0 r 0 f1 0
+% #rules 1 #preds 1
+% foldrpp costs: 0:00:00.634570
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+{'voxel-2294': '0'}
+[F]pizza(X,'1') :- not [T]voxel-2294(X,'0').
+{'voxel-2294': '0'}
+pizza(X,'1') does not hold because
+	the value of voxel-2294 is '0' which should not equal '0' does not hold 
+
+% acc 0.983 p 0.0 r 0 f1 0
