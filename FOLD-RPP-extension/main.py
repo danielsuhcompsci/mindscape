@@ -14,7 +14,8 @@ def main():
                   "cake", "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
                   "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
                   "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
-   
+    for category in categories:
+        do_cat(category)
 
 
 
@@ -39,6 +40,7 @@ if __name__ == '__main__':
 
 
 def do_cat(category):
+    print('Category:', category)
     model, data = brainVoxels(category, '../FOLDdata/subj01New.csv', 5277, True)
 
 
