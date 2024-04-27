@@ -1,0 +1,162 @@
+Beginning analysis on category knife in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.194087
+
+knife(X,'1') :- voxel-3594(X,'0'), voxel-4967(X,'0'), not voxel-3785(X,'0'), voxel-1067(X,'0'), not voxel-1928(X,'0').
+knife(X,'1') :- not voxel-3264(X,'0'), not voxel-1111(X,'0'), voxel-25(X,'0').
+% acc 0.933 p 0.0 r 0 f1 0
+% #rules 2 #preds 8
+% foldrpp costs: 0:00:01.926563
+
+{'voxel-3594': '1', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+[F]knife(X,'1') :- [F]voxel-3594(X,'0'), [F]voxel-4967(X,'0'), not [T]voxel-3785(X,'0'), [T]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [T]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '1', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should equal '0' does not hold and
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3785 is '0' which should not equal '0' does not hold and
+	the value of voxel-1067 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-4967': '0', 'voxel-3785': '1', 'voxel-1067': '0', 'voxel-1928': '1', 'voxel-3264': '1', 'voxel-1111': '1', 'voxel-25': '0'}
+[T]knife(X,'1') :- not [F]voxel-3264(X,'0'), not [F]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '1', 'voxel-4967': '0', 'voxel-3785': '1', 'voxel-1067': '0', 'voxel-1928': '1', 'voxel-3264': '1', 'voxel-1111': '1', 'voxel-25': '0'}
+knife(X,'1') does hold because
+	the value of voxel-3264 is '1' which should not equal '0' does hold and
+	the value of voxel-1111 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-4967': '0', 'voxel-3785': '0', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+[F]knife(X,'1') :- [F]voxel-3594(X,'0'), [T]voxel-4967(X,'0'), not [T]voxel-3785(X,'0'), [T]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [T]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '1', 'voxel-4967': '0', 'voxel-3785': '0', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should equal '0' does not hold and
+	the value of voxel-4967 is '0' which should equal '0' does hold and
+	the value of voxel-3785 is '0' which should not equal '0' does not hold and
+	the value of voxel-1067 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '0', 'voxel-4967': '0', 'voxel-3785': '0', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '1', 'voxel-25': '0'}
+[F]knife(X,'1') :- [T]voxel-3594(X,'0'), [T]voxel-4967(X,'0'), not [T]voxel-3785(X,'0'), [F]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [F]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '0', 'voxel-4967': '0', 'voxel-3785': '0', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '1', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should equal '0' does hold and
+	the value of voxel-4967 is '0' which should equal '0' does hold and
+	the value of voxel-3785 is '0' which should not equal '0' does not hold and
+	the value of voxel-1067 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '0', 'voxel-4967': '1', 'voxel-3785': '1', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+[F]knife(X,'1') :- [T]voxel-3594(X,'0'), [F]voxel-4967(X,'0'), not [F]voxel-3785(X,'0'), [F]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [T]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '0', 'voxel-4967': '1', 'voxel-3785': '1', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should equal '0' does hold and
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3785 is '1' which should not equal '0' does hold and
+	the value of voxel-1067 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '0', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '1', 'voxel-25': '1'}
+[F]knife(X,'1') :- [T]voxel-3594(X,'0'), [F]voxel-4967(X,'0'), not [T]voxel-3785(X,'0'), [T]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [F]voxel-1111(X,'0'), [F]voxel-25(X,'0').
+{'voxel-3594': '0', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '1', 'voxel-25': '1'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should equal '0' does hold and
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3785 is '0' which should not equal '0' does not hold and
+	the value of voxel-1067 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '1' which should equal '0' does not hold 
+
+{'voxel-3594': '1', 'voxel-4967': '1', 'voxel-3785': '1', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+[F]knife(X,'1') :- [F]voxel-3594(X,'0'), [F]voxel-4967(X,'0'), not [F]voxel-3785(X,'0'), [T]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [T]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '1', 'voxel-4967': '1', 'voxel-3785': '1', 'voxel-1067': '0', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should equal '0' does not hold and
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3785 is '1' which should not equal '0' does hold and
+	the value of voxel-1067 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-4967': '0', 'voxel-3785': '1', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '1', 'voxel-25': '0'}
+[F]knife(X,'1') :- [F]voxel-3594(X,'0'), [T]voxel-4967(X,'0'), not [F]voxel-3785(X,'0'), [F]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [F]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '1', 'voxel-4967': '0', 'voxel-3785': '1', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '1', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should equal '0' does not hold and
+	the value of voxel-4967 is '0' which should equal '0' does hold and
+	the value of voxel-3785 is '1' which should not equal '0' does hold and
+	the value of voxel-1067 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+[F]knife(X,'1') :- [F]voxel-3594(X,'0'), [F]voxel-4967(X,'0'), not [T]voxel-3785(X,'0'), [F]voxel-1067(X,'0'), not [T]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [T]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '1', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '1', 'voxel-1928': '0', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should equal '0' does not hold and
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3785 is '0' which should not equal '0' does not hold and
+	the value of voxel-1067 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '0' which should not equal '0' does not hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '0', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '1', 'voxel-1928': '1', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+[F]knife(X,'1') :- [T]voxel-3594(X,'0'), [F]voxel-4967(X,'0'), not [T]voxel-3785(X,'0'), [F]voxel-1067(X,'0'), not [F]voxel-1928(X,'0').
+[F]knife(X,'1') :- not [T]voxel-3264(X,'0'), not [T]voxel-1111(X,'0'), [T]voxel-25(X,'0').
+{'voxel-3594': '0', 'voxel-4967': '1', 'voxel-3785': '0', 'voxel-1067': '1', 'voxel-1928': '1', 'voxel-3264': '0', 'voxel-1111': '0', 'voxel-25': '0'}
+knife(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should equal '0' does hold and
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3785 is '0' which should not equal '0' does not hold and
+	the value of voxel-1067 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '1' which should not equal '0' does hold 
+
+knife(X,'1') does not hold because
+	the value of voxel-3264 is '0' which should not equal '0' does not hold and
+	the value of voxel-1111 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+% acc 0.933 p 0.0 r 0 f1 0

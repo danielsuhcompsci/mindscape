@@ -1,0 +1,225 @@
+Beginning analysis on category surfboard in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.189215
+
+surfboard(X,'1') :- not voxel-1707(X,'0'), voxel-25(X,'0').
+surfboard(X,'1') :- voxel-2589(X,'0'), not voxel-1461(X,'0'), voxel-3417(X,'0'), not voxel-3472(X,'0'), voxel-3976(X,'0').
+surfboard(X,'1') :- not voxel-155(X,'0').
+surfboard(X,'1') :- not voxel-351(X,'0').
+% acc 0.9 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 9
+% foldrpp costs: 0:00:02.731471
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '0', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [F]voxel-2589(X,'0'), not [T]voxel-1461(X,'0'), [T]voxel-3417(X,'0'), not [F]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '0', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '1' which should equal '0' does not hold and
+	the value of voxel-1461 is '0' which should not equal '0' does not hold and
+	the value of voxel-3417 is '0' which should equal '0' does hold and
+	the value of voxel-3472 is '1' which should not equal '0' does hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '1', 'voxel-351': '0'}
+[T]surfboard(X,'1') :- not [F]voxel-155(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '1', 'voxel-351': '0'}
+surfboard(X,'1') does hold because
+	the value of voxel-155 is '1' which should not equal '0' does hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '0', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [T]voxel-2589(X,'0'), not [T]voxel-1461(X,'0'), [T]voxel-3417(X,'0'), not [F]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '0', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '0' which should equal '0' does hold and
+	the value of voxel-1461 is '0' which should not equal '0' does not hold and
+	the value of voxel-3417 is '0' which should equal '0' does hold and
+	the value of voxel-3472 is '1' which should not equal '0' does hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '0', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [F]voxel-2589(X,'0'), not [T]voxel-1461(X,'0'), [T]voxel-3417(X,'0'), not [F]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '0', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '1' which should equal '0' does not hold and
+	the value of voxel-1461 is '0' which should not equal '0' does not hold and
+	the value of voxel-3417 is '0' which should equal '0' does hold and
+	the value of voxel-3472 is '1' which should not equal '0' does hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [F]voxel-2589(X,'0'), not [F]voxel-1461(X,'0'), [T]voxel-3417(X,'0'), not [T]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '1' which should equal '0' does not hold and
+	the value of voxel-1461 is '1' which should not equal '0' does hold and
+	the value of voxel-3417 is '0' which should equal '0' does hold and
+	the value of voxel-3472 is '0' which should not equal '0' does not hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '1', 'voxel-3417': '1', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [T]voxel-2589(X,'0'), not [F]voxel-1461(X,'0'), [F]voxel-3417(X,'0'), not [T]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '1', 'voxel-3417': '1', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '0' which should equal '0' does hold and
+	the value of voxel-1461 is '1' which should not equal '0' does hold and
+	the value of voxel-3417 is '1' which should equal '0' does not hold and
+	the value of voxel-3472 is '0' which should not equal '0' does not hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '1', 'voxel-3417': '1', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [T]voxel-2589(X,'0'), not [F]voxel-1461(X,'0'), [F]voxel-3417(X,'0'), not [T]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '1', 'voxel-3417': '1', 'voxel-3472': '0', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '0' which should equal '0' does hold and
+	the value of voxel-1461 is '1' which should not equal '0' does hold and
+	the value of voxel-3417 is '1' which should equal '0' does not hold and
+	the value of voxel-3472 is '0' which should not equal '0' does not hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '1', 'voxel-3417': '1', 'voxel-3472': '1', 'voxel-3976': '1', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [T]voxel-2589(X,'0'), not [F]voxel-1461(X,'0'), [F]voxel-3417(X,'0'), not [F]voxel-3472(X,'0'), [F]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '0', 'voxel-1461': '1', 'voxel-3417': '1', 'voxel-3472': '1', 'voxel-3976': '1', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '0' which should equal '0' does hold and
+	the value of voxel-1461 is '1' which should not equal '0' does hold and
+	the value of voxel-3417 is '1' which should equal '0' does not hold and
+	the value of voxel-3472 is '1' which should not equal '0' does hold and
+	the value of voxel-3976 is '1' which should equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '1', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [F]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [F]voxel-2589(X,'0'), not [F]voxel-1461(X,'0'), [T]voxel-3417(X,'0'), not [F]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '1', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '1' which should equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '1' which should equal '0' does not hold and
+	the value of voxel-1461 is '1' which should not equal '0' does hold and
+	the value of voxel-3417 is '0' which should equal '0' does hold and
+	the value of voxel-3472 is '1' which should not equal '0' does hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+[F]surfboard(X,'1') :- not [T]voxel-1707(X,'0'), [T]voxel-25(X,'0').
+[F]surfboard(X,'1') :- [F]voxel-2589(X,'0'), not [F]voxel-1461(X,'0'), [T]voxel-3417(X,'0'), not [F]voxel-3472(X,'0'), [T]voxel-3976(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-155(X,'0').
+[F]surfboard(X,'1') :- not [T]voxel-351(X,'0').
+{'voxel-1707': '0', 'voxel-25': '0', 'voxel-2589': '1', 'voxel-1461': '1', 'voxel-3417': '0', 'voxel-3472': '1', 'voxel-3976': '0', 'voxel-155': '0', 'voxel-351': '0'}
+surfboard(X,'1') does not hold because
+	the value of voxel-1707 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-2589 is '1' which should equal '0' does not hold and
+	the value of voxel-1461 is '1' which should not equal '0' does hold and
+	the value of voxel-3417 is '0' which should equal '0' does hold and
+	the value of voxel-3472 is '1' which should not equal '0' does hold and
+	the value of voxel-3976 is '0' which should equal '0' does hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-155 is '0' which should not equal '0' does not hold 
+
+surfboard(X,'1') does not hold because
+	the value of voxel-351 is '0' which should not equal '0' does not hold 
+
+% acc 0.9 p 0.0 r 0.0 f1 0

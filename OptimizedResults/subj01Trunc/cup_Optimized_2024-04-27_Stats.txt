@@ -1,0 +1,69 @@
+Beginning analysis on category cup in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.199160
+
+cup(X,'1') :- not voxel-1468(X,'0').
+% acc 0.967 p 0 r 0.0 f1 0
+% #rules 1 #preds 1
+% foldrpp costs: 0:00:00.643527
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+{'voxel-1468': '0'}
+[F]cup(X,'1') :- not [T]voxel-1468(X,'0').
+{'voxel-1468': '0'}
+cup(X,'1') does not hold because
+	the value of voxel-1468 is '0' which should not equal '0' does not hold 
+
+% acc 0.967 p 0 r 0.0 f1 0

@@ -1,0 +1,252 @@
+Beginning analysis on category tennis racket in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.186596
+
+tennis_racket(X,'1') :- not voxel-8(X,'0'), not voxel-209(X,'0').
+tennis_racket(X,'1') :- not voxel-2590(X,'0').
+tennis_racket(X,'1') :- not voxel-4819(X,'0'), not voxel-61(X,'0'), voxel-25(X,'0').
+tennis_racket(X,'1') :- not voxel-4890(X,'0'), not voxel-1863(X,'0'), not voxel-104(X,'0'), voxel-49(X,'0').
+% acc 0.95 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 10
+% foldrpp costs: 0:00:02.518139
+
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [F]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [F]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [T]voxel-1863(X,'0'), not [T]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '1' which should not equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '0', 'voxel-104': '1', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [T]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [T]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [T]voxel-1863(X,'0'), not [F]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '0', 'voxel-104': '1', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '1', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [T]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [T]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [F]voxel-4890(X,'0'), not [T]voxel-1863(X,'0'), not [T]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '1', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '1' which should not equal '0' does hold and
+	the value of voxel-1863 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '1', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [F]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [F]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [F]voxel-1863(X,'0'), not [F]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '1', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '1' which should not equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '1' which should not equal '0' does hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '0', 'voxel-49': '1'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [T]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [F]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [F]voxel-1863(X,'0'), not [T]voxel-104(X,'0'), [F]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '0', 'voxel-49': '1'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '1' which should not equal '0' does hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '1' which should equal '0' does not hold 
+
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '1', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [T]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [T]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [F]voxel-1863(X,'0'), not [F]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '1', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '1' which should not equal '0' does hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '1', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [T]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [T]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [F]voxel-4890(X,'0'), not [T]voxel-1863(X,'0'), not [T]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '0', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '1', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '1' which should not equal '0' does hold and
+	the value of voxel-1863 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '1', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [F]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [T]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [F]voxel-1863(X,'0'), not [F]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '0', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '1', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '1' which should not equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '1' which should not equal '0' does hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '1'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [F]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [F]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [T]voxel-1863(X,'0'), not [T]voxel-104(X,'0'), [F]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '0', 'voxel-104': '0', 'voxel-49': '1'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '1' which should not equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '1' which should equal '0' does not hold 
+
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '0', 'voxel-49': '0'}
+[F]tennis_racket(X,'1') :- not [T]voxel-8(X,'0'), not [F]voxel-209(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-2590(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4819(X,'0'), not [F]voxel-61(X,'0'), [T]voxel-25(X,'0').
+[F]tennis_racket(X,'1') :- not [T]voxel-4890(X,'0'), not [F]voxel-1863(X,'0'), not [T]voxel-104(X,'0'), [T]voxel-49(X,'0').
+{'voxel-8': '0', 'voxel-209': '1', 'voxel-2590': '0', 'voxel-4819': '0', 'voxel-61': '1', 'voxel-25': '0', 'voxel-4890': '0', 'voxel-1863': '1', 'voxel-104': '0', 'voxel-49': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of voxel-8 is '0' which should not equal '0' does not hold and
+	the value of voxel-209 is '1' which should not equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-2590 is '0' which should not equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4819 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of voxel-4890 is '0' which should not equal '0' does not hold and
+	the value of voxel-1863 is '1' which should not equal '0' does hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should equal '0' does hold 
+
+% acc 0.95 p 0.0 r 0.0 f1 0

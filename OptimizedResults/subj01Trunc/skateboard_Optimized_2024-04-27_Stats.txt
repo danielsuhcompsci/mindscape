@@ -1,0 +1,191 @@
+Beginning analysis on category skateboard in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.191003
+
+skateboard(X,'1') :- not voxel-2809(X,'0'), not voxel-1725(X,'0').
+skateboard(X,'1') :- not voxel-4384(X,'0'), not voxel-1481(X,'0'), not voxel-2087(X,'0').
+skateboard(X,'1') :- not voxel-4847(X,'0'), not voxel-52(X,'0').
+% acc 0.917 p 0 r 0.0 f1 0
+% #rules 3 #preds 7
+% foldrpp costs: 0:00:02.048892
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [T]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '0', 'voxel-1725': '1', 'voxel-4384': '0', 'voxel-1481': '1', 'voxel-2087': '1', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [F]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [F]voxel-1481(X,'0'), not [F]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '1', 'voxel-4384': '0', 'voxel-1481': '1', 'voxel-2087': '1', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '1' which should not equal '0' does hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '1' which should not equal '0' does hold and
+	the value of voxel-2087 is '1' which should not equal '0' does hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [T]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '1', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [F]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [T]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '1', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '1' which should not equal '0' does hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '1', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [F]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '1', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '1' which should not equal '0' does hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [T]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '1', 'voxel-1481': '0', 'voxel-2087': '1', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [F]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [F]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '1', 'voxel-1481': '0', 'voxel-2087': '1', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '1' which should not equal '0' does hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '1' which should not equal '0' does hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '1', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '1'}
+[F]skateboard(X,'1') :- not [F]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [T]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [F]voxel-52(X,'0').
+{'voxel-2809': '1', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '1'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '1' which should not equal '0' does hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '1' which should not equal '0' does hold 
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [T]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+[F]skateboard(X,'1') :- not [T]voxel-2809(X,'0'), not [T]voxel-1725(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4384(X,'0'), not [T]voxel-1481(X,'0'), not [T]voxel-2087(X,'0').
+[F]skateboard(X,'1') :- not [T]voxel-4847(X,'0'), not [T]voxel-52(X,'0').
+{'voxel-2809': '0', 'voxel-1725': '0', 'voxel-4384': '0', 'voxel-1481': '0', 'voxel-2087': '0', 'voxel-4847': '0', 'voxel-52': '0'}
+skateboard(X,'1') does not hold because
+	the value of voxel-2809 is '0' which should not equal '0' does not hold and
+	the value of voxel-1725 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4384 is '0' which should not equal '0' does not hold and
+	the value of voxel-1481 is '0' which should not equal '0' does not hold and
+	the value of voxel-2087 is '0' which should not equal '0' does not hold 
+
+skateboard(X,'1') does not hold because
+	the value of voxel-4847 is '0' which should not equal '0' does not hold and
+	the value of voxel-52 is '0' which should not equal '0' does not hold 
+
+% acc 0.917 p 0 r 0.0 f1 0

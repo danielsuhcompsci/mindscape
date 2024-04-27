@@ -1,0 +1,231 @@
+Beginning analysis on category fork in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.204106
+
+fork(X,'1') :- voxel-4967(X,'0'), not voxel-3115(X,'0'), not voxel-1522(X,'0').
+fork(X,'1') :- not voxel-3370(X,'0'), voxel-4328(X,'0'), not voxel-1615(X,'0').
+fork(X,'1') :- not voxel-2051(X,'0'), not voxel-1572(X,'0'), not voxel-4569(X,'0'), not voxel-1794(X,'0'), voxel-131(X,'0').
+% acc 0.9 p 0.333 r 0.2 f1 0.25
+% #rules 3 #preds 11
+% foldrpp costs: 0:00:03.117879
+
+{'voxel-4967': '0', 'voxel-3115': '0', 'voxel-1522': '1', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+[F]fork(X,'1') :- [T]voxel-4967(X,'0'), not [T]voxel-3115(X,'0'), not [F]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [T]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [T]voxel-2051(X,'0'), not [T]voxel-1572(X,'0'), not [T]voxel-4569(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-131(X,'0').
+{'voxel-4967': '0', 'voxel-3115': '0', 'voxel-1522': '1', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '0' which should equal '0' does hold and
+	the value of voxel-3115 is '0' which should not equal '0' does not hold and
+	the value of voxel-1522 is '1' which should not equal '0' does hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '0' which should not equal '0' does not hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '0' which should not equal '0' does not hold and
+	the value of voxel-1572 is '0' which should not equal '0' does not hold and
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-131 is '0' which should equal '0' does hold 
+
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '1', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '1', 'voxel-131': '0'}
+[F]fork(X,'1') :- [F]voxel-4967(X,'0'), not [T]voxel-3115(X,'0'), not [T]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [F]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [F]voxel-2051(X,'0'), not [T]voxel-1572(X,'0'), not [F]voxel-4569(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-131(X,'0').
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '1', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '1', 'voxel-131': '0'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3115 is '0' which should not equal '0' does not hold and
+	the value of voxel-1522 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '1' which should not equal '0' does hold and
+	the value of voxel-1572 is '0' which should not equal '0' does not hold and
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-131 is '0' which should equal '0' does hold 
+
+{'voxel-4967': '1', 'voxel-3115': '1', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '1', 'voxel-131': '0'}
+[F]fork(X,'1') :- [F]voxel-4967(X,'0'), not [F]voxel-3115(X,'0'), not [T]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [T]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [T]voxel-2051(X,'0'), not [T]voxel-1572(X,'0'), not [F]voxel-4569(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-131(X,'0').
+{'voxel-4967': '1', 'voxel-3115': '1', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '1', 'voxel-131': '0'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3115 is '1' which should not equal '0' does hold and
+	the value of voxel-1522 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '0' which should not equal '0' does not hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '0' which should not equal '0' does not hold and
+	the value of voxel-1572 is '0' which should not equal '0' does not hold and
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-131 is '0' which should equal '0' does hold 
+
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '1', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '1', 'voxel-4569': '0', 'voxel-1794': '0', 'voxel-131': '1'}
+[F]fork(X,'1') :- [F]voxel-4967(X,'0'), not [T]voxel-3115(X,'0'), not [F]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [F]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [T]voxel-2051(X,'0'), not [F]voxel-1572(X,'0'), not [T]voxel-4569(X,'0'), not [T]voxel-1794(X,'0'), [F]voxel-131(X,'0').
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '1', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '1', 'voxel-4569': '0', 'voxel-1794': '0', 'voxel-131': '1'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3115 is '0' which should not equal '0' does not hold and
+	the value of voxel-1522 is '1' which should not equal '0' does hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '0' which should not equal '0' does not hold and
+	the value of voxel-1572 is '1' which should not equal '0' does hold and
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-131 is '1' which should equal '0' does not hold 
+
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '1', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '0', 'voxel-1794': '0', 'voxel-131': '0'}
+[F]fork(X,'1') :- [F]voxel-4967(X,'0'), not [T]voxel-3115(X,'0'), not [F]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [F]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [T]voxel-2051(X,'0'), not [T]voxel-1572(X,'0'), not [T]voxel-4569(X,'0'), not [T]voxel-1794(X,'0'), [T]voxel-131(X,'0').
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '1', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '0', 'voxel-1794': '0', 'voxel-131': '0'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3115 is '0' which should not equal '0' does not hold and
+	the value of voxel-1522 is '1' which should not equal '0' does hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '0' which should not equal '0' does not hold and
+	the value of voxel-1572 is '0' which should not equal '0' does not hold and
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-131 is '0' which should equal '0' does hold 
+
+{'voxel-4967': '1', 'voxel-3115': '1', 'voxel-1522': '0', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '1', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '0', 'voxel-131': '1'}
+[F]fork(X,'1') :- [F]voxel-4967(X,'0'), not [F]voxel-3115(X,'0'), not [T]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [F]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [F]voxel-2051(X,'0'), not [T]voxel-1572(X,'0'), not [F]voxel-4569(X,'0'), not [T]voxel-1794(X,'0'), [F]voxel-131(X,'0').
+{'voxel-4967': '1', 'voxel-3115': '1', 'voxel-1522': '0', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '1', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '0', 'voxel-131': '1'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3115 is '1' which should not equal '0' does hold and
+	the value of voxel-1522 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '1' which should not equal '0' does hold and
+	the value of voxel-1572 is '0' which should not equal '0' does not hold and
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-131 is '1' which should equal '0' does not hold 
+
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '0', 'voxel-131': '1'}
+[F]fork(X,'1') :- [F]voxel-4967(X,'0'), not [T]voxel-3115(X,'0'), not [T]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [F]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [T]voxel-2051(X,'0'), not [T]voxel-1572(X,'0'), not [F]voxel-4569(X,'0'), not [T]voxel-1794(X,'0'), [F]voxel-131(X,'0').
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '1', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '0', 'voxel-4569': '1', 'voxel-1794': '0', 'voxel-131': '1'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3115 is '0' which should not equal '0' does not hold and
+	the value of voxel-1522 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '0' which should not equal '0' does not hold and
+	the value of voxel-1572 is '0' which should not equal '0' does not hold and
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-131 is '1' which should equal '0' does not hold 
+
+{'voxel-4967': '0', 'voxel-3115': '1', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '1', 'voxel-2051': '1', 'voxel-1572': '0', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+[F]fork(X,'1') :- [T]voxel-4967(X,'0'), not [F]voxel-3115(X,'0'), not [T]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [T]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [F]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [F]voxel-2051(X,'0'), not [T]voxel-1572(X,'0'), not [T]voxel-4569(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-131(X,'0').
+{'voxel-4967': '0', 'voxel-3115': '1', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '1', 'voxel-2051': '1', 'voxel-1572': '0', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '0' which should equal '0' does hold and
+	the value of voxel-3115 is '1' which should not equal '0' does hold and
+	the value of voxel-1522 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '0' which should not equal '0' does not hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '1' which should not equal '0' does hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '1' which should not equal '0' does hold and
+	the value of voxel-1572 is '0' which should not equal '0' does not hold and
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-131 is '0' which should equal '0' does hold 
+
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '1', 'voxel-1572': '1', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+[F]fork(X,'1') :- [F]voxel-4967(X,'0'), not [T]voxel-3115(X,'0'), not [T]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [T]voxel-3370(X,'0'), [T]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [F]voxel-2051(X,'0'), not [F]voxel-1572(X,'0'), not [T]voxel-4569(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-131(X,'0').
+{'voxel-4967': '1', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '0', 'voxel-1615': '0', 'voxel-2051': '1', 'voxel-1572': '1', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '1' which should equal '0' does not hold and
+	the value of voxel-3115 is '0' which should not equal '0' does not hold and
+	the value of voxel-1522 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '0' which should not equal '0' does not hold and
+	the value of voxel-4328 is '0' which should equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '1' which should not equal '0' does hold and
+	the value of voxel-1572 is '1' which should not equal '0' does hold and
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-131 is '0' which should equal '0' does hold 
+
+{'voxel-4967': '0', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '1', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '1', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+[F]fork(X,'1') :- [T]voxel-4967(X,'0'), not [T]voxel-3115(X,'0'), not [T]voxel-1522(X,'0').
+[F]fork(X,'1') :- not [T]voxel-3370(X,'0'), [F]voxel-4328(X,'0'), not [T]voxel-1615(X,'0').
+[F]fork(X,'1') :- not [T]voxel-2051(X,'0'), not [F]voxel-1572(X,'0'), not [T]voxel-4569(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-131(X,'0').
+{'voxel-4967': '0', 'voxel-3115': '0', 'voxel-1522': '0', 'voxel-3370': '0', 'voxel-4328': '1', 'voxel-1615': '0', 'voxel-2051': '0', 'voxel-1572': '1', 'voxel-4569': '0', 'voxel-1794': '1', 'voxel-131': '0'}
+fork(X,'1') does not hold because
+	the value of voxel-4967 is '0' which should equal '0' does hold and
+	the value of voxel-3115 is '0' which should not equal '0' does not hold and
+	the value of voxel-1522 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-3370 is '0' which should not equal '0' does not hold and
+	the value of voxel-4328 is '1' which should equal '0' does not hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold 
+
+fork(X,'1') does not hold because
+	the value of voxel-2051 is '0' which should not equal '0' does not hold and
+	the value of voxel-1572 is '1' which should not equal '0' does hold and
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-131 is '0' which should equal '0' does hold 
+
+% acc 0.9 p 0.333 r 0.2 f1 0.25
