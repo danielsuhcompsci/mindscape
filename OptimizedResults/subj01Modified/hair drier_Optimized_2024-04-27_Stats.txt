@@ -1,0 +1,79 @@
+Beginning analysis on category hair drier in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:20.377980
+
+hair_drier(X,'1') :- not v1v-57(X,'0'), not v1v-544(X,'0').
+% acc 0.999 p 0 r 0.0 f1 0
+% #rules 1 #preds 2
+% foldrpp costs: 0:06:09.086161
+
+{'v1v-57': '1', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [F]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '1', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '1' which should not equal '0' does hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '1', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [F]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '1', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '1' which should not equal '0' does hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '1', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [F]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '1', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '1' which should not equal '0' does hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '1', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [F]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '1', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '1' which should not equal '0' does hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '0', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [T]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '0', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '0' which should not equal '0' does not hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '0', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [T]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '0', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '0' which should not equal '0' does not hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '1', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [F]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '1', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '1' which should not equal '0' does hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '1', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [F]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '1', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '1' which should not equal '0' does hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '1', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [F]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '1', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '1' which should not equal '0' does hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+{'v1v-57': '0', 'v1v-544': '0'}
+[F]hair_drier(X,'1') :- not [T]v1v-57(X,'0'), not [T]v1v-544(X,'0').
+{'v1v-57': '0', 'v1v-544': '0'}
+hair_drier(X,'1') does not hold because
+	the value of v1v-57 is '0' which should not equal '0' does not hold and
+	the value of v1v-544 is '0' which should not equal '0' does not hold 
+
+% acc 0.999 p 0 r 0.0 f1 0
