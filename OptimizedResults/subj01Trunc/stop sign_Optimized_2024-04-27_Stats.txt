@@ -1,0 +1,79 @@
+Beginning analysis on category stop sign in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.183551
+
+stop_sign(X,'1') :- not voxel-1656(X,'0'), not voxel-1125(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 1 #preds 2
+% foldrpp costs: 0:00:00.614245
+
+{'voxel-1656': '0', 'voxel-1125': '1'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [F]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '1'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '1' which should not equal '0' does hold 
+
+{'voxel-1656': '0', 'voxel-1125': '0'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [T]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '0'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '0' which should not equal '0' does not hold 
+
+{'voxel-1656': '0', 'voxel-1125': '0'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [T]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '0'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '0' which should not equal '0' does not hold 
+
+{'voxel-1656': '0', 'voxel-1125': '1'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [F]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '1'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '1' which should not equal '0' does hold 
+
+{'voxel-1656': '0', 'voxel-1125': '0'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [T]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '0'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '0' which should not equal '0' does not hold 
+
+{'voxel-1656': '0', 'voxel-1125': '1'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [F]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '1'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '1' which should not equal '0' does hold 
+
+{'voxel-1656': '0', 'voxel-1125': '1'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [F]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '1'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '1' which should not equal '0' does hold 
+
+{'voxel-1656': '0', 'voxel-1125': '0'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [T]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '0'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '0' which should not equal '0' does not hold 
+
+{'voxel-1656': '0', 'voxel-1125': '1'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [F]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '1'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '1' which should not equal '0' does hold 
+
+{'voxel-1656': '0', 'voxel-1125': '1'}
+[F]stop_sign(X,'1') :- not [T]voxel-1656(X,'0'), not [F]voxel-1125(X,'0').
+{'voxel-1656': '0', 'voxel-1125': '1'}
+stop_sign(X,'1') does not hold because
+	the value of voxel-1656 is '0' which should not equal '0' does not hold and
+	the value of voxel-1125 is '1' which should not equal '0' does hold 
+
+% acc 1.0 p 0 r 0 f1 0

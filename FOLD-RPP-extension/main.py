@@ -1,4 +1,5 @@
 import datetime
+import os
 
 from foldrpp import split_data, get_scores, num_predicates, binary_only
 from datasets import *
@@ -27,13 +28,16 @@ def main():
     # csvs = ['../FOLDdata/subj01New-500.csv']
     csvs = ['../FOLDdata/subj01Trunc.csv', '../FOLDdata/subj01Modified.csv']
     for filename in csvs:
+        csvName = (filename.split('/')[-1].removesuffix('.csv'))
+        if not os.path.exists("../OptimizedResults/" + csvName + "/"):
+            os.mkdir("../OptimizedResults/" + csvName + "/")
         columns = get_attrs(filename, categories)
         for category in categories:
             if profile:
                 profiler = cProfile.Profile()
 
             chrono = str(datetime.datetime.today())[:10]
-            savefilename = (filename.split('/')[-1].removesuffix('.csv')) + '_' + category + '_Optimized_' + chrono
+            savefilename = '../OptimizedResults/' + csvName + '/' + category + '_Optimized_' + chrono
             statsFileName = savefilename + '_Stats.txt'
             savefilename += '.txt'
             statsString = f"Beginning analysis on category {category} in file {filename}"

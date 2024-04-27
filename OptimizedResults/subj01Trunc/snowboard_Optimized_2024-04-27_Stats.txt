@@ -1,0 +1,130 @@
+Beginning analysis on category snowboard in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.189707
+
+snowboard(X,'1') :- not voxel-2654(X,'0').
+snowboard(X,'1') :- not voxel-4783(X,'0'), not voxel-533(X,'0'), voxel-103(X,'0').
+% acc 0.983 p 0 r 0.0 f1 0
+% #rules 2 #preds 4
+% foldrpp costs: 0:00:01.330255
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [T]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '0' which should not equal '0' does not hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '1', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [F]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '1', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '1' which should not equal '0' does hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [T]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '0' which should not equal '0' does not hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '1', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [F]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '1', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '1' which should not equal '0' does hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [T]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '0' which should not equal '0' does not hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [T]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '0' which should not equal '0' does not hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [T]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '0' which should not equal '0' does not hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '0'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [T]voxel-533(X,'0'), [T]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '0'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '0' which should not equal '0' does not hold and
+	the value of voxel-103 is '0' which should equal '0' does hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '0'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [T]voxel-533(X,'0'), [T]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '0', 'voxel-103': '0'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '0' which should not equal '0' does not hold and
+	the value of voxel-103 is '0' which should equal '0' does hold 
+
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '1', 'voxel-103': '1'}
+[F]snowboard(X,'1') :- not [T]voxel-2654(X,'0').
+[F]snowboard(X,'1') :- not [T]voxel-4783(X,'0'), not [F]voxel-533(X,'0'), [F]voxel-103(X,'0').
+{'voxel-2654': '0', 'voxel-4783': '0', 'voxel-533': '1', 'voxel-103': '1'}
+snowboard(X,'1') does not hold because
+	the value of voxel-2654 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of voxel-4783 is '0' which should not equal '0' does not hold and
+	the value of voxel-533 is '1' which should not equal '0' does hold and
+	the value of voxel-103 is '1' which should equal '0' does not hold 
+
+% acc 0.983 p 0 r 0.0 f1 0

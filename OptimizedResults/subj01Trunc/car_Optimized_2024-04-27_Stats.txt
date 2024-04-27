@@ -1,0 +1,242 @@
+Beginning analysis on category car in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.192928
+
+car(X,'1') :- not voxel-1190(X,'0'), not voxel-200(X,'0').
+car(X,'1') :- not voxel-1489(X,'0'), not voxel-54(X,'0').
+car(X,'1') :- not voxel-2938(X,'0'), not voxel-210(X,'0'), not voxel-216(X,'0').
+car(X,'1') :- not voxel-4613(X,'0'), voxel-38(X,'0').
+% acc 0.967 p 0.0 r 0 f1 0
+% #rules 4 #preds 9
+% foldrpp costs: 0:00:02.906611
+
+{'voxel-1190': '0', 'voxel-200': '1', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [F]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '1', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should not equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '1', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [T]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [F]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '1', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '1' which should not equal '0' does hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [T]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [T]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '1', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '1', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [F]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [F]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '1', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '1', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should not equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '1' which should not equal '0' does hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '1', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [T]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [F]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '1', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '1' which should not equal '0' does hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '1', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [F]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '1', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should not equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [T]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '1', 'voxel-4613': '0', 'voxel-38': '1'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [T]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [F]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [F]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '1', 'voxel-4613': '0', 'voxel-38': '1'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '1' which should not equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '1' which should equal '0' does not hold 
+
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+[F]car(X,'1') :- not [T]voxel-1190(X,'0'), not [T]voxel-200(X,'0').
+[F]car(X,'1') :- not [T]voxel-1489(X,'0'), not [T]voxel-54(X,'0').
+[F]car(X,'1') :- not [T]voxel-2938(X,'0'), not [T]voxel-210(X,'0'), not [T]voxel-216(X,'0').
+[F]car(X,'1') :- not [T]voxel-4613(X,'0'), [T]voxel-38(X,'0').
+{'voxel-1190': '0', 'voxel-200': '0', 'voxel-1489': '0', 'voxel-54': '0', 'voxel-2938': '0', 'voxel-210': '0', 'voxel-216': '0', 'voxel-4613': '0', 'voxel-38': '0'}
+car(X,'1') does not hold because
+	the value of voxel-1190 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-1489 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-2938 is '0' which should not equal '0' does not hold and
+	the value of voxel-210 is '0' which should not equal '0' does not hold and
+	the value of voxel-216 is '0' which should not equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of voxel-4613 is '0' which should not equal '0' does not hold and
+	the value of voxel-38 is '0' which should equal '0' does hold 
+
+% acc 0.967 p 0.0 r 0 f1 0

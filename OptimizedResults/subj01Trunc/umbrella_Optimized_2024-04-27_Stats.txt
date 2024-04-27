@@ -1,0 +1,262 @@
+Beginning analysis on category umbrella in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.193674
+
+umbrella(X,'1') :- not voxel-140(X,'0'), not voxel-2051(X,'0').
+umbrella(X,'1') :- not voxel-2548(X,'0'), not voxel-3116(X,'0'), voxel-529(X,'0'), not voxel-673(X,'0'), not voxel-552(X,'0').
+umbrella(X,'1') :- not voxel-506(X,'0').
+umbrella(X,'1') :- not voxel-1959(X,'0'), not voxel-1599(X,'0'), not voxel-62(X,'0').
+% acc 0.917 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 11
+% foldrpp costs: 0:00:03.189944
+
+{'voxel-140': '0', 'voxel-2051': '1', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '1'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [F]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [F]voxel-673(X,'0'), not [F]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [F]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '1', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '1'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '0' which should not equal '0' does not hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '1' which should not equal '0' does hold and
+	the value of voxel-552 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '1' which should not equal '0' does hold 
+
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '1', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [T]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [F]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [F]voxel-529(X,'0'), not [F]voxel-673(X,'0'), not [F]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '1', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '1' which should not equal '0' does hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '1' which should equal '0' does not hold and
+	the value of voxel-673 is '1' which should not equal '0' does hold and
+	the value of voxel-552 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '0', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [T]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [F]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [F]voxel-673(X,'0'), not [T]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '0', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '1' which should not equal '0' does hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '1' which should not equal '0' does hold and
+	the value of voxel-552 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '1', 'voxel-62': '0'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [T]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [T]voxel-673(X,'0'), not [F]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [F]voxel-1599(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '1', 'voxel-62': '0'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '0' which should not equal '0' does not hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '0' which should not equal '0' does not hold and
+	the value of voxel-552 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '1' which should not equal '0' does hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '0', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [T]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [F]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [T]voxel-673(X,'0'), not [T]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '0', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '1' which should not equal '0' does hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '0' which should not equal '0' does not hold and
+	the value of voxel-552 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '0', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '1'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [T]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [F]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [F]voxel-673(X,'0'), not [T]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [F]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '0', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '1'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '1' which should not equal '0' does hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '1' which should not equal '0' does hold and
+	the value of voxel-552 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '1' which should not equal '0' does hold 
+
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [T]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [F]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [F]voxel-673(X,'0'), not [F]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '1', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '1' which should not equal '0' does hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '1' which should not equal '0' does hold and
+	the value of voxel-552 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-140': '0', 'voxel-2051': '1', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [F]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [T]voxel-673(X,'0'), not [F]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '1', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '0'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '0' which should not equal '0' does not hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '0' which should not equal '0' does not hold and
+	the value of voxel-552 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-140': '0', 'voxel-2051': '1', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '1'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [F]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [F]voxel-673(X,'0'), not [F]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [T]voxel-1599(X,'0'), not [F]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '1', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '1', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '0', 'voxel-62': '1'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '0' which should not equal '0' does not hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '1' which should not equal '0' does hold and
+	the value of voxel-552 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '1' which should not equal '0' does hold 
+
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '1', 'voxel-62': '0'}
+[F]umbrella(X,'1') :- not [T]voxel-140(X,'0'), not [T]voxel-2051(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-2548(X,'0'), not [T]voxel-3116(X,'0'), [T]voxel-529(X,'0'), not [T]voxel-673(X,'0'), not [F]voxel-552(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-506(X,'0').
+[F]umbrella(X,'1') :- not [T]voxel-1959(X,'0'), not [F]voxel-1599(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-140': '0', 'voxel-2051': '0', 'voxel-2548': '0', 'voxel-3116': '0', 'voxel-529': '0', 'voxel-673': '0', 'voxel-552': '1', 'voxel-506': '0', 'voxel-1959': '0', 'voxel-1599': '1', 'voxel-62': '0'}
+umbrella(X,'1') does not hold because
+	the value of voxel-140 is '0' which should not equal '0' does not hold and
+	the value of voxel-2051 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-2548 is '0' which should not equal '0' does not hold and
+	the value of voxel-3116 is '0' which should not equal '0' does not hold and
+	the value of voxel-529 is '0' which should equal '0' does hold and
+	the value of voxel-673 is '0' which should not equal '0' does not hold and
+	the value of voxel-552 is '1' which should not equal '0' does hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-506 is '0' which should not equal '0' does not hold 
+
+umbrella(X,'1') does not hold because
+	the value of voxel-1959 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '1' which should not equal '0' does hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+% acc 0.917 p 0.0 r 0.0 f1 0

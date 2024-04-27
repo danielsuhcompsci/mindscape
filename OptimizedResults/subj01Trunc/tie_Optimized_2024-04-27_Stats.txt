@@ -1,0 +1,231 @@
+Beginning analysis on category tie in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.185070
+
+tie(X,'1') :- voxel-3491(X,'0'), voxel-2096(X,'0'), voxel-1042(X,'0'), not voxel-1062(X,'0'), not voxel-5203(X,'0'), voxel-54(X,'0').
+tie(X,'1') :- not voxel-118(X,'0'), not voxel-3618(X,'0'), voxel-25(X,'0').
+tie(X,'1') :- not voxel-201(X,'0'), voxel-200(X,'0').
+% acc 0.95 p 0 r 0.0 f1 0
+% #rules 3 #preds 11
+% foldrpp costs: 0:00:02.436933
+
+{'voxel-3491': '1', 'voxel-2096': '1', 'voxel-1042': '1', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+[F]tie(X,'1') :- [F]voxel-3491(X,'0'), [F]voxel-2096(X,'0'), [F]voxel-1042(X,'0'), not [F]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [F]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [T]voxel-200(X,'0').
+{'voxel-3491': '1', 'voxel-2096': '1', 'voxel-1042': '1', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '1' which should equal '0' does not hold and
+	the value of voxel-2096 is '1' which should equal '0' does not hold and
+	the value of voxel-1042 is '1' which should equal '0' does not hold and
+	the value of voxel-1062 is '1' which should not equal '0' does hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should equal '0' does hold 
+
+{'voxel-3491': '0', 'voxel-2096': '0', 'voxel-1042': '1', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '1', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+[F]tie(X,'1') :- [T]voxel-3491(X,'0'), [T]voxel-2096(X,'0'), [F]voxel-1042(X,'0'), not [F]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [F]voxel-118(X,'0'), not [T]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [T]voxel-200(X,'0').
+{'voxel-3491': '0', 'voxel-2096': '0', 'voxel-1042': '1', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '1', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '0' which should equal '0' does hold and
+	the value of voxel-2096 is '0' which should equal '0' does hold and
+	the value of voxel-1042 is '1' which should equal '0' does not hold and
+	the value of voxel-1062 is '1' which should not equal '0' does hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '1' which should not equal '0' does hold and
+	the value of voxel-3618 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should equal '0' does hold 
+
+{'voxel-3491': '1', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '0', 'voxel-5203': '1', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+[F]tie(X,'1') :- [F]voxel-3491(X,'0'), [F]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [T]voxel-1062(X,'0'), not [F]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [T]voxel-200(X,'0').
+{'voxel-3491': '1', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '0', 'voxel-5203': '1', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '1' which should equal '0' does not hold and
+	the value of voxel-2096 is '1' which should equal '0' does not hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '0' which should not equal '0' does not hold and
+	the value of voxel-5203 is '1' which should not equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should equal '0' does hold 
+
+{'voxel-3491': '0', 'voxel-2096': '0', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '1'}
+[F]tie(X,'1') :- [T]voxel-3491(X,'0'), [T]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [F]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [F]voxel-200(X,'0').
+{'voxel-3491': '0', 'voxel-2096': '0', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '1'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '0' which should equal '0' does hold and
+	the value of voxel-2096 is '0' which should equal '0' does hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '1' which should not equal '0' does hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should equal '0' does not hold 
+
+{'voxel-3491': '0', 'voxel-2096': '0', 'voxel-1042': '0', 'voxel-1062': '0', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '1', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '1', 'voxel-200': '1'}
+[F]tie(X,'1') :- [T]voxel-3491(X,'0'), [T]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [T]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [F]voxel-118(X,'0'), not [T]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [F]voxel-201(X,'0'), [F]voxel-200(X,'0').
+{'voxel-3491': '0', 'voxel-2096': '0', 'voxel-1042': '0', 'voxel-1062': '0', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '1', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '1', 'voxel-200': '1'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '0' which should equal '0' does hold and
+	the value of voxel-2096 is '0' which should equal '0' does hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '0' which should not equal '0' does not hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '1' which should not equal '0' does hold and
+	the value of voxel-3618 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '1' which should not equal '0' does hold and
+	the value of voxel-200 is '1' which should equal '0' does not hold 
+
+{'voxel-3491': '0', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '1', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+[F]tie(X,'1') :- [T]voxel-3491(X,'0'), [F]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [F]voxel-1062(X,'0'), not [F]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [T]voxel-200(X,'0').
+{'voxel-3491': '0', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '1', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '0' which should equal '0' does hold and
+	the value of voxel-2096 is '1' which should equal '0' does not hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '1' which should not equal '0' does hold and
+	the value of voxel-5203 is '1' which should not equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should equal '0' does hold 
+
+{'voxel-3491': '0', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '1', 'voxel-201': '0', 'voxel-200': '0'}
+[F]tie(X,'1') :- [T]voxel-3491(X,'0'), [F]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [F]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-3618(X,'0'), [F]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [T]voxel-200(X,'0').
+{'voxel-3491': '0', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '0', 'voxel-25': '1', 'voxel-201': '0', 'voxel-200': '0'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '0' which should equal '0' does hold and
+	the value of voxel-2096 is '1' which should equal '0' does not hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '1' which should not equal '0' does hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '1' which should equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should equal '0' does hold 
+
+{'voxel-3491': '1', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+[F]tie(X,'1') :- [F]voxel-3491(X,'0'), [F]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [F]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [F]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [T]voxel-200(X,'0').
+{'voxel-3491': '1', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '1' which should equal '0' does not hold and
+	the value of voxel-2096 is '1' which should equal '0' does not hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '1' which should not equal '0' does hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should equal '0' does hold 
+
+{'voxel-3491': '0', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '0', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '1'}
+[F]tie(X,'1') :- [T]voxel-3491(X,'0'), [F]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [T]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [F]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [F]voxel-200(X,'0').
+{'voxel-3491': '0', 'voxel-2096': '1', 'voxel-1042': '0', 'voxel-1062': '0', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '1'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '0' which should equal '0' does hold and
+	the value of voxel-2096 is '1' which should equal '0' does not hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '0' which should not equal '0' does not hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should equal '0' does not hold 
+
+{'voxel-3491': '1', 'voxel-2096': '0', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+[F]tie(X,'1') :- [F]voxel-3491(X,'0'), [T]voxel-2096(X,'0'), [T]voxel-1042(X,'0'), not [F]voxel-1062(X,'0'), not [T]voxel-5203(X,'0'), [T]voxel-54(X,'0').
+[F]tie(X,'1') :- not [T]voxel-118(X,'0'), not [F]voxel-3618(X,'0'), [T]voxel-25(X,'0').
+[F]tie(X,'1') :- not [T]voxel-201(X,'0'), [T]voxel-200(X,'0').
+{'voxel-3491': '1', 'voxel-2096': '0', 'voxel-1042': '0', 'voxel-1062': '1', 'voxel-5203': '0', 'voxel-54': '0', 'voxel-118': '0', 'voxel-3618': '1', 'voxel-25': '0', 'voxel-201': '0', 'voxel-200': '0'}
+tie(X,'1') does not hold because
+	the value of voxel-3491 is '1' which should equal '0' does not hold and
+	the value of voxel-2096 is '0' which should equal '0' does hold and
+	the value of voxel-1042 is '0' which should equal '0' does hold and
+	the value of voxel-1062 is '1' which should not equal '0' does hold and
+	the value of voxel-5203 is '0' which should not equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-3618 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of voxel-201 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should equal '0' does hold 
+
+% acc 0.95 p 0 r 0.0 f1 0

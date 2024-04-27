@@ -1,0 +1,160 @@
+Beginning analysis on category sheep in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.186417
+
+sheep(X,'1') :- not voxel-1085(X,'0'), not voxel-1400(X,'0'), not voxel-3408(X,'0'), voxel-39(X,'0').
+sheep(X,'1') :- not voxel-988(X,'0'), not voxel-2253(X,'0'), voxel-122(X,'0').
+% acc 0.95 p 0.0 r 0 f1 0
+% #rules 2 #preds 7
+% foldrpp costs: 0:00:01.480570
+
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '1', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [F]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '1', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '1' which should not equal '0' does hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '0', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '1', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [T]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [F]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '0', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '1', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '0' which should not equal '0' does not hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '1' which should not equal '0' does hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '0', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [T]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '0', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '0' which should not equal '0' does not hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '1', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [F]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '1', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '1' which should not equal '0' does hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '1', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [F]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [T]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '1', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '0'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '1' which should not equal '0' does hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should equal '0' does hold 
+
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '1'}
+[F]sheep(X,'1') :- not [T]voxel-1085(X,'0'), not [F]voxel-1400(X,'0'), not [T]voxel-3408(X,'0'), [T]voxel-39(X,'0').
+[F]sheep(X,'1') :- not [T]voxel-988(X,'0'), not [T]voxel-2253(X,'0'), [F]voxel-122(X,'0').
+{'voxel-1085': '0', 'voxel-1400': '1', 'voxel-3408': '0', 'voxel-39': '0', 'voxel-988': '0', 'voxel-2253': '0', 'voxel-122': '1'}
+sheep(X,'1') does not hold because
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-1400 is '1' which should not equal '0' does hold and
+	the value of voxel-3408 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should equal '0' does hold 
+
+sheep(X,'1') does not hold because
+	the value of voxel-988 is '0' which should not equal '0' does not hold and
+	the value of voxel-2253 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '1' which should equal '0' does not hold 
+
+% acc 0.95 p 0.0 r 0 f1 0

@@ -1,0 +1,201 @@
+Beginning analysis on category dog in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.192526
+
+dog(X,'1') :- not voxel-4599(X,'0').
+dog(X,'1') :- not voxel-4686(X,'0'), not voxel-312(X,'0'), not voxel-1794(X,'0'), voxel-1351(X,'0').
+dog(X,'1') :- voxel-2432(X,'0'), not voxel-1099(X,'0'), voxel-554(X,'0').
+% acc 0.917 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 8
+% foldrpp costs: 0:00:02.076317
+
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '1', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '1', 'voxel-554': '0'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [T]voxel-4686(X,'0'), not [T]voxel-312(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [F]voxel-1099(X,'0'), [T]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '1', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '1', 'voxel-554': '0'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '0' which should not equal '0' does not hold and
+	the value of voxel-312 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-1351 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '1' which should not equal '0' does hold and
+	the value of voxel-554 is '0' which should equal '0' does hold 
+
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '1', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '0'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [T]voxel-4686(X,'0'), not [T]voxel-312(X,'0'), not [F]voxel-1794(X,'0'), [F]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [T]voxel-1099(X,'0'), [T]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '1', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '0'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '0' which should not equal '0' does not hold and
+	the value of voxel-312 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-1351 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '0' which should not equal '0' does not hold and
+	the value of voxel-554 is '0' which should equal '0' does hold 
+
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '1', 'voxel-1794': '1', 'voxel-1351': '0', 'voxel-2432': '0', 'voxel-1099': '0', 'voxel-554': '0'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [T]voxel-4686(X,'0'), not [F]voxel-312(X,'0'), not [F]voxel-1794(X,'0'), [T]voxel-1351(X,'0').
+[F]dog(X,'1') :- [T]voxel-2432(X,'0'), not [T]voxel-1099(X,'0'), [T]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '1', 'voxel-1794': '1', 'voxel-1351': '0', 'voxel-2432': '0', 'voxel-1099': '0', 'voxel-554': '0'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '0' which should not equal '0' does not hold and
+	the value of voxel-312 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-1351 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '0' which should equal '0' does hold and
+	the value of voxel-1099 is '0' which should not equal '0' does not hold and
+	the value of voxel-554 is '0' which should equal '0' does hold 
+
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '0', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '1', 'voxel-554': '0'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [T]voxel-4686(X,'0'), not [T]voxel-312(X,'0'), not [T]voxel-1794(X,'0'), [T]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [F]voxel-1099(X,'0'), [T]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '0', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '1', 'voxel-554': '0'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '0' which should not equal '0' does not hold and
+	the value of voxel-312 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-1351 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '1' which should not equal '0' does hold and
+	the value of voxel-554 is '0' which should equal '0' does hold 
+
+{'voxel-4599': '0', 'voxel-4686': '1', 'voxel-312': '1', 'voxel-1794': '1', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '1'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [F]voxel-4686(X,'0'), not [F]voxel-312(X,'0'), not [F]voxel-1794(X,'0'), [F]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [T]voxel-1099(X,'0'), [F]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '1', 'voxel-312': '1', 'voxel-1794': '1', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '1'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '1' which should not equal '0' does hold and
+	the value of voxel-312 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-1351 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '0' which should not equal '0' does not hold and
+	the value of voxel-554 is '1' which should equal '0' does not hold 
+
+{'voxel-4599': '0', 'voxel-4686': '1', 'voxel-312': '1', 'voxel-1794': '0', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '1'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [F]voxel-4686(X,'0'), not [F]voxel-312(X,'0'), not [T]voxel-1794(X,'0'), [F]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [T]voxel-1099(X,'0'), [F]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '1', 'voxel-312': '1', 'voxel-1794': '0', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '1'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '1' which should not equal '0' does hold and
+	the value of voxel-312 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-1351 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '0' which should not equal '0' does not hold and
+	the value of voxel-554 is '1' which should equal '0' does not hold 
+
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '1', 'voxel-1351': '1', 'voxel-2432': '0', 'voxel-1099': '0', 'voxel-554': '0'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [T]voxel-4686(X,'0'), not [T]voxel-312(X,'0'), not [F]voxel-1794(X,'0'), [F]voxel-1351(X,'0').
+[F]dog(X,'1') :- [T]voxel-2432(X,'0'), not [T]voxel-1099(X,'0'), [T]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '1', 'voxel-1351': '1', 'voxel-2432': '0', 'voxel-1099': '0', 'voxel-554': '0'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '0' which should not equal '0' does not hold and
+	the value of voxel-312 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '1' which should not equal '0' does hold and
+	the value of voxel-1351 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '0' which should equal '0' does hold and
+	the value of voxel-1099 is '0' which should not equal '0' does not hold and
+	the value of voxel-554 is '0' which should equal '0' does hold 
+
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '1', 'voxel-1794': '0', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '0'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [T]voxel-4686(X,'0'), not [F]voxel-312(X,'0'), not [T]voxel-1794(X,'0'), [T]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [T]voxel-1099(X,'0'), [T]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '1', 'voxel-1794': '0', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '0'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '0' which should not equal '0' does not hold and
+	the value of voxel-312 is '1' which should not equal '0' does hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-1351 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '0' which should not equal '0' does not hold and
+	the value of voxel-554 is '0' which should equal '0' does hold 
+
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '0', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '0'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [T]voxel-4686(X,'0'), not [T]voxel-312(X,'0'), not [T]voxel-1794(X,'0'), [T]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [T]voxel-1099(X,'0'), [T]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '0', 'voxel-312': '0', 'voxel-1794': '0', 'voxel-1351': '0', 'voxel-2432': '1', 'voxel-1099': '0', 'voxel-554': '0'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '0' which should not equal '0' does not hold and
+	the value of voxel-312 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-1351 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '0' which should not equal '0' does not hold and
+	the value of voxel-554 is '0' which should equal '0' does hold 
+
+{'voxel-4599': '0', 'voxel-4686': '1', 'voxel-312': '0', 'voxel-1794': '0', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '1', 'voxel-554': '1'}
+[F]dog(X,'1') :- not [T]voxel-4599(X,'0').
+[F]dog(X,'1') :- not [F]voxel-4686(X,'0'), not [T]voxel-312(X,'0'), not [T]voxel-1794(X,'0'), [F]voxel-1351(X,'0').
+[F]dog(X,'1') :- [F]voxel-2432(X,'0'), not [F]voxel-1099(X,'0'), [F]voxel-554(X,'0').
+{'voxel-4599': '0', 'voxel-4686': '1', 'voxel-312': '0', 'voxel-1794': '0', 'voxel-1351': '1', 'voxel-2432': '1', 'voxel-1099': '1', 'voxel-554': '1'}
+dog(X,'1') does not hold because
+	the value of voxel-4599 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-4686 is '1' which should not equal '0' does hold and
+	the value of voxel-312 is '0' which should not equal '0' does not hold and
+	the value of voxel-1794 is '0' which should not equal '0' does not hold and
+	the value of voxel-1351 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of voxel-2432 is '1' which should equal '0' does not hold and
+	the value of voxel-1099 is '1' which should not equal '0' does hold and
+	the value of voxel-554 is '1' which should equal '0' does not hold 
+
+% acc 0.917 p 0.0 r 0.0 f1 0

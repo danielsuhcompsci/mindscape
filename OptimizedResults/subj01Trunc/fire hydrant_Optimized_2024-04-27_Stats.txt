@@ -1,0 +1,201 @@
+Beginning analysis on category fire hydrant in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.186991
+
+fire_hydrant(X,'1') :- not voxel-1520(X,'0').
+fire_hydrant(X,'1') :- voxel-2049(X,'0'), not voxel-139(X,'0'), not voxel-707(X,'0'), not voxel-1055(X,'0'), voxel-257(X,'0').
+fire_hydrant(X,'1') :- not voxel-549(X,'0'), not voxel-1639(X,'0').
+% acc 0.95 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 8
+% foldrpp costs: 0:00:02.107548
+
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '1', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [F]voxel-2049(X,'0'), not [F]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [T]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '1', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '1' which should equal '0' does not hold and
+	the value of voxel-139 is '1' which should not equal '0' does hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '0' which should not equal '0' does not hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [F]voxel-2049(X,'0'), not [T]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [T]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '1' which should equal '0' does not hold and
+	the value of voxel-139 is '0' which should not equal '0' does not hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '0' which should not equal '0' does not hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '1', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [F]voxel-2049(X,'0'), not [F]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [T]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '1', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '1' which should equal '0' does not hold and
+	the value of voxel-139 is '1' which should not equal '0' does hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '0' which should not equal '0' does not hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '0', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '1'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [T]voxel-2049(X,'0'), not [T]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [F]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [F]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '0', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '1'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '0' which should equal '0' does hold and
+	the value of voxel-139 is '0' which should not equal '0' does not hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '1' which should not equal '0' does hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '1' which should not equal '0' does hold 
+
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [F]voxel-2049(X,'0'), not [T]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [F]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '1' which should equal '0' does not hold and
+	the value of voxel-139 is '0' which should not equal '0' does not hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '1' which should not equal '0' does hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '1', 'voxel-707': '1', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [F]voxel-2049(X,'0'), not [F]voxel-139(X,'0'), not [F]voxel-707(X,'0'), not [F]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '1', 'voxel-707': '1', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '1' which should equal '0' does not hold and
+	the value of voxel-139 is '1' which should not equal '0' does hold and
+	the value of voxel-707 is '1' which should not equal '0' does hold and
+	the value of voxel-1055 is '1' which should not equal '0' does hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '0', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [T]voxel-2049(X,'0'), not [T]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [F]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '0', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '0' which should equal '0' does hold and
+	the value of voxel-139 is '0' which should not equal '0' does not hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '1' which should not equal '0' does hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '0', 'voxel-139': '1', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [T]voxel-2049(X,'0'), not [F]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [T]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '0', 'voxel-139': '1', 'voxel-707': '0', 'voxel-1055': '0', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '0' which should equal '0' does hold and
+	the value of voxel-139 is '1' which should not equal '0' does hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '0' which should not equal '0' does not hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [F]voxel-2049(X,'0'), not [T]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [F]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '1' which should equal '0' does not hold and
+	the value of voxel-139 is '0' which should not equal '0' does not hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '1' which should not equal '0' does hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+[F]fire_hydrant(X,'1') :- not [T]voxel-1520(X,'0').
+[F]fire_hydrant(X,'1') :- [F]voxel-2049(X,'0'), not [T]voxel-139(X,'0'), not [T]voxel-707(X,'0'), not [F]voxel-1055(X,'0'), [T]voxel-257(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]voxel-549(X,'0'), not [T]voxel-1639(X,'0').
+{'voxel-1520': '0', 'voxel-2049': '1', 'voxel-139': '0', 'voxel-707': '0', 'voxel-1055': '1', 'voxel-257': '0', 'voxel-549': '0', 'voxel-1639': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-1520 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-2049 is '1' which should equal '0' does not hold and
+	the value of voxel-139 is '0' which should not equal '0' does not hold and
+	the value of voxel-707 is '0' which should not equal '0' does not hold and
+	the value of voxel-1055 is '1' which should not equal '0' does hold and
+	the value of voxel-257 is '0' which should equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of voxel-549 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold 
+
+% acc 0.95 p 0.0 r 0.0 f1 0

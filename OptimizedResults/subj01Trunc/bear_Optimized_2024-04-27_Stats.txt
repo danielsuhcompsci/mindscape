@@ -1,0 +1,150 @@
+Beginning analysis on category bear in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.191491
+
+bear(X,'1') :- not voxel-5196(X,'0'), not voxel-840(X,'0'), not voxel-3422(X,'0'), voxel-25(X,'0').
+bear(X,'1') :- not voxel-3314(X,'0'), voxel-75(X,'0').
+% acc 0.983 p 0 r 0.0 f1 0
+% #rules 2 #preds 6
+% foldrpp costs: 0:00:01.346722
+
+{'voxel-5196': '1', 'voxel-840': '0', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [F]voxel-5196(X,'0'), not [T]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '1', 'voxel-840': '0', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '1' which should not equal '0' does hold and
+	the value of voxel-840 is '0' which should not equal '0' does not hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '1', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [T]voxel-840(X,'0'), not [F]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '1', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '0' which should not equal '0' does not hold and
+	the value of voxel-3422 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [T]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '0' which should not equal '0' does not hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [F]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '1' which should not equal '0' does hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [F]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '1' which should not equal '0' does hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [F]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '1' which should not equal '0' does hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [T]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '0' which should not equal '0' does not hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '1', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '0'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [T]voxel-840(X,'0'), not [F]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [T]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '0', 'voxel-3422': '1', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '0'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '0' which should not equal '0' does not hold and
+	the value of voxel-3422 is '1' which should not equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '0' which should equal '0' does hold 
+
+{'voxel-5196': '1', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [F]voxel-5196(X,'0'), not [F]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '1', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '1' which should not equal '0' does hold and
+	the value of voxel-840 is '1' which should not equal '0' does hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+[F]bear(X,'1') :- not [T]voxel-5196(X,'0'), not [F]voxel-840(X,'0'), not [T]voxel-3422(X,'0'), [T]voxel-25(X,'0').
+[F]bear(X,'1') :- not [T]voxel-3314(X,'0'), [F]voxel-75(X,'0').
+{'voxel-5196': '0', 'voxel-840': '1', 'voxel-3422': '0', 'voxel-25': '0', 'voxel-3314': '0', 'voxel-75': '1'}
+bear(X,'1') does not hold because
+	the value of voxel-5196 is '0' which should not equal '0' does not hold and
+	the value of voxel-840 is '1' which should not equal '0' does hold and
+	the value of voxel-3422 is '0' which should not equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of voxel-3314 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should equal '0' does not hold 
+
+% acc 0.983 p 0 r 0.0 f1 0

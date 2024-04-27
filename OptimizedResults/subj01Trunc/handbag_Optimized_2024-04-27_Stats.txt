@@ -1,0 +1,245 @@
+Beginning analysis on category handbag in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.187906
+
+handbag(X,'1') :- not voxel-5090(X,'0'), not voxel-3757(X,'0').
+handbag(X,'1') :- voxel-2087(X,'0'), not voxel-668(X,'0'), not voxel-1869(X,'0').
+handbag(X,'1') :- voxel-2087(X,'0'), not voxel-4764(X,'0'), not voxel-1598(X,'0'), voxel-3272(X,'0'), voxel-4828(X,'0').
+handbag(X,'1') :- not voxel-1076(X,'0').
+% acc 0.933 p 0.333 r 0.333 f1 0.333
+% #rules 4 #preds 11
+% foldrpp costs: 0:00:03.107003
+
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '0', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '1', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [T]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [T]voxel-2087(X,'0'), not [T]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [T]voxel-2087(X,'0'), not [F]voxel-4764(X,'0'), not [F]voxel-1598(X,'0'), [T]voxel-3272(X,'0'), [F]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '0', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '1', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '0' which should not equal '0' does not hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '0' which should equal '0' does hold and
+	the value of voxel-668 is '0' which should not equal '0' does not hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '0' which should equal '0' does hold and
+	the value of voxel-4764 is '1' which should not equal '0' does hold and
+	the value of voxel-1598 is '1' which should not equal '0' does hold and
+	the value of voxel-3272 is '0' which should equal '0' does hold and
+	the value of voxel-4828 is '1' which should equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [T]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-4764(X,'0'), not [T]voxel-1598(X,'0'), [T]voxel-3272(X,'0'), [F]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '0' which should not equal '0' does not hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-668 is '1' which should not equal '0' does hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-4764 is '1' which should not equal '0' does hold and
+	the value of voxel-1598 is '0' which should not equal '0' does not hold and
+	the value of voxel-3272 is '0' which should equal '0' does hold and
+	the value of voxel-4828 is '1' which should equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '1', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [T]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-4764(X,'0'), not [F]voxel-1598(X,'0'), [T]voxel-3272(X,'0'), [F]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '1', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '0' which should not equal '0' does not hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-668 is '1' which should not equal '0' does hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-4764 is '1' which should not equal '0' does hold and
+	the value of voxel-1598 is '1' which should not equal '0' does hold and
+	the value of voxel-3272 is '0' which should equal '0' does hold and
+	the value of voxel-4828 is '1' which should equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '0', 'voxel-3757': '1', 'voxel-2087': '1', 'voxel-668': '0', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '1', 'voxel-4828': '1', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [T]voxel-5090(X,'0'), not [F]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [T]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-4764(X,'0'), not [T]voxel-1598(X,'0'), [F]voxel-3272(X,'0'), [F]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '0', 'voxel-3757': '1', 'voxel-2087': '1', 'voxel-668': '0', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '1', 'voxel-4828': '1', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '0' which should not equal '0' does not hold and
+	the value of voxel-3757 is '1' which should not equal '0' does hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-668 is '0' which should not equal '0' does not hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-4764 is '1' which should not equal '0' does hold and
+	the value of voxel-1598 is '0' which should not equal '0' does not hold and
+	the value of voxel-3272 is '1' which should equal '0' does not hold and
+	the value of voxel-4828 is '1' which should equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '1', 'voxel-3272': '0', 'voxel-4828': '0', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [T]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-4764(X,'0'), not [F]voxel-1598(X,'0'), [T]voxel-3272(X,'0'), [T]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '1', 'voxel-3272': '0', 'voxel-4828': '0', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '0' which should not equal '0' does not hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-668 is '1' which should not equal '0' does hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-4764 is '1' which should not equal '0' does hold and
+	the value of voxel-1598 is '1' which should not equal '0' does hold and
+	the value of voxel-3272 is '0' which should equal '0' does hold and
+	the value of voxel-4828 is '0' which should equal '0' does hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [T]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [T]voxel-2087(X,'0'), not [F]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [T]voxel-2087(X,'0'), not [F]voxel-4764(X,'0'), not [T]voxel-1598(X,'0'), [T]voxel-3272(X,'0'), [F]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '0' which should not equal '0' does not hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '0' which should equal '0' does hold and
+	the value of voxel-668 is '1' which should not equal '0' does hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '0' which should equal '0' does hold and
+	the value of voxel-4764 is '1' which should not equal '0' does hold and
+	the value of voxel-1598 is '0' which should not equal '0' does not hold and
+	the value of voxel-3272 is '0' which should equal '0' does hold and
+	the value of voxel-4828 is '1' which should equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '1', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '1', 'voxel-1869': '1', 'voxel-4764': '0', 'voxel-1598': '0', 'voxel-3272': '1', 'voxel-4828': '0', 'voxel-1076': '0'}
+[T]handbag(X,'1') :- [T]voxel-2087(X,'0'), not [F]voxel-668(X,'0'), not [F]voxel-1869(X,'0').
+{'voxel-5090': '1', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '1', 'voxel-1869': '1', 'voxel-4764': '0', 'voxel-1598': '0', 'voxel-3272': '1', 'voxel-4828': '0', 'voxel-1076': '0'}
+handbag(X,'1') does hold because
+	the value of voxel-2087 is '0' which should equal '0' does hold and
+	the value of voxel-668 is '1' which should not equal '0' does hold and
+	the value of voxel-1869 is '1' which should not equal '0' does hold 
+
+{'voxel-5090': '1', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '0', 'voxel-1869': '0', 'voxel-4764': '0', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '0', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [F]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [T]voxel-2087(X,'0'), not [T]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [T]voxel-2087(X,'0'), not [T]voxel-4764(X,'0'), not [T]voxel-1598(X,'0'), [T]voxel-3272(X,'0'), [T]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '1', 'voxel-3757': '0', 'voxel-2087': '0', 'voxel-668': '0', 'voxel-1869': '0', 'voxel-4764': '0', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '0', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '1' which should not equal '0' does hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '0' which should equal '0' does hold and
+	the value of voxel-668 is '0' which should not equal '0' does not hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '0' which should equal '0' does hold and
+	the value of voxel-4764 is '0' which should not equal '0' does not hold and
+	the value of voxel-1598 is '0' which should not equal '0' does not hold and
+	the value of voxel-3272 is '0' which should equal '0' does hold and
+	the value of voxel-4828 is '0' which should equal '0' does hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '1', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '0', 'voxel-1598': '0', 'voxel-3272': '1', 'voxel-4828': '1', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [F]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [T]voxel-4764(X,'0'), not [T]voxel-1598(X,'0'), [F]voxel-3272(X,'0'), [F]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '1', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '0', 'voxel-1598': '0', 'voxel-3272': '1', 'voxel-4828': '1', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '1' which should not equal '0' does hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-668 is '1' which should not equal '0' does hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-4764 is '0' which should not equal '0' does not hold and
+	the value of voxel-1598 is '0' which should not equal '0' does not hold and
+	the value of voxel-3272 is '1' which should equal '0' does not hold and
+	the value of voxel-4828 is '1' which should equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+[F]handbag(X,'1') :- not [T]voxel-5090(X,'0'), not [T]voxel-3757(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-668(X,'0'), not [T]voxel-1869(X,'0').
+[F]handbag(X,'1') :- [F]voxel-2087(X,'0'), not [F]voxel-4764(X,'0'), not [T]voxel-1598(X,'0'), [T]voxel-3272(X,'0'), [F]voxel-4828(X,'0').
+[F]handbag(X,'1') :- not [T]voxel-1076(X,'0').
+{'voxel-5090': '0', 'voxel-3757': '0', 'voxel-2087': '1', 'voxel-668': '1', 'voxel-1869': '0', 'voxel-4764': '1', 'voxel-1598': '0', 'voxel-3272': '0', 'voxel-4828': '1', 'voxel-1076': '0'}
+handbag(X,'1') does not hold because
+	the value of voxel-5090 is '0' which should not equal '0' does not hold and
+	the value of voxel-3757 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-668 is '1' which should not equal '0' does hold and
+	the value of voxel-1869 is '0' which should not equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-2087 is '1' which should equal '0' does not hold and
+	the value of voxel-4764 is '1' which should not equal '0' does hold and
+	the value of voxel-1598 is '0' which should not equal '0' does not hold and
+	the value of voxel-3272 is '0' which should equal '0' does hold and
+	the value of voxel-4828 is '1' which should equal '0' does not hold 
+
+handbag(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+% acc 0.933 p 0.333 r 0.333 f1 0.333

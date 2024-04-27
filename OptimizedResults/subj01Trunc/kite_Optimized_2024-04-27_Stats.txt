@@ -1,0 +1,254 @@
+Beginning analysis on category kite in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.188775
+
+kite(X,'1') :- not voxel-4961(X,'0'), not voxel-1639(X,'0'), not voxel-3930(X,'0').
+kite(X,'1') :- not voxel-1362(X,'0'), not voxel-408(X,'0').
+kite(X,'1') :- not voxel-6(X,'0').
+kite(X,'1') :- not voxel-2655(X,'0').
+kite(X,'1') :- not voxel-1373(X,'0'), not voxel-39(X,'0').
+% acc 0.883 p 0.143 r 0.5 f1 0.222
+% #rules 5 #preds 9
+% foldrpp costs: 0:00:03.255247
+
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [T]voxel-1639(X,'0'), not [F]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [T]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold and
+	the value of voxel-3930 is '1' which should not equal '0' does hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [F]voxel-1639(X,'0'), not [T]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [T]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '1' which should not equal '0' does hold and
+	the value of voxel-3930 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [T]voxel-1639(X,'0'), not [F]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [T]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold and
+	the value of voxel-3930 is '1' which should not equal '0' does hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [F]voxel-1639(X,'0'), not [T]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [T]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '1' which should not equal '0' does hold and
+	the value of voxel-3930 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [F]voxel-1639(X,'0'), not [T]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [T]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '1' which should not equal '0' does hold and
+	the value of voxel-3930 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [T]voxel-1639(X,'0'), not [F]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [T]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold and
+	the value of voxel-3930 is '1' which should not equal '0' does hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '1', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [F]voxel-1639(X,'0'), not [T]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [F]voxel-1362(X,'0'), not [T]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '1', 'voxel-3930': '0', 'voxel-1362': '1', 'voxel-408': '0', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '1' which should not equal '0' does hold and
+	the value of voxel-3930 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '1' which should not equal '0' does hold and
+	the value of voxel-408 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '1', 'voxel-1639': '0', 'voxel-3930': '0', 'voxel-1362': '1', 'voxel-408': '1', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[T]kite(X,'1') :- not [F]voxel-1362(X,'0'), not [F]voxel-408(X,'0').
+{'voxel-4961': '1', 'voxel-1639': '0', 'voxel-3930': '0', 'voxel-1362': '1', 'voxel-408': '1', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does hold because
+	the value of voxel-1362 is '1' which should not equal '0' does hold and
+	the value of voxel-408 is '1' which should not equal '0' does hold 
+
+{'voxel-4961': '1', 'voxel-1639': '0', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '1', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [F]voxel-4961(X,'0'), not [T]voxel-1639(X,'0'), not [T]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [F]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '1', 'voxel-1639': '0', 'voxel-3930': '0', 'voxel-1362': '0', 'voxel-408': '1', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '1' which should not equal '0' does hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold and
+	the value of voxel-3930 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '1' which should not equal '0' does hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '1', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+[F]kite(X,'1') :- not [T]voxel-4961(X,'0'), not [T]voxel-1639(X,'0'), not [F]voxel-3930(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1362(X,'0'), not [F]voxel-408(X,'0').
+[F]kite(X,'1') :- not [T]voxel-6(X,'0').
+[F]kite(X,'1') :- not [T]voxel-2655(X,'0').
+[F]kite(X,'1') :- not [T]voxel-1373(X,'0'), not [T]voxel-39(X,'0').
+{'voxel-4961': '0', 'voxel-1639': '0', 'voxel-3930': '1', 'voxel-1362': '0', 'voxel-408': '1', 'voxel-6': '0', 'voxel-2655': '0', 'voxel-1373': '0', 'voxel-39': '0'}
+kite(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of voxel-1639 is '0' which should not equal '0' does not hold and
+	the value of voxel-3930 is '1' which should not equal '0' does hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1362 is '0' which should not equal '0' does not hold and
+	the value of voxel-408 is '1' which should not equal '0' does hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-6 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-2655 is '0' which should not equal '0' does not hold 
+
+kite(X,'1') does not hold because
+	the value of voxel-1373 is '0' which should not equal '0' does not hold and
+	the value of voxel-39 is '0' which should not equal '0' does not hold 
+
+% acc 0.883 p 0.143 r 0.5 f1 0.222

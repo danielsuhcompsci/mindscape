@@ -1,0 +1,191 @@
+Beginning analysis on category skis in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.427706
+
+skis(X,'1') :- not voxel-4359(X,'0'), not voxel-263(X,'0'), not voxel-76(X,'0').
+skis(X,'1') :- not voxel-118(X,'0'), not voxel-4965(X,'0').
+skis(X,'1') :- not voxel-566(X,'0'), not voxel-87(X,'0').
+% acc 0.917 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 7
+% foldrpp costs: 0:00:02.526707
+
+{'voxel-4359': '1', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+[F]skis(X,'1') :- not [F]voxel-4359(X,'0'), not [T]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [F]voxel-87(X,'0').
+{'voxel-4359': '1', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '1' which should not equal '0' does hold and
+	the value of voxel-263 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+{'voxel-4359': '1', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+[F]skis(X,'1') :- not [F]voxel-4359(X,'0'), not [T]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [F]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [F]voxel-87(X,'0').
+{'voxel-4359': '1', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '1' which should not equal '0' does hold and
+	the value of voxel-263 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '1' which should not equal '0' does hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [T]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [T]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [T]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '1', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-263(X,'0'), not [F]voxel-76(X,'0').
+[F]skis(X,'1') :- not [F]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [F]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '1', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '1' which should not equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '1' which should not equal '0' does hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [F]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [F]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [T]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '0', 'voxel-76': '0', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '1' which should not equal '0' does hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-263(X,'0'), not [T]voxel-76(X,'0').
+[F]skis(X,'1') :- not [T]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [T]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '0', 'voxel-118': '0', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '0'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '0' which should not equal '0' does not hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '1', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+[F]skis(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-263(X,'0'), not [F]voxel-76(X,'0').
+[F]skis(X,'1') :- not [F]voxel-118(X,'0'), not [T]voxel-4965(X,'0').
+[F]skis(X,'1') :- not [T]voxel-566(X,'0'), not [F]voxel-87(X,'0').
+{'voxel-4359': '0', 'voxel-263': '1', 'voxel-76': '1', 'voxel-118': '1', 'voxel-4965': '0', 'voxel-566': '0', 'voxel-87': '1'}
+skis(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-263 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '1' which should not equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-118 is '1' which should not equal '0' does hold and
+	the value of voxel-4965 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of voxel-566 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+% acc 0.917 p 0.0 r 0.0 f1 0

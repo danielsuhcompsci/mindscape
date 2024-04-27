@@ -1,0 +1,155 @@
+Beginning analysis on category elephant in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.183953
+
+elephant(X,'1') :- not voxel-2110(X,'0'), voxel-3872(X,'0'), voxel-2070(X,'0'), not voxel-4677(X,'0'), voxel-1791(X,'0').
+elephant(X,'1') :- not voxel-255(X,'0'), not voxel-104(X,'0').
+% acc 0.967 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 7
+% foldrpp costs: 0:00:01.767902
+
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+[F]elephant(X,'1') :- not [T]voxel-2110(X,'0'), [F]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [T]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [F]voxel-104(X,'0').
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '0' which should not equal '0' does not hold and
+	the value of voxel-3872 is '1' which should equal '0' does not hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '0' which should not equal '0' does not hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold 
+
+{'voxel-2110': '0', 'voxel-3872': '0', 'voxel-2070': '1', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+[F]elephant(X,'1') :- not [T]voxel-2110(X,'0'), [T]voxel-3872(X,'0'), [F]voxel-2070(X,'0'), not [T]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [F]voxel-104(X,'0').
+{'voxel-2110': '0', 'voxel-3872': '0', 'voxel-2070': '1', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '0' which should not equal '0' does not hold and
+	the value of voxel-3872 is '0' which should equal '0' does hold and
+	the value of voxel-2070 is '1' which should equal '0' does not hold and
+	the value of voxel-4677 is '0' which should not equal '0' does not hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold 
+
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+[F]elephant(X,'1') :- not [T]voxel-2110(X,'0'), [F]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [F]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [F]voxel-104(X,'0').
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '0' which should not equal '0' does not hold and
+	the value of voxel-3872 is '1' which should equal '0' does not hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '1' which should not equal '0' does hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold 
+
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+[F]elephant(X,'1') :- not [T]voxel-2110(X,'0'), [F]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [F]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [F]voxel-104(X,'0').
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '0' which should not equal '0' does not hold and
+	the value of voxel-3872 is '1' which should equal '0' does not hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '1' which should not equal '0' does hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold 
+
+{'voxel-2110': '1', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+[F]elephant(X,'1') :- not [F]voxel-2110(X,'0'), [F]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [T]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [F]voxel-104(X,'0').
+{'voxel-2110': '1', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '1' which should not equal '0' does hold and
+	the value of voxel-3872 is '1' which should equal '0' does not hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '0' which should not equal '0' does not hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold 
+
+{'voxel-2110': '1', 'voxel-3872': '0', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+[T]elephant(X,'1') :- not [F]voxel-2110(X,'0'), [T]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [F]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+{'voxel-2110': '1', 'voxel-3872': '0', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+elephant(X,'1') does hold because
+	the value of voxel-2110 is '1' which should not equal '0' does hold and
+	the value of voxel-3872 is '0' which should equal '0' does hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '1' which should not equal '0' does hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+{'voxel-2110': '1', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+[F]elephant(X,'1') :- not [F]voxel-2110(X,'0'), [F]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [T]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [T]voxel-104(X,'0').
+{'voxel-2110': '1', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '1' which should not equal '0' does hold and
+	the value of voxel-3872 is '1' which should equal '0' does not hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '0' which should not equal '0' does not hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold 
+
+{'voxel-2110': '0', 'voxel-3872': '0', 'voxel-2070': '1', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+[F]elephant(X,'1') :- not [T]voxel-2110(X,'0'), [T]voxel-3872(X,'0'), [F]voxel-2070(X,'0'), not [T]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [F]voxel-104(X,'0').
+{'voxel-2110': '0', 'voxel-3872': '0', 'voxel-2070': '1', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '1'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '0' which should not equal '0' does not hold and
+	the value of voxel-3872 is '0' which should equal '0' does hold and
+	the value of voxel-2070 is '1' which should equal '0' does not hold and
+	the value of voxel-4677 is '0' which should not equal '0' does not hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '1' which should not equal '0' does hold 
+
+{'voxel-2110': '1', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+[F]elephant(X,'1') :- not [F]voxel-2110(X,'0'), [F]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [T]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [T]voxel-104(X,'0').
+{'voxel-2110': '1', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '0', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '1' which should not equal '0' does hold and
+	the value of voxel-3872 is '1' which should equal '0' does not hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '0' which should not equal '0' does not hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold 
+
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+[F]elephant(X,'1') :- not [T]voxel-2110(X,'0'), [F]voxel-3872(X,'0'), [T]voxel-2070(X,'0'), not [F]voxel-4677(X,'0'), [T]voxel-1791(X,'0').
+[F]elephant(X,'1') :- not [T]voxel-255(X,'0'), not [T]voxel-104(X,'0').
+{'voxel-2110': '0', 'voxel-3872': '1', 'voxel-2070': '0', 'voxel-4677': '1', 'voxel-1791': '0', 'voxel-255': '0', 'voxel-104': '0'}
+elephant(X,'1') does not hold because
+	the value of voxel-2110 is '0' which should not equal '0' does not hold and
+	the value of voxel-3872 is '1' which should equal '0' does not hold and
+	the value of voxel-2070 is '0' which should equal '0' does hold and
+	the value of voxel-4677 is '1' which should not equal '0' does hold and
+	the value of voxel-1791 is '0' which should equal '0' does hold 
+
+elephant(X,'1') does not hold because
+	the value of voxel-255 is '0' which should not equal '0' does not hold and
+	the value of voxel-104 is '0' which should not equal '0' does not hold 
+
+% acc 0.967 p 0.0 r 0.0 f1 0

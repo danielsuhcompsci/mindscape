@@ -1,0 +1,89 @@
+Beginning analysis on category suitcase in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.202755
+
+suitcase(X,'1') :- not voxel-3413(X,'0'), not voxel-1068(X,'0'), not voxel-1263(X,'0').
+% acc 0.95 p 0 r 0.0 f1 0
+% #rules 1 #preds 3
+% foldrpp costs: 0:00:00.823148
+
+{'voxel-3413': '0', 'voxel-1068': '1', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [F]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '1', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '1' which should not equal '0' does hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '1', 'voxel-1068': '0', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [F]voxel-3413(X,'0'), not [T]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '1', 'voxel-1068': '0', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '1' which should not equal '0' does hold and
+	the value of voxel-1068 is '0' which should not equal '0' does not hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [T]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '0' which should not equal '0' does not hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '1', 'voxel-1068': '1', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [F]voxel-3413(X,'0'), not [F]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '1', 'voxel-1068': '1', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '1' which should not equal '0' does hold and
+	the value of voxel-1068 is '1' which should not equal '0' does hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '0', 'voxel-1068': '1', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [F]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '1', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '1' which should not equal '0' does hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [T]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '0' which should not equal '0' does not hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [T]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '0' which should not equal '0' does not hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [T]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '0' which should not equal '0' does not hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [T]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '0', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '0' which should not equal '0' does not hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+{'voxel-3413': '0', 'voxel-1068': '1', 'voxel-1263': '0'}
+[F]suitcase(X,'1') :- not [T]voxel-3413(X,'0'), not [F]voxel-1068(X,'0'), not [T]voxel-1263(X,'0').
+{'voxel-3413': '0', 'voxel-1068': '1', 'voxel-1263': '0'}
+suitcase(X,'1') does not hold because
+	the value of voxel-3413 is '0' which should not equal '0' does not hold and
+	the value of voxel-1068 is '1' which should not equal '0' does hold and
+	the value of voxel-1263 is '0' which should not equal '0' does not hold 
+
+% acc 0.95 p 0 r 0.0 f1 0

@@ -1,0 +1,164 @@
+Beginning analysis on category horse in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.196563
+
+horse(X,'1') :- not voxel-4359(X,'0'), not voxel-5241(X,'0'), voxel-138(X,'0').
+horse(X,'1') :- voxel-4880(X,'0'), voxel-538(X,'0'), voxel-1928(X,'0'), voxel-3471(X,'0'), voxel-1995(X,'0').
+% acc 0.9 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 8
+% foldrpp costs: 0:00:01.784599
+
+{'voxel-4359': '1', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '1'}
+[F]horse(X,'1') :- not [F]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [F]voxel-138(X,'0').
+[F]horse(X,'1') :- [F]voxel-4880(X,'0'), [T]voxel-538(X,'0'), [T]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [F]voxel-1995(X,'0').
+{'voxel-4359': '1', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '1'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '1' which should not equal '0' does hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '1' which should equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '1' which should equal '0' does not hold and
+	the value of voxel-538 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should equal '0' does hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '1' which should equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '1', 'voxel-1928': '1', 'voxel-3471': '0', 'voxel-1995': '0'}
+[F]horse(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [T]voxel-138(X,'0').
+[F]horse(X,'1') :- [F]voxel-4880(X,'0'), [F]voxel-538(X,'0'), [F]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [T]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '1', 'voxel-1928': '1', 'voxel-3471': '0', 'voxel-1995': '0'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '1' which should equal '0' does not hold and
+	the value of voxel-538 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '1' which should equal '0' does not hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '0' which should equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '1'}
+[F]horse(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [T]voxel-138(X,'0').
+[F]horse(X,'1') :- [F]voxel-4880(X,'0'), [T]voxel-538(X,'0'), [T]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [F]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '1'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '1' which should equal '0' does not hold and
+	the value of voxel-538 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should equal '0' does hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '1' which should equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '1', 'voxel-1928': '1', 'voxel-3471': '0', 'voxel-1995': '0'}
+[F]horse(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [T]voxel-138(X,'0').
+[F]horse(X,'1') :- [F]voxel-4880(X,'0'), [F]voxel-538(X,'0'), [F]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [T]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '1', 'voxel-1928': '1', 'voxel-3471': '0', 'voxel-1995': '0'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '1' which should equal '0' does not hold and
+	the value of voxel-538 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '1' which should equal '0' does not hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '0' which should equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '0'}
+[T]horse(X,'1') :- [T]voxel-4880(X,'0'), [T]voxel-538(X,'0'), [T]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [T]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '0'}
+horse(X,'1') does hold because
+	the value of voxel-4880 is '0' which should equal '0' does hold and
+	the value of voxel-538 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should equal '0' does hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '0' which should equal '0' does hold 
+
+{'voxel-4359': '1', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '0'}
+[F]horse(X,'1') :- not [F]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [F]voxel-138(X,'0').
+[F]horse(X,'1') :- [F]voxel-4880(X,'0'), [T]voxel-538(X,'0'), [T]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [T]voxel-1995(X,'0').
+{'voxel-4359': '1', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '0'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '1' which should not equal '0' does hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '1' which should equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '1' which should equal '0' does not hold and
+	the value of voxel-538 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '0' which should equal '0' does hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '0' which should equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '1', 'voxel-3471': '1', 'voxel-1995': '1'}
+[F]horse(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [T]voxel-138(X,'0').
+[F]horse(X,'1') :- [F]voxel-4880(X,'0'), [T]voxel-538(X,'0'), [F]voxel-1928(X,'0'), [F]voxel-3471(X,'0'), [F]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '0', 'voxel-4880': '1', 'voxel-538': '0', 'voxel-1928': '1', 'voxel-3471': '1', 'voxel-1995': '1'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '1' which should equal '0' does not hold and
+	the value of voxel-538 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '1' which should equal '0' does not hold and
+	the value of voxel-3471 is '1' which should equal '0' does not hold and
+	the value of voxel-1995 is '1' which should equal '0' does not hold 
+
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '0', 'voxel-1928': '1', 'voxel-3471': '0', 'voxel-1995': '0'}
+[F]horse(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [F]voxel-138(X,'0').
+[F]horse(X,'1') :- [T]voxel-4880(X,'0'), [T]voxel-538(X,'0'), [F]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [T]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '0', 'voxel-1928': '1', 'voxel-3471': '0', 'voxel-1995': '0'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '1' which should equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '0' which should equal '0' does hold and
+	the value of voxel-538 is '0' which should equal '0' does hold and
+	the value of voxel-1928 is '1' which should equal '0' does not hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '0' which should equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '1', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '0'}
+[F]horse(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-5241(X,'0'), [F]voxel-138(X,'0').
+[F]horse(X,'1') :- [T]voxel-4880(X,'0'), [F]voxel-538(X,'0'), [T]voxel-1928(X,'0'), [T]voxel-3471(X,'0'), [T]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '0', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '1', 'voxel-1928': '0', 'voxel-3471': '0', 'voxel-1995': '0'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-5241 is '0' which should not equal '0' does not hold and
+	the value of voxel-138 is '1' which should equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '0' which should equal '0' does hold and
+	the value of voxel-538 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '0' which should equal '0' does hold and
+	the value of voxel-3471 is '0' which should equal '0' does hold and
+	the value of voxel-1995 is '0' which should equal '0' does hold 
+
+{'voxel-4359': '0', 'voxel-5241': '1', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '1', 'voxel-1928': '1', 'voxel-3471': '1', 'voxel-1995': '0'}
+[F]horse(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-5241(X,'0'), [F]voxel-138(X,'0').
+[F]horse(X,'1') :- [T]voxel-4880(X,'0'), [F]voxel-538(X,'0'), [F]voxel-1928(X,'0'), [F]voxel-3471(X,'0'), [T]voxel-1995(X,'0').
+{'voxel-4359': '0', 'voxel-5241': '1', 'voxel-138': '1', 'voxel-4880': '0', 'voxel-538': '1', 'voxel-1928': '1', 'voxel-3471': '1', 'voxel-1995': '0'}
+horse(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-5241 is '1' which should not equal '0' does hold and
+	the value of voxel-138 is '1' which should equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of voxel-4880 is '0' which should equal '0' does hold and
+	the value of voxel-538 is '1' which should equal '0' does not hold and
+	the value of voxel-1928 is '1' which should equal '0' does not hold and
+	the value of voxel-3471 is '1' which should equal '0' does not hold and
+	the value of voxel-1995 is '0' which should equal '0' does hold 
+
+% acc 0.9 p 0.0 r 0.0 f1 0

@@ -1,0 +1,69 @@
+Beginning analysis on category cow in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.184679
+
+cow(X,'1') :- not voxel-2709(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 1 #preds 1
+% foldrpp costs: 0:00:00.577744
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+{'voxel-2709': '0'}
+[F]cow(X,'1') :- not [T]voxel-2709(X,'0').
+{'voxel-2709': '0'}
+cow(X,'1') does not hold because
+	the value of voxel-2709 is '0' which should not equal '0' does not hold 
+
+% acc 1.0 p 0 r 0 f1 0

@@ -1,0 +1,105 @@
+Beginning analysis on category bicycle in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.204223
+
+bicycle(X,'1') :- not voxel-4961(X,'0'), _voxel-111(X,'0'), not ab1(X,'True'), not ab2(X,'True').
+ab1(X,'True') :- not voxel-775(X,'0'), voxel-61(X,'0').
+ab2(X,'True') :- not voxel-1098(X,'0'), voxel-462(X,'0').
+% acc 0.633 p 0.6 r 0.36 f1 0.45
+% #rules 3 #preds 6
+% foldrpp costs: 0:00:01.562984
+
+{'voxel-4961': '1', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]ab1(X,'True') :- not [T]voxel-775(X,'0'), [T]voxel-61(X,'0').
+[F]ab2(X,'True') :- not [T]voxel-1098(X,'0'), [T]voxel-462(X,'0').
+[T]bicycle(X,'1') :- not [F]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [F]ab1(X,'True'), not [F]ab2(X,'True').
+{'voxel-4961': '1', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does hold because
+	the value of voxel-4961 is '1' which should not equal '0' does hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+	exception ab1(X,'True') does not hold because
+		the value of voxel-775 is '0' which should not equal '0' does not hold and
+		the value of voxel-61 is '0' which should equal '0' does hold 
+	exception ab2(X,'True') does not hold because
+		the value of voxel-1098 is '0' which should not equal '0' does not hold and
+		the value of voxel-462 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]bicycle(X,'1') :- not [T]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True').
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '1', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]bicycle(X,'1') :- not [T]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True').
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '1', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '1', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]ab1(X,'True') :- not [T]voxel-775(X,'0'), [F]voxel-61(X,'0').
+[F]ab2(X,'True') :- not [T]voxel-1098(X,'0'), [T]voxel-462(X,'0').
+[T]bicycle(X,'1') :- not [F]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [F]ab1(X,'True'), not [F]ab2(X,'True').
+{'voxel-4961': '1', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does hold because
+	the value of voxel-4961 is '1' which should not equal '0' does hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+	exception ab1(X,'True') does not hold because
+		the value of voxel-775 is '0' which should not equal '0' does not hold and
+		the value of voxel-61 is '1' which should equal '0' does not hold 
+	exception ab2(X,'True') does not hold because
+		the value of voxel-1098 is '0' which should not equal '0' does not hold and
+		the value of voxel-462 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]bicycle(X,'1') :- not [T]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True').
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]bicycle(X,'1') :- not [T]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True').
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '1'}
+[F]bicycle(X,'1') :- not [T]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True').
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '1'}
+bicycle(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '1', 'voxel-462': '0'}
+[F]bicycle(X,'1') :- not [T]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True').
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '1', 'voxel-1098': '1', 'voxel-462': '0'}
+bicycle(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]bicycle(X,'1') :- not [T]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True').
+{'voxel-4961': '0', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does not hold because
+	the value of voxel-4961 is '0' which should not equal '0' does not hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+
+{'voxel-4961': '1', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+[F]ab1(X,'True') :- not [T]voxel-775(X,'0'), [T]voxel-61(X,'0').
+[F]ab2(X,'True') :- not [T]voxel-1098(X,'0'), [T]voxel-462(X,'0').
+[T]bicycle(X,'1') :- not [F]voxel-4961(X,'0'), [T]_voxel-111(X,'0'), not [F]ab1(X,'True'), not [F]ab2(X,'True').
+{'voxel-4961': '1', '_voxel-111': '0', 'voxel-775': '0', 'voxel-61': '0', 'voxel-1098': '0', 'voxel-462': '0'}
+bicycle(X,'1') does hold because
+	the value of voxel-4961 is '1' which should not equal '0' does hold and
+	the value of _voxel-111 is '0' which should equal '0' does hold 
+	exception ab1(X,'True') does not hold because
+		the value of voxel-775 is '0' which should not equal '0' does not hold and
+		the value of voxel-61 is '0' which should equal '0' does hold 
+	exception ab2(X,'True') does not hold because
+		the value of voxel-1098 is '0' which should not equal '0' does not hold and
+		the value of voxel-462 is '0' which should equal '0' does hold 
+
+% acc 0.633 p 0.6 r 0.36 f1 0.45

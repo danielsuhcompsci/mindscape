@@ -1,0 +1,237 @@
+Beginning analysis on category bird in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.199343
+
+bird(X,'1') :- voxel-4517(X,'0'), not voxel-2486(X,'0'), voxel-68(X,'0').
+bird(X,'1') :- not voxel-529(X,'0'), not voxel-1085(X,'0'), voxel-4840(X,'0'), voxel-25(X,'0').
+bird(X,'1') :- not voxel-3763(X,'0').
+bird(X,'1') :- not voxel-1009(X,'0'), not voxel-57(X,'0').
+% acc 0.867 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 10
+% foldrpp costs: 0:00:02.829489
+
+{'voxel-4517': '0', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+[F]bird(X,'1') :- [T]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [T]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [T]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-4517': '0', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '0' which should equal '0' does hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '0' which should not equal '0' does not hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '0' which should equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '1', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+[F]bird(X,'1') :- [F]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [F]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [T]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '1', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '1' which should equal '0' does not hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '1' which should not equal '0' does hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '0' which should equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+[F]bird(X,'1') :- [F]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [T]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [T]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [F]voxel-57(X,'0').
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '1' which should equal '0' does not hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '0' which should not equal '0' does not hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '0' which should equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should not equal '0' does hold 
+
+{'voxel-4517': '0', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '1', 'voxel-57': '0'}
+[F]bird(X,'1') :- [T]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [T]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [F]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [F]voxel-1009(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-4517': '0', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '1', 'voxel-57': '0'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '0' which should equal '0' does hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '0' which should not equal '0' does not hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '1' which should equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '1' which should not equal '0' does hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-4517': '0', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '1', 'voxel-1085': '1', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+[T]bird(X,'1') :- not [F]voxel-529(X,'0'), not [F]voxel-1085(X,'0'), [T]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+{'voxel-4517': '0', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '1', 'voxel-1085': '1', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+bird(X,'1') does hold because
+	the value of voxel-529 is '1' which should not equal '0' does hold and
+	the value of voxel-1085 is '1' which should not equal '0' does hold and
+	the value of voxel-4840 is '0' which should equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '1', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+[F]bird(X,'1') :- [F]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [T]voxel-529(X,'0'), not [F]voxel-1085(X,'0'), [F]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '1', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '1' which should equal '0' does not hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '0' which should not equal '0' does not hold and
+	the value of voxel-1085 is '1' which should not equal '0' does hold and
+	the value of voxel-4840 is '1' which should equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+[F]bird(X,'1') :- [F]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [T]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [F]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '1' which should equal '0' does not hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '0' which should not equal '0' does not hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '1' which should equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '1', 'voxel-1085': '0', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+[F]bird(X,'1') :- [F]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [F]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [F]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [F]voxel-57(X,'0').
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '1', 'voxel-1085': '0', 'voxel-4840': '1', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '1' which should equal '0' does not hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '1' which should not equal '0' does hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '1' which should equal '0' does not hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should not equal '0' does hold 
+
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+[F]bird(X,'1') :- [F]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [T]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [T]voxel-4840(X,'0'), [T]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '0', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '0'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '1' which should equal '0' does not hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '0' which should not equal '0' does not hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '0' which should equal '0' does hold and
+	the value of voxel-25 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '1', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+[F]bird(X,'1') :- [F]voxel-4517(X,'0'), not [T]voxel-2486(X,'0'), [T]voxel-68(X,'0').
+[F]bird(X,'1') :- not [T]voxel-529(X,'0'), not [T]voxel-1085(X,'0'), [T]voxel-4840(X,'0'), [F]voxel-25(X,'0').
+[F]bird(X,'1') :- not [T]voxel-3763(X,'0').
+[F]bird(X,'1') :- not [T]voxel-1009(X,'0'), not [F]voxel-57(X,'0').
+{'voxel-4517': '1', 'voxel-2486': '0', 'voxel-68': '0', 'voxel-529': '0', 'voxel-1085': '0', 'voxel-4840': '0', 'voxel-25': '1', 'voxel-3763': '0', 'voxel-1009': '0', 'voxel-57': '1'}
+bird(X,'1') does not hold because
+	the value of voxel-4517 is '1' which should equal '0' does not hold and
+	the value of voxel-2486 is '0' which should not equal '0' does not hold and
+	the value of voxel-68 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-529 is '0' which should not equal '0' does not hold and
+	the value of voxel-1085 is '0' which should not equal '0' does not hold and
+	the value of voxel-4840 is '0' which should equal '0' does hold and
+	the value of voxel-25 is '1' which should equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-3763 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of voxel-1009 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should not equal '0' does hold 
+
+% acc 0.867 p 0.0 r 0.0 f1 0

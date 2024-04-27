@@ -1,0 +1,89 @@
+Beginning analysis on category baseball bat in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.189184
+
+baseball_bat(X,'1') :- not voxel-2623(X,'0'), not voxel-3473(X,'0'), voxel-3791(X,'0').
+% acc 0.967 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 3
+% foldrpp costs: 0:00:00.748731
+
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [T]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [T]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [F]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '1' which should not equal '0' does hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+{'voxel-2623': '1', 'voxel-3473': '1', 'voxel-3791': '1'}
+[F]baseball_bat(X,'1') :- not [F]voxel-2623(X,'0'), not [F]voxel-3473(X,'0'), [F]voxel-3791(X,'0').
+{'voxel-2623': '1', 'voxel-3473': '1', 'voxel-3791': '1'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '1' which should not equal '0' does hold and
+	the value of voxel-3473 is '1' which should not equal '0' does hold and
+	the value of voxel-3791 is '1' which should equal '0' does not hold 
+
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [T]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [T]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [F]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '1' which should not equal '0' does hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '1'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [F]voxel-3473(X,'0'), [F]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '1'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '1' which should not equal '0' does hold and
+	the value of voxel-3791 is '1' which should equal '0' does not hold 
+
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [F]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '1', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '1' which should not equal '0' does hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+[F]baseball_bat(X,'1') :- not [T]voxel-2623(X,'0'), not [T]voxel-3473(X,'0'), [T]voxel-3791(X,'0').
+{'voxel-2623': '0', 'voxel-3473': '0', 'voxel-3791': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of voxel-2623 is '0' which should not equal '0' does not hold and
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3791 is '0' which should equal '0' does hold 
+
+% acc 0.967 p 0.0 r 0.0 f1 0

@@ -1,0 +1,69 @@
+Beginning analysis on category frisbee in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.198603
+
+frisbee(X,'1') :- not voxel-3338(X,'0').
+% acc 0.95 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 1
+% foldrpp costs: 0:00:00.810611
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+{'voxel-3338': '0'}
+[F]frisbee(X,'1') :- not [T]voxel-3338(X,'0').
+{'voxel-3338': '0'}
+frisbee(X,'1') does not hold because
+	the value of voxel-3338 is '0' which should not equal '0' does not hold 
+
+% acc 0.95 p 0.0 r 0.0 f1 0

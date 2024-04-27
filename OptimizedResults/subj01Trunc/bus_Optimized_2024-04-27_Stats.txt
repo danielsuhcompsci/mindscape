@@ -1,0 +1,222 @@
+Beginning analysis on category bus in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.287535
+
+bus(X,'1') :- not voxel-4331(X,'0'), not voxel-631(X,'0').
+bus(X,'1') :- not voxel-1784(X,'0'), voxel-226(X,'0').
+bus(X,'1') :- not voxel-3437(X,'0'), not voxel-49(X,'0').
+bus(X,'1') :- not voxel-722(X,'0').
+% acc 0.9 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 7
+% foldrpp costs: 0:00:04.395271
+
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [F]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '1' which should not equal '0' does hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [T]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '0' which should not equal '0' does not hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [F]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '1' which should not equal '0' does hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '1', 'voxel-3437': '0', 'voxel-49': '1', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [T]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [F]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [F]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '1', 'voxel-3437': '0', 'voxel-49': '1', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '0' which should not equal '0' does not hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '1' which should equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '1' which should not equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [F]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '1' which should not equal '0' does hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '1', 'voxel-3437': '0', 'voxel-49': '1', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [F]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [F]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [F]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '1', 'voxel-3437': '0', 'voxel-49': '1', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '1' which should not equal '0' does hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '1' which should equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '1' which should not equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [T]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '0' which should not equal '0' does not hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [T]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '0', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '0' which should not equal '0' does not hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [F]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '1' which should not equal '0' does hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+[F]bus(X,'1') :- not [F]voxel-4331(X,'0'), not [T]voxel-631(X,'0').
+[F]bus(X,'1') :- not [T]voxel-1784(X,'0'), [T]voxel-226(X,'0').
+[F]bus(X,'1') :- not [T]voxel-3437(X,'0'), not [T]voxel-49(X,'0').
+[F]bus(X,'1') :- not [T]voxel-722(X,'0').
+{'voxel-4331': '1', 'voxel-631': '0', 'voxel-1784': '0', 'voxel-226': '0', 'voxel-3437': '0', 'voxel-49': '0', 'voxel-722': '0'}
+bus(X,'1') does not hold because
+	the value of voxel-4331 is '1' which should not equal '0' does hold and
+	the value of voxel-631 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-1784 is '0' which should not equal '0' does not hold and
+	the value of voxel-226 is '0' which should equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-3437 is '0' which should not equal '0' does not hold and
+	the value of voxel-49 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of voxel-722 is '0' which should not equal '0' does not hold 
+
+% acc 0.9 p 0.0 r 0.0 f1 0
