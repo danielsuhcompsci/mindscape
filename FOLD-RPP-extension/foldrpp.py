@@ -58,10 +58,7 @@ def ken_load(file_name, label, skip_first_col = False):
                     line = line[1:]
                 headers = line.split(',')
 
-                #modified to deal with leading integers
-                if (not (headers[0] == '1' or headers[0] == '0')):
-                    headers = headers[1:]
-                elif skip_first_col:
+                if skip_first_col:
                     headers = headers[1:]
 
                 #transform headers

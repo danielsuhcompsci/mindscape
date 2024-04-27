@@ -31,6 +31,7 @@ def main():
         for category in categories:
             if profile:
                 profiler = cProfile.Profile()
+            statsString = f"Beginning analysis on category {category} in file {filename}"
             print(f"Beginning analysis on category {category} in file {filename}")
             load_start = timer()
             if profile:
@@ -42,6 +43,8 @@ def main():
             if profile:
                 profiler.disable()
             load_end = timer()
+
+            statsString += '\n' + '% load data costs: ' + str(timedelta(seconds=load_end - load_start)) + '\n'
             print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')
 
             data_train, data_test = split_data(data, ratio=0.8, rand=True)
@@ -56,20 +59,27 @@ def main():
             end = timer()
 
             for r in model.asp():
+                statsString += "\n" + str(r)
                 print(r)
 
             ys_test_hat = model.predict(data_test)
             ys_test = [x['label'] for x in data_test]
             acc, p, r, f1 = get_scores(ys_test_hat, ys_test)
+            statsString += '\n% acc ' + str(round(acc, 3)) + ' p ' + str(round(p, 3)) + ' r ' + str(round(r, 3)) + ' f1 ' + str(round(f1, 3))
             print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
+
             n_rules, n_preds = len(model.flat_rules), num_predicates(model.flat_rules)
+            statsString += '\n% #rules ' + n_rules + ' #preds ' + n_preds
             print('% #rules', n_rules, '#preds', n_preds)
+            statsString += '\n% foldrpp costs: ' + str(timedelta(seconds=end - start)) + '\n'
             print('% foldrpp costs: ', timedelta(seconds=end - start), '\n')
 
             for x in data_test[:10]:
                 for r in model.proof_rules(x):
+                    statsString += '\n' + str(r)
                     print(r)
                 for r in model.proof_trees(x):
+                    statsString += '\n'+ str(r)
                     print(r)
 
             from foldrpp import save_model_to_file, load_model_from_file
@@ -80,7 +90,14 @@ def main():
             ys_test_hat = saved_model.predict(data_test)
             ys_test = [x['label'] for x in data_test]
             acc, p, r, f1 = get_scores(ys_test_hat, ys_test)
+            statsString += '\n' + '% acc ' + str(round(acc, 3)) + ' p ' + str(round(p, 3)) + ' r ' + str(round(r, 3)) + ' f1 ' + str(round(f1, 3))
             print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
+
+            statsFileName = (filename.split('/')[-1]) + category + 'stats.txt'
+            statsFile = open(statsFileName, mode='w')
+            statsFile.write(statsString)
+            statsFile.flush()
+            statsFile.close()
 
             # for x in data_test[:10]:
             #     for r in saved_model.proof_rules(x):
