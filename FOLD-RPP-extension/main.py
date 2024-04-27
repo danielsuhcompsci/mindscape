@@ -36,6 +36,9 @@ def main():
             if profile:
                 profiler.enable()
             model, data = brainVoxels(category, filename, columns)
+
+            # print(f"data[0] == {data[0]} and data[1] == {data[1]}")
+
             if profile:
                 profiler.disable()
             load_end = timer()
