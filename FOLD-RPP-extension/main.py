@@ -35,8 +35,6 @@ def add_stats(cat, acc, p , r, f1):
     with open("fold_stats.json", "w") as f:
         json.dump(current, f)
 
-if __name__ == '__main__':
-    main()
 
 
 def do_cat(category):
@@ -65,8 +63,8 @@ def do_cat(category):
             print(r)
 
     from foldrpp import save_model_to_file, load_model_from_file
-    save_model_to_file(model, category+'_model_final.txt')
-    saved_model = load_model_from_file(category+'_model_final.txt')
+    save_model_to_file(model, category+'_model_final_fr.txt')
+    saved_model = load_model_from_file(category+'_model_final_fr.txt')
         
     ys_test_hat = saved_model.predict(data_test)
     ys_test = [x['label'] for x in data_test]
@@ -75,3 +73,6 @@ def do_cat(category):
     add_stats(category, acc, p, r, f1)
 
     print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
+
+if __name__ == '__main__':
+    main()
