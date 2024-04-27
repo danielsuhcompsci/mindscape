@@ -1,0 +1,171 @@
+Beginning analysis on category hot dog
+beginning load_data
+% load data costs:  3:39:12.769797
+
+hot_dog(X,'1') :- not ffa_1-283(X,'0'), not ofa-38(X,'0'), not v3v-326(X,'0'), not v1v-341(X,'0'), not ffa_1-135(X,'0').
+hot_dog(X,'1') :- not ffa_1-283(X,'0'), not ofa-38(X,'0'), v1v-0(X,'9485').
+% acc 0.987 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 8
+% foldrpp costs:  0:08:07.829480
+
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '10344'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '10344'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '10344' which should equal '9485' does not hold
+
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '28839'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '28839'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '28839' which should equal '9485' does not hold
+
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '23121'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '23121'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '23121' which should equal '9485' does not hold
+
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '1', 'v1v-341': '1', 'ffa_1-135': '0', 'v1v-0': '2022'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [F]v3v-326(X,'0'), not [F]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '1', 'v1v-341': '1', 'ffa_1-135': '0', 'v1v-0': '2022'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '1' which should not equal '0' does hold and
+	the value of v1v-341 is '1' which should not equal '0' does hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '2022' which should equal '9485' does not hold
+
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '19448'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '19448'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '19448' which should equal '9485' does not hold
+
+{'ffa_1-283': '0', 'ofa-38': '1', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '28221'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [F]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [F]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '1', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '28221'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '1' which should not equal '0' does hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '1' which should not equal '0' does hold and
+	the value of v1v-0 is '28221' which should equal '9485' does not hold
+
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '24862'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '24862'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '24862' which should equal '9485' does not hold
+
+{'ffa_1-283': '1', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '27118'}
+[F]hot_dog(X,'1') :- not [F]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [F]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '1', 'ofa-38': '0', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '27118'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '1' which should not equal '0' does hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '1' which should not equal '0' does hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '27118' which should equal '9485' does not hold
+
+{'ffa_1-283': '1', 'ofa-38': '1', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '14541'}
+[F]hot_dog(X,'1') :- not [F]ffa_1-283(X,'0'), not [F]ofa-38(X,'0'), not [T]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [F]ffa_1-283(X,'0'), not [F]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '1', 'ofa-38': '1', 'v3v-326': '0', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '14541'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '1' which should not equal '0' does hold and
+	the value of ofa-38 is '1' which should not equal '0' does hold and
+	the value of v3v-326 is '0' which should not equal '0' does not hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '1' which should not equal '0' does hold and
+	the value of ofa-38 is '1' which should not equal '0' does hold and
+	the value of v1v-0 is '14541' which should equal '9485' does not hold
+
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '1', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '13996'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), not [F]v3v-326(X,'0'), not [T]v1v-341(X,'0'), not [T]ffa_1-135(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-283(X,'0'), not [T]ofa-38(X,'0'), [F]v1v-0(X,'9485').
+{'ffa_1-283': '0', 'ofa-38': '0', 'v3v-326': '1', 'v1v-341': '0', 'ffa_1-135': '0', 'v1v-0': '13996'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v3v-326 is '1' which should not equal '0' does hold and
+	the value of v1v-341 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-135 is '0' which should not equal '0' does not hold
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-283 is '0' which should not equal '0' does not hold and
+	the value of ofa-38 is '0' which should not equal '0' does not hold and
+	the value of v1v-0 is '13996' which should equal '9485' does not hold
+
+% acc 0.987 p 0.0 r 0.0 f1 0
