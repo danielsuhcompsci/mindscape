@@ -1,8 +1,10 @@
-from foldrpp import split_data, get_scores, num_predicates
+from foldrpp import split_data, get_scores, num_predicates, binary_only
 from datasets import *
 from brainDataset import brainVoxels
 from timeit import default_timer as timer
 from datetime import timedelta
+import pstats
+import cProfile
 
 def main():
     # categories = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat",
@@ -14,8 +16,7 @@ def main():
     #               "cake", "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
     #               "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
     #               "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush", "x-coord", "y-coord"]
-    categories = ["hot dog", "bird", "cat", "dog", "horse",
-                  "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie",
+    categories = [ "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie",
                   "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove",
                   "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon",
                   "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "pizza", "donut",
@@ -23,16 +24,22 @@ def main():
                   "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
                   "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
     for category in categories:
+        profiler = cProfile.Profile()
         print(f"Beginning analysis on category {category}")
         load_start = timer()
-        model, data = brainVoxels(category, '..\FOLDdata\subj01Modified.csv', 5277, False)
+        profiler.enable()
+        model, data = brainVoxels(category, '../FOLDdata/subj01New.csv', 5277, True)
+        profiler.disable()
         load_end = timer()
         print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')
 
         data_train, data_test = split_data(data, ratio=0.8, rand=True)
 
         start = timer()
-        model.fit(data_train)
+        with binary_only():
+            profiler.enable()
+            model.fit(data_train)
+            profiler.disable()
         end = timer()
 
         for r in model.asp():
@@ -67,5 +74,8 @@ def main():
             #     for r in saved_model.proof_trees(x):
             #         print(r)
 
+        pstats.Stats(profiler).dump_stats('profile_data.prof')
+
+        break
 if __name__ == '__main__':
     main()

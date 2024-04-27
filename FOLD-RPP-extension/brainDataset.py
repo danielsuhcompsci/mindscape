@@ -13,7 +13,7 @@ def brainVoxels(category, sourceDir, numVoxels, debugFlag): #"category" should h
     # num_attrs = ['x-coord', 'y-coord']
     num_attrs = []
     model = Foldrpp(str_attrs, num_attrs, label=category, pos_val='1')
-    data = model.load_data(sourceDir, debugFlag=debugFlag)
+    data = model.load_data_new(sourceDir, debugFlag=debugFlag)
     # if(debugFlag):
         # print(data)#for debugging
     return model, data
