@@ -2,7 +2,7 @@ import time
 # from line_profiler import profile
 import pandas as pd
 from tqdm import tqdm
-
+from bitarray import bitarray
 from contextlib import contextmanager
 
 only_binary = False
@@ -17,6 +17,49 @@ def binary_only():
         yield
     finally:
         only_binary = old_mode
+
+class BitDictWrapper:
+    def __init__(self, parent, data, label):
+        self.parent = parent
+        self.data = data
+        self.label = label
+    
+    def __getitem__(self, idx):
+        if idx == 'label':
+            return self.label
+        idx = self.parent.headers[idx]
+        val = self.data[idx]
+        return '1' if val else '0'
+    def __contains__(self, idx):
+        return idx in self.parent.headers
+class BitWrapper:
+    def __init__(self, headers):
+        self.headers = {
+            header: i for i, header in enumerate(headers)
+        }
+        self.data = []
+
+    def _transform_row(self, row):
+        ba = bitarray()
+        ba.extend(c == '1' for c in row)
+        return ba
+
+    #array of 1s and 0s chars
+    def add_row(self, row, label):
+        row = self._transform_row(row)
+        row = BitDictWrapper(self, row, label)
+        self.data.append(row)
+
+    def __getitem__(self, idx):
+        return self.data[idx]
+    
+    def __len__(self):
+        return len(self.data)
+    
+    def __setitem__(self, idx, item):
+        self.data[idx] = item
+    
+        
 
 class DFWrapper:
 
@@ -77,6 +120,51 @@ def ken_load(file_name, label):
                 ret.append(line_dict)
     return ret
 
+
+
+def ken_load2(file_name, label, truncate = None):
+
+    skip_first_col = False
+
+    headers = []
+    ret = None
+    row_size = None
+
+    label = label.lower().replace(' ',  '_')
+    ldx = None
+
+    line_range_start = 2 if skip_first_col else 0
+
+
+    with open(file_name) as f:
+        for i, line in tqdm(enumerate(f)):
+            if truncate is not None and i+1 >= truncate:
+                break
+            if i == 0:
+                if line[0] == ',':
+                    line = line[1:]
+                headers = line.split(',')
+
+                if skip_first_col:
+                    headers = headers[1:]
+
+                #transform headers
+                for hdx, header in enumerate(headers):
+                    headers[hdx] = header.lower().replace(' ', '_')
+                    if headers[hdx] == label:
+                        ldx = hdx
+                
+                headers[-1] = headers[-1].strip('\n')
+                row_size = len(headers)
+
+                ret = BitWrapper(headers)
+            else:
+                label = 1 if line[2*ldx] == "1" else 0
+                line_list = [line[2*i] for i in range(line_range_start, row_size)]
+                ret.add_row(line_list, label)
+                
+    return ret
+
 def wrapper_load(file_name, label):
     r =  DFWrapper(file_name, label)
     return r
@@ -94,10 +182,10 @@ def df_load(file_name, label):
     
     return r
 
-def load_data_new(file_name, label):
+def load_data_new(file_name, label, truncate=None):
     t = time.time()
 
-    ret = ken_load(file_name, label)
+    ret = ken_load2(file_name, label, truncate = truncate)
 
     print(f'load_data_new costs: {time.time() - t}')
     return ret
@@ -298,7 +386,10 @@ def best_item_on_attr(data, pos_idx, neg_idx, attr, used_items):
             
     # noinspection DuplicatedCode
     for i in neg_idx:
-        attr_val = data[i][attr] if attr in data[i] else ''
+        if only_binary:
+            attr_val = data[i][attr]
+        else:
+            attr_val = data[i][attr] if attr in data[i] else ''
         if attr_val not in neg_cnt:
             pos_cnt[attr_val], neg_cnt[attr_val] = 0, 0
         neg_cnt[attr_val] += 1.0
@@ -732,8 +823,8 @@ class Foldrpp:
     def load_data(self, file_name, amount=-1, debugFlag=False):
         return load_data(file_name, self.str_attrs, self.num_attrs, self.label, self.pos_val, amount, debugFlag)
 
-    def load_data_new(self, file_name, debugFlag=False):
-        return load_data_new(file_name, self.label)
+    def load_data_new(self, file_name, debugFlag=False, truncate=None):
+        return load_data_new(file_name, self.label, truncate = truncate)
 
     def fit(self, data, ratio=0.5):
         pos_idx, neg_idx = split_index_by_label(data)
