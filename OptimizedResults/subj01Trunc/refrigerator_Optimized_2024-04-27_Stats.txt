@@ -1,0 +1,89 @@
+Beginning analysis on category refrigerator in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.287607
+
+refrigerator(X,'1') :- not voxel-336(X,'0'), voxel-551(X,'0'), voxel-89(X,'0').
+% acc 0.883 p 0 r 0.0 f1 0
+% #rules 1 #preds 3
+% foldrpp costs: 0:00:02.025480
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '1'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [F]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '1'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '1' which should equal '0' does not hold 
+
+{'voxel-336': '0', 'voxel-551': '0', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [T]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '0', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '0' which should equal '0' does hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '1', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [F]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '1', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '1' which should not equal '0' does hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+[F]refrigerator(X,'1') :- not [T]voxel-336(X,'0'), [F]voxel-551(X,'0'), [T]voxel-89(X,'0').
+{'voxel-336': '0', 'voxel-551': '1', 'voxel-89': '0'}
+refrigerator(X,'1') does not hold because
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-551 is '1' which should equal '0' does not hold and
+	the value of voxel-89 is '0' which should equal '0' does hold 
+
+% acc 0.883 p 0 r 0.0 f1 0

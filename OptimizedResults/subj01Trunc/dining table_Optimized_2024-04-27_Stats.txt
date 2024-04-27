@@ -1,0 +1,212 @@
+Beginning analysis on category dining table in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.207033
+
+dining_table(X,'1') :- not voxel-2944(X,'0'), not voxel-1599(X,'0').
+dining_table(X,'1') :- not voxel-1076(X,'0').
+dining_table(X,'1') :- not voxel-1680(X,'0').
+dining_table(X,'1') :- not voxel-3077(X,'0'), voxel-61(X,'0').
+% acc 0.95 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 6
+% foldrpp costs: 0:00:03.033561
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [T]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should equal '0' does hold 
+
+{'voxel-2944': '0', 'voxel-1599': '1', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [F]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [T]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '1', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '1' which should not equal '0' does hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should equal '0' does hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [T]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should equal '0' does hold 
+
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]dining_table(X,'1') :- not [T]voxel-2944(X,'0'), not [T]voxel-1599(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1076(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-1680(X,'0').
+[F]dining_table(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-2944': '0', 'voxel-1599': '0', 'voxel-1076': '0', 'voxel-1680': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+dining_table(X,'1') does not hold because
+	the value of voxel-2944 is '0' which should not equal '0' does not hold and
+	the value of voxel-1599 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1076 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-1680 is '0' which should not equal '0' does not hold 
+
+dining_table(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+% acc 0.95 p 0.0 r 0.0 f1 0

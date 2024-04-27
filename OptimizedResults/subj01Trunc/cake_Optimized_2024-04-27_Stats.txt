@@ -1,0 +1,79 @@
+Beginning analysis on category cake in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.197889
+
+cake(X,'1') :- not voxel-267(X,'0'), not voxel-57(X,'0').
+% acc 0.967 p 0 r 0.0 f1 0
+% #rules 1 #preds 2
+% foldrpp costs: 0:00:00.587257
+
+{'voxel-267': '0', 'voxel-57': '0'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '0'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-267': '0', 'voxel-57': '0'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '0'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-267': '0', 'voxel-57': '0'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '0'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-267': '0', 'voxel-57': '0'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '0'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-267': '0', 'voxel-57': '0'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '0'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-267': '0', 'voxel-57': '1'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [F]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '1'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should not equal '0' does hold 
+
+{'voxel-267': '0', 'voxel-57': '1'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [F]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '1'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should not equal '0' does hold 
+
+{'voxel-267': '0', 'voxel-57': '1'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [F]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '1'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should not equal '0' does hold 
+
+{'voxel-267': '0', 'voxel-57': '0'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '0'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+{'voxel-267': '0', 'voxel-57': '0'}
+[F]cake(X,'1') :- not [T]voxel-267(X,'0'), not [T]voxel-57(X,'0').
+{'voxel-267': '0', 'voxel-57': '0'}
+cake(X,'1') does not hold because
+	the value of voxel-267 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should not equal '0' does not hold 
+
+% acc 0.967 p 0 r 0.0 f1 0

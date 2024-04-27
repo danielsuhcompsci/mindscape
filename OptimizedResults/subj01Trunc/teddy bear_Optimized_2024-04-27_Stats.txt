@@ -1,0 +1,79 @@
+Beginning analysis on category teddy bear in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.190379
+
+teddy_bear(X,'1') :- not voxel-1579(X,'0'), not voxel-955(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 1 #preds 2
+% foldrpp costs: 0:00:00.652666
+
+{'voxel-1579': '0', 'voxel-955': '0'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [T]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '0'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '0' which should not equal '0' does not hold 
+
+{'voxel-1579': '0', 'voxel-955': '1'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [F]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '1'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '1' which should not equal '0' does hold 
+
+{'voxel-1579': '0', 'voxel-955': '1'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [F]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '1'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '1' which should not equal '0' does hold 
+
+{'voxel-1579': '0', 'voxel-955': '0'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [T]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '0'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '0' which should not equal '0' does not hold 
+
+{'voxel-1579': '0', 'voxel-955': '0'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [T]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '0'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '0' which should not equal '0' does not hold 
+
+{'voxel-1579': '0', 'voxel-955': '0'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [T]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '0'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '0' which should not equal '0' does not hold 
+
+{'voxel-1579': '0', 'voxel-955': '0'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [T]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '0'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '0' which should not equal '0' does not hold 
+
+{'voxel-1579': '0', 'voxel-955': '1'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [F]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '1'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '1' which should not equal '0' does hold 
+
+{'voxel-1579': '0', 'voxel-955': '0'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [T]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '0'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '0' which should not equal '0' does not hold 
+
+{'voxel-1579': '0', 'voxel-955': '0'}
+[F]teddy_bear(X,'1') :- not [T]voxel-1579(X,'0'), not [T]voxel-955(X,'0').
+{'voxel-1579': '0', 'voxel-955': '0'}
+teddy_bear(X,'1') does not hold because
+	the value of voxel-1579 is '0' which should not equal '0' does not hold and
+	the value of voxel-955 is '0' which should not equal '0' does not hold 
+
+% acc 1.0 p 0 r 0 f1 0

@@ -1,0 +1,120 @@
+Beginning analysis on category toaster in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.208938
+
+toaster(X,'1') :- not voxel-26(X,'0').
+toaster(X,'1') :- not voxel-1101(X,'0'), not voxel-97(X,'0').
+% acc 0.95 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 3
+% foldrpp costs: 0:00:01.707418
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '1'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [F]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '1'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '1' which should not equal '0' does hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '1'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [F]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '1'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '1' which should not equal '0' does hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+[F]toaster(X,'1') :- not [T]voxel-26(X,'0').
+[F]toaster(X,'1') :- not [T]voxel-1101(X,'0'), not [T]voxel-97(X,'0').
+{'voxel-26': '0', 'voxel-1101': '0', 'voxel-97': '0'}
+toaster(X,'1') does not hold because
+	the value of voxel-26 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of voxel-1101 is '0' which should not equal '0' does not hold and
+	the value of voxel-97 is '0' which should not equal '0' does not hold 
+
+% acc 0.95 p 0.0 r 0.0 f1 0

@@ -1,0 +1,201 @@
+Beginning analysis on category donut in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.193727
+
+donut(X,'1') :- not voxel-2100(X,'0'), not voxel-3216(X,'0'), not voxel-200(X,'0').
+donut(X,'1') :- not voxel-1673(X,'0'), not voxel-53(X,'0').
+donut(X,'1') :- not voxel-1608(X,'0'), not voxel-502(X,'0'), voxel-50(X,'0').
+% acc 0.883 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 8
+% foldrpp costs: 0:00:02.328245
+
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [T]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [F]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [F]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '0' which should not equal '0' does not hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '1' which should not equal '0' does hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [T]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [F]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '0' which should not equal '0' does not hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '0' which should not equal '0' does not hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [T]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [F]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '0' which should not equal '0' does not hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '0' which should not equal '0' does not hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '1', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [T]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [T]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [F]voxel-53(X,'0').
+[F]donut(X,'1') :- not [F]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '1', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '0' which should not equal '0' does not hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '1' which should not equal '0' does hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [F]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [T]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '1' which should not equal '0' does hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '0' which should not equal '0' does not hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [F]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [F]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [F]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '1', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '1' which should not equal '0' does hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '1' which should not equal '0' does hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [F]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [T]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [F]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '1', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '1' which should not equal '0' does hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '1' which should not equal '0' does hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [F]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [T]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '1' which should not equal '0' does hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '0' which should not equal '0' does not hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '1', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [T]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [T]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1608(X,'0'), not [F]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '0', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '1', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '0' which should not equal '0' does not hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '0' which should not equal '0' does not hold and
+	the value of voxel-502 is '1' which should not equal '0' does hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+[F]donut(X,'1') :- not [F]voxel-2100(X,'0'), not [T]voxel-3216(X,'0'), not [T]voxel-200(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1673(X,'0'), not [T]voxel-53(X,'0').
+[F]donut(X,'1') :- not [T]voxel-1608(X,'0'), not [T]voxel-502(X,'0'), [T]voxel-50(X,'0').
+{'voxel-2100': '1', 'voxel-3216': '0', 'voxel-200': '0', 'voxel-1673': '0', 'voxel-53': '0', 'voxel-1608': '0', 'voxel-502': '0', 'voxel-50': '0'}
+donut(X,'1') does not hold because
+	the value of voxel-2100 is '1' which should not equal '0' does hold and
+	the value of voxel-3216 is '0' which should not equal '0' does not hold and
+	the value of voxel-200 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1673 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of voxel-1608 is '0' which should not equal '0' does not hold and
+	the value of voxel-502 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+% acc 0.883 p 0.0 r 0.0 f1 0

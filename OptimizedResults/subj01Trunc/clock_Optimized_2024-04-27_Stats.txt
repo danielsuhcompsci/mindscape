@@ -1,0 +1,170 @@
+Beginning analysis on category clock in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.201728
+
+clock(X,'1') :- not voxel-3594(X,'0'), not voxel-3370(X,'0'), voxel-3366(X,'0'), not voxel-3425(X,'0'), voxel-87(X,'0').
+clock(X,'1') :- not voxel-686(X,'0'), not voxel-235(X,'0'), voxel-57(X,'0').
+% acc 0.917 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 8
+% foldrpp costs: 0:00:02.034505
+
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [T]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [T]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [F]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should not equal '0' does not hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '0' which should equal '0' does hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should equal '0' does not hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-3370': '1', 'voxel-3366': '1', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [F]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [F]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [F]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '1', 'voxel-3370': '1', 'voxel-3366': '1', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should not equal '0' does hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '1' which should equal '0' does not hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should equal '0' does not hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '0', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [T]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [T]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [T]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '0', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should not equal '0' does not hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '0' which should equal '0' does hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should equal '0' does hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-3370': '0', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [F]voxel-3594(X,'0'), not [T]voxel-3370(X,'0'), [T]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [F]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '1', 'voxel-3370': '0', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should not equal '0' does hold and
+	the value of voxel-3370 is '0' which should not equal '0' does not hold and
+	the value of voxel-3366 is '0' which should equal '0' does hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should equal '0' does not hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '1', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '1'}
+[F]clock(X,'1') :- not [T]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [F]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [F]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [F]voxel-57(X,'0').
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '1', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '1'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should not equal '0' does not hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '1' which should equal '0' does not hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should equal '0' does not hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should equal '0' does not hold 
+
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '1', 'voxel-3425': '0', 'voxel-87': '0', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [T]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [F]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [T]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '1', 'voxel-3425': '0', 'voxel-87': '0', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should not equal '0' does not hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '1' which should equal '0' does not hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should equal '0' does hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-3370': '0', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '0', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [F]voxel-3594(X,'0'), not [T]voxel-3370(X,'0'), [T]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [T]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '1', 'voxel-3370': '0', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '0', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should not equal '0' does hold and
+	the value of voxel-3370 is '0' which should not equal '0' does not hold and
+	the value of voxel-3366 is '0' which should equal '0' does hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should equal '0' does hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '1', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '1', 'voxel-87': '1', 'voxel-686': '1', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [F]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [T]voxel-3366(X,'0'), not [F]voxel-3425(X,'0'), [F]voxel-87(X,'0').
+[F]clock(X,'1') :- not [F]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '1', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '1', 'voxel-87': '1', 'voxel-686': '1', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '1' which should not equal '0' does hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '0' which should equal '0' does hold and
+	the value of voxel-3425 is '1' which should not equal '0' does hold and
+	the value of voxel-87 is '1' which should equal '0' does not hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '1' which should not equal '0' does hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '1'}
+[F]clock(X,'1') :- not [T]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [T]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [F]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [F]voxel-57(X,'0').
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '1'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should not equal '0' does not hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '0' which should equal '0' does hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should equal '0' does not hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '1' which should equal '0' does not hold 
+
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+[F]clock(X,'1') :- not [T]voxel-3594(X,'0'), not [F]voxel-3370(X,'0'), [T]voxel-3366(X,'0'), not [T]voxel-3425(X,'0'), [F]voxel-87(X,'0').
+[F]clock(X,'1') :- not [T]voxel-686(X,'0'), not [T]voxel-235(X,'0'), [T]voxel-57(X,'0').
+{'voxel-3594': '0', 'voxel-3370': '1', 'voxel-3366': '0', 'voxel-3425': '0', 'voxel-87': '1', 'voxel-686': '0', 'voxel-235': '0', 'voxel-57': '0'}
+clock(X,'1') does not hold because
+	the value of voxel-3594 is '0' which should not equal '0' does not hold and
+	the value of voxel-3370 is '1' which should not equal '0' does hold and
+	the value of voxel-3366 is '0' which should equal '0' does hold and
+	the value of voxel-3425 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should equal '0' does not hold 
+
+clock(X,'1') does not hold because
+	the value of voxel-686 is '0' which should not equal '0' does not hold and
+	the value of voxel-235 is '0' which should not equal '0' does not hold and
+	the value of voxel-57 is '0' which should equal '0' does hold 
+
+% acc 0.917 p 0.0 r 0.0 f1 0

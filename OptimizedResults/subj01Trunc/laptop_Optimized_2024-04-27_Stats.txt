@@ -1,0 +1,181 @@
+Beginning analysis on category laptop in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.193704
+
+laptop(X,'1') :- not voxel-371(X,'0').
+laptop(X,'1') :- not voxel-4542(X,'0'), not voxel-3691(X,'0'), not voxel-2589(X,'0').
+laptop(X,'1') :- not voxel-127(X,'0'), not voxel-18(X,'0').
+% acc 0.983 p 0.0 r 0 f1 0
+% #rules 3 #preds 6
+% foldrpp costs: 0:00:02.117089
+
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [F]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [T]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '1' which should not equal '0' does hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [F]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [F]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '1' which should not equal '0' does hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '1' which should not equal '0' does hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '1', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-4542(X,'0'), not [F]voxel-3691(X,'0'), not [F]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '1', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '0' which should not equal '0' does not hold and
+	the value of voxel-3691 is '1' which should not equal '0' does hold and
+	the value of voxel-2589 is '1' which should not equal '0' does hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [F]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '0' which should not equal '0' does not hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '1' which should not equal '0' does hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [F]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [T]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '1' which should not equal '0' does hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [T]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '0' which should not equal '0' does not hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [F]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '0' which should not equal '0' does not hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '1' which should not equal '0' does hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [F]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [T]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '0', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '1' which should not equal '0' does hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [F]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [F]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '1', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '1' which should not equal '0' does hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '1' which should not equal '0' does hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+[F]laptop(X,'1') :- not [T]voxel-371(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-4542(X,'0'), not [T]voxel-3691(X,'0'), not [F]voxel-2589(X,'0').
+[F]laptop(X,'1') :- not [T]voxel-127(X,'0'), not [T]voxel-18(X,'0').
+{'voxel-371': '0', 'voxel-4542': '0', 'voxel-3691': '0', 'voxel-2589': '1', 'voxel-127': '0', 'voxel-18': '0'}
+laptop(X,'1') does not hold because
+	the value of voxel-371 is '0' which should not equal '0' does not hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-4542 is '0' which should not equal '0' does not hold and
+	the value of voxel-3691 is '0' which should not equal '0' does not hold and
+	the value of voxel-2589 is '1' which should not equal '0' does hold 
+
+laptop(X,'1') does not hold because
+	the value of voxel-127 is '0' which should not equal '0' does not hold and
+	the value of voxel-18 is '0' which should not equal '0' does not hold 
+
+% acc 0.983 p 0.0 r 0 f1 0

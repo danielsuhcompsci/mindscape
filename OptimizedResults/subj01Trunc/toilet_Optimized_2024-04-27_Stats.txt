@@ -1,0 +1,302 @@
+Beginning analysis on category toilet in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.200090
+
+toilet(X,'1') :- not voxel-4982(X,'0'), not voxel-1683(X,'0'), not voxel-3538(X,'0'), voxel-5236(X,'0'), voxel-54(X,'0').
+toilet(X,'1') :- not voxel-154(X,'0'), not voxel-957(X,'0'), voxel-50(X,'0').
+toilet(X,'1') :- not voxel-4886(X,'0'), not voxel-3871(X,'0'), not voxel-4153(X,'0'), not voxel-461(X,'0'), voxel-9(X,'0').
+toilet(X,'1') :- not voxel-1724(X,'0'), not voxel-53(X,'0').
+% acc 0.85 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 15
+% foldrpp costs: 0:00:03.452868
+
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '1', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '1', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+[F]toilet(X,'1') :- not [F]voxel-4982(X,'0'), not [T]voxel-1683(X,'0'), not [F]voxel-3538(X,'0'), [T]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [F]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [F]voxel-4153(X,'0'), not [T]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [F]voxel-53(X,'0').
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '1', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '1', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '1' which should not equal '0' does hold and
+	the value of voxel-1683 is '0' which should not equal '0' does not hold and
+	the value of voxel-3538 is '1' which should not equal '0' does hold and
+	the value of voxel-5236 is '0' which should equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '1' which should not equal '0' does hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '1' which should not equal '0' does hold and
+	the value of voxel-461 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '1' which should not equal '0' does hold 
+
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '0', 'voxel-5236': '1', 'voxel-54': '1', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '1', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+[F]toilet(X,'1') :- not [F]voxel-4982(X,'0'), not [T]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [F]voxel-5236(X,'0'), [F]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [F]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [F]voxel-4153(X,'0'), not [T]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [F]voxel-53(X,'0').
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '0', 'voxel-5236': '1', 'voxel-54': '1', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '1', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '1' which should not equal '0' does hold and
+	the value of voxel-1683 is '0' which should not equal '0' does not hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '1' which should equal '0' does not hold and
+	the value of voxel-54 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '1' which should not equal '0' does hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '1' which should not equal '0' does hold and
+	the value of voxel-461 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '1' which should not equal '0' does hold 
+
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '0', 'voxel-5236': '1', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '1', 'voxel-4153': '0', 'voxel-461': '1', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+[F]toilet(X,'1') :- not [F]voxel-4982(X,'0'), not [T]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [F]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-4886(X,'0'), not [F]voxel-3871(X,'0'), not [T]voxel-4153(X,'0'), not [F]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [T]voxel-53(X,'0').
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '0', 'voxel-5236': '1', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '1', 'voxel-4153': '0', 'voxel-461': '1', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '1' which should not equal '0' does hold and
+	the value of voxel-1683 is '0' which should not equal '0' does not hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '1' which should equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '0' which should not equal '0' does not hold and
+	the value of voxel-3871 is '1' which should not equal '0' does hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold and
+	the value of voxel-461 is '1' which should not equal '0' does hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+[F]toilet(X,'1') :- not [F]voxel-4982(X,'0'), not [T]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [T]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [F]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [T]voxel-4153(X,'0'), not [T]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [T]voxel-53(X,'0').
+{'voxel-4982': '1', 'voxel-1683': '0', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '1' which should not equal '0' does hold and
+	the value of voxel-1683 is '0' which should not equal '0' does not hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '0' which should equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '1' which should not equal '0' does hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold and
+	the value of voxel-461 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '1', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+[F]toilet(X,'1') :- not [T]voxel-4982(X,'0'), not [F]voxel-1683(X,'0'), not [F]voxel-3538(X,'0'), [T]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [T]voxel-4153(X,'0'), not [T]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [T]voxel-53(X,'0').
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '1', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '0' which should not equal '0' does not hold and
+	the value of voxel-1683 is '1' which should not equal '0' does hold and
+	the value of voxel-3538 is '1' which should not equal '0' does hold and
+	the value of voxel-5236 is '0' which should equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '0' which should not equal '0' does not hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold and
+	the value of voxel-461 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '1', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+[F]toilet(X,'1') :- not [T]voxel-4982(X,'0'), not [F]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [F]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [T]voxel-4153(X,'0'), not [T]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [F]voxel-53(X,'0').
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '1', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '0' which should not equal '0' does not hold and
+	the value of voxel-1683 is '1' which should not equal '0' does hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '1' which should equal '0' does not hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '0' which should not equal '0' does not hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold and
+	the value of voxel-461 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '1' which should not equal '0' does hold 
+
+{'voxel-4982': '1', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '1', 'voxel-461': '1', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+[F]toilet(X,'1') :- not [F]voxel-4982(X,'0'), not [F]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [T]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [F]voxel-4153(X,'0'), not [F]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [F]voxel-53(X,'0').
+{'voxel-4982': '1', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '1', 'voxel-461': '1', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '1' which should not equal '0' does hold and
+	the value of voxel-1683 is '1' which should not equal '0' does hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '0' which should equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '0' which should not equal '0' does not hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '1' which should not equal '0' does hold and
+	the value of voxel-461 is '1' which should not equal '0' does hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '1' which should not equal '0' does hold 
+
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+[F]toilet(X,'1') :- not [T]voxel-4982(X,'0'), not [F]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [T]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [F]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [T]voxel-4153(X,'0'), not [T]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [T]voxel-53(X,'0').
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '0' which should not equal '0' does not hold and
+	the value of voxel-1683 is '1' which should not equal '0' does hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '0' which should equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '1' which should not equal '0' does hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold and
+	the value of voxel-461 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '1', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '1', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+[F]toilet(X,'1') :- not [T]voxel-4982(X,'0'), not [F]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [T]voxel-5236(X,'0'), [F]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-4886(X,'0'), not [T]voxel-3871(X,'0'), not [T]voxel-4153(X,'0'), not [F]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [F]voxel-53(X,'0').
+{'voxel-4982': '0', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '1', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '0', 'voxel-3871': '0', 'voxel-4153': '0', 'voxel-461': '1', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '1'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '0' which should not equal '0' does not hold and
+	the value of voxel-1683 is '1' which should not equal '0' does hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '0' which should equal '0' does hold and
+	the value of voxel-54 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '0' which should not equal '0' does not hold and
+	the value of voxel-3871 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold and
+	the value of voxel-461 is '1' which should not equal '0' does hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '1' which should not equal '0' does hold 
+
+{'voxel-4982': '1', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '1', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+[F]toilet(X,'1') :- not [F]voxel-4982(X,'0'), not [F]voxel-1683(X,'0'), not [T]voxel-3538(X,'0'), [T]voxel-5236(X,'0'), [T]voxel-54(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-154(X,'0'), not [T]voxel-957(X,'0'), [T]voxel-50(X,'0').
+[F]toilet(X,'1') :- not [F]voxel-4886(X,'0'), not [F]voxel-3871(X,'0'), not [T]voxel-4153(X,'0'), not [T]voxel-461(X,'0'), [T]voxel-9(X,'0').
+[F]toilet(X,'1') :- not [T]voxel-1724(X,'0'), not [T]voxel-53(X,'0').
+{'voxel-4982': '1', 'voxel-1683': '1', 'voxel-3538': '0', 'voxel-5236': '0', 'voxel-54': '0', 'voxel-154': '0', 'voxel-957': '0', 'voxel-50': '0', 'voxel-4886': '1', 'voxel-3871': '1', 'voxel-4153': '0', 'voxel-461': '0', 'voxel-9': '0', 'voxel-1724': '0', 'voxel-53': '0'}
+toilet(X,'1') does not hold because
+	the value of voxel-4982 is '1' which should not equal '0' does hold and
+	the value of voxel-1683 is '1' which should not equal '0' does hold and
+	the value of voxel-3538 is '0' which should not equal '0' does not hold and
+	the value of voxel-5236 is '0' which should equal '0' does hold and
+	the value of voxel-54 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-154 is '0' which should not equal '0' does not hold and
+	the value of voxel-957 is '0' which should not equal '0' does not hold and
+	the value of voxel-50 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-4886 is '1' which should not equal '0' does hold and
+	the value of voxel-3871 is '1' which should not equal '0' does hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold and
+	the value of voxel-461 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of voxel-1724 is '0' which should not equal '0' does not hold and
+	the value of voxel-53 is '0' which should not equal '0' does not hold 
+
+% acc 0.85 p 0.0 r 0.0 f1 0

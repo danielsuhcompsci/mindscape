@@ -1,0 +1,130 @@
+Beginning analysis on category remote in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.268493
+
+remote(X,'1') :- not voxel-4503(X,'0'), not voxel-527(X,'0').
+remote(X,'1') :- not voxel-4895(X,'0'), not voxel-562(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 2 #preds 4
+% foldrpp costs: 0:00:01.513564
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '1'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [F]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '1'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '1' which should not equal '0' does hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+[F]remote(X,'1') :- not [T]voxel-4503(X,'0'), not [F]voxel-527(X,'0').
+[F]remote(X,'1') :- not [T]voxel-4895(X,'0'), not [T]voxel-562(X,'0').
+{'voxel-4503': '0', 'voxel-527': '1', 'voxel-4895': '0', 'voxel-562': '0'}
+remote(X,'1') does not hold because
+	the value of voxel-4503 is '0' which should not equal '0' does not hold and
+	the value of voxel-527 is '1' which should not equal '0' does hold 
+
+remote(X,'1') does not hold because
+	the value of voxel-4895 is '0' which should not equal '0' does not hold and
+	the value of voxel-562 is '0' which should not equal '0' does not hold 
+
+% acc 1.0 p 0 r 0 f1 0

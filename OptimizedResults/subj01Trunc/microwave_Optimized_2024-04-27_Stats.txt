@@ -1,0 +1,191 @@
+Beginning analysis on category microwave in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.290591
+
+microwave(X,'1') :- not voxel-3612(X,'0'), not voxel-3471(X,'0').
+microwave(X,'1') :- not voxel-4359(X,'0'), not voxel-2048(X,'0'), voxel-1472(X,'0').
+microwave(X,'1') :- not voxel-1036(X,'0'), not voxel-2755(X,'0').
+% acc 0.95 p 0.0 r 0 f1 0
+% #rules 3 #preds 7
+% foldrpp costs: 0:00:02.508722
+
+{'voxel-3612': '0', 'voxel-3471': '1', 'voxel-4359': '1', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '1'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [F]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [F]voxel-4359(X,'0'), not [T]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [F]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '1', 'voxel-4359': '1', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '1'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '1' which should not equal '0' does hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '1' which should not equal '0' does hold and
+	the value of voxel-2048 is '0' which should not equal '0' does not hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '1' which should not equal '0' does hold 
+
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '0', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [T]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-2048(X,'0'), [T]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '0', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '0' which should not equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '0' which should not equal '0' does not hold and
+	the value of voxel-1472 is '0' which should equal '0' does hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [T]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '0' which should not equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '0' which should not equal '0' does not hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [T]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '0' which should not equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '0' which should not equal '0' does not hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+{'voxel-3612': '0', 'voxel-3471': '1', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '0', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [F]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-2048(X,'0'), [T]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '1', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '0', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '1' which should not equal '0' does hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '0' which should not equal '0' does not hold and
+	the value of voxel-1472 is '0' which should equal '0' does hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [T]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '0' which should not equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '0' which should not equal '0' does not hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '1', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [T]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '1', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '0' which should not equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '1' which should not equal '0' does hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '1', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '1'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [T]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [F]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '1', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '1'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '0' which should not equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '1' which should not equal '0' does hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '1' which should not equal '0' does hold 
+
+{'voxel-3612': '0', 'voxel-3471': '1', 'voxel-4359': '0', 'voxel-2048': '1', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [F]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [F]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '1', 'voxel-4359': '0', 'voxel-2048': '1', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '1' which should not equal '0' does hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '1' which should not equal '0' does hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+[F]microwave(X,'1') :- not [T]voxel-3612(X,'0'), not [T]voxel-3471(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-4359(X,'0'), not [T]voxel-2048(X,'0'), [F]voxel-1472(X,'0').
+[F]microwave(X,'1') :- not [T]voxel-1036(X,'0'), not [T]voxel-2755(X,'0').
+{'voxel-3612': '0', 'voxel-3471': '0', 'voxel-4359': '0', 'voxel-2048': '0', 'voxel-1472': '1', 'voxel-1036': '0', 'voxel-2755': '0'}
+microwave(X,'1') does not hold because
+	the value of voxel-3612 is '0' which should not equal '0' does not hold and
+	the value of voxel-3471 is '0' which should not equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-4359 is '0' which should not equal '0' does not hold and
+	the value of voxel-2048 is '0' which should not equal '0' does not hold and
+	the value of voxel-1472 is '1' which should equal '0' does not hold 
+
+microwave(X,'1') does not hold because
+	the value of voxel-1036 is '0' which should not equal '0' does not hold and
+	the value of voxel-2755 is '0' which should not equal '0' does not hold 
+
+% acc 0.95 p 0.0 r 0 f1 0

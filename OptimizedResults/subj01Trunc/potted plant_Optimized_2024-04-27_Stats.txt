@@ -1,0 +1,150 @@
+Beginning analysis on category potted plant in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.195832
+
+potted_plant(X,'1') :- not voxel-3791(X,'0'), not voxel-122(X,'0'), not voxel-61(X,'0').
+potted_plant(X,'1') :- not voxel-124(X,'0'), not voxel-3954(X,'0'), not voxel-76(X,'0').
+% acc 0.967 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 6
+% foldrpp costs: 0:00:01.537855
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '1', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [F]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '1', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '1', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [F]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '1', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '1' which should not equal '0' does hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '1', 'voxel-3954': '0', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [F]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '1', 'voxel-3954': '0', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '1' which should not equal '0' does hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '0', 'voxel-122': '1', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [F]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '1', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '1' which should not equal '0' does hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '1'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-3954(X,'0'), not [F]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '0', 'voxel-76': '1'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-76 is '1' which should not equal '0' does hold 
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '1', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [T]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [F]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '0', 'voxel-124': '0', 'voxel-3954': '1', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '1', 'voxel-124': '0', 'voxel-3954': '1', 'voxel-76': '0'}
+[F]potted_plant(X,'1') :- not [T]voxel-3791(X,'0'), not [T]voxel-122(X,'0'), not [F]voxel-61(X,'0').
+[F]potted_plant(X,'1') :- not [T]voxel-124(X,'0'), not [F]voxel-3954(X,'0'), not [T]voxel-76(X,'0').
+{'voxel-3791': '0', 'voxel-122': '0', 'voxel-61': '1', 'voxel-124': '0', 'voxel-3954': '1', 'voxel-76': '0'}
+potted_plant(X,'1') does not hold because
+	the value of voxel-3791 is '0' which should not equal '0' does not hold and
+	the value of voxel-122 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '1' which should not equal '0' does hold and
+	the value of voxel-76 is '0' which should not equal '0' does not hold 
+
+% acc 0.967 p 0.0 r 0.0 f1 0

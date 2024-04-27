@@ -1,0 +1,211 @@
+Beginning analysis on category bed in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.196408
+
+bed(X,'1') :- not voxel-4569(X,'0'), not voxel-1615(X,'0'), not voxel-462(X,'0').
+bed(X,'1') :- not voxel-3473(X,'0'), not voxel-3954(X,'0'), not voxel-89(X,'0'), voxel-9(X,'0').
+bed(X,'1') :- not voxel-3077(X,'0'), voxel-61(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 3 #preds 9
+% foldrpp costs: 0:00:02.488455
+
+{'voxel-4569': '1', 'voxel-1615': '1', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '1', 'voxel-89': '1', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+[F]bed(X,'1') :- not [F]voxel-4569(X,'0'), not [F]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [F]voxel-3954(X,'0'), not [F]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [T]voxel-61(X,'0').
+{'voxel-4569': '1', 'voxel-1615': '1', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '1', 'voxel-89': '1', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1615 is '1' which should not equal '0' does hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '1' which should not equal '0' does hold and
+	the value of voxel-89 is '1' which should not equal '0' does hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should equal '0' does hold 
+
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '1', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '1', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+[F]bed(X,'1') :- not [F]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [F]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [T]voxel-3954(X,'0'), not [F]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [T]voxel-61(X,'0').
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '1', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '1', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '1' which should not equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '1' which should not equal '0' does hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should equal '0' does hold 
+
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+[F]bed(X,'1') :- not [F]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [T]voxel-61(X,'0').
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should equal '0' does hold 
+
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '1', 'voxel-3954': '0', 'voxel-89': '1', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]bed(X,'1') :- not [F]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [F]voxel-3473(X,'0'), not [T]voxel-3954(X,'0'), not [F]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '1', 'voxel-3954': '0', 'voxel-89': '1', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '1' which should not equal '0' does hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '1' which should not equal '0' does hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]bed(X,'1') :- not [F]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-4569': '0', 'voxel-1615': '1', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+[F]bed(X,'1') :- not [T]voxel-4569(X,'0'), not [F]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [T]voxel-61(X,'0').
+{'voxel-4569': '0', 'voxel-1615': '1', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '0'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1615 is '1' which should not equal '0' does hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '0' which should equal '0' does hold 
+
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]bed(X,'1') :- not [F]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-4569': '1', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '1' which should not equal '0' does hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-4569': '0', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]bed(X,'1') :- not [T]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [T]voxel-3954(X,'0'), not [T]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-4569': '0', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '0', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-4569': '0', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '1', 'voxel-89': '1', 'voxel-9': '1', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]bed(X,'1') :- not [T]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [F]voxel-3954(X,'0'), not [F]voxel-89(X,'0'), [F]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-4569': '0', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '1', 'voxel-89': '1', 'voxel-9': '1', 'voxel-3077': '0', 'voxel-61': '1'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '1' which should not equal '0' does hold and
+	the value of voxel-89 is '1' which should not equal '0' does hold and
+	the value of voxel-9 is '1' which should equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+{'voxel-4569': '0', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '1', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+[F]bed(X,'1') :- not [T]voxel-4569(X,'0'), not [T]voxel-1615(X,'0'), not [T]voxel-462(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3473(X,'0'), not [F]voxel-3954(X,'0'), not [T]voxel-89(X,'0'), [T]voxel-9(X,'0').
+[F]bed(X,'1') :- not [T]voxel-3077(X,'0'), [F]voxel-61(X,'0').
+{'voxel-4569': '0', 'voxel-1615': '0', 'voxel-462': '0', 'voxel-3473': '0', 'voxel-3954': '1', 'voxel-89': '0', 'voxel-9': '0', 'voxel-3077': '0', 'voxel-61': '1'}
+bed(X,'1') does not hold because
+	the value of voxel-4569 is '0' which should not equal '0' does not hold and
+	the value of voxel-1615 is '0' which should not equal '0' does not hold and
+	the value of voxel-462 is '0' which should not equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3473 is '0' which should not equal '0' does not hold and
+	the value of voxel-3954 is '1' which should not equal '0' does hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-9 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of voxel-3077 is '0' which should not equal '0' does not hold and
+	the value of voxel-61 is '1' which should equal '0' does not hold 
+
+% acc 1.0 p 0 r 0 f1 0

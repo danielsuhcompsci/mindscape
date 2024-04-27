@@ -1,0 +1,191 @@
+Beginning analysis on category book in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.237914
+
+book(X,'1') :- not voxel-556(X,'0'), not voxel-1410(X,'0').
+book(X,'1') :- not voxel-124(X,'0'), not voxel-4153(X,'0').
+book(X,'1') :- not voxel-1399(X,'0'), not voxel-341(X,'0'), not voxel-62(X,'0').
+% acc 0.917 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 7
+% foldrpp costs: 0:00:03.562942
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '1', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [F]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '1', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '1' which should not equal '0' does hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '1', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [F]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '1', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '1' which should not equal '0' does hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '1', 'voxel-62': '0'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [F]voxel-341(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '1', 'voxel-62': '0'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '1' which should not equal '0' does hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [F]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '1' which should not equal '0' does hold 
+
+{'voxel-556': '1', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+[F]book(X,'1') :- not [F]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [F]voxel-62(X,'0').
+{'voxel-556': '1', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '1' which should not equal '0' does hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '1' which should not equal '0' does hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '1', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [F]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [F]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '1', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '1' which should not equal '0' does hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '1' which should not equal '0' does hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [F]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '1'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '1' which should not equal '0' does hold 
+
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+[F]book(X,'1') :- not [T]voxel-556(X,'0'), not [T]voxel-1410(X,'0').
+[F]book(X,'1') :- not [T]voxel-124(X,'0'), not [T]voxel-4153(X,'0').
+[F]book(X,'1') :- not [T]voxel-1399(X,'0'), not [T]voxel-341(X,'0'), not [T]voxel-62(X,'0').
+{'voxel-556': '0', 'voxel-1410': '0', 'voxel-124': '0', 'voxel-4153': '0', 'voxel-1399': '0', 'voxel-341': '0', 'voxel-62': '0'}
+book(X,'1') does not hold because
+	the value of voxel-556 is '0' which should not equal '0' does not hold and
+	the value of voxel-1410 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-124 is '0' which should not equal '0' does not hold and
+	the value of voxel-4153 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of voxel-1399 is '0' which should not equal '0' does not hold and
+	the value of voxel-341 is '0' which should not equal '0' does not hold and
+	the value of voxel-62 is '0' which should not equal '0' does not hold 
+
+% acc 0.917 p 0.0 r 0.0 f1 0

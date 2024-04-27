@@ -1,0 +1,211 @@
+Beginning analysis on category scissors in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.204285
+
+scissors(X,'1') :- not voxel-3861(X,'0'), not voxel-1449(X,'0'), not voxel-89(X,'0'), not voxel-87(X,'0').
+scissors(X,'1') :- not voxel-4983(X,'0'), not voxel-75(X,'0').
+scissors(X,'1') :- not voxel-1689(X,'0'), not voxel-336(X,'0'), voxel-45(X,'0').
+% acc 0.95 p 0 r 0.0 f1 0
+% #rules 3 #preds 9
+% foldrpp costs: 0:00:02.203084
+
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [T]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [T]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '0' which should not equal '0' does not hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '1', 'voxel-75': '0', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '1'}
+[F]scissors(X,'1') :- not [T]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [T]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [F]voxel-4983(X,'0'), not [T]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [F]voxel-45(X,'0').
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '1', 'voxel-75': '0', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '1'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '0' which should not equal '0' does not hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '1' which should not equal '0' does hold and
+	the value of voxel-75 is '0' which should not equal '0' does not hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '1' which should equal '0' does not hold 
+
+{'voxel-3861': '1', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [F]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [F]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '1', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '1' which should not equal '0' does hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [T]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [T]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '0' which should not equal '0' does not hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [T]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [F]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '0' which should not equal '0' does not hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+{'voxel-3861': '1', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [F]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [F]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '1', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '1' which should not equal '0' does hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+{'voxel-3861': '1', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '1'}
+[F]scissors(X,'1') :- not [F]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [F]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [F]voxel-45(X,'0').
+{'voxel-3861': '1', 'voxel-1449': '0', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '1'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '1' which should not equal '0' does hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '1' which should equal '0' does not hold 
+
+{'voxel-3861': '0', 'voxel-1449': '1', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [T]voxel-3861(X,'0'), not [F]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [T]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '0', 'voxel-1449': '1', 'voxel-89': '0', 'voxel-87': '0', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '0' which should not equal '0' does not hold and
+	the value of voxel-1449 is '1' which should not equal '0' does hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '0' which should not equal '0' does not hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '1', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [T]voxel-3861(X,'0'), not [T]voxel-1449(X,'0'), not [F]voxel-89(X,'0'), not [F]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '0', 'voxel-1449': '0', 'voxel-89': '1', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '0' which should not equal '0' does not hold and
+	the value of voxel-1449 is '0' which should not equal '0' does not hold and
+	the value of voxel-89 is '1' which should not equal '0' does hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+{'voxel-3861': '0', 'voxel-1449': '1', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+[F]scissors(X,'1') :- not [T]voxel-3861(X,'0'), not [F]voxel-1449(X,'0'), not [T]voxel-89(X,'0'), not [F]voxel-87(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-4983(X,'0'), not [F]voxel-75(X,'0').
+[F]scissors(X,'1') :- not [T]voxel-1689(X,'0'), not [T]voxel-336(X,'0'), [T]voxel-45(X,'0').
+{'voxel-3861': '0', 'voxel-1449': '1', 'voxel-89': '0', 'voxel-87': '1', 'voxel-4983': '0', 'voxel-75': '1', 'voxel-1689': '0', 'voxel-336': '0', 'voxel-45': '0'}
+scissors(X,'1') does not hold because
+	the value of voxel-3861 is '0' which should not equal '0' does not hold and
+	the value of voxel-1449 is '1' which should not equal '0' does hold and
+	the value of voxel-89 is '0' which should not equal '0' does not hold and
+	the value of voxel-87 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-4983 is '0' which should not equal '0' does not hold and
+	the value of voxel-75 is '1' which should not equal '0' does hold 
+
+scissors(X,'1') does not hold because
+	the value of voxel-1689 is '0' which should not equal '0' does not hold and
+	the value of voxel-336 is '0' which should not equal '0' does not hold and
+	the value of voxel-45 is '0' which should equal '0' does hold 
+
+% acc 0.95 p 0 r 0.0 f1 0

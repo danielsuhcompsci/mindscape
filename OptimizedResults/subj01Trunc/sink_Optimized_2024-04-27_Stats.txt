@@ -1,0 +1,69 @@
+Beginning analysis on category sink in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.206944
+
+sink(X,'1') :- not voxel-4461(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 1 #preds 1
+% foldrpp costs: 0:00:00.741971
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+{'voxel-4461': '0'}
+[F]sink(X,'1') :- not [T]voxel-4461(X,'0').
+{'voxel-4461': '0'}
+sink(X,'1') does not hold because
+	the value of voxel-4461 is '0' which should not equal '0' does not hold 
+
+% acc 1.0 p 0 r 0 f1 0

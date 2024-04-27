@@ -1,0 +1,99 @@
+Beginning analysis on category hair drier in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.198602
+
+hair_drier(X,'1') :- not voxel-4706(X,'0'), not voxel-3688(X,'0'), not voxel-214(X,'0'), voxel-46(X,'0').
+% acc 1.0 p 0 r 0 f1 0
+% #rules 1 #preds 4
+% foldrpp costs: 0:00:00.922532
+
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '0', 'voxel-46': '1'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [F]voxel-3688(X,'0'), not [T]voxel-214(X,'0'), [F]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '0', 'voxel-46': '1'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '1' which should not equal '0' does hold and
+	the value of voxel-214 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '1' which should equal '0' does not hold 
+
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '0', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [F]voxel-3688(X,'0'), not [T]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '0', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '1' which should not equal '0' does hold and
+	the value of voxel-214 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '1', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [F]voxel-3688(X,'0'), not [F]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '1', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '1' which should not equal '0' does hold and
+	the value of voxel-214 is '1' which should not equal '0' does hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '1', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [T]voxel-3688(X,'0'), not [F]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '1', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '0' which should not equal '0' does not hold and
+	the value of voxel-214 is '1' which should not equal '0' does hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [T]voxel-3688(X,'0'), not [T]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '0' which should not equal '0' does not hold and
+	the value of voxel-214 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [T]voxel-3688(X,'0'), not [T]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '0' which should not equal '0' does not hold and
+	the value of voxel-214 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '1', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [F]voxel-3688(X,'0'), not [F]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '1', 'voxel-214': '1', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '1' which should not equal '0' does hold and
+	the value of voxel-214 is '1' which should not equal '0' does hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '1', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [T]voxel-3688(X,'0'), not [F]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '1', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '0' which should not equal '0' does not hold and
+	the value of voxel-214 is '1' which should not equal '0' does hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [T]voxel-3688(X,'0'), not [T]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '0' which should not equal '0' does not hold and
+	the value of voxel-214 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+[F]hair_drier(X,'1') :- not [T]voxel-4706(X,'0'), not [T]voxel-3688(X,'0'), not [T]voxel-214(X,'0'), [T]voxel-46(X,'0').
+{'voxel-4706': '0', 'voxel-3688': '0', 'voxel-214': '0', 'voxel-46': '0'}
+hair_drier(X,'1') does not hold because
+	the value of voxel-4706 is '0' which should not equal '0' does not hold and
+	the value of voxel-3688 is '0' which should not equal '0' does not hold and
+	the value of voxel-214 is '0' which should not equal '0' does not hold and
+	the value of voxel-46 is '0' which should equal '0' does hold 
+
+% acc 1.0 p 0 r 0 f1 0
