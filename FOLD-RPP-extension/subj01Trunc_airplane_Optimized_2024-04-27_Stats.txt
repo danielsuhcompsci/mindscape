@@ -1,0 +1,232 @@
+Beginning analysis on category airplane in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.190267
+
+airplane(X,'1') :- voxel-829(X,'1'), not voxel-1868(X,'1').
+airplane(X,'1') :- voxel-2700(X,'1'), voxel-1099(X,'1').
+airplane(X,'1') :- voxel-1853(X,'1'), voxel-1190(X,'1').
+airplane(X,'1') :- voxel-4548(X,'1'), not voxel-25(X,'1').
+% acc 0.883 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 8
+% foldrpp costs: 0:00:02.208538
+
+{'voxel-829': '0', 'voxel-1868': '0', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [F]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [F]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [F]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '0', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '0' which should not equal '1' does hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '0' which should equal '1' does not hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [F]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [T]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '1' which should equal '1' does hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+{'voxel-829': '1', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '1'}
+[F]airplane(X,'1') :- [T]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [F]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [T]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [T]voxel-25(X,'1').
+{'voxel-829': '1', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '1'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '1' which should equal '1' does hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '1' which should equal '1' does hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '1' which should not equal '1' does not hold 
+
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '1', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [T]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [F]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '1', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '1' which should equal '1' does hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '0' which should equal '1' does not hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '1', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [T]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [F]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '1', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '1' which should equal '1' does hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '0' which should equal '1' does not hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [F]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [T]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '1' which should equal '1' does hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '1'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [F]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [F]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [T]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '1'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '0' which should equal '1' does not hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '1' which should not equal '1' does not hold 
+
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [F]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [T]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '1', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '1' which should equal '1' does hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '1', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [T]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [T]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [F]voxel-1853(X,'1'), [F]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '1', 'voxel-2700': '0', 'voxel-1099': '1', 'voxel-1853': '0', 'voxel-1190': '0', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '1' which should not equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '1' which should equal '1' does hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '0' which should equal '1' does not hold and
+	the value of voxel-1190 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+{'voxel-829': '0', 'voxel-1868': '0', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '0', 'voxel-1190': '1', 'voxel-4548': '0', 'voxel-25': '0'}
+[F]airplane(X,'1') :- [F]voxel-829(X,'1'), not [F]voxel-1868(X,'1').
+[F]airplane(X,'1') :- [F]voxel-2700(X,'1'), [F]voxel-1099(X,'1').
+[F]airplane(X,'1') :- [F]voxel-1853(X,'1'), [T]voxel-1190(X,'1').
+[F]airplane(X,'1') :- [F]voxel-4548(X,'1'), not [F]voxel-25(X,'1').
+{'voxel-829': '0', 'voxel-1868': '0', 'voxel-2700': '0', 'voxel-1099': '0', 'voxel-1853': '0', 'voxel-1190': '1', 'voxel-4548': '0', 'voxel-25': '0'}
+airplane(X,'1') does not hold because
+	the value of voxel-829 is '0' which should equal '1' does not hold and
+	the value of voxel-1868 is '0' which should not equal '1' does hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-2700 is '0' which should equal '1' does not hold and
+	the value of voxel-1099 is '0' which should equal '1' does not hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-1853 is '0' which should equal '1' does not hold and
+	the value of voxel-1190 is '1' which should equal '1' does hold 
+
+airplane(X,'1') does not hold because
+	the value of voxel-4548 is '0' which should equal '1' does not hold and
+	the value of voxel-25 is '0' which should not equal '1' does hold 
+
+% acc 0.883 p 0.0 r 0.0 f1 0

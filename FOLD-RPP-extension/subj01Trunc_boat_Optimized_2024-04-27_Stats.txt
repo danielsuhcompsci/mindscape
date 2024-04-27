@@ -1,0 +1,231 @@
+Beginning analysis on category boat in file ../FOLDdata/subj01Trunc.csv
+% load data costs: 0:00:00.194156
+
+boat(X,'1') :- voxel-3412(X,'1'), voxel-191(X,'1').
+boat(X,'1') :- not voxel-2066(X,'1'), voxel-1400(X,'1'), voxel-1507(X,'1'), voxel-138(X,'1').
+boat(X,'1') :- not voxel-2066(X,'1'), voxel-2096(X,'1'), voxel-247(X,'1'), not voxel-2052(X,'1'), not voxel-89(X,'1').
+% acc 0.933 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 11
+% foldrpp costs: 0:00:02.401651
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '0', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '0'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [F]voxel-2066(X,'1'), [F]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [F]voxel-138(X,'1').
+[F]boat(X,'1') :- not [F]voxel-2066(X,'1'), [T]voxel-2096(X,'1'), [F]voxel-247(X,'1'), not [F]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '0', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '0' which should not equal '1' does hold and
+	the value of voxel-1400 is '0' which should equal '1' does not hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '0' which should not equal '1' does hold and
+	the value of voxel-2096 is '1' which should equal '1' does hold and
+	the value of voxel-247 is '0' which should equal '1' does not hold and
+	the value of voxel-2052 is '0' which should not equal '1' does hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '1', 'voxel-2096': '1', 'voxel-247': '1', 'voxel-2052': '0', 'voxel-89': '0'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [T]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-2096(X,'1'), [T]voxel-247(X,'1'), not [F]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '1', 'voxel-2096': '1', 'voxel-247': '1', 'voxel-2052': '0', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '1' which should equal '1' does hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '1' which should equal '1' does hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '1' which should equal '1' does hold and
+	the value of voxel-247 is '1' which should equal '1' does hold and
+	the value of voxel-2052 is '0' which should not equal '1' does hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '1', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '1'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [T]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-2096(X,'1'), [F]voxel-247(X,'1'), not [F]voxel-2052(X,'1'), not [T]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '1', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '1'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '0' which should equal '1' does not hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '1' which should equal '1' does hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '0' which should equal '1' does not hold and
+	the value of voxel-247 is '0' which should equal '1' does not hold and
+	the value of voxel-2052 is '0' which should not equal '1' does hold and
+	the value of voxel-89 is '1' which should not equal '1' does not hold 
+
+{'voxel-3412': '1', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '1', 'voxel-89': '0'}
+[F]boat(X,'1') :- [T]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [F]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-2096(X,'1'), [F]voxel-247(X,'1'), not [T]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '1', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '1', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '1' which should equal '1' does hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '1' which should equal '1' does hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '0' which should equal '1' does not hold and
+	the value of voxel-247 is '0' which should equal '1' does not hold and
+	the value of voxel-2052 is '1' which should not equal '1' does not hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '0'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [F]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-2096(X,'1'), [F]voxel-247(X,'1'), not [F]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '0' which should equal '1' does not hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '0' which should equal '1' does not hold and
+	the value of voxel-247 is '0' which should equal '1' does not hold and
+	the value of voxel-2052 is '0' which should not equal '1' does hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '1', 'voxel-2052': '0', 'voxel-89': '0'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [F]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-2096(X,'1'), [T]voxel-247(X,'1'), not [F]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '1', 'voxel-2052': '0', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '0' which should equal '1' does not hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '1' which should equal '1' does hold and
+	the value of voxel-247 is '1' which should equal '1' does hold and
+	the value of voxel-2052 is '0' which should not equal '1' does hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '1', 'voxel-138': '1', 'voxel-2096': '0', 'voxel-247': '1', 'voxel-2052': '1', 'voxel-89': '0'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-1400(X,'1'), [T]voxel-1507(X,'1'), [T]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-2096(X,'1'), [T]voxel-247(X,'1'), not [T]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '1', 'voxel-138': '1', 'voxel-2096': '0', 'voxel-247': '1', 'voxel-2052': '1', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '1' which should equal '1' does hold and
+	the value of voxel-1507 is '1' which should equal '1' does hold and
+	the value of voxel-138 is '1' which should equal '1' does hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '0' which should equal '1' does not hold and
+	the value of voxel-247 is '1' which should equal '1' does hold and
+	the value of voxel-2052 is '1' which should not equal '1' does not hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+{'voxel-3412': '1', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '0', 'voxel-2052': '1', 'voxel-89': '1'}
+[F]boat(X,'1') :- [T]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [F]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-2096(X,'1'), [F]voxel-247(X,'1'), not [T]voxel-2052(X,'1'), not [T]voxel-89(X,'1').
+{'voxel-3412': '1', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '0', 'voxel-2052': '1', 'voxel-89': '1'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '1' which should equal '1' does hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '1' which should equal '1' does hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '1' which should equal '1' does hold and
+	the value of voxel-247 is '0' which should equal '1' does not hold and
+	the value of voxel-2052 is '1' which should not equal '1' does not hold and
+	the value of voxel-89 is '1' which should not equal '1' does not hold 
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '1', 'voxel-2052': '0', 'voxel-89': '0'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [F]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-2096(X,'1'), [T]voxel-247(X,'1'), not [F]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '0', 'voxel-1507': '0', 'voxel-138': '0', 'voxel-2096': '1', 'voxel-247': '1', 'voxel-2052': '0', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '0' which should equal '1' does not hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '1' which should equal '1' does hold and
+	the value of voxel-247 is '1' which should equal '1' does hold and
+	the value of voxel-2052 is '0' which should not equal '1' does hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '1', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '0'}
+[F]boat(X,'1') :- [F]voxel-3412(X,'1'), [F]voxel-191(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [T]voxel-1400(X,'1'), [F]voxel-1507(X,'1'), [T]voxel-138(X,'1').
+[F]boat(X,'1') :- not [T]voxel-2066(X,'1'), [F]voxel-2096(X,'1'), [F]voxel-247(X,'1'), not [F]voxel-2052(X,'1'), not [F]voxel-89(X,'1').
+{'voxel-3412': '0', 'voxel-191': '0', 'voxel-2066': '1', 'voxel-1400': '1', 'voxel-1507': '0', 'voxel-138': '1', 'voxel-2096': '0', 'voxel-247': '0', 'voxel-2052': '0', 'voxel-89': '0'}
+boat(X,'1') does not hold because
+	the value of voxel-3412 is '0' which should equal '1' does not hold and
+	the value of voxel-191 is '0' which should equal '1' does not hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-1400 is '1' which should equal '1' does hold and
+	the value of voxel-1507 is '0' which should equal '1' does not hold and
+	the value of voxel-138 is '1' which should equal '1' does hold 
+
+boat(X,'1') does not hold because
+	the value of voxel-2066 is '1' which should not equal '1' does not hold and
+	the value of voxel-2096 is '0' which should equal '1' does not hold and
+	the value of voxel-247 is '0' which should equal '1' does not hold and
+	the value of voxel-2052 is '0' which should not equal '1' does hold and
+	the value of voxel-89 is '0' which should not equal '1' does hold 
+
+% acc 0.933 p 0.0 r 0.0 f1 0

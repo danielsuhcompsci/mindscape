@@ -25,12 +25,17 @@ def main():
                   "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
                   "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush", "x-coord", "y-coord"]
     # csvs = ['../FOLDdata/subj01New-500.csv']
-    csvs = ['../FOLDdata/subj01Modified.csv']
+    csvs = ['../FOLDdata/subj01Trunc.csv', '../FOLDdata/subj01Modified.csv']
     for filename in csvs:
         columns = get_attrs(filename, categories)
         for category in categories:
             if profile:
                 profiler = cProfile.Profile()
+
+            chrono = str(datetime.datetime.today())[:10]
+            savefilename = (filename.split('/')[-1].removesuffix('.csv')) + '_' + category + '_Optimized_' + chrono
+            statsFileName = savefilename + '_Stats.txt'
+            savefilename += '.txt'
             statsString = f"Beginning analysis on category {category} in file {filename}"
             print(f"Beginning analysis on category {category} in file {filename}")
             load_start = timer()
@@ -69,7 +74,7 @@ def main():
             print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
 
             n_rules, n_preds = len(model.flat_rules), num_predicates(model.flat_rules)
-            statsString += '\n% #rules ' + n_rules + ' #preds ' + n_preds
+            statsString += '\n% #rules ' + str(n_rules) + ' #preds ' + str(n_preds)
             print('% #rules', n_rules, '#preds', n_preds)
             statsString += '\n% foldrpp costs: ' + str(timedelta(seconds=end - start)) + '\n'
             print('% foldrpp costs: ', timedelta(seconds=end - start), '\n')
@@ -83,9 +88,8 @@ def main():
                     print(r)
 
             from foldrpp import save_model_to_file, load_model_from_file
-            chrono = datetime.UTC
-            save_model_to_file(chrono + model + category + 'Optimized.txt')
-            saved_model = load_model_from_file(chrono + model + category + 'Optimized.txt')
+            save_model_to_file(model, savefilename)
+            saved_model = load_model_from_file(savefilename)
 
             ys_test_hat = saved_model.predict(data_test)
             ys_test = [x['label'] for x in data_test]
@@ -93,7 +97,6 @@ def main():
             statsString += '\n' + '% acc ' + str(round(acc, 3)) + ' p ' + str(round(p, 3)) + ' r ' + str(round(r, 3)) + ' f1 ' + str(round(f1, 3))
             print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
 
-            statsFileName = (filename.split('/')[-1]) + category + 'stats.txt'
             statsFile = open(statsFileName, mode='w')
             statsFile.write(statsString)
             statsFile.flush()
@@ -108,6 +111,5 @@ def main():
             if profile:
                 pstats.Stats(profiler).dump_stats('profile_data.prof')
 
-            break
 if __name__ == '__main__':
     main()
