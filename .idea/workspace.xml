@@ -5,27 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="416ab2a0-d826-477b-94b3-1890688e4ba9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/profile_data.prof" beforeDir="false" afterPath="$PROJECT_DIR$/FOLD-RPP-extension/profile_data.prof" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_airplane_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_airplane_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_bicycle_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_bicycle_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_boat_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_boat_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_bus_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_bus_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_car_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_car_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_motorcycle_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_motorcycle_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_person_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_person_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_train_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_train_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_truck_Optimized_2024-04-27.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FOLD-RPP-extension/subj01Trunc_truck_Optimized_2024-04-27_Stats.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

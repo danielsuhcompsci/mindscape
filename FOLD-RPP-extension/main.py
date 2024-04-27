@@ -24,9 +24,10 @@ def main():
                   "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut",
                   "cake", "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
                   "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
-                  "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush", "x-coord", "y-coord"]
+                  "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
     # csvs = ['../FOLDdata/subj01New-500.csv']
-    csvs = ['../FOLDdata/subj01Trunc.csv', '../FOLDdata/subj01Modified.csv']
+    categories.reverse()
+    csvs = ['../FOLDdata/subj01Modified.csv']
     for filename in csvs:
         csvName = (filename.split('/')[-1].removesuffix('.csv'))
         if not os.path.exists("../OptimizedResults/" + csvName + "/"):
