@@ -2,7 +2,7 @@ import os.path
 import numpy as np
 from foldrpp import Foldrpp
 
-def brainVoxels(category, sourceDir, numVoxels, debugFlag): #"category" should hold the COCO category the data of which is being analyzed. sourceDir should hold the path to the directory containing the FOLDdata folder.
+def brainVoxels(category, sourceDir, numVoxels, debugFlag, truncate=None): #"category" should hold the COCO category the data of which is being analyzed. sourceDir should hold the path to the directory containing the FOLDdata folder.
     str_attrs = []
     # for index in range(1, numVoxels+1):
     #     str_attrs.append(f'voxel-{index}')
@@ -13,7 +13,7 @@ def brainVoxels(category, sourceDir, numVoxels, debugFlag): #"category" should h
     # num_attrs = ['x-coord', 'y-coord']
     num_attrs = []
     model = Foldrpp(str_attrs, num_attrs, label=category, pos_val='1')
-    data = model.load_data_new(sourceDir, debugFlag=debugFlag)
+    data = model.load_data_new(sourceDir, debugFlag=debugFlag, truncate=truncate)
     # if(debugFlag):
         # print(data)#for debugging
     return model, data
