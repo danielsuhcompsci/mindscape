@@ -3,8 +3,13 @@ from datasets import *
 from brainDataset import brainVoxels
 from timeit import default_timer as timer
 from datetime import timedelta
-import pstats
-import cProfile
+
+profile = True
+
+if profile:
+    import pstats
+    import cProfile
+
 
 def main():
     # categories = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat",
@@ -19,12 +24,15 @@ def main():
     categories = [  "microwave", "oven", "toaster", "sink", "refrigerator", "book",
                   "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
     for category in categories:
-        profiler = cProfile.Profile()
+        if profile:
+            profiler = cProfile.Profile()
         print(f"Beginning analysis on category {category}")
         load_start = timer()
-        profiler.enable()
+        if profile:
+            profiler.enable()
         model, data = brainVoxels(category, '../FOLDdata/subj01New-500.csv', 5277, True)
-        profiler.disable()
+        if profile:    
+            profiler.disable()
         load_end = timer()
         print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')
 
@@ -32,9 +40,11 @@ def main():
 
         start = timer()
         with binary_only():
-            profiler.enable()
+            if profile:
+                profiler.enable()
             model.fit(data_train)
-            profiler.disable()
+            if profile:
+                profiler.disable()
         end = timer()
 
         for r in model.asp():
@@ -69,7 +79,8 @@ def main():
             #     for r in saved_model.proof_trees(x):
             #         print(r)
 
-        pstats.Stats(profiler).dump_stats('profile_data.prof')
+        if profile:
+            pstats.Stats(profiler).dump_stats('profile_data.prof')
 
         break
 if __name__ == '__main__':

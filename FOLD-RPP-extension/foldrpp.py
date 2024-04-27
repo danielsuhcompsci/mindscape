@@ -69,14 +69,11 @@ def ken_load(file_name, label):
                     headers[hdx] = header.lower().replace(' ', '_')
                     if headers[hdx] == label:
                         ldx = hdx
-                headers = [h.lower().replace(' ', '_') for h in headers]
                 
                 row_size = len(headers)
             else:
                 line_dict = {headers[i]: line[2*i] for i in range(line_range_start, row_size)}
                 line_dict['label'] = 1 if line[2*ldx] == "1" else 0
-                # print(line_dict)
-                # input()
                 ret.append(line_dict)
     return ret
 
@@ -272,7 +269,10 @@ def best_item_on_attr(data, pos_idx, neg_idx, attr, used_items):
     for i in pos_idx:
 
         #get value of attribute assoc with this index
-        attr_val = data[i][attr] if attr in data[i] else ''
+        if only_binary:
+            attr_val = data[i][attr]
+        else:
+            attr_val = data[i][attr] if attr in data[i] else ''
         if attr_val not in pos_cnt:
             pos_cnt[attr_val], neg_cnt[attr_val] = 0, 0
         pos_cnt[attr_val] += 1.0
@@ -287,14 +287,14 @@ def best_item_on_attr(data, pos_idx, neg_idx, attr, used_items):
                     zero_seen = True
             else:
                 raise ValueError(f'Non 0/1 value "{attr_val}" found in binary mode!')
-            str_pos += 1.0
+            str_pos += 1
         else:
             if isinstance(attr_val, str):
                 strs.add(attr_val)
-                str_pos += 1.0
+                str_pos += 1
             else:
                 nums.add(attr_val)
-                num_pos += 1.0
+                num_pos += 1
             
     # noinspection DuplicatedCode
     for i in neg_idx:
@@ -313,14 +313,14 @@ def best_item_on_attr(data, pos_idx, neg_idx, attr, used_items):
                     zero_seen = True
             else:
                 raise ValueError(f'Non 0/1 value "{attr_val}" found in binary mode!')
-            str_neg += 1.0
+            str_neg += 1
         else:
             if isinstance(attr_val, str):
                 strs.add(attr_val)
-                str_neg += 1.0
+                str_neg += 1
             else:
                 nums.add(attr_val)
-                num_neg += 1.0
+                num_neg += 1
     nums = sorted(list(nums))
     for i in range(1, len(nums)):
         pos_cnt[nums[i]] += pos_cnt[nums[i - 1]]
