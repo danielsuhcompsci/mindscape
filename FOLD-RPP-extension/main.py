@@ -53,8 +53,8 @@ def main():
                 print(r)
 
         from foldrpp import save_model_to_file, load_model_from_file
-        save_model_to_file(model, category+'Full.txt')
-        saved_model = load_model_from_file(category+'Full.txt')
+        save_model_to_file(model, category+'Full-ROIs.txt')
+        saved_model = load_model_from_file(category+'Full-ROIs.txt')
 
         ys_test_hat = saved_model.predict(data_test)
         ys_test = [x['label'] for x in data_test]
