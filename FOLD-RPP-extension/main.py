@@ -1,8 +1,11 @@
+import datetime
+
 from foldrpp import split_data, get_scores, num_predicates, binary_only
 from datasets import *
 from brainDataset import brainVoxels
 from timeit import default_timer as timer
 from datetime import timedelta
+from brainDataset import get_attrs
 
 profile = True
 
@@ -12,66 +15,69 @@ if profile:
 
 
 def main():
-    # categories = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat",
-    #               "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse",
-    #               "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie",
-    #               "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove",
-    #               "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon",
-    #               "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut",
-    #               "cake", "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
-    #               "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
-    #               "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush", "x-coord", "y-coord"]
-    categories = [  "microwave", "oven", "toaster", "sink", "refrigerator", "book",
-                  "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"]
-    for category in categories:
-        if profile:
-            profiler = cProfile.Profile()
-        print(f"Beginning analysis on category {category}")
-        load_start = timer()
-        if profile:
-            profiler.enable()
-        model, data = brainVoxels(category, '../FOLDdata/subj01New-500.csv', 5277, True)
-        if profile:    
-            profiler.disable()
-        load_end = timer()
-        print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')
-
-        data_train, data_test = split_data(data, ratio=0.8, rand=True)
-
-        start = timer()
-        with binary_only():
+    categories = ["person", "bicycle", "car", "motorcycle", "airplane", "bus", "train", "truck", "boat",
+                  "traffic light", "fire hydrant", "stop sign", "parking meter", "bench", "bird", "cat", "dog", "horse",
+                  "sheep", "cow", "elephant", "bear", "zebra", "giraffe", "backpack", "umbrella", "handbag", "tie",
+                  "suitcase", "frisbee", "skis", "snowboard", "sports ball", "kite", "baseball bat", "baseball glove",
+                  "skateboard", "surfboard", "tennis racket", "bottle", "wine glass", "cup", "fork", "knife", "spoon",
+                  "bowl", "banana", "apple", "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut",
+                  "cake", "chair", "couch", "potted plant", "bed", "dining table", "toilet", "tv", "laptop", "mouse",
+                  "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator", "book",
+                  "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush", "x-coord", "y-coord"]
+    # csvs = ['../FOLDdata/subj01New-500.csv']
+    csvs = ['../FOLDdata/subj01Modified.csv']
+    for filename in csvs:
+        columns = get_attrs(filename, categories)
+        for category in categories:
+            if profile:
+                profiler = cProfile.Profile()
+            print(f"Beginning analysis on category {category} in file {filename}")
+            load_start = timer()
             if profile:
                 profiler.enable()
-            model.fit(data_train)
+            model, data = brainVoxels(category, filename, columns)
             if profile:
                 profiler.disable()
-        end = timer()
+            load_end = timer()
+            print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')
 
-        for r in model.asp():
-            print(r)
+            data_train, data_test = split_data(data, ratio=0.8, rand=True)
 
-        ys_test_hat = model.predict(data_test)
-        ys_test = [x['label'] for x in data_test]
-        acc, p, r, f1 = get_scores(ys_test_hat, ys_test)
-        print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
-        n_rules, n_preds = len(model.flat_rules), num_predicates(model.flat_rules)
-        print('% #rules', n_rules, '#preds', n_preds)
-        print('% foldrpp costs: ', timedelta(seconds=end - start), '\n')
+            start = timer()
+            with binary_only():
+                if profile:
+                    profiler.enable()
+                model.fit(data_train)
+                if profile:
+                    profiler.disable()
+            end = timer()
 
-        for x in data_test[:10]:
-            for r in model.proof_rules(x):
-                print(r)
-            for r in model.proof_trees(x):
+            for r in model.asp():
                 print(r)
 
-        from foldrpp import save_model_to_file, load_model_from_file
-        save_model_to_file(model, category+'Full.txt')
-        saved_model = load_model_from_file(category+'Full.txt')
+            ys_test_hat = model.predict(data_test)
+            ys_test = [x['label'] for x in data_test]
+            acc, p, r, f1 = get_scores(ys_test_hat, ys_test)
+            print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
+            n_rules, n_preds = len(model.flat_rules), num_predicates(model.flat_rules)
+            print('% #rules', n_rules, '#preds', n_preds)
+            print('% foldrpp costs: ', timedelta(seconds=end - start), '\n')
 
-        ys_test_hat = saved_model.predict(data_test)
-        ys_test = [x['label'] for x in data_test]
-        acc, p, r, f1 = get_scores(ys_test_hat, ys_test)
-        print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
+            for x in data_test[:10]:
+                for r in model.proof_rules(x):
+                    print(r)
+                for r in model.proof_trees(x):
+                    print(r)
+
+            from foldrpp import save_model_to_file, load_model_from_file
+            chrono = datetime.UTC
+            save_model_to_file(chrono + model + category + 'Optimized.txt')
+            saved_model = load_model_from_file(chrono + model + category + 'Optimized.txt')
+
+            ys_test_hat = saved_model.predict(data_test)
+            ys_test = [x['label'] for x in data_test]
+            acc, p, r, f1 = get_scores(ys_test_hat, ys_test)
+            print('% acc', round(acc, 3), 'p', round(p, 3), 'r', round(r, 3), 'f1', round(f1, 3))
 
             # for x in data_test[:10]:
             #     for r in saved_model.proof_rules(x):
@@ -79,9 +85,9 @@ def main():
             #     for r in saved_model.proof_trees(x):
             #         print(r)
 
-        if profile:
-            pstats.Stats(profiler).dump_stats('profile_data.prof')
+            if profile:
+                pstats.Stats(profiler).dump_stats('profile_data.prof')
 
-        break
+            break
 if __name__ == '__main__':
     main()
