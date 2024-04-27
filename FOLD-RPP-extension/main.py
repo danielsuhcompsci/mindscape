@@ -25,7 +25,7 @@ def main():
     for category in categories:
         print(f"Beginning analysis on category {category}")
         load_start = timer()
-        model, data = brainVoxels(category, '..\FOLDdata\subj01.csv', 5277, False)
+        model, data = brainVoxels(category, '..\FOLDdata\subj01Modified.csv', 5277, False)
         load_end = timer()
         print('% load data costs: ', timedelta(seconds=load_end - load_start), '\n')
 
