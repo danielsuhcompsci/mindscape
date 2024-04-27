@@ -1,0 +1,322 @@
+Beginning analysis on category toothbrush in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:27.123038
+
+toothbrush(X,'1') :- not ffa_2-121(X,'0'), not ffa_2-237(X,'0'), not ffa_2-241(X,'0'), not ffa_1-360(X,'0'), v1v-68(X,'0').
+toothbrush(X,'1') :- not v1d-72(X,'0'), not ffa_2-122(X,'0'), not v2v-453(X,'0').
+toothbrush(X,'1') :- not v1d-72(X,'0'), not v1d-141(X,'0'), not ofa-146(X,'0'), not v2v-87(X,'0'), not v1v-38(X,'0').
+toothbrush(X,'1') :- not v1d-72(X,'0'), not v1d-141(X,'0'), not ffa_1-371(X,'0'), not v1v-473(X,'0').
+% acc 0.99 p 0.333 r 0.018 f1 0.033
+% #rules 4 #preds 17
+% foldrpp costs: 0:18:25.091262
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [T]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '0' which should equal '0' does hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '1', 'ffa_2-237': '1', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [F]ffa_2-121(X,'0'), not [F]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [T]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '1', 'ffa_2-237': '1', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '1' which should not equal '0' does hold and
+	the value of ffa_2-237 is '1' which should not equal '0' does hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '0' which should equal '0' does hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '1', 'v1v-68': '1', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [F]ffa_1-360(X,'0'), [F]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '1', 'v1v-68': '1', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '1' which should not equal '0' does hold and
+	the value of v1v-68 is '1' which should equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '0', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '1'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [T]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [F]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '0', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '1'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '0' which should equal '0' does hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '1' which should not equal '0' does hold 
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '1', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '0', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [F]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [T]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '1', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '0', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '1' which should not equal '0' does hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '0' which should equal '0' does hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '1', 'ffa_2-237': '1', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '0', 'ffa_2-122': '1', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '1', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [F]ffa_2-121(X,'0'), not [F]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [T]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [F]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [F]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '1', 'ffa_2-237': '1', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '0', 'ffa_2-122': '1', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '1', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '1' which should not equal '0' does hold and
+	the value of ffa_2-237 is '1' which should not equal '0' does hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '0' which should equal '0' does hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '1' which should not equal '0' does hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '1' which should not equal '0' does hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '1', 'v1d-72': '0', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [F]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [T]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '1', 'v1d-72': '0', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '1' which should equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '1', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [F]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '1', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '1' which should equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [T]ffa_1-360(X,'0'), [T]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [F]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '0', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '1', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '0' which should not equal '0' does not hold and
+	the value of v1v-68 is '0' which should equal '0' does hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '1', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+[F]toothbrush(X,'1') :- not [T]ffa_2-121(X,'0'), not [T]ffa_2-237(X,'0'), not [T]ffa_2-241(X,'0'), not [F]ffa_1-360(X,'0'), [T]v1v-68(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]ffa_2-122(X,'0'), not [T]v2v-453(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ofa-146(X,'0'), not [T]v2v-87(X,'0'), not [T]v1v-38(X,'0').
+[F]toothbrush(X,'1') :- not [F]v1d-72(X,'0'), not [T]v1d-141(X,'0'), not [T]ffa_1-371(X,'0'), not [T]v1v-473(X,'0').
+{'ffa_2-121': '0', 'ffa_2-237': '0', 'ffa_2-241': '0', 'ffa_1-360': '1', 'v1v-68': '0', 'v1d-72': '1', 'ffa_2-122': '0', 'v2v-453': '0', 'v1d-141': '0', 'ofa-146': '0', 'v2v-87': '0', 'v1v-38': '0', 'ffa_1-371': '0', 'v1v-473': '0'}
+toothbrush(X,'1') does not hold because
+	the value of ffa_2-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-237 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-241 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-360 is '1' which should not equal '0' does hold and
+	the value of v1v-68 is '0' which should equal '0' does hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold and
+	the value of v2v-453 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v2v-87 is '0' which should not equal '0' does not hold and
+	the value of v1v-38 is '0' which should not equal '0' does not hold 
+
+toothbrush(X,'1') does not hold because
+	the value of v1d-72 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-371 is '0' which should not equal '0' does not hold and
+	the value of v1v-473 is '0' which should not equal '0' does not hold 
+
+% acc 0.99 p 0.333 r 0.018 f1 0.033
