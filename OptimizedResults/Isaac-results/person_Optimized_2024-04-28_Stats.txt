@@ -1,0 +1,147 @@
+Beginning analysis on category person in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:34.479075
+
+person(X,'1') :- not ffa_2-151(X,'0'), not ab8(X,'True'), not ab11(X,'True'), not ab12(X,'True').
+ab1(X,'True') :- v1d-120(X,'0'), atl_faces-10(X,'0'), not v1d-509(X,'0').
+ab2(X,'True') :- not v2v-198(X,'0'), not v2v-580(X,'0').
+ab3(X,'True') :- not v2v-827(X,'0'), not ffa_2-31(X,'0'), v1v-24(X,'0').
+ab4(X,'True') :- v2v-651(X,'0'), v1v-85(X,'0').
+ab5(X,'True') :- not v2v-653(X,'0'), v1v-86(X,'0'), not ab4(X,'True').
+ab6(X,'True') :- not v1d-619(X,'0'), not v2v-603(X,'0').
+ab7(X,'True') :- not v1v-24(X,'0'), v1d-367(X,'0').
+ab8(X,'True') :- ffa_2-155(X,'0'), not ffa_1-454(X,'0'), ffa_2-227(X,'0'), ffa_1-383(X,'0'), v1v-61(X,'0'), ffa_2-126(X,'0'), ffa_2-22(X,'0'), v1d-99(X,'0'), not ab1(X,'True'), not ab2(X,'True'), not ab3(X,'True'), not ab5(X,'True'), not ab6(X,'True'), not ab7(X,'True').
+ab9(X,'True') :- not v1v-102(X,'0'), not v1v-24(X,'0').
+ab10(X,'True') :- not v1v-212(X,'0'), v1v-62(X,'0').
+ab11(X,'True') :- ffa_2-155(X,'0'), not ffa_1-454(X,'0'), not v3d-261(X,'0'), not ffa_1-282(X,'0'), not ffa_2-85(X,'0'), not ab9(X,'True'), not ab10(X,'True').
+ab12(X,'True') :- not ffa_2-160(X,'0'), ffa_1-454(X,'0'), not v2d-140(X,'0').
+% acc 0.603 p 0.742 r 0.328 f1 0.454
+% #rules 13 #preds 37
+% foldrpp costs: 0:06:24.182628
+
+{'ffa_2-151': '1', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '1', 'ffa_1-454': '1', 'ffa_2-227': '1', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '1', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '1', 'v2d-140': '0'}
+[F]ab8(X,'True') :- [F]ffa_2-155(X,'0'), not [F]ffa_1-454(X,'0'), [F]ffa_2-227(X,'0'), [T]ffa_1-383(X,'0'), [F]v1v-61(X,'0'), [T]ffa_2-126(X,'0'), [F]ffa_2-22(X,'0'), [T]v1d-99(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True'), not [U]ab5(X,'True'), not [U]ab6(X,'True'), not [U]ab7(X,'True').
+[F]ab11(X,'True') :- [F]ffa_2-155(X,'0'), not [F]ffa_1-454(X,'0'), not [T]v3d-261(X,'0'), not [T]ffa_1-282(X,'0'), not [T]ffa_2-85(X,'0'), not [U]ab9(X,'True'), not [U]ab10(X,'True').
+[F]ab12(X,'True') :- not [F]ffa_2-160(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-140(X,'0').
+[T]person(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ab8(X,'True'), not [F]ab11(X,'True'), not [F]ab12(X,'True').
+{'ffa_2-151': '1', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '1', 'ffa_1-454': '1', 'ffa_2-227': '1', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '1', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '1', 'v2d-140': '0'}
+person(X,'1') does hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold 
+	exception ab8(X,'True') does not hold because
+		the value of ffa_2-155 is '1' which should equal '0' does not hold and
+		the value of ffa_1-454 is '1' which should not equal '0' does hold and
+		the value of ffa_2-227 is '1' which should equal '0' does not hold and
+		the value of ffa_1-383 is '0' which should equal '0' does hold and
+		the value of v1v-61 is '1' which should equal '0' does not hold and
+		the value of ffa_2-126 is '0' which should equal '0' does hold and
+		the value of ffa_2-22 is '1' which should equal '0' does not hold and
+		the value of v1d-99 is '0' which should equal '0' does hold 
+	exception ab11(X,'True') does not hold because
+		the value of ffa_2-155 is '1' which should equal '0' does not hold and
+		the value of ffa_1-454 is '1' which should not equal '0' does hold and
+		the value of v3d-261 is '0' which should not equal '0' does not hold and
+		the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+		the value of ffa_2-85 is '0' which should not equal '0' does not hold 
+	exception ab12(X,'True') does not hold because
+		the value of ffa_2-160 is '1' which should not equal '0' does hold and
+		the value of ffa_1-454 is '1' which should equal '0' does not hold and
+		the value of v2d-140 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '0', 'ffa_2-155': '0', 'ffa_1-454': '0', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]person(X,'1') :- not [T]ffa_2-151(X,'0'), not [U]ab8(X,'True'), not [U]ab11(X,'True'), not [U]ab12(X,'True').
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '0', 'ffa_2-155': '0', 'ffa_1-454': '0', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]person(X,'1') :- not [T]ffa_2-151(X,'0'), not [U]ab8(X,'True'), not [U]ab11(X,'True'), not [U]ab12(X,'True').
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '1', 'v3d-261': '1', 'ffa_1-282': '1', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]person(X,'1') :- not [T]ffa_2-151(X,'0'), not [U]ab8(X,'True'), not [U]ab11(X,'True'), not [U]ab12(X,'True').
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '1', 'v3d-261': '1', 'ffa_1-282': '1', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '1', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '0', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '0', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]person(X,'1') :- not [T]ffa_2-151(X,'0'), not [U]ab8(X,'True'), not [U]ab11(X,'True'), not [U]ab12(X,'True').
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '1', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '0', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '0', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '0', 'v2v-653': '1', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '0', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '1', 'ffa_1-383': '1', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '1', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]ab8(X,'True') :- [T]ffa_2-155(X,'0'), not [F]ffa_1-454(X,'0'), [F]ffa_2-227(X,'0'), [F]ffa_1-383(X,'0'), [F]v1v-61(X,'0'), [T]ffa_2-126(X,'0'), [F]ffa_2-22(X,'0'), [T]v1d-99(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True'), not [U]ab5(X,'True'), not [U]ab6(X,'True'), not [U]ab7(X,'True').
+[F]ab11(X,'True') :- [T]ffa_2-155(X,'0'), not [F]ffa_1-454(X,'0'), not [T]v3d-261(X,'0'), not [T]ffa_1-282(X,'0'), not [T]ffa_2-85(X,'0'), not [U]ab9(X,'True'), not [U]ab10(X,'True').
+[F]ab12(X,'True') :- not [T]ffa_2-160(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-140(X,'0').
+[T]person(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ab8(X,'True'), not [F]ab11(X,'True'), not [F]ab12(X,'True').
+{'ffa_2-151': '1', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '0', 'v2v-653': '1', 'v1v-86': '1', 'v1d-619': '0', 'v2v-603': '0', 'v1d-367': '0', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '1', 'ffa_1-383': '1', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '1', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold 
+	exception ab8(X,'True') does not hold because
+		the value of ffa_2-155 is '0' which should equal '0' does hold and
+		the value of ffa_1-454 is '1' which should not equal '0' does hold and
+		the value of ffa_2-227 is '1' which should equal '0' does not hold and
+		the value of ffa_1-383 is '1' which should equal '0' does not hold and
+		the value of v1v-61 is '1' which should equal '0' does not hold and
+		the value of ffa_2-126 is '0' which should equal '0' does hold and
+		the value of ffa_2-22 is '1' which should equal '0' does not hold and
+		the value of v1d-99 is '0' which should equal '0' does hold 
+	exception ab11(X,'True') does not hold because
+		the value of ffa_2-155 is '0' which should equal '0' does hold and
+		the value of ffa_1-454 is '1' which should not equal '0' does hold and
+		the value of v3d-261 is '0' which should not equal '0' does not hold and
+		the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+		the value of ffa_2-85 is '0' which should not equal '0' does not hold 
+	exception ab12(X,'True') does not hold because
+		the value of ffa_2-160 is '0' which should not equal '0' does not hold and
+		the value of ffa_1-454 is '1' which should equal '0' does not hold and
+		the value of v2d-140 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]person(X,'1') :- not [T]ffa_2-151(X,'0'), not [U]ab8(X,'True'), not [U]ab11(X,'True'), not [U]ab12(X,'True').
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '0', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '1', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '1', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]person(X,'1') :- not [T]ffa_2-151(X,'0'), not [U]ab8(X,'True'), not [U]ab11(X,'True'), not [U]ab12(X,'True').
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '1', 'v1d-509': '1', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '0', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '1', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '1', 'v1v-61': '0', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]ab8(X,'True') :- [T]ffa_2-155(X,'0'), not [F]ffa_1-454(X,'0'), [T]ffa_2-227(X,'0'), [F]ffa_1-383(X,'0'), [T]v1v-61(X,'0'), [T]ffa_2-126(X,'0'), [T]ffa_2-22(X,'0'), [T]v1d-99(X,'0'), not [U]ab1(X,'True'), not [U]ab2(X,'True'), not [U]ab3(X,'True'), not [U]ab5(X,'True'), not [U]ab6(X,'True'), not [U]ab7(X,'True').
+[F]ab11(X,'True') :- [T]ffa_2-155(X,'0'), not [F]ffa_1-454(X,'0'), not [F]v3d-261(X,'0'), not [T]ffa_1-282(X,'0'), not [T]ffa_2-85(X,'0'), not [U]ab9(X,'True'), not [U]ab10(X,'True').
+[F]ab12(X,'True') :- not [T]ffa_2-160(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-140(X,'0').
+[T]person(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ab8(X,'True'), not [F]ab11(X,'True'), not [F]ab12(X,'True').
+{'ffa_2-151': '1', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '0', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '1', 'v1v-85': '1', 'v2v-653': '0', 'v1v-86': '1', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '1', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '1', 'v1v-61': '0', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '1', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '0', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold 
+	exception ab8(X,'True') does not hold because
+		the value of ffa_2-155 is '0' which should equal '0' does hold and
+		the value of ffa_1-454 is '1' which should not equal '0' does hold and
+		the value of ffa_2-227 is '0' which should equal '0' does hold and
+		the value of ffa_1-383 is '1' which should equal '0' does not hold and
+		the value of v1v-61 is '0' which should equal '0' does hold and
+		the value of ffa_2-126 is '0' which should equal '0' does hold and
+		the value of ffa_2-22 is '0' which should equal '0' does hold and
+		the value of v1d-99 is '0' which should equal '0' does hold 
+	exception ab11(X,'True') does not hold because
+		the value of ffa_2-155 is '0' which should equal '0' does hold and
+		the value of ffa_1-454 is '1' which should not equal '0' does hold and
+		the value of v3d-261 is '1' which should not equal '0' does hold and
+		the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+		the value of ffa_2-85 is '0' which should not equal '0' does not hold 
+	exception ab12(X,'True') does not hold because
+		the value of ffa_2-160 is '0' which should not equal '0' does not hold and
+		the value of ffa_1-454 is '1' which should equal '0' does not hold and
+		the value of v2d-140 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '0', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '0', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '1', 'ffa_2-160': '0', 'v2d-140': '0'}
+[F]person(X,'1') :- not [T]ffa_2-151(X,'0'), not [U]ab8(X,'True'), not [U]ab11(X,'True'), not [U]ab12(X,'True').
+{'ffa_2-151': '0', 'v1d-120': '1', 'atl_faces-10': '0', 'v1d-509': '0', 'v2v-198': '0', 'v2v-580': '1', 'v2v-827': '0', 'ffa_2-31': '1', 'v1v-24': '0', 'v2v-651': '0', 'v1v-85': '0', 'v2v-653': '0', 'v1v-86': '0', 'v1d-619': '1', 'v2v-603': '0', 'v1d-367': '0', 'ffa_2-155': '0', 'ffa_1-454': '1', 'ffa_2-227': '0', 'ffa_1-383': '0', 'v1v-61': '1', 'ffa_2-126': '0', 'ffa_2-22': '0', 'v1d-99': '0', 'v1v-102': '0', 'v1v-212': '0', 'v1v-62': '0', 'v3d-261': '1', 'ffa_1-282': '0', 'ffa_2-85': '1', 'ffa_2-160': '0', 'v2d-140': '0'}
+person(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold 
+
+% acc 0.603 p 0.742 r 0.328 f1 0.454

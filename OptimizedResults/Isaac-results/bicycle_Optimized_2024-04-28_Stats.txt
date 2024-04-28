@@ -1,0 +1,109 @@
+Beginning analysis on category bicycle in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:25.773509
+
+bicycle(X,'1') :- v2v-694(X,'0'), not ffa_1-2(X,'0'), not v2v-618(X,'0'), not ffa_1-25(X,'0'), not v1v-150(X,'0').
+% acc 0.972 p 0 r 0.0 f1 0
+% #rules 1 #preds 5
+% foldrpp costs: 0:05:56.959774
+
+{'v2v-694': '0', 'ffa_1-2': '1', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [T]v2v-694(X,'0'), not [F]ffa_1-2(X,'0'), not [T]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '0', 'ffa_1-2': '1', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of ffa_1-2 is '1' which should not equal '0' does hold and
+	the value of v2v-618 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '0', 'ffa_1-2': '0', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [T]v2v-694(X,'0'), not [T]ffa_1-2(X,'0'), not [T]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '0', 'ffa_1-2': '0', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of ffa_1-2 is '0' which should not equal '0' does not hold and
+	the value of v2v-618 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '0', 'ffa_1-2': '1', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [T]v2v-694(X,'0'), not [F]ffa_1-2(X,'0'), not [F]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '0', 'ffa_1-2': '1', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of ffa_1-2 is '1' which should not equal '0' does hold and
+	the value of v2v-618 is '1' which should not equal '0' does hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [F]v2v-694(X,'0'), not [T]ffa_1-2(X,'0'), not [F]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of ffa_1-2 is '0' which should not equal '0' does not hold and
+	the value of v2v-618 is '1' which should not equal '0' does hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [F]v2v-694(X,'0'), not [T]ffa_1-2(X,'0'), not [T]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of ffa_1-2 is '0' which should not equal '0' does not hold and
+	the value of v2v-618 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '0', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [T]v2v-694(X,'0'), not [T]ffa_1-2(X,'0'), not [F]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '0', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of ffa_1-2 is '0' which should not equal '0' does not hold and
+	the value of v2v-618 is '1' which should not equal '0' does hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [F]v2v-694(X,'0'), not [T]ffa_1-2(X,'0'), not [F]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of ffa_1-2 is '0' which should not equal '0' does not hold and
+	the value of v2v-618 is '1' which should not equal '0' does hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [F]v2v-694(X,'0'), not [T]ffa_1-2(X,'0'), not [F]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '1', 'ffa_1-2': '0', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of ffa_1-2 is '0' which should not equal '0' does not hold and
+	the value of v2v-618 is '1' which should not equal '0' does hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '1', 'ffa_1-2': '1', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [F]v2v-694(X,'0'), not [F]ffa_1-2(X,'0'), not [T]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '1', 'ffa_1-2': '1', 'v2v-618': '0', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of ffa_1-2 is '1' which should not equal '0' does hold and
+	the value of v2v-618 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+{'v2v-694': '1', 'ffa_1-2': '1', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+[F]bicycle(X,'1') :- [F]v2v-694(X,'0'), not [F]ffa_1-2(X,'0'), not [F]v2v-618(X,'0'), not [T]ffa_1-25(X,'0'), not [T]v1v-150(X,'0').
+{'v2v-694': '1', 'ffa_1-2': '1', 'v2v-618': '1', 'ffa_1-25': '0', 'v1v-150': '0'}
+bicycle(X,'1') does not hold because
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of ffa_1-2 is '1' which should not equal '0' does hold and
+	the value of v2v-618 is '1' which should not equal '0' does hold and
+	the value of ffa_1-25 is '0' which should not equal '0' does not hold and
+	the value of v1v-150 is '0' which should not equal '0' does not hold 
+
+% acc 0.972 p 0 r 0.0 f1 0

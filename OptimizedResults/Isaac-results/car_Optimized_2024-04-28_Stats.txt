@@ -1,0 +1,190 @@
+Beginning analysis on category car in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.469082
+
+car(X,'1') :- ffa_1-454(X,'0'), not ffa_2-151(X,'0'), v3v-100(X,'0'), not v3v-115(X,'0'), not v2v-437(X,'0'), v1d-398(X,'0').
+car(X,'1') :- v1v-146(X,'0'), not v3d-439(X,'0'), not v2v-727(X,'0'), not v2v-388(X,'0').
+% acc 0.909 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 10
+% foldrpp costs: 0:09:18.277761
+
+{'ffa_1-454': '1', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '1', 'v1v-146': '1', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+[F]car(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [F]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [F]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [F]v3d-439(X,'0'), not [T]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '1', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '1', 'v1v-146': '1', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '1' which should not equal '0' does hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '1' which should equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '1' which should not equal '0' does hold and
+	the value of v2v-727 is '0' which should not equal '0' does not hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '1', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '0', 'v2v-388': '0'}
+[F]car(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [F]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [T]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [T]v3d-439(X,'0'), not [T]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '1', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '0', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '1' which should not equal '0' does hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '0' which should equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '0' which should not equal '0' does not hold and
+	the value of v2v-727 is '0' which should not equal '0' does not hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '1', 'v2v-388': '0'}
+[F]car(X,'1') :- [T]ffa_1-454(X,'0'), not [T]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [F]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [T]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [T]v3d-439(X,'0'), not [F]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '1', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '1' which should not equal '0' does hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '0' which should equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '0' which should not equal '0' does not hold and
+	the value of v2v-727 is '1' which should not equal '0' does hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '1', 'ffa_2-151': '1', 'v3v-100': '0', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '1', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '0', 'v2v-388': '0'}
+[F]car(X,'1') :- [F]ffa_1-454(X,'0'), not [F]ffa_2-151(X,'0'), [T]v3v-100(X,'0'), not [T]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [F]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [T]v3d-439(X,'0'), not [T]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '1', 'ffa_2-151': '1', 'v3v-100': '0', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '1', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '0', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-100 is '0' which should equal '0' does hold and
+	the value of v3v-115 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '1' which should equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '0' which should not equal '0' does not hold and
+	the value of v2v-727 is '0' which should not equal '0' does not hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '1', 'ffa_2-151': '1', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '1', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '1', 'v2v-388': '0'}
+[F]car(X,'1') :- [F]ffa_1-454(X,'0'), not [F]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [F]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [F]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [T]v3d-439(X,'0'), not [F]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '1', 'ffa_2-151': '1', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '1', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '1', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '1' which should not equal '0' does hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '1' which should equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '0' which should not equal '0' does not hold and
+	the value of v2v-727 is '1' which should not equal '0' does hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '1', 'ffa_2-151': '0', 'v3v-100': '0', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '0', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+[F]car(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-151(X,'0'), [T]v3v-100(X,'0'), not [T]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [T]v1d-398(X,'0').
+[F]car(X,'1') :- [T]v1v-146(X,'0'), not [F]v3d-439(X,'0'), not [T]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '1', 'ffa_2-151': '0', 'v3v-100': '0', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '0', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-100 is '0' which should equal '0' does hold and
+	the value of v3v-115 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '0' which should equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of v3d-439 is '1' which should not equal '0' does hold and
+	the value of v2v-727 is '0' which should not equal '0' does not hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+[F]car(X,'1') :- [T]ffa_1-454(X,'0'), not [T]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [F]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [T]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [F]v3d-439(X,'0'), not [T]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '1', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '1' which should not equal '0' does hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '0' which should equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '1' which should not equal '0' does hold and
+	the value of v2v-727 is '0' which should not equal '0' does not hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '0', 'v2v-388': '0'}
+[F]car(X,'1') :- [T]ffa_1-454(X,'0'), not [T]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [T]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [T]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [T]v3d-439(X,'0'), not [T]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '0', 'v2v-727': '0', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '0' which should equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '0' which should not equal '0' does not hold and
+	the value of v2v-727 is '0' which should not equal '0' does not hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+[F]car(X,'1') :- [T]ffa_1-454(X,'0'), not [T]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [T]v3v-115(X,'0'), not [T]v2v-437(X,'0'), [T]v1d-398(X,'0').
+[F]car(X,'1') :- [F]v1v-146(X,'0'), not [F]v3d-439(X,'0'), not [T]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '0', 'ffa_2-151': '0', 'v3v-100': '1', 'v3v-115': '0', 'v2v-437': '0', 'v1d-398': '0', 'v1v-146': '1', 'v3d-439': '1', 'v2v-727': '0', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold and
+	the value of v1d-398 is '0' which should equal '0' does hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v3d-439 is '1' which should not equal '0' does hold and
+	the value of v2v-727 is '0' which should not equal '0' does not hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '1', 'ffa_2-151': '1', 'v3v-100': '1', 'v3v-115': '0', 'v2v-437': '1', 'v1d-398': '1', 'v1v-146': '0', 'v3d-439': '0', 'v2v-727': '1', 'v2v-388': '0'}
+[F]car(X,'1') :- [F]ffa_1-454(X,'0'), not [F]ffa_2-151(X,'0'), [F]v3v-100(X,'0'), not [T]v3v-115(X,'0'), not [F]v2v-437(X,'0'), [F]v1d-398(X,'0').
+[F]car(X,'1') :- [T]v1v-146(X,'0'), not [T]v3d-439(X,'0'), not [F]v2v-727(X,'0'), not [T]v2v-388(X,'0').
+{'ffa_1-454': '1', 'ffa_2-151': '1', 'v3v-100': '1', 'v3v-115': '0', 'v2v-437': '1', 'v1d-398': '1', 'v1v-146': '0', 'v3d-439': '0', 'v2v-727': '1', 'v2v-388': '0'}
+car(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-100 is '1' which should equal '0' does not hold and
+	the value of v3v-115 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '1' which should not equal '0' does hold and
+	the value of v1d-398 is '1' which should equal '0' does not hold 
+
+car(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of v3d-439 is '0' which should not equal '0' does not hold and
+	the value of v2v-727 is '1' which should not equal '0' does hold and
+	the value of v2v-388 is '0' which should not equal '0' does not hold 
+
+% acc 0.909 p 0.0 r 0.0 f1 0
