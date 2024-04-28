@@ -1,0 +1,28 @@
+Beginning analysis on category frisbee in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.032437
+
+% acc 0.983 p 0 r 0.0 f1 0
+% #rules 0 #preds 0
+% foldrpp costs: 0:01:59.393607
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+% acc 0.983 p 0 r 0.0 f1 0

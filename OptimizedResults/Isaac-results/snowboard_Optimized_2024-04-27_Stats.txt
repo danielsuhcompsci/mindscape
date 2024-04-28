@@ -1,0 +1,615 @@
+Beginning analysis on category snowboard in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:20.620182
+
+snowboard(X,'1') :- not ffa_2-156(X,'0'), v1d-367(X,'0'), not v1d-112(X,'0'), not v3d-19(X,'0'), v2v-694(X,'0'), not v3v-572(X,'0'), v1v-274(X,'0').
+snowboard(X,'1') :- not ffa_2-151(X,'0'), v1d-367(X,'0'), not v1d-112(X,'0'), not v3v-625(X,'0'), not v2v-437(X,'0').
+snowboard(X,'1') :- not ffa_2-156(X,'0'), v1d-367(X,'0'), not v1d-112(X,'0'), not v3d-391(X,'0'), not v1v-97(X,'0').
+snowboard(X,'1') :- not ffa_2-156(X,'0'), v1d-367(X,'0'), not v1d-112(X,'0'), not v3v-306(X,'0').
+snowboard(X,'1') :- not ffa_2-156(X,'0'), v1d-367(X,'0'), not v1d-112(X,'0'), not ffa_1-186(X,'0'), not v2v-736(X,'0'), not v2v-157(X,'0').
+snowboard(X,'1') :- not ffa_2-151(X,'0'), v1d-561(X,'0'), not v2v-508(X,'0'), v3v-484(X,'0'), v2v-178(X,'0'), not v1v-209(X,'0'), v1d-181(X,'0').
+snowboard(X,'1') :- not ffa_2-151(X,'0'), not v1d-112(X,'0'), not v2v-343(X,'0').
+% acc 0.984 p 0.25 r 0.011 f1 0.02
+% #rules 7 #preds 37
+% foldrpp costs: 0:14:58.627319
+
+{'ffa_2-156': '0', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '1', 'v1v-274': '1', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '1', 'v2v-736': '0', 'v2v-157': '1', 'v1d-561': '0', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '1', 'v1v-209': '1', 'v1d-181': '0', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [T]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [F]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [F]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [F]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-561(X,'0'), not [T]v2v-508(X,'0'), [F]v3v-484(X,'0'), [F]v2v-178(X,'0'), not [F]v1v-209(X,'0'), [T]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '1', 'v1v-274': '1', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '1', 'v2v-736': '0', 'v2v-157': '1', 'v1d-561': '0', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '1', 'v1v-209': '1', 'v1d-181': '0', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '1' which should equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of ffa_1-186 is '1' which should not equal '0' does hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '1' which should not equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v2v-508 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v2v-178 is '1' which should equal '0' does not hold and
+	the value of v1v-209 is '1' which should not equal '0' does hold and
+	the value of v1d-181 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '0', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '1', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '1', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [T]v2v-694(X,'0'), not [T]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [F]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-508(X,'0'), [F]v3v-484(X,'0'), [T]v2v-178(X,'0'), not [T]v1v-209(X,'0'), [F]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '0', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '1', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '1', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of v3v-572 is '0' which should not equal '0' does not hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '1' which should not equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold and
+	the value of v1v-209 is '0' which should not equal '0' does not hold and
+	the value of v1d-181 is '1' which should equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '0', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [F]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-508(X,'0'), [F]v3v-484(X,'0'), [T]v2v-178(X,'0'), not [T]v1v-209(X,'0'), [T]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '0', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold and
+	the value of v1v-209 is '0' which should not equal '0' does not hold and
+	the value of v1d-181 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '0', 'v2v-178': '0', 'v1v-209': '1', 'v1d-181': '0', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [F]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-508(X,'0'), [T]v3v-484(X,'0'), [T]v2v-178(X,'0'), not [F]v1v-209(X,'0'), [T]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '0', 'v2v-178': '0', 'v1v-209': '1', 'v1d-181': '0', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of v2v-178 is '0' which should equal '0' does hold and
+	the value of v1v-209 is '1' which should not equal '0' does hold and
+	the value of v1d-181 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '1', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '1', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '1', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '0', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '0', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [F]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [F]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-508(X,'0'), [T]v3v-484(X,'0'), [T]v2v-178(X,'0'), not [T]v1v-209(X,'0'), [T]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '1', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '1', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '1', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '0', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '0', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '1' which should not equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of v2v-178 is '0' which should equal '0' does hold and
+	the value of v1v-209 is '0' which should not equal '0' does not hold and
+	the value of v1d-181 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '0', 'v2v-178': '1', 'v1v-209': '0', 'v1d-181': '1', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [T]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-508(X,'0'), [T]v3v-484(X,'0'), [F]v2v-178(X,'0'), not [T]v1v-209(X,'0'), [F]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '0', 'v2v-178': '1', 'v1v-209': '0', 'v1d-181': '1', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of v2v-178 is '1' which should equal '0' does not hold and
+	the value of v1v-209 is '0' which should not equal '0' does not hold and
+	the value of v1d-181 is '1' which should equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '1', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '1', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '1', 'v3v-484': '0', 'v2v-178': '1', 'v1v-209': '0', 'v1d-181': '0', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [F]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [F]v2v-508(X,'0'), [T]v3v-484(X,'0'), [F]v2v-178(X,'0'), not [T]v1v-209(X,'0'), [T]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '1', 'v1d-367': '0', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '1', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '1', 'v3v-484': '0', 'v2v-178': '1', 'v1v-209': '0', 'v1d-181': '0', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '1' which should not equal '0' does hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of v2v-178 is '1' which should equal '0' does not hold and
+	the value of v1v-209 is '0' which should not equal '0' does not hold and
+	the value of v1d-181 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '0', 'v1v-274': '1', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '1', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '1', 'v1d-181': '1', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [T]v2v-694(X,'0'), not [T]v3v-572(X,'0'), [F]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [F]v2v-508(X,'0'), [F]v3v-484(X,'0'), [T]v2v-178(X,'0'), not [F]v1v-209(X,'0'), [F]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '0', 'v3v-572': '0', 'v1v-274': '1', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '1', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '1', 'v1d-181': '1', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '0' which should equal '0' does hold and
+	the value of v3v-572 is '0' which should not equal '0' does not hold and
+	the value of v1v-274 is '1' which should equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '1' which should not equal '0' does hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold and
+	the value of v1v-209 is '1' which should not equal '0' does hold and
+	the value of v1d-181 is '1' which should equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '1', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '1', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '1', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [F]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [T]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [T]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [T]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [F]v2v-508(X,'0'), [F]v3v-484(X,'0'), [T]v2v-178(X,'0'), not [T]v1v-209(X,'0'), [F]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '1', 'v1d-112': '1', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '1', 'v3v-625': '0', 'v2v-437': '0', 'v3d-391': '0', 'v1v-97': '0', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '0', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '1', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '0', 'v1d-181': '1', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '0' which should not equal '0' does not hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '1' which should not equal '0' does hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold and
+	the value of v1v-209 is '0' which should not equal '0' does not hold and
+	the value of v1d-181 is '1' which should equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v1d-367': '0', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '1', 'v3d-391': '0', 'v1v-97': '1', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '1', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '1', 'v1d-181': '1', 'v2v-343': '0'}
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-19(X,'0'), [F]v2v-694(X,'0'), not [F]v3v-572(X,'0'), [T]v1v-274(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-625(X,'0'), not [F]v2v-437(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3d-391(X,'0'), not [F]v1v-97(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-306(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1d-112(X,'0'), not [T]ffa_1-186(X,'0'), not [F]v2v-736(X,'0'), not [T]v2v-157(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-508(X,'0'), [F]v3v-484(X,'0'), [T]v2v-178(X,'0'), not [F]v1v-209(X,'0'), [F]v1d-181(X,'0').
+[F]snowboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-112(X,'0'), not [T]v2v-343(X,'0').
+{'ffa_2-156': '0', 'v1d-367': '0', 'v1d-112': '0', 'v3d-19': '0', 'v2v-694': '1', 'v3v-572': '1', 'v1v-274': '0', 'ffa_2-151': '0', 'v3v-625': '0', 'v2v-437': '1', 'v3d-391': '0', 'v1v-97': '1', 'v3v-306': '0', 'ffa_1-186': '0', 'v2v-736': '1', 'v2v-157': '0', 'v1d-561': '1', 'v2v-508': '0', 'v3v-484': '1', 'v2v-178': '0', 'v1v-209': '1', 'v1d-181': '1', 'v2v-343': '0'}
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-19 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should equal '0' does not hold and
+	the value of v3v-572 is '1' which should not equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-625 is '0' which should not equal '0' does not hold and
+	the value of v2v-437 is '1' which should not equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3d-391 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '1' which should not equal '0' does hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-306 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold and
+	the value of v2v-736 is '1' which should not equal '0' does hold and
+	the value of v2v-157 is '0' which should not equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-508 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold and
+	the value of v1v-209 is '1' which should not equal '0' does hold and
+	the value of v1d-181 is '1' which should equal '0' does not hold 
+
+snowboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v2v-343 is '0' which should not equal '0' does not hold 
+
+% acc 0.984 p 0.25 r 0.011 f1 0.02

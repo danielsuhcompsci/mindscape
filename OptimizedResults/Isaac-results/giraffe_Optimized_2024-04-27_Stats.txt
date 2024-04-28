@@ -1,0 +1,170 @@
+Beginning analysis on category giraffe in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.948588
+
+giraffe(X,'1') :- ffa_2-20(X,'0'), not ffa_2-155(X,'0'), not ffa_1-421(X,'0'), not v2v-117(X,'0').
+giraffe(X,'1') :- ffa_2-20(X,'0'), not ffa_2-155(X,'0'), not v3d-58(X,'0'), not v2v-702(X,'0').
+% acc 0.971 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 8
+% foldrpp costs: 0:05:39.983305
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [T]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-20': '0', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '1'}
+[F]giraffe(X,'1') :- [T]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [T]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [F]v2v-702(X,'0').
+{'ffa_2-20': '0', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '1'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '1' which should not equal '0' does hold 
+
+{'ffa_2-20': '0', 'ffa_2-155': '1', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+[F]giraffe(X,'1') :- [T]ffa_2-20(X,'0'), not [F]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [T]ffa_2-20(X,'0'), not [F]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [T]v2v-702(X,'0').
+{'ffa_2-20': '0', 'ffa_2-155': '1', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '1' which should not equal '0' does hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '1' which should not equal '0' does hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [T]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [T]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [T]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [T]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '1'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [F]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '1'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '1' which should not equal '0' does hold 
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '1'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [F]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '1'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '1' which should not equal '0' does hold 
+
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]ffa_1-421(X,'0'), not [T]v2v-117(X,'0').
+[F]giraffe(X,'1') :- [F]ffa_2-20(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v3d-58(X,'0'), not [T]v2v-702(X,'0').
+{'ffa_2-20': '1', 'ffa_2-155': '0', 'ffa_1-421': '0', 'v2v-117': '0', 'v3d-58': '0', 'v2v-702': '0'}
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-421 is '0' which should not equal '0' does not hold and
+	the value of v2v-117 is '0' which should not equal '0' does not hold 
+
+giraffe(X,'1') does not hold because
+	the value of ffa_2-20 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v3d-58 is '0' which should not equal '0' does not hold and
+	the value of v2v-702 is '0' which should not equal '0' does not hold 
+
+% acc 0.971 p 0.0 r 0.0 f1 0

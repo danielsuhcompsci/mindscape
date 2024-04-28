@@ -1,0 +1,109 @@
+Beginning analysis on category handbag in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.119360
+
+handbag(X,'1') :- v1v-181(X,'0'), not v2d-115(X,'0'), not ffa_2-31(X,'0'), not v3v-592(X,'0'), not v1v-282(X,'0').
+% acc 0.952 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 5
+% foldrpp costs: 0:04:45.147921
+
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [F]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [F]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '1' which should equal '0' does not hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '1' which should not equal '0' does hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [F]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [F]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '1' which should equal '0' does not hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '1' which should not equal '0' does hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [F]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [T]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '1' which should equal '0' does not hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '0' which should not equal '0' does not hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [F]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [T]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '1' which should equal '0' does not hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '0' which should not equal '0' does not hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [F]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [F]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '1' which should equal '0' does not hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '1' which should not equal '0' does hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '0', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '0'}
+[F]handbag(X,'1') :- [T]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [T]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [T]v1v-282(X,'0').
+{'v1v-181': '0', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '0'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '0' which should equal '0' does hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '0' which should not equal '0' does not hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '0' which should not equal '0' does not hold 
+
+{'v1v-181': '0', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [T]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [F]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '0', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '0' which should equal '0' does hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '1' which should not equal '0' does hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [F]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [T]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '1', 'v2d-115': '0', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '1' which should equal '0' does not hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '0' which should not equal '0' does not hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '0', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+[F]handbag(X,'1') :- [T]v1v-181(X,'0'), not [T]v2d-115(X,'0'), not [F]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [F]v1v-282(X,'0').
+{'v1v-181': '0', 'v2d-115': '0', 'ffa_2-31': '1', 'v3v-592': '0', 'v1v-282': '1'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '0' which should equal '0' does hold and
+	the value of v2d-115 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-31 is '1' which should not equal '0' does hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '1' which should not equal '0' does hold 
+
+{'v1v-181': '1', 'v2d-115': '1', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '0'}
+[F]handbag(X,'1') :- [F]v1v-181(X,'0'), not [F]v2d-115(X,'0'), not [T]ffa_2-31(X,'0'), not [T]v3v-592(X,'0'), not [T]v1v-282(X,'0').
+{'v1v-181': '1', 'v2d-115': '1', 'ffa_2-31': '0', 'v3v-592': '0', 'v1v-282': '0'}
+handbag(X,'1') does not hold because
+	the value of v1v-181 is '1' which should equal '0' does not hold and
+	the value of v2d-115 is '1' which should not equal '0' does hold and
+	the value of ffa_2-31 is '0' which should not equal '0' does not hold and
+	the value of v3v-592 is '0' which should not equal '0' does not hold and
+	the value of v1v-282 is '0' which should not equal '0' does not hold 
+
+% acc 0.952 p 0.0 r 0.0 f1 0

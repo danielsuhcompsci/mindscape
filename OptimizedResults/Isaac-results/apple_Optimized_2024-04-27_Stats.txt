@@ -1,0 +1,301 @@
+Beginning analysis on category apple in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.316184
+
+apple(X,'1') :- not ffa_1-316(X,'0'), not ffa_1-282(X,'0'), not v1d-460(X,'0'), not ofa-146(X,'0'), not v3d-261(X,'0'), ffa_2-197(X,'0'), v1v-529(X,'0'), v3v-12(X,'0').
+apple(X,'1') :- not ffa_1-316(X,'0'), v1d-557(X,'0'), not v2v-244(X,'0'), not v1d-112(X,'0'), not v3v-636(X,'0'), not v1v-86(X,'0').
+apple(X,'1') :- not ffa_1-316(X,'0'), v1d-557(X,'0'), not v3v-21(X,'0'), not v2d-570(X,'0').
+% acc 0.989 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 18
+% foldrpp costs: 0:08:53.099703
+
+{'ffa_1-316': '1', 'ffa_1-282': '1', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '1', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '0', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [F]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [T]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [T]v1v-86(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '1', 'ffa_1-282': '1', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '1', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '0', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v1d-460 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '1' which should not equal '0' does hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '0' which should equal '0' does hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '0' which should not equal '0' does not hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '1', 'v3d-261': '0', 'ffa_2-197': '1', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '0', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-460(X,'0'), not [F]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [F]ffa_2-197(X,'0'), [T]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [T]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [F]v1v-86(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [T]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '1', 'v3d-261': '0', 'ffa_2-197': '1', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '0', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '1' which should not equal '0' does hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '1' which should equal '0' does not hold and
+	the value of v1v-529 is '0' which should equal '0' does hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '0' which should equal '0' does hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '0' which should equal '0' does hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '1', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '1', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [F]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [F]v2v-244(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [F]v1v-86(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '1', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '1', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '1' which should equal '0' does not hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v2v-244 is '1' which should not equal '0' does hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [F]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [F]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [F]v1v-86(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '1' which should equal '0' does not hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '1', 'ffa_1-282': '1', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '1', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '0', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), not [F]ffa_1-282(X,'0'), not [F]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [T]v1v-529(X,'0'), [F]v3v-12(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [T]v1v-86(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '1', 'ffa_1-282': '1', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '1', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '0', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v1d-460 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '0' which should equal '0' does hold and
+	the value of v3v-12 is '1' which should equal '0' does not hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '0' which should not equal '0' does not hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '1', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '0', 'v2v-244': '0', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [F]ffa_2-197(X,'0'), [T]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [T]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [F]v1v-86(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [T]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '1', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '0', 'v2v-244': '0', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '1' which should equal '0' does not hold and
+	the value of v1v-529 is '0' which should equal '0' does hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '0' which should equal '0' does hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '0' which should equal '0' does hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [T]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [F]v1v-86(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '0' which should equal '0' does hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '1', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '1', 'v1d-557': '0', 'v2v-244': '1', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '0', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [T]v1v-529(X,'0'), [F]v3v-12(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [T]v1d-557(X,'0'), not [F]v2v-244(X,'0'), not [F]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [T]v1v-86(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [T]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '1', 'ffa_1-282': '0', 'v1d-460': '0', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '0', 'v3v-12': '1', 'v1d-557': '0', 'v2v-244': '1', 'v1d-112': '1', 'v3v-636': '0', 'v1v-86': '0', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '0' which should not equal '0' does not hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '0' which should equal '0' does hold and
+	the value of v3v-12 is '1' which should equal '0' does not hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '0' which should equal '0' does hold and
+	the value of v2v-244 is '1' which should not equal '0' does hold and
+	the value of v1d-112 is '1' which should not equal '0' does hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '0' which should not equal '0' does not hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '0' which should equal '0' does hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '1', 'ffa_1-282': '0', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [F]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [T]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [F]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [F]v1v-86(X,'0').
+[F]apple(X,'1') :- not [F]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '1', 'ffa_1-282': '0', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '0', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '1' which should equal '0' does not hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '1' which should not equal '0' does hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '1', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), not [T]ffa_1-282(X,'0'), not [F]v1d-460(X,'0'), not [T]ofa-146(X,'0'), not [F]v3d-261(X,'0'), [T]ffa_2-197(X,'0'), [F]v1v-529(X,'0'), [T]v3v-12(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v2v-244(X,'0'), not [T]v1d-112(X,'0'), not [T]v3v-636(X,'0'), not [F]v1v-86(X,'0').
+[F]apple(X,'1') :- not [T]ffa_1-316(X,'0'), [F]v1d-557(X,'0'), not [T]v3v-21(X,'0'), not [T]v2d-570(X,'0').
+{'ffa_1-316': '0', 'ffa_1-282': '0', 'v1d-460': '1', 'ofa-146': '0', 'v3d-261': '1', 'ffa_2-197': '0', 'v1v-529': '1', 'v3v-12': '0', 'v1d-557': '1', 'v2v-244': '0', 'v1d-112': '0', 'v3v-636': '0', 'v1v-86': '1', 'v3v-21': '0', 'v2d-570': '0'}
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-460 is '1' which should not equal '0' does hold and
+	the value of ofa-146 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '1' which should not equal '0' does hold and
+	the value of ffa_2-197 is '0' which should equal '0' does hold and
+	the value of v1v-529 is '1' which should equal '0' does not hold and
+	the value of v3v-12 is '0' which should equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v2v-244 is '0' which should not equal '0' does not hold and
+	the value of v1d-112 is '0' which should not equal '0' does not hold and
+	the value of v3v-636 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+apple(X,'1') does not hold because
+	the value of ffa_1-316 is '0' which should not equal '0' does not hold and
+	the value of v1d-557 is '1' which should equal '0' does not hold and
+	the value of v3v-21 is '0' which should not equal '0' does not hold and
+	the value of v2d-570 is '0' which should not equal '0' does not hold 
+
+% acc 0.989 p 0.0 r 0.0 f1 0

@@ -1,0 +1,393 @@
+Beginning analysis on category fire hydrant in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.548643
+
+fire_hydrant(X,'1') :- not ffa_1-33(X,'0'), not v1v-331(X,'0'), not ffa_2-264(X,'0'), not v1v-7(X,'0').
+fire_hydrant(X,'1') :- not ffa_1-33(X,'0'), not v2v-178(X,'0'), v2v-669(X,'0'), not v2v-744(X,'0'), ffa_2-227(X,'0'), not v1d-261(X,'0').
+fire_hydrant(X,'1') :- not ffa_1-33(X,'0'), not v3v-175(X,'0'), not v1d-110(X,'0'), not v1v-60(X,'0').
+fire_hydrant(X,'1') :- not ffa_1-33(X,'0'), not v1v-224(X,'0'), not v2d-85(X,'0').
+fire_hydrant(X,'1') :- not ffa_1-33(X,'0'), not v1v-224(X,'0'), not v1v-232(X,'0'), not ffa_1-186(X,'0').
+% acc 0.984 p 0.0 r 0.0 f1 0
+% #rules 5 #preds 21
+% foldrpp costs: 0:10:43.249098
+
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-178(X,'0'), [T]v2v-669(X,'0'), not [T]v2v-744(X,'0'), [T]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [T]ffa_1-186(X,'0').
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-331 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should not equal '0' does not hold and
+	the value of v2v-669 is '0' which should equal '0' does hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-227 is '0' which should equal '0' does hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '1', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '0', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [F]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-178(X,'0'), [T]v2v-669(X,'0'), not [T]v2v-744(X,'0'), [T]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [T]ffa_1-186(X,'0').
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '1', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '0', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-331 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should not equal '0' does not hold and
+	the value of v2v-669 is '0' which should equal '0' does hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-227 is '0' which should equal '0' does hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'v1v-331': '1', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v2v-178(X,'0'), [T]v2v-669(X,'0'), not [T]v2v-744(X,'0'), [T]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [T]ffa_1-186(X,'0').
+{'ffa_1-33': '0', 'v1v-331': '1', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-331 is '1' which should not equal '0' does hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '1' which should not equal '0' does hold and
+	the value of v2v-669 is '0' which should equal '0' does hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-227 is '0' which should equal '0' does hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '1', 'v2v-744': '1', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '1'}
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v2v-178(X,'0'), [F]v2v-669(X,'0'), not [F]v2v-744(X,'0'), [T]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [F]ffa_1-186(X,'0').
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '1', 'v2v-744': '1', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '1'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-331 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '1' which should not equal '0' does hold and
+	the value of v2v-669 is '1' which should equal '0' does not hold and
+	the value of v2v-744 is '1' which should not equal '0' does hold and
+	the value of ffa_2-227 is '0' which should equal '0' does hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '1' which should not equal '0' does hold 
+
+{'ffa_1-33': '0', 'v1v-331': '1', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '1', 'v2v-744': '1', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v2v-178(X,'0'), [F]v2v-669(X,'0'), not [F]v2v-744(X,'0'), [T]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [T]ffa_1-186(X,'0').
+{'ffa_1-33': '0', 'v1v-331': '1', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '1', 'v2v-744': '1', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-331 is '1' which should not equal '0' does hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '1' which should not equal '0' does hold and
+	the value of v2v-669 is '1' which should equal '0' does not hold and
+	the value of v2v-744 is '1' which should not equal '0' does hold and
+	the value of ffa_2-227 is '0' which should equal '0' does hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '1', 'v1v-331': '1', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '1', 'v2v-744': '0', 'ffa_2-227': '1', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '0', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [F]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v2v-178(X,'0'), [F]v2v-669(X,'0'), not [T]v2v-744(X,'0'), [F]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [T]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [T]ffa_1-186(X,'0').
+{'ffa_1-33': '1', 'v1v-331': '1', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '1', 'v2v-744': '0', 'ffa_2-227': '1', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '0', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-331 is '1' which should not equal '0' does hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v2v-178 is '0' which should not equal '0' does not hold and
+	the value of v2v-669 is '1' which should equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-227 is '1' which should equal '0' does not hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '1', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '1'}
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-178(X,'0'), [T]v2v-669(X,'0'), not [T]v2v-744(X,'0'), [F]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [F]ffa_1-186(X,'0').
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '1', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '1'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-331 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should not equal '0' does not hold and
+	the value of v2v-669 is '0' which should equal '0' does hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-227 is '1' which should equal '0' does not hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '1' which should not equal '0' does hold 
+
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '1', 'ffa_2-227': '1', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '0', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-178(X,'0'), [T]v2v-669(X,'0'), not [F]v2v-744(X,'0'), [F]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [T]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [T]ffa_1-186(X,'0').
+{'ffa_1-33': '0', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '1', 'ffa_2-227': '1', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '0', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-331 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should not equal '0' does not hold and
+	the value of v2v-669 is '0' which should equal '0' does hold and
+	the value of v2v-744 is '1' which should not equal '0' does hold and
+	the value of ffa_2-227 is '1' which should equal '0' does not hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '1', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '0', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '1'}
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v2v-178(X,'0'), [T]v2v-669(X,'0'), not [T]v2v-744(X,'0'), [T]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [F]ffa_1-186(X,'0').
+{'ffa_1-33': '1', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '0', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '0', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '1'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-331 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v2v-178 is '0' which should not equal '0' does not hold and
+	the value of v2v-669 is '0' which should equal '0' does hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-227 is '0' which should equal '0' does hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '1' which should not equal '0' does hold 
+
+{'ffa_1-33': '1', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v1v-331(X,'0'), not [T]ffa_2-264(X,'0'), not [T]v1v-7(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [F]v2v-178(X,'0'), [T]v2v-669(X,'0'), not [T]v2v-744(X,'0'), [T]ffa_2-227(X,'0'), not [T]v1d-261(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v3v-175(X,'0'), not [T]v1d-110(X,'0'), not [F]v1v-60(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v2d-85(X,'0').
+[F]fire_hydrant(X,'1') :- not [F]ffa_1-33(X,'0'), not [F]v1v-224(X,'0'), not [T]v1v-232(X,'0'), not [T]ffa_1-186(X,'0').
+{'ffa_1-33': '1', 'v1v-331': '0', 'ffa_2-264': '0', 'v1v-7': '0', 'v2v-178': '1', 'v2v-669': '0', 'v2v-744': '0', 'ffa_2-227': '0', 'v1d-261': '0', 'v3v-175': '0', 'v1d-110': '0', 'v1v-60': '1', 'v1v-224': '1', 'v2d-85': '0', 'v1v-232': '0', 'ffa_1-186': '0'}
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-331 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-264 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v2v-178 is '1' which should not equal '0' does hold and
+	the value of v2v-669 is '0' which should equal '0' does hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-227 is '0' which should equal '0' does hold and
+	the value of v1d-261 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v3v-175 is '0' which should not equal '0' does not hold and
+	the value of v1d-110 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2d-85 is '0' which should not equal '0' does not hold 
+
+fire_hydrant(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v1v-232 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-186 is '0' which should not equal '0' does not hold 
+
+% acc 0.984 p 0.0 r 0.0 f1 0

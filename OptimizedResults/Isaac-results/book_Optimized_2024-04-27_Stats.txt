@@ -1,0 +1,332 @@
+Beginning analysis on category book in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.833815
+
+book(X,'1') :- not ffa_2-156(X,'0'), not v2v-719(X,'0'), not ffa_1-456(X,'0'), not v2v-397(X,'0'), not v2v-331(X,'0'), not v1v-48(X,'0').
+book(X,'1') :- not ffa_2-156(X,'0'), not v2v-719(X,'0'), not v1d-287(X,'0'), not v1v-7(X,'0').
+book(X,'1') :- not ffa_2-156(X,'0'), not v2v-719(X,'0'), not ffa_2-177(X,'0'), not v1d-164(X,'0').
+book(X,'1') :- not ffa_2-156(X,'0'), not v2v-719(X,'0'), not v2d-332(X,'0'), not v1v-144(X,'0').
+% acc 0.953 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 18
+% foldrpp costs: 0:09:50.701197
+
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [T]v1v-48(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '1', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '1'}
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [F]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [F]v1v-48(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [F]v1v-144(X,'0').
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '1', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '1'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '1' which should not equal '0' does hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '1' which should not equal '0' does hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '1' which should not equal '0' does hold 
+
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '1'}
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [F]v1v-48(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [F]v1v-144(X,'0').
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '1'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '1' which should not equal '0' does hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '1' which should not equal '0' does hold 
+
+{'ffa_2-156': '1', 'v2v-719': '0', 'ffa_1-456': '1', 'v2v-397': '0', 'v2v-331': '1', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [F]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [F]v2v-331(X,'0'), not [T]v1v-48(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '1', 'v2v-719': '0', 'ffa_1-456': '1', 'v2v-397': '0', 'v2v-331': '1', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '1' which should not equal '0' does hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '1', 'v2v-719': '1', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [T]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [F]v1v-48(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '1', 'v2v-719': '1', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of ffa_1-456 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '1' which should not equal '0' does hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '1', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [T]v1v-48(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [F]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '1', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '1' which should not equal '0' does hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [T]v1v-48(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '1', 'v1d-164': '0', 'v2d-332': '1', 'v1v-144': '0'}
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [T]v1v-48(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [F]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [F]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '0', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '1', 'v1d-164': '0', 'v2d-332': '1', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '1' which should not equal '0' does hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '1' which should not equal '0' does hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [T]v2v-331(X,'0'), not [F]v1v-48(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '0', 'v2v-719': '0', 'ffa_1-456': '0', 'v2v-397': '0', 'v2v-331': '0', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-456 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '1' which should not equal '0' does hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '0' which should not equal '0' does not hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-156': '0', 'v2v-719': '1', 'ffa_1-456': '1', 'v2v-397': '0', 'v2v-331': '1', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [F]ffa_1-456(X,'0'), not [T]v2v-397(X,'0'), not [F]v2v-331(X,'0'), not [F]v1v-48(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [T]v1d-287(X,'0'), not [T]v1v-7(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [T]ffa_2-177(X,'0'), not [T]v1d-164(X,'0').
+[F]book(X,'1') :- not [T]ffa_2-156(X,'0'), not [F]v2v-719(X,'0'), not [T]v2d-332(X,'0'), not [T]v1v-144(X,'0').
+{'ffa_2-156': '0', 'v2v-719': '1', 'ffa_1-456': '1', 'v2v-397': '0', 'v2v-331': '1', 'v1v-48': '1', 'v1d-287': '0', 'v1v-7': '0', 'ffa_2-177': '0', 'v1d-164': '0', 'v2d-332': '0', 'v1v-144': '0'}
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of ffa_1-456 is '1' which should not equal '0' does hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v2v-331 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '1' which should not equal '0' does hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of v1d-287 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of ffa_2-177 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold 
+
+book(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-719 is '1' which should not equal '0' does hold and
+	the value of v2d-332 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+% acc 0.953 p 0.0 r 0.0 f1 0

@@ -1,0 +1,89 @@
+Beginning analysis on category clock in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.220101
+
+clock(X,'1') :- not ffa_2-151(X,'0'), not v1v-430(X,'0'), not v1d-386(X,'0').
+% acc 0.956 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 3
+% foldrpp costs: 0:03:37.152403
+
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '1'}
+[F]clock(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [F]v1d-386(X,'0').
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '1'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '1', 'v1v-430': '0', 'v1d-386': '0'}
+[F]clock(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [T]v1d-386(X,'0').
+{'ffa_2-151': '1', 'v1v-430': '0', 'v1d-386': '0'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+[F]clock(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [T]v1d-386(X,'0').
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+[F]clock(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [T]v1d-386(X,'0').
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '1'}
+[F]clock(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [F]v1d-386(X,'0').
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '1'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+[F]clock(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [T]v1d-386(X,'0').
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+[F]clock(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [T]v1d-386(X,'0').
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '0'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1v-430': '0', 'v1d-386': '1'}
+[F]clock(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [F]v1d-386(X,'0').
+{'ffa_2-151': '1', 'v1v-430': '0', 'v1d-386': '1'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '1', 'v1v-430': '0', 'v1d-386': '0'}
+[F]clock(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [T]v1d-386(X,'0').
+{'ffa_2-151': '1', 'v1v-430': '0', 'v1d-386': '0'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '1'}
+[F]clock(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-430(X,'0'), not [F]v1d-386(X,'0').
+{'ffa_2-151': '0', 'v1v-430': '0', 'v1d-386': '1'}
+clock(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-430 is '0' which should not equal '0' does not hold and
+	the value of v1d-386 is '1' which should not equal '0' does hold 
+
+% acc 0.956 p 0.0 r 0.0 f1 0

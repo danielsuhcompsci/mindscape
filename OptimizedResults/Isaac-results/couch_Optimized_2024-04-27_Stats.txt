@@ -1,0 +1,241 @@
+Beginning analysis on category couch in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.243099
+
+couch(X,'1') :- not v1v-243(X,'0'), v3d-399(X,'0'), not v2v-465(X,'0'), not v1v-530(X,'0').
+couch(X,'1') :- not v1v-243(X,'0'), v3d-399(X,'0'), not ffa_2-234(X,'0'), not v2v-1(X,'0'), v1v-24(X,'0').
+couch(X,'1') :- not v1v-243(X,'0'), v3d-399(X,'0'), not v1v-275(X,'0').
+% acc 0.971 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 12
+% foldrpp costs: 0:07:54.745451
+
+{'v1v-243': '0', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [T]v1v-530(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '0', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '0' which should not equal '0' does not hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '1', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '1', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [F]v1v-530(X,'0').
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '1', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '1', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '1' which should not equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [T]v1v-530(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '0' which should not equal '0' does not hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [T]v1v-530(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '0' which should not equal '0' does not hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '1', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '1', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [T]v1v-530(X,'0').
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [F]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '1', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '1', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '0' which should not equal '0' does not hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of ffa_2-234 is '1' which should not equal '0' does hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '1', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '1', 'ffa_2-234': '1', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [F]v1v-530(X,'0').
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [F]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [F]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '1', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '1', 'ffa_2-234': '1', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '1' which should not equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of ffa_2-234 is '1' which should not equal '0' does hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '1' which should not equal '0' does hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [T]v1v-530(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '0' which should not equal '0' does not hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '0', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '1', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [F]v1v-530(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '0', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '1', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '1' which should not equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [T]v1v-530(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [F]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '0', 'v3d-399': '1', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '0' which should not equal '0' does not hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '1' which should equal '0' does not hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+{'v1v-243': '0', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v2v-465(X,'0'), not [T]v1v-530(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]ffa_2-234(X,'0'), not [T]v2v-1(X,'0'), [T]v1v-24(X,'0').
+[F]couch(X,'1') :- not [T]v1v-243(X,'0'), [T]v3d-399(X,'0'), not [T]v1v-275(X,'0').
+{'v1v-243': '0', 'v3d-399': '0', 'v2v-465': '0', 'v1v-530': '0', 'ffa_2-234': '0', 'v2v-1': '0', 'v1v-24': '0', 'v1v-275': '0'}
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v2v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-530 is '0' which should not equal '0' does not hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of ffa_2-234 is '0' which should not equal '0' does not hold and
+	the value of v2v-1 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+couch(X,'1') does not hold because
+	the value of v1v-243 is '0' which should not equal '0' does not hold and
+	the value of v3d-399 is '0' which should equal '0' does hold and
+	the value of v1v-275 is '0' which should not equal '0' does not hold 
+
+% acc 0.971 p 0.0 r 0.0 f1 0

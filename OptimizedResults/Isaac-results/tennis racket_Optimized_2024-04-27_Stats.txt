@@ -1,0 +1,221 @@
+Beginning analysis on category tennis racket in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.254921
+
+tennis_racket(X,'1') :- not ffa_2-151(X,'0'), not ffa_2-146(X,'0'), v1d-215(X,'0'), not v1v-259(X,'0'), not v2v-353(X,'0'), ofa-224(X,'0'), v1v-17(X,'0'), not ab1(X,'True').
+tennis_racket(X,'1') :- not ffa_2-151(X,'0'), v3d-230(X,'0'), v1d-561(X,'0'), not v2v-288(X,'0'), not v2v-247(X,'0'), not v1d-412(X,'0').
+ab1(X,'True') :- not ffa_2-49(X,'0'), not v1v-361(X,'0').
+% acc 0.968 p 0.222 r 0.022 f1 0.04
+% #rules 3 #preds 15
+% foldrpp costs: 0:06:24.087111
+
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [F]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3d-230(X,'0'), [T]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '1' which should equal '0' does not hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '0', 'v1v-259': '0', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '1', 'v3d-230': '0', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '0', 'ffa_2-49': '0', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [T]v1d-215(X,'0'), not [T]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [F]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3d-230(X,'0'), [T]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [T]v1d-412(X,'0').
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '0', 'v1v-259': '0', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '1', 'v3d-230': '0', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '0', 'ffa_2-49': '0', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '0' which should equal '0' does hold and
+	the value of v1v-259 is '0' which should not equal '0' does not hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '1' which should equal '0' does not hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '1', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [F]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3d-230(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [F]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '1', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '1' which should equal '0' does not hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '1' which should not equal '0' does hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '1', 'ffa_2-146': '1', 'v1d-215': '0', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ffa_2-146(X,'0'), [T]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v3d-230(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '1', 'ffa_2-146': '1', 'v1d-215': '0', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_2-146 is '1' which should not equal '0' does hold and
+	the value of v1d-215 is '0' which should equal '0' does hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '1', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '1', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [F]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v3d-230(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '1', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '1', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '1' which should equal '0' does not hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '1', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [F]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-230(X,'0'), [T]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '1', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '1' which should equal '0' does not hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '1', 'ffa_2-146': '0', 'v1d-215': '0', 'v1v-259': '1', 'v2v-353': '1', 'ofa-224': '1', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '0', 'ffa_2-49': '1', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [T]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [F]v2v-353(X,'0'), [F]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v3d-230(X,'0'), [T]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [T]v1d-412(X,'0').
+{'ffa_2-151': '1', 'ffa_2-146': '0', 'v1d-215': '0', 'v1v-259': '1', 'v2v-353': '1', 'ofa-224': '1', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '0', 'ffa_2-49': '1', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '0' which should equal '0' does hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '1' which should not equal '0' does hold and
+	the value of ofa-224 is '1' which should equal '0' does not hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [F]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3d-230(X,'0'), [T]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '0', 'v1d-561': '0', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '1' which should equal '0' does not hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [F]v1d-215(X,'0'), not [F]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [T]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-230(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '1', 'v1v-259': '1', 'v2v-353': '0', 'ofa-224': '0', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '1' which should equal '0' does not hold and
+	the value of v1v-259 is '1' which should not equal '0' does hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '0' which should equal '0' does hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '0', 'v1v-259': '0', 'v2v-353': '0', 'ofa-224': '1', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-146(X,'0'), [T]v1d-215(X,'0'), not [T]v1v-259(X,'0'), not [T]v2v-353(X,'0'), [F]ofa-224(X,'0'), [T]v1v-17(X,'0'), not [U]ab1(X,'True').
+[F]tennis_racket(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-230(X,'0'), [F]v1d-561(X,'0'), not [T]v2v-288(X,'0'), not [T]v2v-247(X,'0'), not [F]v1d-412(X,'0').
+{'ffa_2-151': '0', 'ffa_2-146': '0', 'v1d-215': '0', 'v1v-259': '0', 'v2v-353': '0', 'ofa-224': '1', 'v1v-17': '0', 'v3d-230': '1', 'v1d-561': '1', 'v2v-288': '0', 'v2v-247': '0', 'v1d-412': '1', 'ffa_2-49': '0', 'v1v-361': '0'}
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-146 is '0' which should not equal '0' does not hold and
+	the value of v1d-215 is '0' which should equal '0' does hold and
+	the value of v1v-259 is '0' which should not equal '0' does not hold and
+	the value of v2v-353 is '0' which should not equal '0' does not hold and
+	the value of ofa-224 is '1' which should equal '0' does not hold and
+	the value of v1v-17 is '0' which should equal '0' does hold 
+
+tennis_racket(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v2v-288 is '0' which should not equal '0' does not hold and
+	the value of v2v-247 is '0' which should not equal '0' does not hold and
+	the value of v1d-412 is '1' which should not equal '0' does hold 
+
+% acc 0.968 p 0.222 r 0.022 f1 0.04

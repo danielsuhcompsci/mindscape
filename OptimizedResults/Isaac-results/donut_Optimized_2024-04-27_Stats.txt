@@ -1,0 +1,190 @@
+Beginning analysis on category donut in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.595747
+
+donut(X,'1') :- not ffa_1-282(X,'0'), not ffa_1-1(X,'0'), not ffa_1-134(X,'0'), not v2v-694(X,'0'), not v3d-462(X,'0'), not v1v-61(X,'0').
+donut(X,'1') :- ffa_1-454(X,'0'), v1v-283(X,'0'), v1d-516(X,'0'), not v1d-185(X,'0').
+% acc 0.986 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 10
+% foldrpp costs: 0:06:39.248030
+
+{'ffa_1-282': '0', 'ffa_1-1': '1', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '0', 'v1d-516': '0', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [F]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [T]v3d-462(X,'0'), not [T]v1v-61(X,'0').
+[F]donut(X,'1') :- [T]ffa_1-454(X,'0'), [T]v1v-283(X,'0'), [T]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '1', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '0', 'v1d-516': '0', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '1' which should not equal '0' does hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '0' which should not equal '0' does not hold and
+	the value of v1v-61 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-516 is '0' which should equal '0' does hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '1', 'v1v-61': '1', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '1', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [T]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [F]v3d-462(X,'0'), not [F]v1v-61(X,'0').
+[F]donut(X,'1') :- [T]ffa_1-454(X,'0'), [F]v1v-283(X,'0'), [F]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '1', 'v1v-61': '1', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '1', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '1' which should not equal '0' does hold and
+	the value of v1v-61 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-516 is '1' which should equal '0' does not hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '1', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '1', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '1', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [F]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [T]v3d-462(X,'0'), not [F]v1v-61(X,'0').
+[F]donut(X,'1') :- [T]ffa_1-454(X,'0'), [F]v1v-283(X,'0'), [F]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '1', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '1', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '1', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '1' which should not equal '0' does hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '0' which should not equal '0' does not hold and
+	the value of v1v-61 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-516 is '1' which should equal '0' does not hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '1', 'v1v-61': '1', 'ffa_1-454': '1', 'v1v-283': '0', 'v1d-516': '1', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [T]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [F]v3d-462(X,'0'), not [F]v1v-61(X,'0').
+[F]donut(X,'1') :- [F]ffa_1-454(X,'0'), [T]v1v-283(X,'0'), [F]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '1', 'v1v-61': '1', 'ffa_1-454': '1', 'v1v-283': '0', 'v1d-516': '1', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '1' which should not equal '0' does hold and
+	the value of v1v-61 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-516 is '1' which should equal '0' does not hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '0', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '0', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [T]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [T]v2v-694(X,'0'), not [T]v3d-462(X,'0'), not [T]v1v-61(X,'0').
+[F]donut(X,'1') :- [T]ffa_1-454(X,'0'), [F]v1v-283(X,'0'), [T]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '0', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '0', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '0' which should not equal '0' does not hold and
+	the value of v3d-462 is '0' which should not equal '0' does not hold and
+	the value of v1v-61 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-516 is '0' which should equal '0' does hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '0', 'v1d-516': '1', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [T]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [T]v3d-462(X,'0'), not [T]v1v-61(X,'0').
+[F]donut(X,'1') :- [T]ffa_1-454(X,'0'), [T]v1v-283(X,'0'), [F]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '0', 'v1d-516': '1', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '0' which should not equal '0' does not hold and
+	the value of v1v-61 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-516 is '1' which should equal '0' does not hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '1', 'ffa_1-454': '1', 'v1v-283': '1', 'v1d-516': '0', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [T]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [T]v3d-462(X,'0'), not [F]v1v-61(X,'0').
+[F]donut(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-283(X,'0'), [T]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '1', 'ffa_1-454': '1', 'v1v-283': '1', 'v1d-516': '0', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '0' which should not equal '0' does not hold and
+	the value of v1v-61 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-516 is '0' which should equal '0' does hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '1', 'v1v-61': '1', 'ffa_1-454': '1', 'v1v-283': '0', 'v1d-516': '1', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [T]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [F]v3d-462(X,'0'), not [F]v1v-61(X,'0').
+[F]donut(X,'1') :- [F]ffa_1-454(X,'0'), [T]v1v-283(X,'0'), [F]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '1', 'v1v-61': '1', 'ffa_1-454': '1', 'v1v-283': '0', 'v1d-516': '1', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '1' which should not equal '0' does hold and
+	the value of v1v-61 is '1' which should not equal '0' does hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-516 is '1' which should equal '0' does not hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '0', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [T]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [F]v2v-694(X,'0'), not [T]v3d-462(X,'0'), not [T]v1v-61(X,'0').
+[F]donut(X,'1') :- [T]ffa_1-454(X,'0'), [F]v1v-283(X,'0'), [T]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '0', 'ffa_1-134': '0', 'v2v-694': '1', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '0', 'v1v-283': '1', 'v1d-516': '0', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '1' which should not equal '0' does hold and
+	the value of v3d-462 is '0' which should not equal '0' does not hold and
+	the value of v1v-61 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-516 is '0' which should equal '0' does hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'ffa_1-1': '1', 'ffa_1-134': '0', 'v2v-694': '0', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '1', 'v1v-283': '1', 'v1d-516': '1', 'v1d-185': '0'}
+[F]donut(X,'1') :- not [T]ffa_1-282(X,'0'), not [F]ffa_1-1(X,'0'), not [T]ffa_1-134(X,'0'), not [T]v2v-694(X,'0'), not [T]v3d-462(X,'0'), not [T]v1v-61(X,'0').
+[F]donut(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-283(X,'0'), [F]v1d-516(X,'0'), not [T]v1d-185(X,'0').
+{'ffa_1-282': '0', 'ffa_1-1': '1', 'ffa_1-134': '0', 'v2v-694': '0', 'v3d-462': '0', 'v1v-61': '0', 'ffa_1-454': '1', 'v1v-283': '1', 'v1d-516': '1', 'v1d-185': '0'}
+donut(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-1 is '1' which should not equal '0' does hold and
+	the value of ffa_1-134 is '0' which should not equal '0' does not hold and
+	the value of v2v-694 is '0' which should not equal '0' does not hold and
+	the value of v3d-462 is '0' which should not equal '0' does not hold and
+	the value of v1v-61 is '0' which should not equal '0' does not hold 
+
+donut(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-516 is '1' which should equal '0' does not hold and
+	the value of v1d-185 is '0' which should not equal '0' does not hold 
+
+% acc 0.986 p 0.0 r 0.0 f1 0

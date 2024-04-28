@@ -1,0 +1,119 @@
+Beginning analysis on category banana in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.683885
+
+banana(X,'1') :- not ffa_1-282(X,'0'), v3v-484(X,'0'), not v1v-351(X,'0'), not v1v-121(X,'0'), not ffa_1-12(X,'0'), not v1v-56(X,'0').
+% acc 0.978 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 6
+% foldrpp costs: 0:03:47.097578
+
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '1'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [T]ffa_1-12(X,'0'), not [F]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '1'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+{'ffa_1-282': '0', 'v3v-484': '0', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '1'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [T]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [T]ffa_1-12(X,'0'), not [F]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '0', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '1'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+{'ffa_1-282': '0', 'v3v-484': '0', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '1', 'v1v-56': '0'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [T]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [F]ffa_1-12(X,'0'), not [T]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '0', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '1', 'v1v-56': '0'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '1' which should not equal '0' does hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '1', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '0'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3v-484(X,'0'), not [F]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [T]ffa_1-12(X,'0'), not [T]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '1', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '0'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v1v-351 is '1' which should not equal '0' does hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '0'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [T]ffa_1-12(X,'0'), not [T]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '0'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '1', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '1'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3v-484(X,'0'), not [F]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [T]ffa_1-12(X,'0'), not [F]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '1', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '1'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v1v-351 is '1' which should not equal '0' does hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '0'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [T]ffa_1-12(X,'0'), not [T]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '0', 'v1v-56': '0'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '1', 'ffa_1-12': '1', 'v1v-56': '0'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [F]v1v-121(X,'0'), not [F]ffa_1-12(X,'0'), not [T]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '1', 'ffa_1-12': '1', 'v1v-56': '0'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '1' which should not equal '0' does hold and
+	the value of ffa_1-12 is '1' which should not equal '0' does hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '1', 'v1v-56': '0'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [T]v1v-121(X,'0'), not [F]ffa_1-12(X,'0'), not [T]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '1', 'v1v-351': '0', 'v1v-121': '0', 'ffa_1-12': '1', 'v1v-56': '0'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '1' which should not equal '0' does hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3v-484': '0', 'v1v-351': '0', 'v1v-121': '1', 'ffa_1-12': '0', 'v1v-56': '1'}
+[F]banana(X,'1') :- not [T]ffa_1-282(X,'0'), [T]v3v-484(X,'0'), not [T]v1v-351(X,'0'), not [F]v1v-121(X,'0'), not [T]ffa_1-12(X,'0'), not [F]v1v-56(X,'0').
+{'ffa_1-282': '0', 'v3v-484': '0', 'v1v-351': '0', 'v1v-121': '1', 'ffa_1-12': '0', 'v1v-56': '1'}
+banana(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of v1v-351 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '1' which should not equal '0' does hold and
+	the value of ffa_1-12 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+% acc 0.978 p 0.0 r 0.0 f1 0

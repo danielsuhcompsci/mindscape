@@ -1,0 +1,99 @@
+Beginning analysis on category mouse in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.734470
+
+mouse(X,'1') :- v3d-230(X,'0'), not ffa_2-155(X,'0'), not v2d-208(X,'0'), v1v-87(X,'0').
+% acc 0.988 p 0 r 0.0 f1 0
+% #rules 1 #preds 4
+% foldrpp costs: 0:04:57.999184
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '0'}
+[F]mouse(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [T]v1v-87(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '0'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '0' which should equal '0' does hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+[F]mouse(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v2d-208(X,'0'), [F]v1v-87(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v2d-208': '0', 'v1v-87': '1'}
+mouse(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v2d-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-87 is '1' which should equal '0' does not hold 
+
+% acc 0.988 p 0 r 0.0 f1 0

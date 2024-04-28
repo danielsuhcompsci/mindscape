@@ -1,0 +1,271 @@
+Beginning analysis on category bear in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.250839
+
+bear(X,'1') :- not ffa_1-58(X,'0'), v1v-283(X,'0'), not v1v-445(X,'0'), not ffa_2-269(X,'0'), v1v-45(X,'0').
+bear(X,'1') :- not ffa_1-58(X,'0'), v1v-283(X,'0'), not v1v-445(X,'0'), not v3d-231(X,'0'), not ffa_2-147(X,'0'), not ffa_2-164(X,'0').
+bear(X,'1') :- v1v-283(X,'0'), not ofa-224(X,'0'), not atl_faces-66(X,'0'), not v1v-52(X,'0').
+% acc 0.988 p 0.0 r 0.0 f1 0
+% #rules 3 #preds 15
+% foldrpp costs: 0:08:12.829221
+
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [T]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [F]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '1' which should not equal '0' does hold 
+
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '1', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [F]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [F]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [F]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '1', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '1' which should not equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '1' which should not equal '0' does hold 
+
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [F]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [F]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '1' which should not equal '0' does hold 
+
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '1', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '0'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [F]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [F]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [T]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '1', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '0'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of v3d-231 is '1' which should not equal '0' does hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '1', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '1', 'atl_faces-66': '0', 'v1v-52': '0'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [F]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [F]v1v-283(X,'0'), not [F]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [T]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '1', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '1', 'atl_faces-66': '0', 'v1v-52': '0'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '1' which should equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '1', 'ffa_2-269': '1', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '0'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [F]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [T]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [T]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '1', 'ffa_2-269': '1', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '0'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of ffa_2-269 is '1' which should not equal '0' does hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '1', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [F]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [F]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [F]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '1', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '1' which should equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '1' which should not equal '0' does hold 
+
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '0'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [T]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [T]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '0'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '1', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '1', 'atl_faces-66': '0', 'v1v-52': '0'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [F]v1v-283(X,'0'), not [T]v1v-445(X,'0'), not [F]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [F]v1v-283(X,'0'), not [F]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [T]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '1', 'v1v-445': '0', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '1', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '1', 'atl_faces-66': '0', 'v1v-52': '0'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1v-445 is '0' which should not equal '0' does not hold and
+	the value of v3d-231 is '1' which should not equal '0' does hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]ffa_2-269(X,'0'), [T]v1v-45(X,'0').
+[F]bear(X,'1') :- not [T]ffa_1-58(X,'0'), [T]v1v-283(X,'0'), not [F]v1v-445(X,'0'), not [T]v3d-231(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_2-164(X,'0').
+[F]bear(X,'1') :- [T]v1v-283(X,'0'), not [T]ofa-224(X,'0'), not [T]atl_faces-66(X,'0'), not [F]v1v-52(X,'0').
+{'ffa_1-58': '0', 'v1v-283': '0', 'v1v-445': '1', 'ffa_2-269': '0', 'v1v-45': '0', 'v3d-231': '0', 'ffa_2-147': '0', 'ffa_2-164': '0', 'ofa-224': '0', 'atl_faces-66': '0', 'v1v-52': '1'}
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of ffa_2-269 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bear(X,'1') does not hold because
+	the value of ffa_1-58 is '0' which should not equal '0' does not hold and
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1v-445 is '1' which should not equal '0' does hold and
+	the value of v3d-231 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-164 is '0' which should not equal '0' does not hold 
+
+bear(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-66 is '0' which should not equal '0' does not hold and
+	the value of v1v-52 is '1' which should not equal '0' does hold 
+
+% acc 0.988 p 0.0 r 0.0 f1 0

@@ -1,0 +1,150 @@
+Beginning analysis on category toaster in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.712221
+
+toaster(X,'1') :- not v2v-372(X,'0'), not v1v-548(X,'0'), not v3d-99(X,'0').
+toaster(X,'1') :- not v2v-372(X,'0'), not v1d-164(X,'0'), not ofa-315(X,'0').
+% acc 0.998 p 0 r 0.0 f1 0
+% #rules 2 #preds 6
+% foldrpp costs: 0:06:20.069886
+
+{'v2v-372': '0', 'v1v-548': '1', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [F]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '1', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '1' which should not equal '0' does hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '1', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [F]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '1', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '1' which should not equal '0' does hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '1', 'v1d-164': '0', 'ofa-315': '1'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [F]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [F]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '1', 'v1d-164': '0', 'ofa-315': '1'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '1' which should not equal '0' does hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '1' which should not equal '0' does hold 
+
+{'v2v-372': '1', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [F]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [F]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '1', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '1' which should not equal '0' does hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '1' which should not equal '0' does hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1v-548(X,'0'), not [T]v3d-99(X,'0').
+[F]toaster(X,'1') :- not [T]v2v-372(X,'0'), not [T]v1d-164(X,'0'), not [T]ofa-315(X,'0').
+{'v2v-372': '0', 'v1v-548': '0', 'v3d-99': '0', 'v1d-164': '0', 'ofa-315': '0'}
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1v-548 is '0' which should not equal '0' does not hold and
+	the value of v3d-99 is '0' which should not equal '0' does not hold 
+
+toaster(X,'1') does not hold because
+	the value of v2v-372 is '0' which should not equal '0' does not hold and
+	the value of v1d-164 is '0' which should not equal '0' does not hold and
+	the value of ofa-315 is '0' which should not equal '0' does not hold 
+
+% acc 0.998 p 0 r 0.0 f1 0

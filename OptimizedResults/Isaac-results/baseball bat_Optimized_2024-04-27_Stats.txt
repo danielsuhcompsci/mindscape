@@ -1,0 +1,109 @@
+Beginning analysis on category baseball bat in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.856735
+
+baseball_bat(X,'1') :- not ffa_2-151(X,'0'), ffa_1-454(X,'0'), not v3v-586(X,'0'), not v2v-248(X,'0'), not v1v-97(X,'0').
+% acc 0.98 p 0 r 0.0 f1 0
+% #rules 1 #preds 5
+% foldrpp costs: 0:03:42.742396
+
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '1'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [F]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '1'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [T]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [T]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [F]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '1', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [F]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '1', 'ffa_1-454': '1', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [T]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+[F]baseball_bat(X,'1') :- not [T]ffa_2-151(X,'0'), [T]ffa_1-454(X,'0'), not [T]v3v-586(X,'0'), not [T]v2v-248(X,'0'), not [T]v1v-97(X,'0').
+{'ffa_2-151': '0', 'ffa_1-454': '0', 'v3v-586': '0', 'v2v-248': '0', 'v1v-97': '0'}
+baseball_bat(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of v2v-248 is '0' which should not equal '0' does not hold and
+	the value of v1v-97 is '0' which should not equal '0' does not hold 
+
+% acc 0.98 p 0 r 0.0 f1 0

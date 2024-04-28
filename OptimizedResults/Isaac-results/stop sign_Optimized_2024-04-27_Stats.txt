@@ -1,0 +1,555 @@
+Beginning analysis on category stop sign in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.162980
+
+stop_sign(X,'1') :- not ffa_2-151(X,'0'), not v3v-353(X,'0'), not v1v-67(X,'0'), not v1v-220(X,'0').
+stop_sign(X,'1') :- not ffa_2-151(X,'0'), v3v-516(X,'0'), not v2v-502(X,'0'), not v1v-465(X,'0'), not v1v-94(X,'0'), not v1v-57(X,'0').
+stop_sign(X,'1') :- not ffa_2-151(X,'0'), not v2d-331(X,'0'), not v2v-601(X,'0'), not v1v-84(X,'0'), v1v-48(X,'0').
+stop_sign(X,'1') :- not ffa_2-151(X,'0'), not v1d-417(X,'0'), not v1v-75(X,'0'), not v1v-425(X,'0').
+stop_sign(X,'1') :- not ffa_2-151(X,'0'), not v1v-271(X,'0'), not atl_faces-10(X,'0'), not v2v-450(X,'0'), not v2v-226(X,'0').
+stop_sign(X,'1') :- not ffa_2-151(X,'0'), not ffa_1-272(X,'0'), not v1d-530(X,'0').
+stop_sign(X,'1') :- not ffa_2-151(X,'0'), not v1v-303(X,'0'), not v2v-769(X,'0'), not v1v-197(X,'0').
+% acc 0.982 p 0.0 r 0.0 f1 0
+% #rules 7 #preds 31
+% foldrpp costs: 0:14:38.494219
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '1', 'v1v-220': '0', 'v3v-516': '0', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [F]v1v-67(X,'0'), not [T]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [F]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [F]v1v-84(X,'0'), [T]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [F]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [T]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '1', 'v1v-220': '0', 'v3v-516': '0', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '1' which should not equal '0' does hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '0' which should equal '0' does hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '1' which should not equal '0' does hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '0', 'v2v-502': '1', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '0', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '1', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [T]v1v-67(X,'0'), not [F]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3v-516(X,'0'), not [F]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [F]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [T]v1v-84(X,'0'), [T]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [F]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [F]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [F]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '0', 'v2v-502': '1', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '0', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '1', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should not equal '0' does not hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '0' which should equal '0' does hold and
+	the value of v2v-502 is '1' which should not equal '0' does hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '1' which should not equal '0' does hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '1' which should not equal '0' does hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v3v-353': '0', 'v1v-67': '1', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '0', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '1', 'v2v-226': '1', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [F]v1v-67(X,'0'), not [T]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [T]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [T]v1v-84(X,'0'), [T]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [T]atl_faces-10(X,'0'), not [F]v2v-450(X,'0'), not [F]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [F]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '1', 'v3v-353': '0', 'v1v-67': '1', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '0', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '1', 'v2v-226': '1', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '1' which should not equal '0' does hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-516 is '1' which should equal '0' does not hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v2v-450 is '1' which should not equal '0' does hold and
+	the value of v2v-226 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [T]v1v-67(X,'0'), not [T]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [F]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [F]v1v-84(X,'0'), [T]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [T]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [F]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should not equal '0' does not hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '1' which should equal '0' does not hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '1', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '1', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '1'}
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [T]v1v-67(X,'0'), not [F]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [T]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [F]v1v-84(X,'0'), [F]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]v1v-271(X,'0'), not [T]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [T]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [F]v1v-197(X,'0').
+{'ffa_2-151': '1', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '1', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '1', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '1'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should not equal '0' does not hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-516 is '1' which should equal '0' does not hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '1' which should equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-271 is '1' which should not equal '0' does hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '1', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '1', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [T]v1v-67(X,'0'), not [T]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [F]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [F]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [F]v1v-84(X,'0'), [F]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [F]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [T]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '1', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '1', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should not equal '0' does not hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '1' which should equal '0' does not hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '1' which should not equal '0' does hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '1' which should equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '1' which should not equal '0' does hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [T]v1v-67(X,'0'), not [F]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [F]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [F]v1v-84(X,'0'), [T]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [F]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [T]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should not equal '0' does not hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '1' which should equal '0' does not hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '1' which should not equal '0' does hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [T]v1v-67(X,'0'), not [T]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [T]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [F]v1v-84(X,'0'), [T]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [T]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [T]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '0', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '0', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should not equal '0' does not hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '1' which should equal '0' does not hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '1', 'v1v-220': '1', 'v3v-516': '0', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '1', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [F]v1v-67(X,'0'), not [F]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [T]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [T]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [T]v2v-601(X,'0'), not [F]v1v-84(X,'0'), [T]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [F]atl_faces-10(X,'0'), not [F]v2v-450(X,'0'), not [T]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [F]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '1', 'v1v-220': '1', 'v3v-516': '0', 'v2v-502': '0', 'v1v-465': '0', 'v1v-94': '0', 'v1v-57': '0', 'v2d-331': '0', 'v2v-601': '0', 'v1v-84': '1', 'v1v-48': '0', 'v1d-417': '0', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '1', 'v2v-450': '1', 'v2v-226': '0', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '1' which should not equal '0' does hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '0' which should equal '0' does hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold and
+	the value of v1v-84 is '1' which should not equal '0' does hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '1' which should not equal '0' does hold and
+	the value of v2v-450 is '1' which should not equal '0' does hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '1', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '1', 'v1v-84': '0', 'v1v-48': '1', 'v1d-417': '1', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '1', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3v-353(X,'0'), not [T]v1v-67(X,'0'), not [F]v1v-220(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-516(X,'0'), not [T]v2v-502(X,'0'), not [F]v1v-465(X,'0'), not [T]v1v-94(X,'0'), not [F]v1v-57(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2d-331(X,'0'), not [F]v2v-601(X,'0'), not [T]v1v-84(X,'0'), [F]v1v-48(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1d-417(X,'0'), not [T]v1v-75(X,'0'), not [T]v1v-425(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-271(X,'0'), not [T]atl_faces-10(X,'0'), not [T]v2v-450(X,'0'), not [F]v2v-226(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-272(X,'0'), not [F]v1d-530(X,'0').
+[F]stop_sign(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-303(X,'0'), not [T]v2v-769(X,'0'), not [T]v1v-197(X,'0').
+{'ffa_2-151': '0', 'v3v-353': '0', 'v1v-67': '0', 'v1v-220': '1', 'v3v-516': '1', 'v2v-502': '0', 'v1v-465': '1', 'v1v-94': '0', 'v1v-57': '1', 'v2d-331': '0', 'v2v-601': '1', 'v1v-84': '0', 'v1v-48': '1', 'v1d-417': '1', 'v1v-75': '0', 'v1v-425': '0', 'v1v-271': '0', 'atl_faces-10': '0', 'v2v-450': '0', 'v2v-226': '1', 'ffa_1-272': '0', 'v1d-530': '1', 'v1v-303': '0', 'v2v-769': '0', 'v1v-197': '0'}
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-353 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should not equal '0' does not hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-516 is '1' which should equal '0' does not hold and
+	the value of v2v-502 is '0' which should not equal '0' does not hold and
+	the value of v1v-465 is '1' which should not equal '0' does hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2d-331 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '1' which should not equal '0' does hold and
+	the value of v1v-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '1' which should equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-417 is '1' which should not equal '0' does hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-425 is '0' which should not equal '0' does not hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-271 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v2v-450 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-272 is '0' which should not equal '0' does not hold and
+	the value of v1d-530 is '1' which should not equal '0' does hold 
+
+stop_sign(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-303 is '0' which should not equal '0' does not hold and
+	the value of v2v-769 is '0' which should not equal '0' does not hold and
+	the value of v1v-197 is '0' which should not equal '0' does not hold 
+
+% acc 0.982 p 0.0 r 0.0 f1 0

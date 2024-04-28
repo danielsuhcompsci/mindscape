@@ -1,0 +1,28 @@
+Beginning analysis on category chair in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.230026
+
+% acc 0.905 p 0 r 0.0 f1 0
+% #rules 0 #preds 0
+% foldrpp costs: 0:01:50.984852
+
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+{}
+% acc 0.905 p 0 r 0.0 f1 0

@@ -1,0 +1,231 @@
+Beginning analysis on category tie in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.674559
+
+tie(X,'1') :- not ffa_1-383(X,'0'), not ffa_2-147(X,'0'), not ffa_1-287(X,'0').
+tie(X,'1') :- not ffa_1-383(X,'0'), not ffa_2-147(X,'0'), not atl_faces-34(X,'0'), v1v-85(X,'0').
+tie(X,'1') :- not ffa_1-383(X,'0'), not ffa_2-147(X,'0'), not v1d-241(X,'0'), not v3v-91(X,'0').
+% acc 0.968 p 0.2 r 0.005 f1 0.01
+% #rules 3 #preds 11
+% foldrpp costs: 0:07:45.801836
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [T]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '0' which should not equal '0' does not hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '0', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [F]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '0', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '0' which should not equal '0' does not hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '1', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [F]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [F]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '1', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '1' which should not equal '0' does hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [T]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '0' which should not equal '0' does not hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '1', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [F]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [F]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '1', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '1' which should not equal '0' does hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '0', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [F]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '0', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '0' which should not equal '0' does not hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '0', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [F]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '1', 'v1d-241': '0', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '0' which should not equal '0' does not hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [T]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '0' which should not equal '0' does not hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '1', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [T]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [F]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '1', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '1' which should not equal '0' does hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]ffa_1-287(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]atl_faces-34(X,'0'), [T]v1v-85(X,'0').
+[F]tie(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1d-241(X,'0'), not [T]v3v-91(X,'0').
+{'ffa_1-383': '0', 'ffa_2-147': '0', 'ffa_1-287': '0', 'atl_faces-34': '0', 'v1v-85': '0', 'v1d-241': '0', 'v3v-91': '0'}
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-287 is '0' which should not equal '0' does not hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-34 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold 
+
+tie(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1d-241 is '0' which should not equal '0' does not hold and
+	the value of v3v-91 is '0' which should not equal '0' does not hold 
+
+% acc 0.968 p 0.2 r 0.005 f1 0.01

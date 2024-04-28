@@ -1,0 +1,676 @@
+Beginning analysis on category sink in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.000385
+
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not v3v-114(X,'0'), not v2d-447(X,'0').
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not v3v-114(X,'0'), not ffa_2-76(X,'0'), not v3v-607(X,'0'), v1v-60(X,'0').
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not ffa_1-436(X,'0'), v1v-48(X,'0').
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not v1v-177(X,'0'), not v3d-54(X,'0'), not v1d-401(X,'0'), not v1v-153(X,'0').
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not v3d-430(X,'0'), not v2v-832(X,'0'), not v3d-31(X,'0').
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not v1v-53(X,'0'), v3v-356(X,'0'), not v2v-577(X,'0').
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not v3d-361(X,'0'), v2v-501(X,'0'), not ffa_2-115(X,'0'), v1v-37(X,'0').
+sink(X,'1') :- not v3v-217(X,'0'), not ffa_2-151(X,'0'), not v1d-323(X,'0'), v1v-18(X,'0').
+% acc 0.959 p 0.0 r 0.0 f1 0
+% #rules 8 #preds 40
+% foldrpp costs: 0:16:57.583038
+
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '1', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '0', 'v1d-401': '0', 'v1v-153': '1', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3v-114(X,'0'), not [F]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [F]v1v-60(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [T]v3d-54(X,'0'), not [T]v1d-401(X,'0'), not [F]v1v-153(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '1', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '0', 'v1d-401': '0', 'v1v-153': '1', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of ffa_2-76 is '1' which should not equal '0' does hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '0' which should not equal '0' does not hold and
+	the value of v1d-401 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should not equal '0' does not hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '0' which should not equal '0' does not hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '0', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '1', 'v3d-361': '1', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '1', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [T]v1v-60(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [T]v3d-54(X,'0'), not [T]v1d-401(X,'0'), not [T]v1v-153(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [F]v2v-577(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [F]v1v-37(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '0', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '1', 'v3d-361': '1', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '1', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-76 is '0' which should not equal '0' does not hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '0' which should not equal '0' does not hold and
+	the value of v1d-401 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should not equal '0' does not hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '1' which should not equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '1' which should not equal '0' does hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '1', 'v2v-501': '0', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [T]v1v-60(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [F]v3d-54(X,'0'), not [T]v1d-401(X,'0'), not [T]v1v-153(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3d-361(X,'0'), [T]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '1', 'v2v-501': '0', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-76 is '0' which should not equal '0' does not hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '1' which should not equal '0' does hold and
+	the value of v1d-401 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should not equal '0' does not hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '1' which should not equal '0' does hold and
+	the value of v2v-501 is '0' which should equal '0' does hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '1', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '1', 'v1v-153': '0', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [F]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [F]v1v-60(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [F]v3d-54(X,'0'), not [F]v1d-401(X,'0'), not [T]v1v-153(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '1', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '1', 'v1v-153': '0', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-76 is '1' which should not equal '0' does hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '1' which should not equal '0' does hold and
+	the value of v1d-401 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should not equal '0' does not hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '0' which should not equal '0' does not hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '0', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [F]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [F]v1v-60(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [F]v3d-54(X,'0'), not [T]v1d-401(X,'0'), not [T]v1v-153(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-361(X,'0'), [T]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '0', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-76 is '1' which should not equal '0' does hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '1' which should not equal '0' does hold and
+	the value of v1d-401 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should not equal '0' does not hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '0' which should not equal '0' does not hold and
+	the value of v2v-501 is '0' which should equal '0' does hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '1', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '1', 'v1v-153': '1', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [T]v1v-60(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [F]v3d-54(X,'0'), not [F]v1d-401(X,'0'), not [F]v1v-153(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '1', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '1', 'v1v-153': '1', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-76 is '0' which should not equal '0' does not hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '1' which should not equal '0' does hold and
+	the value of v1d-401 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should not equal '0' does not hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '0' which should not equal '0' does not hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '1', 'ffa_2-151': '1', 'v3v-114': '1', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '1', 'v1v-177': '1', 'v3d-54': '0', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '1', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v3v-114(X,'0'), not [F]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [F]v1v-60(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [F]v1v-48(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v1v-177(X,'0'), not [T]v3d-54(X,'0'), not [T]v1d-401(X,'0'), not [T]v1v-153(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [F]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '1', 'ffa_2-151': '1', 'v3v-114': '1', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '1', 'v1v-177': '1', 'v3d-54': '0', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '0', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '1', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of ffa_2-76 is '1' which should not equal '0' does hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-177 is '1' which should not equal '0' does hold and
+	the value of v3d-54 is '0' which should not equal '0' does not hold and
+	the value of v1d-401 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-53 is '0' which should not equal '0' does not hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-361 is '1' which should not equal '0' does hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '1', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [T]v1v-60(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [F]v3d-54(X,'0'), not [T]v1d-401(X,'0'), not [T]v1v-153(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '0', 'v3v-607': '0', 'v1v-60': '0', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '0', 'v1v-153': '0', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '1', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-76 is '0' which should not equal '0' does not hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '1' which should not equal '0' does hold and
+	the value of v1d-401 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '1' which should not equal '0' does hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '0' which should not equal '0' does not hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '0', 'ffa_2-151': '1', 'v3v-114': '1', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '0', 'v1d-401': '1', 'v1v-153': '1', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '1', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '1', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v3v-114(X,'0'), not [F]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [F]v1v-60(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [T]v3d-54(X,'0'), not [F]v1d-401(X,'0'), not [F]v1v-153(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [F]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [F]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [F]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '0', 'ffa_2-151': '1', 'v3v-114': '1', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '0', 'v1d-401': '1', 'v1v-153': '1', 'v3d-430': '1', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '1', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '1', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of ffa_2-76 is '1' which should not equal '0' does hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '0' which should not equal '0' does not hold and
+	the value of v1d-401 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-53 is '1' which should not equal '0' does hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-361 is '0' which should not equal '0' does not hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '1' which should not equal '0' does hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '1', 'v1v-153': '1', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '1', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [T]v2d-447(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3v-114(X,'0'), not [F]ffa_2-76(X,'0'), not [T]v3v-607(X,'0'), [F]v1v-60(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]ffa_1-436(X,'0'), [T]v1v-48(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1v-177(X,'0'), not [F]v3d-54(X,'0'), not [F]v1d-401(X,'0'), not [F]v1v-153(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-430(X,'0'), not [T]v2v-832(X,'0'), not [T]v3d-31(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [F]v1v-53(X,'0'), [F]v3v-356(X,'0'), not [T]v2v-577(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v3d-361(X,'0'), [F]v2v-501(X,'0'), not [T]ffa_2-115(X,'0'), [T]v1v-37(X,'0').
+[F]sink(X,'1') :- not [T]v3v-217(X,'0'), not [T]ffa_2-151(X,'0'), not [T]v1d-323(X,'0'), [T]v1v-18(X,'0').
+{'v3v-217': '0', 'ffa_2-151': '0', 'v3v-114': '0', 'v2d-447': '0', 'ffa_2-76': '1', 'v3v-607': '0', 'v1v-60': '1', 'ffa_1-436': '0', 'v1v-48': '0', 'v1v-177': '0', 'v3d-54': '1', 'v1d-401': '1', 'v1v-153': '1', 'v3d-430': '0', 'v2v-832': '0', 'v3d-31': '0', 'v1v-53': '1', 'v3v-356': '1', 'v2v-577': '0', 'v3d-361': '0', 'v2v-501': '1', 'ffa_2-115': '0', 'v1v-37': '0', 'v1d-323': '0', 'v1v-18': '0'}
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of v2d-447 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-76 is '1' which should not equal '0' does hold and
+	the value of v3v-607 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-436 is '0' which should not equal '0' does not hold and
+	the value of v1v-48 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-177 is '0' which should not equal '0' does not hold and
+	the value of v3d-54 is '1' which should not equal '0' does hold and
+	the value of v1d-401 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v2v-832 is '0' which should not equal '0' does not hold and
+	the value of v3d-31 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '1' which should not equal '0' does hold and
+	the value of v3v-356 is '1' which should equal '0' does not hold and
+	the value of v2v-577 is '0' which should not equal '0' does not hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-361 is '0' which should not equal '0' does not hold and
+	the value of v2v-501 is '1' which should equal '0' does not hold and
+	the value of ffa_2-115 is '0' which should not equal '0' does not hold and
+	the value of v1v-37 is '0' which should equal '0' does hold 
+
+sink(X,'1') does not hold because
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-323 is '0' which should not equal '0' does not hold and
+	the value of v1v-18 is '0' which should equal '0' does hold 
+
+% acc 0.959 p 0.0 r 0.0 f1 0

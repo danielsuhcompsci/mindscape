@@ -1,0 +1,626 @@
+Beginning analysis on category dog in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.332305
+
+dog(X,'1') :- not ffa_1-33(X,'0'), not ffa_2-50(X,'0'), not ffa_1-167(X,'0'), v1v-146(X,'0'), not v1v-204(X,'0'), v1v-335(X,'0'), v1v-58(X,'0').
+dog(X,'1') :- not ffa_1-33(X,'0'), not v3v-217(X,'0'), not ofa-6(X,'0'), not ffa_2-18(X,'0'), not v2v-523(X,'0'), v1v-343(X,'0'), v1v-118(X,'0').
+dog(X,'1') :- not ffa_1-383(X,'0'), not v1v-464(X,'0'), not v2v-397(X,'0'), not v3v-480(X,'0'), v2v-178(X,'0').
+dog(X,'1') :- not ffa_1-383(X,'0'), not v1v-464(X,'0'), not atl_faces-110(X,'0').
+dog(X,'1') :- not ffa_1-33(X,'0'), not v1d-353(X,'0').
+dog(X,'1') :- not ffa_1-383(X,'0'), not v1v-464(X,'0'), not v3d-84(X,'0'), not v1v-74(X,'0').
+dog(X,'1') :- not ffa_1-33(X,'0'), not v2v-545(X,'0').
+dog(X,'1') :- not ffa_1-33(X,'0'), not v3v-586(X,'0'), ffa_1-12(X,'0'), not v2v-783(X,'0'), not ffa_2-309(X,'0').
+% acc 0.959 p 0.125 r 0.004 f1 0.008
+% #rules 8 #preds 35
+% foldrpp costs: 0:15:28.134056
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '1', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [F]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [F]ffa_2-18(X,'0'), not [F]v2v-523(X,'0'), [F]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [T]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [F]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '1', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '1' which should not equal '0' does hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '1' which should not equal '0' does hold and
+	the value of v2v-523 is '1' which should not equal '0' does hold and
+	the value of v1v-343 is '1' which should equal '0' does not hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '1' which should not equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [F]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [T]ffa_2-18(X,'0'), not [F]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [F]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [T]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '1' which should not equal '0' does hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '0' which should not equal '0' does not hold and
+	the value of v2v-523 is '1' which should not equal '0' does hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '1', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '1', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '1', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [F]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [F]ffa_2-18(X,'0'), not [F]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [F]v3v-480(X,'0'), [F]v2v-178(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [T]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '1', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '1', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '1', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '1' which should not equal '0' does hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '1' which should not equal '0' does hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '1' which should not equal '0' does hold and
+	the value of v2v-523 is '1' which should not equal '0' does hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '1' which should not equal '0' does hold and
+	the value of v2v-178 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [F]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [F]ffa_2-18(X,'0'), not [F]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [F]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [F]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '1' which should not equal '0' does hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '1' which should not equal '0' does hold and
+	the value of v2v-523 is '1' which should not equal '0' does hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '1' which should not equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '1', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [T]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [F]ffa_2-18(X,'0'), not [T]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [T]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [F]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [F]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '1', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '0' which should not equal '0' does not hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '1' which should not equal '0' does hold and
+	the value of v2v-523 is '0' which should not equal '0' does not hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '1' which should not equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '1' which should not equal '0' does hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '0', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '1', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [T]v1v-146(X,'0'), not [T]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [F]ffa_2-18(X,'0'), not [T]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [T]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [F]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [T]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '0', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '1', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of v1v-204 is '0' which should not equal '0' does not hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '1' which should not equal '0' does hold and
+	the value of v2v-523 is '0' which should not equal '0' does not hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '1' which should not equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '1', 'ffa_2-50': '1', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [F]ffa_1-33(X,'0'), not [F]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [T]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [F]ffa_2-18(X,'0'), not [F]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [T]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [T]v1v-74(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '1', 'ffa_2-50': '1', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '1', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '0', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of ffa_2-50 is '1' which should not equal '0' does hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '0' which should not equal '0' does not hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '1' which should not equal '0' does hold and
+	the value of v2v-523 is '1' which should not equal '0' does hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '1' which should not equal '0' does hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '0', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '1', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '1', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [T]v1v-146(X,'0'), not [F]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [T]ffa_2-18(X,'0'), not [T]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [F]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [F]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [F]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [F]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [F]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [F]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '0', 'v1v-204': '1', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '1', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '1', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '1', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of v1v-204 is '1' which should not equal '0' does hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '0' which should not equal '0' does not hold and
+	the value of v2v-523 is '0' which should not equal '0' does not hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '1' which should not equal '0' does hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '1' which should not equal '0' does hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '1' which should not equal '0' does hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '1' which should not equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '1' which should equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '1', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [T]v1v-204(X,'0'), [T]v1v-335(X,'0'), [F]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [T]ffa_2-18(X,'0'), not [F]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [T]v2v-178(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [F]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '1', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '1', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '0', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '0' which should not equal '0' does not hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '1' which should equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '0' which should not equal '0' does not hold and
+	the value of v2v-523 is '1' which should not equal '0' does hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '1' which should not equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '1', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]ffa_2-50(X,'0'), not [T]ffa_1-167(X,'0'), [F]v1v-146(X,'0'), not [T]v1v-204(X,'0'), [T]v1v-335(X,'0'), [T]v1v-58(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-217(X,'0'), not [T]ofa-6(X,'0'), not [T]ffa_2-18(X,'0'), not [T]v2v-523(X,'0'), [T]v1v-343(X,'0'), [T]v1v-118(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v2v-397(X,'0'), not [T]v3v-480(X,'0'), [T]v2v-178(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]atl_faces-110(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v1d-353(X,'0').
+[F]dog(X,'1') :- not [F]ffa_1-383(X,'0'), not [T]v1v-464(X,'0'), not [T]v3d-84(X,'0'), not [F]v1v-74(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v2v-545(X,'0').
+[F]dog(X,'1') :- not [T]ffa_1-33(X,'0'), not [T]v3v-586(X,'0'), [T]ffa_1-12(X,'0'), not [T]v2v-783(X,'0'), not [T]ffa_2-309(X,'0').
+{'ffa_1-33': '0', 'ffa_2-50': '0', 'ffa_1-167': '0', 'v1v-146': '1', 'v1v-204': '0', 'v1v-335': '0', 'v1v-58': '0', 'v3v-217': '0', 'ofa-6': '0', 'ffa_2-18': '0', 'v2v-523': '0', 'v1v-343': '0', 'v1v-118': '0', 'ffa_1-383': '1', 'v1v-464': '0', 'v2v-397': '0', 'v3v-480': '0', 'v2v-178': '0', 'atl_faces-110': '0', 'v1d-353': '0', 'v3d-84': '0', 'v1v-74': '1', 'v2v-545': '0', 'v3v-586': '0', 'ffa_1-12': '0', 'v2v-783': '0', 'ffa_2-309': '0'}
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-50 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-167 is '0' which should not equal '0' does not hold and
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v1v-204 is '0' which should not equal '0' does not hold and
+	the value of v1v-335 is '0' which should equal '0' does hold and
+	the value of v1v-58 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ofa-6 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-18 is '0' which should not equal '0' does not hold and
+	the value of v2v-523 is '0' which should not equal '0' does not hold and
+	the value of v1v-343 is '0' which should equal '0' does hold and
+	the value of v1v-118 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v2v-397 is '0' which should not equal '0' does not hold and
+	the value of v3v-480 is '0' which should not equal '0' does not hold and
+	the value of v2v-178 is '0' which should equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-110 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v1d-353 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v3d-84 is '0' which should not equal '0' does not hold and
+	the value of v1v-74 is '1' which should not equal '0' does hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v2v-545 is '0' which should not equal '0' does not hold 
+
+dog(X,'1') does not hold because
+	the value of ffa_1-33 is '0' which should not equal '0' does not hold and
+	the value of v3v-586 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-12 is '0' which should equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold 
+
+% acc 0.959 p 0.125 r 0.004 f1 0.008

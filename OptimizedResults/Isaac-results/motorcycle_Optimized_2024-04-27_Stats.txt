@@ -1,0 +1,160 @@
+Beginning analysis on category motorcycle in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.862714
+
+motorcycle(X,'1') :- not v1d-554(X,'0'), v1d-93(X,'0'), not v3d-242(X,'0'), not v1v-57(X,'0').
+motorcycle(X,'1') :- not v1d-554(X,'0'), v1d-93(X,'0'), not v3d-248(X,'0').
+% acc 0.973 p 0 r 0.0 f1 0
+% #rules 2 #preds 7
+% foldrpp costs: 0:06:45.828725
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [T]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [F]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [T]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [T]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '1', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [F]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [F]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [F]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '1', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '1', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [F]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [F]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [F]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '1', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [T]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [F]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [F]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '1', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should not equal '0' does hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-242(X,'0'), not [T]v1v-57(X,'0').
+[F]motorcycle(X,'1') :- not [T]v1d-554(X,'0'), [F]v1d-93(X,'0'), not [T]v3d-248(X,'0').
+{'v1d-554': '0', 'v1d-93': '1', 'v3d-242': '0', 'v1v-57': '0', 'v3d-248': '0'}
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-242 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should not equal '0' does not hold 
+
+motorcycle(X,'1') does not hold because
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of v1d-93 is '1' which should equal '0' does not hold and
+	the value of v3d-248 is '0' which should not equal '0' does not hold 
+
+% acc 0.973 p 0 r 0.0 f1 0

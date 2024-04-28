@@ -1,0 +1,900 @@
+Beginning analysis on category toilet in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.029439
+
+toilet(X,'1') :- not v3d-433(X,'0'), not v3d-384(X,'0'), not v3v-217(X,'0'), not ffa_1-282(X,'0'), not v2v-422(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not v3d-384(X,'0'), not v3v-217(X,'0'), ffa_1-282(X,'0'), not v2v-305(X,'0'), not v3d-65(X,'0'), not ab1(X,'True').
+toilet(X,'1') :- not v3d-433(X,'0'), not v3d-384(X,'0'), not ffa_1-383(X,'0'), not v3d-261(X,'0'), not v2v-221(X,'0'), not v2d-173(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not v1v-290(X,'0'), not ffa_2-124(X,'0'), v1v-311(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not v2v-649(X,'0'), not v1v-550(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not v2v-787(X,'0'), not ffa_2-122(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not v3v-158(X,'0'), not v3v-526(X,'0'), not v1v-288(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not ffa_1-481(X,'0'), not v1v-464(X,'0'), v1v-44(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not v2v-738(X,'0'), not v2v-785(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not v2v-564(X,'0'), not ffa_2-246(X,'0'), v1v-24(X,'0').
+toilet(X,'1') :- not v3d-433(X,'0'), not ffa_1-383(X,'0'), not v3d-228(X,'0'), not v1v-144(X,'0').
+ab1(X,'True') :- ffa_1-416(X,'0'), v1v-8(X,'0').
+% acc 0.969 p 0.111 r 0.006 f1 0.011
+% #rules 12 #preds 55
+% foldrpp costs: 0:26:04.516601
+
+{'v3d-433': '1', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '1', 'ffa_1-383': '0', 'v3d-261': '1', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '1', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '1', 'ffa_1-416': '1', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [T]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [F]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v3d-261(X,'0'), not [T]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [T]ffa_2-124(X,'0'), [T]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [T]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3v-158(X,'0'), not [F]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [T]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [T]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [F]v1v-144(X,'0').
+{'v3d-433': '1', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '1', 'ffa_1-383': '0', 'v3d-261': '1', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '1', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '1', 'ffa_1-416': '1', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should equal '0' does hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '1' which should not equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '1' which should not equal '0' does hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v3v-526 is '1' which should not equal '0' does hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '1' which should not equal '0' does hold 
+
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '1', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '1', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '1', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [F]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [F]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [F]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [T]ffa_2-124(X,'0'), [T]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [F]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [T]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [T]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '1', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '1', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '1', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should equal '0' does not hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '1' which should not equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '1' which should not equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '1', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '1', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '1', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '1', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [F]v3v-217(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [F]v3v-217(X,'0'), [T]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [T]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [F]ffa_2-124(X,'0'), [F]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [T]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [T]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [F]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '1', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '1', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '1', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '1', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should equal '0' does hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '1' which should not equal '0' does hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '1', 'v3d-384': '1', 'v3v-217': '0', 'ffa_1-282': '1', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [F]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [F]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [F]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [F]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [F]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [T]ffa_2-124(X,'0'), [T]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [T]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [T]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [T]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '1', 'v3d-384': '1', 'v3v-217': '0', 'ffa_1-282': '1', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '1' which should not equal '0' does hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '1' which should not equal '0' does hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should equal '0' does not hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '1', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '1', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [F]v3v-217(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [F]v3v-217(X,'0'), [T]ffa_1-282(X,'0'), not [F]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [F]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [T]ffa_2-124(X,'0'), [T]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [T]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [F]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [T]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '1', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '1', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should equal '0' does hold and
+	the value of v2v-305 is '1' which should not equal '0' does hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '1' which should not equal '0' does hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '1', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '1', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [F]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [F]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [F]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [T]ffa_2-124(X,'0'), [F]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [T]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [F]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [T]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [T]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [T]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [F]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '1', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '1', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should equal '0' does not hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '1' which should not equal '0' does hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '1', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '1', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [T]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [F]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [T]ffa_2-124(X,'0'), [F]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [F]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [T]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [F]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '1', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '1', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '0', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '1', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should equal '0' does hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '1' which should not equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '0' which should not equal '0' does not hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '1', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '1', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '1', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '1', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [T]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [F]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [F]ffa_2-124(X,'0'), [F]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [T]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [F]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [F]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [F]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '1', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '1', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '1', 'v1v-311': '1', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '1', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '1', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '0', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should equal '0' does hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '1' which should not equal '0' does hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '1' which should not equal '0' does hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '1' which should equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '1', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '1', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [T]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v3d-261(X,'0'), not [T]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [T]ffa_2-124(X,'0'), [T]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [F]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [F]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [T]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '1', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '0', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '1', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '0', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should equal '0' does hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '1' which should not equal '0' does hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '1' which should not equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '1' which should not equal '0' does hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '1', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '1', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-422(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]v3v-217(X,'0'), [T]ffa_1-282(X,'0'), not [T]v2v-305(X,'0'), not [T]v3d-65(X,'0'), not [U]ab1(X,'True').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-384(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-261(X,'0'), not [T]v2v-221(X,'0'), not [T]v2d-173(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v1v-290(X,'0'), not [F]ffa_2-124(X,'0'), [T]v1v-311(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-649(X,'0'), not [T]v1v-550(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-787(X,'0'), not [T]ffa_2-122(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3v-158(X,'0'), not [T]v3v-526(X,'0'), not [T]v1v-288(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]ffa_1-481(X,'0'), not [F]v1v-464(X,'0'), [T]v1v-44(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [F]v2v-738(X,'0'), not [T]v2v-785(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v2v-564(X,'0'), not [T]ffa_2-246(X,'0'), [T]v1v-24(X,'0').
+[F]toilet(X,'1') :- not [T]v3d-433(X,'0'), not [T]ffa_1-383(X,'0'), not [T]v3d-228(X,'0'), not [T]v1v-144(X,'0').
+{'v3d-433': '0', 'v3d-384': '0', 'v3v-217': '0', 'ffa_1-282': '0', 'v2v-422': '0', 'v2v-305': '0', 'v3d-65': '0', 'ffa_1-383': '0', 'v3d-261': '0', 'v2v-221': '0', 'v2d-173': '0', 'v1v-290': '0', 'ffa_2-124': '1', 'v1v-311': '0', 'v2v-649': '0', 'v1v-550': '0', 'v2v-787': '0', 'ffa_2-122': '0', 'v3v-158': '0', 'v3v-526': '0', 'v1v-288': '0', 'ffa_1-481': '0', 'v1v-464': '1', 'v1v-44': '0', 'v2v-738': '1', 'v2v-785': '0', 'v2v-564': '0', 'ffa_2-246': '0', 'v1v-24': '0', 'v3d-228': '0', 'v1v-144': '0', 'ffa_1-416': '1', 'v1v-8': '0'}
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-422 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of v3v-217 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should equal '0' does hold and
+	the value of v2v-305 is '0' which should not equal '0' does not hold and
+	the value of v3d-65 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-384 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-261 is '0' which should not equal '0' does not hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v2d-173 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-290 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-124 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-649 is '0' which should not equal '0' does not hold and
+	the value of v1v-550 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-787 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-122 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v3v-526 is '0' which should not equal '0' does not hold and
+	the value of v1v-288 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-481 is '0' which should not equal '0' does not hold and
+	the value of v1v-464 is '1' which should not equal '0' does hold and
+	the value of v1v-44 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '1' which should not equal '0' does hold and
+	the value of v2v-785 is '0' which should not equal '0' does not hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-564 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+toilet(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-383 is '0' which should not equal '0' does not hold and
+	the value of v3d-228 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should not equal '0' does not hold 
+
+% acc 0.969 p 0.111 r 0.006 f1 0.011

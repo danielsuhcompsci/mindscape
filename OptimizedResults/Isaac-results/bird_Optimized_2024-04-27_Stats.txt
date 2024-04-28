@@ -1,0 +1,474 @@
+Beginning analysis on category bird in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:20.380379
+
+bird(X,'1') :- not ofa-344(X,'0'), not v2v-402(X,'0').
+bird(X,'1') :- not ofa-37(X,'0'), not ffa_2-75(X,'0'), not v1v-92(X,'0'), not v2v-720(X,'0'), not ffa_2-302(X,'0'), v1v-53(X,'0').
+bird(X,'1') :- not ofa-344(X,'0'), not v3d-7(X,'0'), not v2d-94(X,'0'), not ffa_2-42(X,'0').
+bird(X,'1') :- not ofa-344(X,'0'), not v3d-7(X,'0'), not v1d-19(X,'0'), not v2d-362(X,'0'), v1v-7(X,'0').
+bird(X,'1') :- not ofa-344(X,'0'), not v3d-7(X,'0'), v1d-78(X,'0'), not v2v-407(X,'0').
+bird(X,'1') :- not ofa-344(X,'0'), not v3d-7(X,'0'), v1d-78(X,'0'), not v1d-428(X,'0'), not v1v-88(X,'0').
+% acc 0.972 p 0.0 r 0.0 f1 0
+% #rules 6 #preds 26
+% foldrpp costs: 0:13:10.296098
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '1', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [F]v1v-92(X,'0'), not [F]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [T]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '1', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '1' which should not equal '0' does hold and
+	the value of v2v-720 is '1' which should not equal '0' does hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '0' which should not equal '0' does not hold 
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [T]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [F]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should not equal '0' does not hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '1' which should not equal '0' does hold 
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '1', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '1', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '1', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '0', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [F]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [F]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [F]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [F]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [T]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [T]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [T]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '1', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '1', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '1', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '0', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '1' which should not equal '0' does hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '1' which should equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-19 is '1' which should not equal '0' does hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '0' which should equal '0' does hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '0' which should equal '0' does hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '0' which should not equal '0' does not hold 
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '1', 'ffa_2-42': '0', 'v1d-19': '1', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [F]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [F]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [F]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [F]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '1', 'ffa_2-42': '0', 'v1d-19': '1', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '1' which should not equal '0' does hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v2d-94 is '1' which should not equal '0' does hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-19 is '1' which should not equal '0' does hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '1' which should not equal '0' does hold 
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [T]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [T]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should not equal '0' does not hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '0' which should not equal '0' does not hold 
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '1', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [F]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [F]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [F]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '1', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '1' which should not equal '0' does hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v2d-94 is '1' which should not equal '0' does hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '1' which should not equal '0' does hold 
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '1', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [T]v1v-92(X,'0'), not [F]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [F]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [T]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '1', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '1', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should not equal '0' does not hold and
+	the value of v2v-720 is '1' which should not equal '0' does hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '1' which should not equal '0' does hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '0' which should not equal '0' does not hold 
+
+{'ofa-344': '1', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '1', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '1', 'v1d-19': '0', 'v2d-362': '1', 'v1v-7': '0', 'v1d-78': '0', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [T]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [F]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [F]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [F]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [T]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [T]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [T]v1v-88(X,'0').
+{'ofa-344': '1', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '1', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '1', 'v1d-19': '0', 'v2d-362': '1', 'v1v-7': '0', 'v1d-78': '0', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '0'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should not equal '0' does not hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '1' which should not equal '0' does hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '1' which should not equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '1' which should not equal '0' does hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '0' which should equal '0' does hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '0' which should equal '0' does hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '0' which should not equal '0' does not hold 
+
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [T]ffa_2-75(X,'0'), not [T]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [T]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [F]v1v-88(X,'0').
+{'ofa-344': '0', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '0', 'v1v-92': '0', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should not equal '0' does not hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '0' which should not equal '0' does not hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '1' which should not equal '0' does hold 
+
+{'ofa-344': '1', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '1', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v2v-402(X,'0').
+[F]bird(X,'1') :- not [T]ofa-37(X,'0'), not [F]ffa_2-75(X,'0'), not [F]v1v-92(X,'0'), not [T]v2v-720(X,'0'), not [T]ffa_2-302(X,'0'), [T]v1v-53(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v2d-94(X,'0'), not [T]ffa_2-42(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), not [T]v1d-19(X,'0'), not [T]v2d-362(X,'0'), [T]v1v-7(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v2v-407(X,'0').
+[F]bird(X,'1') :- not [F]ofa-344(X,'0'), not [T]v3d-7(X,'0'), [F]v1d-78(X,'0'), not [T]v1d-428(X,'0'), not [F]v1v-88(X,'0').
+{'ofa-344': '1', 'v2v-402': '0', 'ofa-37': '0', 'ffa_2-75': '1', 'v1v-92': '1', 'v2v-720': '0', 'ffa_2-302': '0', 'v1v-53': '0', 'v3d-7': '0', 'v2d-94': '0', 'ffa_2-42': '0', 'v1d-19': '0', 'v2d-362': '0', 'v1v-7': '0', 'v1d-78': '1', 'v2v-407': '0', 'v1d-428': '0', 'v1v-88': '1'}
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v2v-402 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-75 is '1' which should not equal '0' does hold and
+	the value of v1v-92 is '1' which should not equal '0' does hold and
+	the value of v2v-720 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-302 is '0' which should not equal '0' does not hold and
+	the value of v1v-53 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v2d-94 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-42 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-19 is '0' which should not equal '0' does not hold and
+	the value of v2d-362 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should equal '0' does hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v2v-407 is '0' which should not equal '0' does not hold 
+
+bird(X,'1') does not hold because
+	the value of ofa-344 is '1' which should not equal '0' does hold and
+	the value of v3d-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-78 is '1' which should equal '0' does not hold and
+	the value of v1d-428 is '0' which should not equal '0' does not hold and
+	the value of v1v-88 is '1' which should not equal '0' does hold 
+
+% acc 0.972 p 0.0 r 0.0 f1 0

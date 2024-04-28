@@ -1,0 +1,403 @@
+Beginning analysis on category oven in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.780079
+
+oven(X,'1') :- not ffa_2-151(X,'0'), not ofa-37(X,'0'), v2v-94(X,'0'), not v2v-221(X,'0'), not v1v-338(X,'0').
+oven(X,'1') :- not ffa_2-151(X,'0'), not ofa-37(X,'0'), not ffa_2-69(X,'0'), not v1d-188(X,'0').
+oven(X,'1') :- not ffa_2-151(X,'0'), not ofa-37(X,'0'), not ofa-337(X,'0'), not ffa_2-309(X,'0'), not v1v-212(X,'0').
+oven(X,'1') :- not ffa_2-151(X,'0'), not ofa-37(X,'0'), not ofa-302(X,'0'), not v2d-312(X,'0').
+oven(X,'1') :- not ffa_2-151(X,'0'), not ofa-37(X,'0'), not ofa-107(X,'0'), not v1v-262(X,'0').
+% acc 0.974 p 0.0 r 0.0 f1 0
+% #rules 5 #preds 22
+% foldrpp costs: 0:11:33.078633
+
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '0', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), [T]v2v-94(X,'0'), not [T]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '0', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of v2v-94 is '0' which should equal '0' does hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-337 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '1', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '1', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '1'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), [F]v2v-94(X,'0'), not [T]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [F]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-337(X,'0'), not [F]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [F]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '1', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '1', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '1'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of v2v-94 is '1' which should equal '0' does not hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-69 is '1' which should not equal '0' does hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-337 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '1' which should not equal '0' does hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '0', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), [T]v2v-94(X,'0'), not [F]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '0', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of v2v-94 is '0' which should equal '0' does hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-337 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '1', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), [F]v2v-94(X,'0'), not [F]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [F]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '1', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of v2v-94 is '1' which should equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-337 is '1' which should not equal '0' does hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ofa-37': '1', 'v2v-94': '1', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), [F]v2v-94(X,'0'), not [F]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '1', 'v2v-94': '1', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of v2v-94 is '1' which should equal '0' does not hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-337 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), [F]v2v-94(X,'0'), not [T]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of v2v-94 is '1' which should equal '0' does not hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-337 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'ofa-37': '1', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '1', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), [F]v2v-94(X,'0'), not [T]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [F]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '1', 'ofa-37': '1', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '1', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of v2v-94 is '1' which should equal '0' does not hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-337 is '1' which should not equal '0' does hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ofa-37': '1', 'v2v-94': '0', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '1', 'v1d-188': '0', 'ofa-337': '1', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), [T]v2v-94(X,'0'), not [F]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [F]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [F]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '1', 'v2v-94': '0', 'v2v-221': '1', 'v1v-338': '0', 'ffa_2-69': '1', 'v1d-188': '0', 'ofa-337': '1', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of v2v-94 is '0' which should equal '0' does hold and
+	the value of v2v-221 is '1' which should not equal '0' does hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ffa_2-69 is '1' which should not equal '0' does hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-337 is '1' which should not equal '0' does hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), [F]v2v-94(X,'0'), not [T]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '0', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of v2v-94 is '1' which should equal '0' does not hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-337 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ofa-37': '1', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), [F]v2v-94(X,'0'), not [T]v2v-221(X,'0'), not [T]v1v-338(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ffa_2-69(X,'0'), not [T]v1d-188(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-337(X,'0'), not [T]ffa_2-309(X,'0'), not [T]v1v-212(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-302(X,'0'), not [T]v2d-312(X,'0').
+[F]oven(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ofa-37(X,'0'), not [T]ofa-107(X,'0'), not [T]v1v-262(X,'0').
+{'ffa_2-151': '0', 'ofa-37': '1', 'v2v-94': '1', 'v2v-221': '0', 'v1v-338': '0', 'ffa_2-69': '0', 'v1d-188': '0', 'ofa-337': '0', 'ffa_2-309': '0', 'v1v-212': '0', 'ofa-302': '0', 'v2d-312': '0', 'ofa-107': '0', 'v1v-262': '0'}
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of v2v-94 is '1' which should equal '0' does not hold and
+	the value of v2v-221 is '0' which should not equal '0' does not hold and
+	the value of v1v-338 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ffa_2-69 is '0' which should not equal '0' does not hold and
+	the value of v1d-188 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-337 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-309 is '0' which should not equal '0' does not hold and
+	the value of v1v-212 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-302 is '0' which should not equal '0' does not hold and
+	the value of v2d-312 is '0' which should not equal '0' does not hold 
+
+oven(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold and
+	the value of ofa-107 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold 
+
+% acc 0.974 p 0.0 r 0.0 f1 0

@@ -1,0 +1,342 @@
+Beginning analysis on category horse in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:20.385387
+
+horse(X,'1') :- not ofa-224(X,'0'), not v1v-311(X,'0'), not v1d-224(X,'0').
+horse(X,'1') :- not ofa-224(X,'0'), not v1v-311(X,'0'), not v2v-745(X,'0'), not ffa_1-344(X,'0'), v1v-85(X,'0'), v1v-24(X,'0').
+horse(X,'1') :- not ofa-224(X,'0'), not v1v-311(X,'0'), not v3v-29(X,'0'), not v1v-121(X,'0'), not v1d-554(X,'0'), not ofa-23(X,'0').
+horse(X,'1') :- not ofa-224(X,'0'), not v1v-311(X,'0'), not v2v-208(X,'0'), not v1v-49(X,'0').
+% acc 0.977 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 19
+% foldrpp costs: 0:09:32.585304
+
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '1', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '0', 'ofa-23': '1', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [F]ffa_1-344(X,'0'), [F]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [T]v1v-121(X,'0'), not [T]v1d-554(X,'0'), not [F]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '1', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '0', 'ofa-23': '1', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '1' which should not equal '0' does hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '1' which should not equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+{'ofa-224': '1', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [T]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [T]v1v-121(X,'0'), not [T]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '1', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '1'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [F]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [T]v1v-121(X,'0'), not [T]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [F]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '1'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '1' which should not equal '0' does hold 
+
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '1', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [F]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [F]v1v-121(X,'0'), not [T]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '1', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '1' which should not equal '0' does hold and
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '1'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [T]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [T]v1v-121(X,'0'), not [F]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [F]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [F]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '1', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '1'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '1' which should not equal '0' does hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '1' which should not equal '0' does hold 
+
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '1', 'v1d-554': '0', 'ofa-23': '1', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [F]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [F]v1v-121(X,'0'), not [T]v1d-554(X,'0'), not [F]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '1', 'v1d-554': '0', 'ofa-23': '1', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '1' which should not equal '0' does hold and
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '1' which should not equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '1', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [T]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [F]v1v-121(X,'0'), not [T]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '1', 'v1d-554': '0', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '1' which should not equal '0' does hold and
+	the value of v1d-554 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+{'ofa-224': '1', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [F]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [T]v1v-121(X,'0'), not [F]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [F]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '1', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '1' which should not equal '0' does hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [F]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [T]v1v-121(X,'0'), not [F]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '1', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '1' which should equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v1d-224(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-745(X,'0'), not [T]ffa_1-344(X,'0'), [T]v1v-85(X,'0'), [T]v1v-24(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v3v-29(X,'0'), not [T]v1v-121(X,'0'), not [F]v1d-554(X,'0'), not [T]ofa-23(X,'0').
+[F]horse(X,'1') :- not [T]ofa-224(X,'0'), not [T]v1v-311(X,'0'), not [T]v2v-208(X,'0'), not [T]v1v-49(X,'0').
+{'ofa-224': '0', 'v1v-311': '0', 'v1d-224': '0', 'v2v-745': '0', 'ffa_1-344': '0', 'v1v-85': '0', 'v1v-24': '0', 'v3v-29': '0', 'v1v-121': '0', 'v1d-554': '1', 'ofa-23': '0', 'v2v-208': '0', 'v1v-49': '0'}
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v1d-224 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-745 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-344 is '0' which should not equal '0' does not hold and
+	the value of v1v-85 is '0' which should equal '0' does hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v3v-29 is '0' which should not equal '0' does not hold and
+	the value of v1v-121 is '0' which should not equal '0' does not hold and
+	the value of v1d-554 is '1' which should not equal '0' does hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold 
+
+horse(X,'1') does not hold because
+	the value of ofa-224 is '0' which should not equal '0' does not hold and
+	the value of v1v-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-208 is '0' which should not equal '0' does not hold and
+	the value of v1v-49 is '0' which should not equal '0' does not hold 
+
+% acc 0.977 p 0.0 r 0.0 f1 0

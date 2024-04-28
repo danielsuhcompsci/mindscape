@@ -1,0 +1,99 @@
+Beginning analysis on category airplane in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.949911
+
+airplane(X,'1') :- v1v-283(X,'0'), v1d-367(X,'0'), not v1v-220(X,'0'), not ffa_1-443(X,'0').
+% acc 0.971 p 0 r 0.0 f1 0
+% #rules 1 #preds 4
+% foldrpp costs: 0:04:54.628507
+
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '1', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [F]v1v-283(X,'0'), [T]v1d-367(X,'0'), not [F]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '1', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [T]v1v-283(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '0', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [F]v1v-283(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '0', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '1', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [F]v1v-283(X,'0'), [T]v1d-367(X,'0'), not [F]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '1', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '1', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [F]v1v-283(X,'0'), [T]v1d-367(X,'0'), not [F]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '1', 'v1d-367': '0', 'v1v-220': '1', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '1', 'v1d-367': '1', 'v1v-220': '1', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [F]v1v-283(X,'0'), [F]v1d-367(X,'0'), not [F]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '1', 'v1d-367': '1', 'v1v-220': '1', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [T]v1v-283(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '1', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [F]v1v-283(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '1', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '1' which should equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [T]v1v-283(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '0', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-220 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '1', 'ffa_1-443': '0'}
+[F]airplane(X,'1') :- [T]v1v-283(X,'0'), [F]v1d-367(X,'0'), not [F]v1v-220(X,'0'), not [T]ffa_1-443(X,'0').
+{'v1v-283': '0', 'v1d-367': '1', 'v1v-220': '1', 'ffa_1-443': '0'}
+airplane(X,'1') does not hold because
+	the value of v1v-283 is '0' which should equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-220 is '1' which should not equal '0' does hold and
+	the value of ffa_1-443 is '0' which should not equal '0' does not hold 
+
+% acc 0.971 p 0 r 0.0 f1 0

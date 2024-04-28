@@ -1,0 +1,200 @@
+Beginning analysis on category hot dog in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:20.995217
+
+hot_dog(X,'1') :- not ffa_1-282(X,'0'), v3d-430(X,'0'), not v3d-466(X,'0'), not atl_faces-10(X,'0'), not v1v-446(X,'0'), v1d-473(X,'0').
+hot_dog(X,'1') :- not ffa_1-282(X,'0'), v3d-430(X,'0'), ffa_1-469(X,'0'), not v3d-497(X,'0'), not v1v-108(X,'0').
+% acc 0.991 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 11
+% foldrpp costs: 0:06:14.644635
+
+{'ffa_1-282': '0', 'v3d-430': '0', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [T]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [F]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [T]v3d-430(X,'0'), [F]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '0', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should equal '0' does hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '1' which should not equal '0' does hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should equal '0' does hold and
+	the value of ffa_1-469 is '1' which should equal '0' does not hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3d-430': '0', 'v3d-466': '1', 'atl_faces-10': '1', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '0', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [T]v3d-430(X,'0'), not [F]v3d-466(X,'0'), not [F]atl_faces-10(X,'0'), not [T]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [T]v3d-430(X,'0'), [T]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '0', 'v3d-466': '1', 'atl_faces-10': '1', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '0', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should equal '0' does hold and
+	the value of v3d-466 is '1' which should not equal '0' does hold and
+	the value of atl_faces-10 is '1' which should not equal '0' does hold and
+	the value of v1v-446 is '0' which should not equal '0' does not hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should equal '0' does hold and
+	the value of ffa_1-469 is '0' which should equal '0' does hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '0', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [F]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [T]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '0', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '1' which should not equal '0' does hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '0' which should equal '0' does hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [F]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [F]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '1' which should not equal '0' does hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '1' which should equal '0' does not hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [F]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [F]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '1' which should not equal '0' does hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '1' which should equal '0' does not hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '0', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [T]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [T]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '0', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '0' which should not equal '0' does not hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '0' which should equal '0' does hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '1'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [F]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [F]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [F]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '1'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '1' which should not equal '0' does hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '1' which should equal '0' does not hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '1' which should not equal '0' does hold 
+
+{'ffa_1-282': '1', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [F]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [T]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [F]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [F]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '1', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '0' which should not equal '0' does not hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '1' which should equal '0' does not hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [T]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [T]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [F]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [T]v1v-108(X,'0').
+{'ffa_1-282': '0', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '0', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '0'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '0' which should not equal '0' does not hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '1' which should equal '0' does not hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-282': '1', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '1'}
+[F]hot_dog(X,'1') :- not [F]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), not [T]v3d-466(X,'0'), not [T]atl_faces-10(X,'0'), not [F]v1v-446(X,'0'), [T]v1d-473(X,'0').
+[F]hot_dog(X,'1') :- not [F]ffa_1-282(X,'0'), [F]v3d-430(X,'0'), [F]ffa_1-469(X,'0'), not [T]v3d-497(X,'0'), not [F]v1v-108(X,'0').
+{'ffa_1-282': '1', 'v3d-430': '1', 'v3d-466': '0', 'atl_faces-10': '0', 'v1v-446': '1', 'v1d-473': '0', 'ffa_1-469': '1', 'v3d-497': '0', 'v1v-108': '1'}
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of v3d-466 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-10 is '0' which should not equal '0' does not hold and
+	the value of v1v-446 is '1' which should not equal '0' does hold and
+	the value of v1d-473 is '0' which should equal '0' does hold 
+
+hot_dog(X,'1') does not hold because
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '1' which should equal '0' does not hold and
+	the value of ffa_1-469 is '1' which should equal '0' does not hold and
+	the value of v3d-497 is '0' which should not equal '0' does not hold and
+	the value of v1v-108 is '1' which should not equal '0' does hold 
+
+% acc 0.991 p 0.0 r 0.0 f1 0

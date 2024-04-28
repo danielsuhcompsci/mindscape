@@ -1,0 +1,302 @@
+Beginning analysis on category sheep in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.972675
+
+sheep(X,'1') :- not v3d-433(X,'0'), not v3d-383(X,'0'), not v1d-213(X,'0').
+sheep(X,'1') :- not v3d-433(X,'0'), not v3d-383(X,'0'), not v1v-494(X,'0'), not v3v-25(X,'0').
+sheep(X,'1') :- not v3d-433(X,'0'), not v3d-383(X,'0'), not v2v-783(X,'0'), not v1d-476(X,'0').
+sheep(X,'1') :- not v3d-433(X,'0'), not v3d-383(X,'0'), not v2d-519(X,'0'), not v2v-783(X,'0').
+% acc 0.988 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 15
+% foldrpp costs: 0:09:48.601239
+
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '1', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [F]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [F]v2v-783(X,'0').
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '1', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '1' which should not equal '0' does hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '1' which should not equal '0' does hold 
+
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [T]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '0', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '0' which should not equal '0' does not hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1d-213(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v1v-494(X,'0'), not [T]v3v-25(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2v-783(X,'0'), not [T]v1d-476(X,'0').
+[F]sheep(X,'1') :- not [F]v3d-433(X,'0'), not [T]v3d-383(X,'0'), not [T]v2d-519(X,'0'), not [T]v2v-783(X,'0').
+{'v3d-433': '1', 'v3d-383': '0', 'v1d-213': '0', 'v1v-494': '0', 'v3v-25': '0', 'v2v-783': '0', 'v1d-476': '0', 'v2d-519': '0'}
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1d-213 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v1v-494 is '0' which should not equal '0' does not hold and
+	the value of v3v-25 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v1d-476 is '0' which should not equal '0' does not hold 
+
+sheep(X,'1') does not hold because
+	the value of v3d-433 is '1' which should not equal '0' does hold and
+	the value of v3d-383 is '0' which should not equal '0' does not hold and
+	the value of v2d-519 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold 
+
+% acc 0.988 p 0.0 r 0.0 f1 0

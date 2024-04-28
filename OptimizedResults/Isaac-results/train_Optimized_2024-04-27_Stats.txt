@@ -1,0 +1,150 @@
+Beginning analysis on category train in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.946781
+
+train(X,'1') :- not ffa_2-227(X,'0'), not v1d-141(X,'0'), not v1v-533(X,'0'), not v1v-56(X,'0').
+train(X,'1') :- not ffa_2-227(X,'0'), not v1d-375(X,'0').
+% acc 0.968 p 0 r 0.0 f1 0
+% #rules 2 #preds 6
+% foldrpp costs: 0:06:13.242034
+
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [F]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [F]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '1', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+[F]train(X,'1') :- not [F]ffa_2-227(X,'0'), not [T]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [T]v1v-56(X,'0').
+[F]train(X,'1') :- not [F]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '1', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [F]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '1', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+[F]train(X,'1') :- not [F]ffa_2-227(X,'0'), not [F]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [T]v1v-56(X,'0').
+[F]train(X,'1') :- not [F]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '1', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [F]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [T]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [F]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [T]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [F]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [F]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '0', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '0' which should not equal '0' does not hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [F]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [F]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '1', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [F]v1d-141(X,'0'), not [T]v1v-533(X,'0'), not [T]v1v-56(X,'0').
+[F]train(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]v1d-375(X,'0').
+{'ffa_2-227': '0', 'v1d-141': '1', 'v1v-533': '0', 'v1v-56': '0', 'v1d-375': '0'}
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-141 is '1' which should not equal '0' does hold and
+	the value of v1v-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+train(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of v1d-375 is '0' which should not equal '0' does not hold 
+
+% acc 0.968 p 0 r 0.0 f1 0

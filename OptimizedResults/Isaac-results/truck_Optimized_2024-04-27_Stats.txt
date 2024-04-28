@@ -1,0 +1,180 @@
+Beginning analysis on category truck in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:21.457279
+
+truck(X,'1') :- v1v-146(X,'0'), not v2v-760(X,'0'), v2v-715(X,'0'), v1v-199(X,'0'), not v2v-718(X,'0'), v1v-65(X,'0').
+truck(X,'1') :- v1v-146(X,'0'), not ffa_2-152(X,'0'), not v1d-334(X,'0').
+% acc 0.956 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 9
+% foldrpp costs: 0:05:32.019024
+
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [F]v2v-715(X,'0'), [F]v1v-199(X,'0'), not [T]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '1' which should equal '0' does not hold and
+	the value of v1v-199 is '1' which should equal '0' does not hold and
+	the value of v2v-718 is '0' which should not equal '0' does not hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '0', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [T]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [T]v2v-715(X,'0'), [T]v1v-199(X,'0'), not [T]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [T]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '0', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '0' which should equal '0' does hold and
+	the value of v1v-199 is '0' which should equal '0' does hold and
+	the value of v2v-718 is '0' which should not equal '0' does not hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [F]v2v-715(X,'0'), [F]v1v-199(X,'0'), not [F]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '1' which should equal '0' does not hold and
+	the value of v1v-199 is '1' which should equal '0' does not hold and
+	the value of v2v-718 is '1' which should not equal '0' does hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [T]v2v-715(X,'0'), [T]v1v-199(X,'0'), not [F]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '0' which should equal '0' does hold and
+	the value of v1v-199 is '0' which should equal '0' does hold and
+	the value of v2v-718 is '1' which should not equal '0' does hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [F]v2v-715(X,'0'), [F]v1v-199(X,'0'), not [T]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '1' which should equal '0' does not hold and
+	the value of v1v-199 is '1' which should equal '0' does not hold and
+	the value of v2v-718 is '0' which should not equal '0' does not hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [T]v2v-715(X,'0'), [T]v1v-199(X,'0'), not [T]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '0' which should equal '0' does hold and
+	the value of v1v-199 is '0' which should equal '0' does hold and
+	the value of v2v-718 is '0' which should not equal '0' does not hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '0', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [T]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [F]v2v-715(X,'0'), [F]v1v-199(X,'0'), not [F]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [T]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '0', 'v2v-760': '0', 'v2v-715': '1', 'v1v-199': '1', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '1' which should equal '0' does not hold and
+	the value of v1v-199 is '1' which should equal '0' does not hold and
+	the value of v2v-718 is '1' which should not equal '0' does hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '1', 'v2v-760': '1', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [F]v2v-760(X,'0'), [T]v2v-715(X,'0'), [T]v1v-199(X,'0'), not [F]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '1', 'v2v-760': '1', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v2v-760 is '1' which should not equal '0' does hold and
+	the value of v2v-715 is '0' which should equal '0' does hold and
+	the value of v1v-199 is '0' which should equal '0' does hold and
+	the value of v2v-718 is '1' which should not equal '0' does hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [T]v2v-715(X,'0'), [T]v1v-199(X,'0'), not [F]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [F]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '1', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '1', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '0' which should equal '0' does hold and
+	the value of v1v-199 is '0' which should equal '0' does hold and
+	the value of v2v-718 is '1' which should not equal '0' does hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+{'v1v-146': '0', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+[F]truck(X,'1') :- [T]v1v-146(X,'0'), not [T]v2v-760(X,'0'), [T]v2v-715(X,'0'), [T]v1v-199(X,'0'), not [T]v2v-718(X,'0'), [T]v1v-65(X,'0').
+[F]truck(X,'1') :- [T]v1v-146(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1d-334(X,'0').
+{'v1v-146': '0', 'v2v-760': '0', 'v2v-715': '0', 'v1v-199': '0', 'v2v-718': '0', 'v1v-65': '0', 'ffa_2-152': '0', 'v1d-334': '0'}
+truck(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of v2v-760 is '0' which should not equal '0' does not hold and
+	the value of v2v-715 is '0' which should equal '0' does hold and
+	the value of v1v-199 is '0' which should equal '0' does hold and
+	the value of v2v-718 is '0' which should not equal '0' does not hold and
+	the value of v1v-65 is '0' which should equal '0' does hold 
+
+truck(X,'1') does not hold because
+	the value of v1v-146 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1d-334 is '0' which should not equal '0' does not hold 
+
+% acc 0.956 p 0.0 r 0.0 f1 0

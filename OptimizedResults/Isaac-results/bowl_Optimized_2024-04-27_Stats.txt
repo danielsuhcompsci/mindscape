@@ -1,0 +1,89 @@
+Beginning analysis on category bowl in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.860647
+
+bowl(X,'1') :- not ffa_2-151(X,'0'), not v3d-219(X,'0'), not v2v-695(X,'0').
+% acc 0.941 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 3
+% foldrpp costs: 0:04:07.074774
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '0', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '1', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v3d-219': '0', 'v2v-695': '0'}
+[F]bowl(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v3d-219(X,'0'), not [T]v2v-695(X,'0').
+{'ffa_2-151': '1', 'v3d-219': '0', 'v2v-695': '0'}
+bowl(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3d-219 is '0' which should not equal '0' does not hold and
+	the value of v2v-695 is '0' which should not equal '0' does not hold 
+
+% acc 0.941 p 0.0 r 0.0 f1 0

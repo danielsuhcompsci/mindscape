@@ -1,0 +1,332 @@
+Beginning analysis on category bottle in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.491696
+
+bottle(X,'1') :- not ffa_2-151(X,'0'), not v1d-517(X,'0'), not v1d-330(X,'0').
+bottle(X,'1') :- not ffa_2-151(X,'0'), not v1d-517(X,'0'), not v2v-484(X,'0'), not v1v-137(X,'0'), not v2v-515(X,'0').
+bottle(X,'1') :- not ffa_2-151(X,'0'), not v1d-517(X,'0'), not ffa_1-119(X,'0'), not v1v-119(X,'0'), not ffa_2-49(X,'0'), not v1v-153(X,'0').
+bottle(X,'1') :- not ffa_2-151(X,'0'), not v1d-517(X,'0'), not atl_faces-155(X,'0'), not v1v-94(X,'0').
+% acc 0.934 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 18
+% foldrpp costs: 0:10:12.121184
+
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '1', 'ffa_2-49': '0', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [T]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]ffa_1-119(X,'0'), not [F]v1v-119(X,'0'), not [T]ffa_2-49(X,'0'), not [T]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '1', 'ffa_2-49': '0', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '0' which should not equal '0' does not hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '0' which should not equal '0' does not hold and
+	the value of v1v-119 is '1' which should not equal '0' does hold and
+	the value of ffa_2-49 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '1', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '1', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [F]v2v-484(X,'0'), not [F]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]ffa_1-119(X,'0'), not [F]v1v-119(X,'0'), not [F]ffa_2-49(X,'0'), not [F]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '1', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '1', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '1', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '1' which should not equal '0' does hold and
+	the value of v1v-137 is '1' which should not equal '0' does hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '0' which should not equal '0' does not hold and
+	the value of v1v-119 is '1' which should not equal '0' does hold and
+	the value of ffa_2-49 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '1', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '1', 'ffa_2-49': '0', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [F]v2v-484(X,'0'), not [F]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]ffa_1-119(X,'0'), not [F]v1v-119(X,'0'), not [T]ffa_2-49(X,'0'), not [F]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '1', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '1', 'ffa_2-49': '0', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '1' which should not equal '0' does hold and
+	the value of v1v-137 is '1' which should not equal '0' does hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '0' which should not equal '0' does not hold and
+	the value of v1v-119 is '1' which should not equal '0' does hold and
+	the value of ffa_2-49 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '0', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [T]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]ffa_1-119(X,'0'), not [T]v1v-119(X,'0'), not [T]ffa_2-49(X,'0'), not [T]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '0', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '0' which should not equal '0' does not hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '0' which should not equal '0' does not hold and
+	the value of v1v-119 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-49 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '0', 'v1v-153': '1', 'atl_faces-155': '1', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [T]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]ffa_1-119(X,'0'), not [T]v1v-119(X,'0'), not [T]ffa_2-49(X,'0'), not [F]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [F]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '0', 'v1v-153': '1', 'atl_faces-155': '1', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '0' which should not equal '0' does not hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '0' which should not equal '0' does not hold and
+	the value of v1v-119 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-49 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '1' which should not equal '0' does hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '1', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [T]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [F]ffa_1-119(X,'0'), not [T]v1v-119(X,'0'), not [F]ffa_2-49(X,'0'), not [T]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '1', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '1', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '0' which should not equal '0' does not hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '1' which should not equal '0' does hold and
+	the value of v1v-119 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-49 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [F]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]ffa_1-119(X,'0'), not [T]v1v-119(X,'0'), not [F]ffa_2-49(X,'0'), not [F]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '1' which should not equal '0' does hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '0' which should not equal '0' does not hold and
+	the value of v1v-119 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-49 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '1', 'v1v-119': '0', 'ffa_2-49': '0', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [T]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [F]ffa_1-119(X,'0'), not [T]v1v-119(X,'0'), not [T]ffa_2-49(X,'0'), not [T]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '1', 'v1v-119': '0', 'ffa_2-49': '0', 'v1v-153': '0', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '0' which should not equal '0' does not hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '1' which should not equal '0' does hold and
+	the value of v1v-119 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-49 is '0' which should not equal '0' does not hold and
+	the value of v1v-153 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '1', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [F]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [F]ffa_1-119(X,'0'), not [T]v1v-119(X,'0'), not [F]ffa_2-49(X,'0'), not [F]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '1', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '1', 'v2v-515': '0', 'ffa_1-119': '1', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '1' which should not equal '0' does hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '1' which should not equal '0' does hold and
+	the value of v1v-119 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-49 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v1d-330(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]v2v-484(X,'0'), not [T]v1v-137(X,'0'), not [T]v2v-515(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]ffa_1-119(X,'0'), not [T]v1v-119(X,'0'), not [F]ffa_2-49(X,'0'), not [F]v1v-153(X,'0').
+[F]bottle(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1d-517(X,'0'), not [T]atl_faces-155(X,'0'), not [T]v1v-94(X,'0').
+{'ffa_2-151': '0', 'v1d-517': '0', 'v1d-330': '0', 'v2v-484': '0', 'v1v-137': '0', 'v2v-515': '0', 'ffa_1-119': '0', 'v1v-119': '0', 'ffa_2-49': '1', 'v1v-153': '1', 'atl_faces-155': '0', 'v1v-94': '0'}
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v1d-330 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of v2v-484 is '0' which should not equal '0' does not hold and
+	the value of v1v-137 is '0' which should not equal '0' does not hold and
+	the value of v2v-515 is '0' which should not equal '0' does not hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-119 is '0' which should not equal '0' does not hold and
+	the value of v1v-119 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-49 is '1' which should not equal '0' does hold and
+	the value of v1v-153 is '1' which should not equal '0' does hold 
+
+bottle(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-517 is '0' which should not equal '0' does not hold and
+	the value of atl_faces-155 is '0' which should not equal '0' does not hold and
+	the value of v1v-94 is '0' which should not equal '0' does not hold 
+
+% acc 0.934 p 0.0 r 0.0 f1 0

@@ -1,0 +1,99 @@
+Beginning analysis on category keyboard in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.611106
+
+keyboard(X,'1') :- v3d-230(X,'0'), not ffa_2-155(X,'0'), not v1d-609(X,'0'), not v1v-286(X,'0').
+% acc 0.987 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 4
+% foldrpp costs: 0:04:58.580360
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '1'}
+[F]keyboard(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [F]v1v-286(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '1'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '1' which should not equal '0' does hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '1'}
+[F]keyboard(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [F]v1v-286(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '1'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '1' which should not equal '0' does hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-155': '1', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [F]v3d-230(X,'0'), not [F]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '1', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '1' which should not equal '0' does hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '0', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+[F]keyboard(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-155(X,'0'), not [T]v1d-609(X,'0'), not [T]v1v-286(X,'0').
+{'v3d-230': '1', 'ffa_2-155': '0', 'v1d-609': '0', 'v1v-286': '0'}
+keyboard(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-155 is '0' which should not equal '0' does not hold and
+	the value of v1d-609 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold 
+
+% acc 0.987 p 0.0 r 0.0 f1 0

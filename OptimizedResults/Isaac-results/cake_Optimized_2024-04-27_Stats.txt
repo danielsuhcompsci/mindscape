@@ -1,0 +1,605 @@
+Beginning analysis on category cake in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.072336
+
+cake(X,'1') :- ffa_1-454(X,'0'), not v1d-399(X,'0'), not v1d-590(X,'0').
+cake(X,'1') :- ffa_1-454(X,'0'), not ffa_2-174(X,'0'), not v2v-738(X,'0'), not v1d-429(X,'0'), v1v-57(X,'0').
+cake(X,'1') :- ffa_1-454(X,'0'), v1v-102(X,'0'), not ofa-149(X,'0'), not ofa-23(X,'0'), not v1v-229(X,'0').
+cake(X,'1') :- ffa_1-454(X,'0'), v1v-102(X,'0'), not ffa_2-56(X,'0'), not v3v-114(X,'0'), not ffa_2-46(X,'0'), not v2v-512(X,'0').
+cake(X,'1') :- ffa_1-454(X,'0'), v1v-102(X,'0'), not v1d-245(X,'0'), not v1v-397(X,'0'), not v1d-577(X,'0'), not v2v-58(X,'0').
+cake(X,'1') :- ffa_1-454(X,'0'), v1v-102(X,'0'), not v2v-374(X,'0'), not v1d-442(X,'0'), not v2d-68(X,'0').
+cake(X,'1') :- ffa_1-454(X,'0'), v1v-102(X,'0'), not v2v-754(X,'0'), not v3d-426(X,'0'), not ffa_1-71(X,'0'), v1v-24(X,'0').
+% acc 0.976 p 0.0 r 0.0 f1 0
+% #rules 7 #preds 36
+% foldrpp costs: 0:15:39.502774
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '1', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '1', 'v2v-754': '0', 'v3d-426': '1', 'ffa_1-71': '1', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [F]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [F]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ffa_2-56(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [T]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [F]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [F]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [F]v3d-426(X,'0'), not [F]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '1', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '1', 'v2v-754': '0', 'v3d-426': '1', 'ffa_1-71': '1', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '1' which should not equal '0' does hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '1' which should not equal '0' does hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '1' which should not equal '0' does hold and
+	the value of ffa_1-71 is '1' which should not equal '0' does hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '1', 'ffa_1-71': '0', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [T]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [F]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ffa_2-56(X,'0'), not [F]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [T]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [T]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [F]v3d-426(X,'0'), not [T]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '1', 'ffa_1-71': '0', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '0' which should not equal '0' does not hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '0' which should not equal '0' does not hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '1' which should not equal '0' does hold and
+	the value of ffa_1-71 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '1', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [T]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [F]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ffa_2-56(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [T]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [T]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v2v-754(X,'0'), not [T]v3d-426(X,'0'), not [T]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '1', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '1' which should not equal '0' does hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '0' which should not equal '0' does not hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '1' which should not equal '0' does hold and
+	the value of v3d-426 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-71 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '1', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '1', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [F]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [T]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [F]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ffa_2-56(X,'0'), not [F]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [F]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [T]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [F]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [T]v3d-426(X,'0'), not [T]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '1', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '1', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '1' which should not equal '0' does hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '0' which should not equal '0' does not hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '0' which should not equal '0' does not hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-71 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '1', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '1', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [T]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [F]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]ffa_2-56(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [T]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [T]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [T]v3d-426(X,'0'), not [T]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '1', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '1', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '1' which should not equal '0' does hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '0' which should not equal '0' does not hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '1' which should not equal '0' does hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-71 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '1', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '0', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '1', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [F]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [F]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [T]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ffa_2-56(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [F]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [F]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [T]v3d-426(X,'0'), not [T]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '1', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '0', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '1', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '0' which should not equal '0' does not hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '1' which should not equal '0' does hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-71 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '1', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '0', 'v2v-374': '1', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [F]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [F]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [F]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ffa_2-56(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [T]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [T]v1d-577(X,'0'), not [T]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [T]v3d-426(X,'0'), not [T]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '1', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '0', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '0', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '0', 'v2v-374': '1', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '0', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '1' which should not equal '0' does hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '0' which should not equal '0' does not hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '1' which should not equal '0' does hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '0' which should not equal '0' does not hold and
+	the value of v2v-58 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '1' which should not equal '0' does hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-71 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '1', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '1', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [T]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [F]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]ffa_2-56(X,'0'), not [F]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [F]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [T]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [T]v3d-426(X,'0'), not [F]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '1', 'ffa_2-56': '1', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '1', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '1', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '1' which should not equal '0' does hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '0' which should not equal '0' does not hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-71 is '1' which should not equal '0' does hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '0', 'ffa_2-56': '1', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '1', 'v2v-58': '0', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '1', 'ffa_1-71': '0', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [F]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [T]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]ffa_2-56(X,'0'), not [F]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [F]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [F]v1d-577(X,'0'), not [T]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [F]v3d-426(X,'0'), not [T]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '1', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '0', 'ffa_2-56': '1', 'v3v-114': '1', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '1', 'v2v-58': '0', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '1', 'ffa_1-71': '0', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '1' which should equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '1' which should not equal '0' does hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '0' which should not equal '0' does not hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '1' which should not equal '0' does hold and
+	the value of v2v-58 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '1' which should not equal '0' does hold and
+	the value of ffa_1-71 is '0' which should not equal '0' does not hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '0', 'ffa_2-56': '1', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '1', 'v1v-24': '0'}
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]v1d-399(X,'0'), not [T]v1d-590(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), not [T]ffa_2-174(X,'0'), not [T]v2v-738(X,'0'), not [T]v1d-429(X,'0'), [T]v1v-57(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]ofa-149(X,'0'), not [T]ofa-23(X,'0'), not [T]v1v-229(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [F]ffa_2-56(X,'0'), not [T]v3v-114(X,'0'), not [T]ffa_2-46(X,'0'), not [F]v2v-512(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v1d-245(X,'0'), not [T]v1v-397(X,'0'), not [T]v1d-577(X,'0'), not [F]v2v-58(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-374(X,'0'), not [T]v1d-442(X,'0'), not [T]v2d-68(X,'0').
+[F]cake(X,'1') :- [F]ffa_1-454(X,'0'), [F]v1v-102(X,'0'), not [T]v2v-754(X,'0'), not [T]v3d-426(X,'0'), not [F]ffa_1-71(X,'0'), [T]v1v-24(X,'0').
+{'ffa_1-454': '1', 'v1d-399': '0', 'v1d-590': '0', 'ffa_2-174': '0', 'v2v-738': '0', 'v1d-429': '0', 'v1v-57': '0', 'v1v-102': '1', 'ofa-149': '0', 'ofa-23': '0', 'v1v-229': '0', 'ffa_2-56': '1', 'v3v-114': '0', 'ffa_2-46': '0', 'v2v-512': '1', 'v1d-245': '0', 'v1v-397': '0', 'v1d-577': '0', 'v2v-58': '1', 'v2v-374': '0', 'v1d-442': '0', 'v2d-68': '0', 'v2v-754': '0', 'v3d-426': '0', 'ffa_1-71': '1', 'v1v-24': '0'}
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1d-399 is '0' which should not equal '0' does not hold and
+	the value of v1d-590 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of ffa_2-174 is '0' which should not equal '0' does not hold and
+	the value of v2v-738 is '0' which should not equal '0' does not hold and
+	the value of v1d-429 is '0' which should not equal '0' does not hold and
+	the value of v1v-57 is '0' which should equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ofa-149 is '0' which should not equal '0' does not hold and
+	the value of ofa-23 is '0' which should not equal '0' does not hold and
+	the value of v1v-229 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of ffa_2-56 is '1' which should not equal '0' does hold and
+	the value of v3v-114 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-46 is '0' which should not equal '0' does not hold and
+	the value of v2v-512 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v1d-245 is '0' which should not equal '0' does not hold and
+	the value of v1v-397 is '0' which should not equal '0' does not hold and
+	the value of v1d-577 is '0' which should not equal '0' does not hold and
+	the value of v2v-58 is '1' which should not equal '0' does hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-374 is '0' which should not equal '0' does not hold and
+	the value of v1d-442 is '0' which should not equal '0' does not hold and
+	the value of v2d-68 is '0' which should not equal '0' does not hold 
+
+cake(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v1v-102 is '1' which should equal '0' does not hold and
+	the value of v2v-754 is '0' which should not equal '0' does not hold and
+	the value of v3d-426 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-71 is '1' which should not equal '0' does hold and
+	the value of v1v-24 is '0' which should equal '0' does hold 
+
+% acc 0.976 p 0.0 r 0.0 f1 0

@@ -1,0 +1,99 @@
+Beginning analysis on category skateboard in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.197676
+
+skateboard(X,'1') :- not ffa_2-151(X,'0'), not ffa_1-311(X,'0'), not v2v-93(X,'0'), not v3v-483(X,'0').
+% acc 0.976 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 4
+% foldrpp costs: 0:03:31.935154
+
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+[F]skateboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [T]v3v-483(X,'0').
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+[F]skateboard(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [T]v3v-483(X,'0').
+{'ffa_2-151': '1', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'ffa_1-311': '1', 'v2v-93': '0', 'v3v-483': '0'}
+[F]skateboard(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [T]v3v-483(X,'0').
+{'ffa_2-151': '1', 'ffa_1-311': '1', 'v2v-93': '0', 'v3v-483': '0'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-311 is '1' which should not equal '0' does hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+[F]skateboard(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [T]v3v-483(X,'0').
+{'ffa_2-151': '1', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+[F]skateboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [F]v3v-483(X,'0').
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+[F]skateboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [F]v3v-483(X,'0').
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+[F]skateboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [F]v3v-483(X,'0').
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+[F]skateboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [T]v3v-483(X,'0').
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '0'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+[F]skateboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [F]v3v-483(X,'0').
+{'ffa_2-151': '0', 'ffa_1-311': '0', 'v2v-93': '0', 'v3v-483': '1'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-311 is '0' which should not equal '0' does not hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'ffa_1-311': '1', 'v2v-93': '0', 'v3v-483': '1'}
+[F]skateboard(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]ffa_1-311(X,'0'), not [T]v2v-93(X,'0'), not [F]v3v-483(X,'0').
+{'ffa_2-151': '0', 'ffa_1-311': '1', 'v2v-93': '0', 'v3v-483': '1'}
+skateboard(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-311 is '1' which should not equal '0' does hold and
+	the value of v2v-93 is '0' which should not equal '0' does not hold and
+	the value of v3v-483 is '1' which should not equal '0' does hold 
+
+% acc 0.976 p 0.0 r 0.0 f1 0

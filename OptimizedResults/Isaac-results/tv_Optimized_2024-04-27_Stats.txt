@@ -1,0 +1,119 @@
+Beginning analysis on category tv in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:21.808124
+
+tv(X,'1') :- not ffa_2-151(X,'0'), not v2v-744(X,'0'), not ffa_1-194(X,'0'), not v1v-205(X,'0'), v2v-710(X,'0'), not ofa-37(X,'0').
+% acc 0.971 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 6
+% foldrpp costs: 0:04:06.824943
+
+{'ffa_2-151': '1', 'v2v-744': '1', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '1', 'ofa-37': '1'}
+[F]tv(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [T]v1v-205(X,'0'), [F]v2v-710(X,'0'), not [F]ofa-37(X,'0').
+{'ffa_2-151': '1', 'v2v-744': '1', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '1', 'ofa-37': '1'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v2v-744 is '1' which should not equal '0' does hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '0' which should not equal '0' does not hold and
+	the value of v2v-710 is '1' which should equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [T]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '0' which should not equal '0' does not hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [F]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '1' which should not equal '0' does hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [F]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '1' which should not equal '0' does hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [T]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '0' which should not equal '0' does not hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [F]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '1', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '1' which should not equal '0' does hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [T]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '0' which should not equal '0' does not hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [F]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '1', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '1' which should not equal '0' does hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [T]ffa_1-194(X,'0'), not [T]v1v-205(X,'0'), [T]v2v-710(X,'0'), not [T]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '0', 'v1v-205': '0', 'v2v-710': '0', 'ofa-37': '0'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '0' which should not equal '0' does not hold and
+	the value of v1v-205 is '0' which should not equal '0' does not hold and
+	the value of v2v-710 is '0' which should equal '0' does hold and
+	the value of ofa-37 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '1', 'v1v-205': '0', 'v2v-710': '1', 'ofa-37': '1'}
+[F]tv(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v2v-744(X,'0'), not [F]ffa_1-194(X,'0'), not [T]v1v-205(X,'0'), [F]v2v-710(X,'0'), not [F]ofa-37(X,'0').
+{'ffa_2-151': '0', 'v2v-744': '0', 'ffa_1-194': '1', 'v1v-205': '0', 'v2v-710': '1', 'ofa-37': '1'}
+tv(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v2v-744 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-194 is '1' which should not equal '0' does hold and
+	the value of v1v-205 is '0' which should not equal '0' does not hold and
+	the value of v2v-710 is '1' which should equal '0' does not hold and
+	the value of ofa-37 is '1' which should not equal '0' does hold 
+
+% acc 0.971 p 0.0 r 0.0 f1 0

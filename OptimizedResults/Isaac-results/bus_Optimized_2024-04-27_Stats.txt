@@ -1,0 +1,170 @@
+Beginning analysis on category bus in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.577069
+
+bus(X,'1') :- not ffa_2-227(X,'0'), not ffa_1-282(X,'0'), not v1d-18(X,'0'), not v1v-60(X,'0').
+bus(X,'1') :- not ffa_2-227(X,'0'), not ffa_1-282(X,'0'), not v2v-426(X,'0'), not v1v-75(X,'0').
+% acc 0.966 p 0.0 r 0.0 f1 0
+% #rules 2 #preds 8
+% foldrpp costs: 0:05:29.235050
+
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [F]v1v-60(X,'0').
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [T]v1v-60(X,'0').
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '1', 'ffa_1-282': '1', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [F]ffa_2-227(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [F]v1v-60(X,'0').
+[F]bus(X,'1') :- not [F]ffa_2-227(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '1', 'ffa_1-282': '1', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'ffa_1-282': '1', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [F]v1v-60(X,'0').
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [F]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '0', 'ffa_1-282': '1', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '1' which should not equal '0' does hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [F]v1v-60(X,'0').
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '1', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '1', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [F]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [T]v1v-60(X,'0').
+[F]bus(X,'1') :- not [F]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [F]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '1', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '1', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '1' which should not equal '0' does hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [F]v1v-60(X,'0').
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '1', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '1' which should not equal '0' does hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '1', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [F]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [T]v1v-60(X,'0').
+[F]bus(X,'1') :- not [F]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '1', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '1' which should not equal '0' does hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '1'}
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [T]v1v-60(X,'0').
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [F]v1v-75(X,'0').
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '1'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '1' which should not equal '0' does hold 
+
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '0'}
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v1d-18(X,'0'), not [T]v1v-60(X,'0').
+[F]bus(X,'1') :- not [T]ffa_2-227(X,'0'), not [T]ffa_1-282(X,'0'), not [T]v2v-426(X,'0'), not [T]v1v-75(X,'0').
+{'ffa_2-227': '0', 'ffa_1-282': '0', 'v1d-18': '0', 'v1v-60': '0', 'v2v-426': '0', 'v1v-75': '0'}
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v1d-18 is '0' which should not equal '0' does not hold and
+	the value of v1v-60 is '0' which should not equal '0' does not hold 
+
+bus(X,'1') does not hold because
+	the value of ffa_2-227 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-282 is '0' which should not equal '0' does not hold and
+	the value of v2v-426 is '0' which should not equal '0' does not hold and
+	the value of v1v-75 is '0' which should not equal '0' does not hold 
+
+% acc 0.966 p 0.0 r 0.0 f1 0

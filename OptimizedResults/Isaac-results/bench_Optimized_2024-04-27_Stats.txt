@@ -1,0 +1,524 @@
+Beginning analysis on category bench in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.667530
+
+bench(X,'1') :- ffa_1-454(X,'0'), v2v-523(X,'0'), not ofa-349(X,'0'), not v2v-284(X,'0'), not v1d-668(X,'0'), not v2v-799(X,'0').
+bench(X,'1') :- ffa_1-454(X,'0'), v2v-523(X,'0'), not ofa-349(X,'0'), not ffa_1-216(X,'0'), not ffa_2-178(X,'0'), v1v-45(X,'0').
+bench(X,'1') :- ffa_1-454(X,'0'), v2v-523(X,'0'), not ofa-349(X,'0'), not ffa_1-188(X,'0'), not v1v-86(X,'0').
+bench(X,'1') :- not ffa_1-280(X,'0'), not v1v-340(X,'0'), not v3d-355(X,'0'), not v1d-333(X,'0').
+bench(X,'1') :- not ffa_1-280(X,'0'), not v1v-340(X,'0'), not v2v-783(X,'0'), not v3v-384(X,'0'), v2v-355(X,'0'), v1v-144(X,'0').
+bench(X,'1') :- not ffa_1-280(X,'0'), ffa_1-193(X,'0'), not v1d-28(X,'0'), not v3d-355(X,'0').
+% acc 0.959 p 0.0 r 0.0 f1 0
+% #rules 6 #preds 31
+% foldrpp costs: 0:14:36.015344
+
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '1', 'ffa_1-216': '1', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [F]v2v-799(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [F]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [F]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [F]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [F]v3d-355(X,'0').
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '1', 'ffa_1-216': '1', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '1' which should not equal '0' does hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '1' which should equal '0' does not hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold 
+
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '1', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '0', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [F]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [T]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [F]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [F]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [F]v3d-355(X,'0').
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '1', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '0', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '1' which should not equal '0' does hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '1' which should equal '0' does not hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold 
+
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '1', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '1', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [F]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [F]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [F]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [F]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [F]v3d-355(X,'0').
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '1', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '1', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '1' which should not equal '0' does hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '1' which should not equal '0' does hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '1' which should equal '0' does not hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold 
+
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '1', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '0', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '0', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '1', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '1'}
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [F]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [T]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [F]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [F]ffa_1-193(X,'0'), not [F]v1d-28(X,'0'), not [T]v3d-355(X,'0').
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '1', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '0', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '0', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '1', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '1'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '1' which should not equal '0' does hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '0' which should not equal '0' does not hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '1' which should equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '1' which should equal '0' does not hold and
+	the value of v1d-28 is '1' which should not equal '0' does hold and
+	the value of v3d-355 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '0', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [F]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [T]v3d-355(X,'0').
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '0', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '0' which should not equal '0' does not hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '1' which should equal '0' does not hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '1', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '0', 'v1d-28': '0'}
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [F]v1v-340(X,'0'), not [F]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [F]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [T]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [F]v3d-355(X,'0').
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '1', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '0', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '1' which should not equal '0' does hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '1' which should not equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '0' which should equal '0' does hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold 
+
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '1', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '0', 'v1d-28': '0'}
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [F]v1v-340(X,'0'), not [F]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [F]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [T]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [F]v3d-355(X,'0').
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '1', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '0', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '1' which should not equal '0' does hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '1' which should not equal '0' does hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '0' which should equal '0' does hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold 
+
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '1', 'v2v-799': '0', 'ffa_1-216': '1', 'ffa_2-178': '0', 'v1v-45': '1', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '0', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '0', 'v1d-28': '0'}
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [F]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [F]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [F]v1v-45(X,'0').
+[F]bench(X,'1') :- [F]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [T]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [T]v3d-355(X,'0').
+{'ffa_1-454': '1', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '1', 'v2v-799': '0', 'ffa_1-216': '1', 'ffa_2-178': '0', 'v1v-45': '1', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '0', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '0', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '1' which should not equal '0' does hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '1' which should not equal '0' does hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '1' which should equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '0' which should not equal '0' does not hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '0' which should equal '0' does hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '0' which should not equal '0' does not hold 
+
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [F]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [F]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [F]v3d-355(X,'0').
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '1' which should equal '0' does not hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold 
+
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]v2v-284(X,'0'), not [T]v1d-668(X,'0'), not [T]v2v-799(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-216(X,'0'), not [T]ffa_2-178(X,'0'), [T]v1v-45(X,'0').
+[F]bench(X,'1') :- [T]ffa_1-454(X,'0'), [F]v2v-523(X,'0'), not [T]ofa-349(X,'0'), not [T]ffa_1-188(X,'0'), not [F]v1v-86(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [F]v3d-355(X,'0'), not [T]v1d-333(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), not [T]v1v-340(X,'0'), not [T]v2v-783(X,'0'), not [T]v3v-384(X,'0'), [T]v2v-355(X,'0'), [T]v1v-144(X,'0').
+[F]bench(X,'1') :- not [T]ffa_1-280(X,'0'), [F]ffa_1-193(X,'0'), not [T]v1d-28(X,'0'), not [F]v3d-355(X,'0').
+{'ffa_1-454': '0', 'v2v-523': '1', 'ofa-349': '0', 'v2v-284': '0', 'v1d-668': '0', 'v2v-799': '0', 'ffa_1-216': '0', 'ffa_2-178': '0', 'v1v-45': '0', 'ffa_1-188': '0', 'v1v-86': '1', 'ffa_1-280': '0', 'v1v-340': '0', 'v3d-355': '1', 'v1d-333': '0', 'v2v-783': '0', 'v3v-384': '0', 'v2v-355': '0', 'v1v-144': '0', 'ffa_1-193': '1', 'v1d-28': '0'}
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold and
+	the value of v1d-668 is '0' which should not equal '0' does not hold and
+	the value of v2v-799 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-216 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-178 is '0' which should not equal '0' does not hold and
+	the value of v1v-45 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2v-523 is '1' which should equal '0' does not hold and
+	the value of ofa-349 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-188 is '0' which should not equal '0' does not hold and
+	the value of v1v-86 is '1' which should not equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold and
+	the value of v1d-333 is '0' which should not equal '0' does not hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of v1v-340 is '0' which should not equal '0' does not hold and
+	the value of v2v-783 is '0' which should not equal '0' does not hold and
+	the value of v3v-384 is '0' which should not equal '0' does not hold and
+	the value of v2v-355 is '0' which should equal '0' does hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+bench(X,'1') does not hold because
+	the value of ffa_1-280 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-193 is '1' which should equal '0' does not hold and
+	the value of v1d-28 is '0' which should not equal '0' does not hold and
+	the value of v3d-355 is '1' which should not equal '0' does hold 
+
+% acc 0.959 p 0.0 r 0.0 f1 0

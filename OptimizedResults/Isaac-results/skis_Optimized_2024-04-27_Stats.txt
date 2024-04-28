@@ -1,0 +1,505 @@
+Beginning analysis on category skis in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.803523
+
+skis(X,'1') :- not ffa_2-151(X,'0'), v1d-367(X,'0'), v1d-432(X,'0'), v1d-561(X,'0'), not v1v-108(X,'0'), v1v-103(X,'0'), v1v-274(X,'0'), not ab1(X,'True').
+skis(X,'1') :- not ffa_2-151(X,'0'), v1d-367(X,'0'), v1d-76(X,'0'), not v1v-564(X,'0').
+skis(X,'1') :- not ffa_2-151(X,'0'), v1d-367(X,'0'), v1d-76(X,'0'), not v2v-519(X,'0').
+skis(X,'1') :- not ffa_2-151(X,'0'), v3v-484(X,'0'), not ffa_1-326(X,'0'), not v1d-124(X,'0'), v1v-51(X,'0').
+skis(X,'1') :- not ffa_2-151(X,'0'), v1d-367(X,'0'), v1d-76(X,'0'), not ffa_1-101(X,'0'), not v1v-224(X,'0'), not v2v-284(X,'0').
+skis(X,'1') :- not ffa_2-151(X,'0'), ffa_1-454(X,'0'), not v2d-86(X,'0').
+ab1(X,'True') :- not v1v-129(X,'0'), v1v-37(X,'0').
+% acc 0.966 p 0.0 r 0.0 f1 0
+% #rules 7 #preds 31
+% foldrpp costs: 0:13:00.528177
+
+{'ffa_2-151': '0', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '1', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '1', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [F]v1v-224(X,'0'), not [F]v2v-284(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '0', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '1', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '1', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2v-284 is '1' which should not equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '0', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '1', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-432(X,'0'), [T]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [F]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '1', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '0', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '1', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '0', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '0', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '1', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [T]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [T]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [F]v1v-51(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [T]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [F]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '0', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '0', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '1', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '0' which should equal '0' does hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '0' which should equal '0' does hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '1' which should equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '0' which should equal '0' does hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '1', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [T]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '1', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '1', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '1', 'v1v-274': '1', 'v1d-76': '0', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '1', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '1', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [F]v1v-103(X,'0'), [F]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [T]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [T]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-484(X,'0'), not [F]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [T]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [F]v1v-224(X,'0'), not [F]v2v-284(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '0', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '1', 'v1v-274': '1', 'v1d-76': '0', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '1', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '1', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '1' which should equal '0' does not hold and
+	the value of v1v-274 is '1' which should equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '0' which should equal '0' does hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '0' which should equal '0' does hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of ffa_1-326 is '1' which should not equal '0' does hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '0' which should equal '0' does hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2v-284 is '1' which should not equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '0', 'v1v-108': '1', 'v1v-103': '0', 'v1v-274': '1', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '0', 'ffa_1-454': '0', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-432(X,'0'), [T]v1d-561(X,'0'), not [F]v1v-108(X,'0'), [T]v1v-103(X,'0'), [F]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [F]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '0', 'v1v-108': '1', 'v1v-103': '0', 'v1v-274': '1', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '1', 'v2v-284': '0', 'ffa_1-454': '0', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '0' which should equal '0' does hold and
+	the value of v1v-108 is '1' which should not equal '0' does hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '1' which should equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '1' which should not equal '0' does hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [T]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '1', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '0', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '0', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [F]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [T]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '0', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '1', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '0', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '0', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '1' which should not equal '0' does hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '0' which should equal '0' does hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '0', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [T]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [T]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [F]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '1', 'v1d-367': '1', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '0', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v3v-484 is '0' which should equal '0' does hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-432(X,'0'), [F]v1d-561(X,'0'), not [T]v1v-108(X,'0'), [T]v1v-103(X,'0'), [T]v1v-274(X,'0'), not [U]ab1(X,'True').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v1v-564(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]v2v-519(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3v-484(X,'0'), not [T]ffa_1-326(X,'0'), not [T]v1d-124(X,'0'), [T]v1v-51(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v1d-367(X,'0'), [F]v1d-76(X,'0'), not [T]ffa_1-101(X,'0'), not [T]v1v-224(X,'0'), not [T]v2v-284(X,'0').
+[F]skis(X,'1') :- not [T]ffa_2-151(X,'0'), [F]ffa_1-454(X,'0'), not [T]v2d-86(X,'0').
+{'ffa_2-151': '0', 'v1d-367': '0', 'v1d-432': '1', 'v1d-561': '1', 'v1v-108': '0', 'v1v-103': '0', 'v1v-274': '0', 'v1d-76': '1', 'v1v-564': '0', 'v2v-519': '0', 'v3v-484': '1', 'ffa_1-326': '0', 'v1d-124': '0', 'v1v-51': '0', 'ffa_1-101': '0', 'v1v-224': '0', 'v2v-284': '0', 'ffa_1-454': '1', 'v2d-86': '0', 'v1v-129': '0', 'v1v-37': '0'}
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-432 is '1' which should equal '0' does not hold and
+	the value of v1d-561 is '1' which should equal '0' does not hold and
+	the value of v1v-108 is '0' which should not equal '0' does not hold and
+	the value of v1v-103 is '0' which should equal '0' does hold and
+	the value of v1v-274 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v1v-564 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of v2v-519 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3v-484 is '1' which should equal '0' does not hold and
+	the value of ffa_1-326 is '0' which should not equal '0' does not hold and
+	the value of v1d-124 is '0' which should not equal '0' does not hold and
+	the value of v1v-51 is '0' which should equal '0' does hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1d-76 is '1' which should equal '0' does not hold and
+	the value of ffa_1-101 is '0' which should not equal '0' does not hold and
+	the value of v1v-224 is '0' which should not equal '0' does not hold and
+	the value of v2v-284 is '0' which should not equal '0' does not hold 
+
+skis(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-454 is '1' which should equal '0' does not hold and
+	the value of v2d-86 is '0' which should not equal '0' does not hold 
+
+% acc 0.966 p 0.0 r 0.0 f1 0

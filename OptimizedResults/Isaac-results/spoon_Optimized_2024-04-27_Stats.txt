@@ -1,0 +1,200 @@
+Beginning analysis on category spoon in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.883543
+
+spoon(X,'1') :- not ffa_2-151(X,'0'), not v1v-262(X,'0'), not v3d-430(X,'0'), not v3v-160(X,'0'), not v1v-286(X,'0'), v1v-67(X,'0').
+spoon(X,'1') :- not ffa_2-151(X,'0'), not ffa_2-147(X,'0'), not v1v-471(X,'0'), not v2v-98(X,'0'), not v1v-215(X,'0').
+% acc 0.968 p 0 r 0.0 f1 0
+% #rules 2 #preds 11
+% foldrpp costs: 0:05:34.554091
+
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '1', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-262(X,'0'), not [F]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [F]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [F]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '1', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '1' which should equal '0' does not hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '1' which should not equal '0' does hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '0', 'v3v-160': '1', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-262(X,'0'), not [T]v3d-430(X,'0'), not [F]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [T]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [F]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '0', 'v3v-160': '1', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v3v-160 is '1' which should not equal '0' does hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should equal '0' does hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '1' which should not equal '0' does hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '1'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-262(X,'0'), not [T]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [T]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [T]v2v-98(X,'0'), not [F]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '1'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should equal '0' does hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '0' which should not equal '0' does not hold and
+	the value of v1v-215 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-262(X,'0'), not [T]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [T]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [F]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should equal '0' does hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '1' which should not equal '0' does hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '1', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-262(X,'0'), not [F]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [T]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [F]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '1', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '1', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should equal '0' does hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '1' which should not equal '0' does hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-262(X,'0'), not [T]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [T]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [T]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should equal '0' does hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '0' which should not equal '0' does not hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '1', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-262(X,'0'), not [F]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [F]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [T]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '1', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '1' which should equal '0' does not hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '0' which should not equal '0' does not hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '1', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-262(X,'0'), not [F]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [F]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [T]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '1', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '1' which should equal '0' does not hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '0' which should not equal '0' does not hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '1'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-262(X,'0'), not [T]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [T]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [T]v2v-98(X,'0'), not [F]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '1', 'v3d-430': '0', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '1'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '1' which should not equal '0' does hold and
+	the value of v3d-430 is '0' which should not equal '0' does not hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should equal '0' does hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '0' which should not equal '0' does not hold and
+	the value of v1v-215 is '1' which should not equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-262(X,'0'), not [F]v3d-430(X,'0'), not [T]v3v-160(X,'0'), not [T]v1v-286(X,'0'), [T]v1v-67(X,'0').
+[F]spoon(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]ffa_2-147(X,'0'), not [T]v1v-471(X,'0'), not [T]v2v-98(X,'0'), not [T]v1v-215(X,'0').
+{'ffa_2-151': '0', 'v1v-262': '0', 'v3d-430': '1', 'v3v-160': '0', 'v1v-286': '0', 'v1v-67': '0', 'ffa_2-147': '0', 'v1v-471': '0', 'v2v-98': '0', 'v1v-215': '0'}
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-262 is '0' which should not equal '0' does not hold and
+	the value of v3d-430 is '1' which should not equal '0' does hold and
+	the value of v3v-160 is '0' which should not equal '0' does not hold and
+	the value of v1v-286 is '0' which should not equal '0' does not hold and
+	the value of v1v-67 is '0' which should equal '0' does hold 
+
+spoon(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-147 is '0' which should not equal '0' does not hold and
+	the value of v1v-471 is '0' which should not equal '0' does not hold and
+	the value of v2v-98 is '0' which should not equal '0' does not hold and
+	the value of v1v-215 is '0' which should not equal '0' does not hold 
+
+% acc 0.968 p 0 r 0.0 f1 0

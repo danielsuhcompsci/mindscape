@@ -1,0 +1,109 @@
+Beginning analysis on category kite in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.512362
+
+kite(X,'1') :- v1v-91(X,'0'), v2v-517(X,'0'), not v1d-250(X,'0'), not v1d-322(X,'0'), v1v-144(X,'0').
+% acc 0.98 p 0.0 r 0.0 f1 0
+% #rules 1 #preds 5
+% foldrpp costs: 0:03:37.613740
+
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [F]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '1' which should equal '0' does not hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [F]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '1' which should equal '0' does not hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '1', 'v2v-517': '0', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '1'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [T]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [F]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '0', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '1'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '0' which should equal '0' does hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '1' which should equal '0' does not hold 
+
+{'v1v-91': '1', 'v2v-517': '0', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [T]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '0', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '0' which should equal '0' does hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [F]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '1' which should equal '0' does not hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [F]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '1' which should equal '0' does not hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '0', 'v2v-517': '0', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [T]v1v-91(X,'0'), [T]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '0', 'v2v-517': '0', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '0' which should equal '0' does hold and
+	the value of v2v-517 is '0' which should equal '0' does hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [F]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '1' which should equal '0' does not hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '0', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [T]v1v-91(X,'0'), [F]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '0', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '0' which should equal '0' does hold and
+	the value of v2v-517 is '1' which should equal '0' does not hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+[F]kite(X,'1') :- [F]v1v-91(X,'0'), [F]v2v-517(X,'0'), not [T]v1d-250(X,'0'), not [T]v1d-322(X,'0'), [T]v1v-144(X,'0').
+{'v1v-91': '1', 'v2v-517': '1', 'v1d-250': '0', 'v1d-322': '0', 'v1v-144': '0'}
+kite(X,'1') does not hold because
+	the value of v1v-91 is '1' which should equal '0' does not hold and
+	the value of v2v-517 is '1' which should equal '0' does not hold and
+	the value of v1d-250 is '0' which should not equal '0' does not hold and
+	the value of v1d-322 is '0' which should not equal '0' does not hold and
+	the value of v1v-144 is '0' which should equal '0' does hold 
+
+% acc 0.98 p 0.0 r 0.0 f1 0

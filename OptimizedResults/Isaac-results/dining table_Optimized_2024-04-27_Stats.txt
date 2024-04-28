@@ -1,0 +1,99 @@
+Beginning analysis on category dining table in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:19.078742
+
+dining_table(X,'1') :- not ffa_2-151(X,'0'), v3d-442(X,'0'), not v3v-24(X,'0'), not v2d-133(X,'0').
+% acc 0.913 p 0 r 0.0 f1 0
+% #rules 1 #preds 4
+% foldrpp costs: 0:04:10.607006
+
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-442(X,'0'), not [F]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v3v-24 is '1' which should not equal '0' does hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-442(X,'0'), not [F]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v3v-24 is '1' which should not equal '0' does hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '0', 'v3v-24': '0', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3d-442(X,'0'), not [T]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '0', 'v3v-24': '0', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v3v-24 is '0' which should not equal '0' does not hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '0', 'v3v-24': '0', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3d-442(X,'0'), not [T]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '0', 'v3v-24': '0', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v3v-24 is '0' which should not equal '0' does not hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-442(X,'0'), not [F]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v3v-24 is '1' which should not equal '0' does hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-442(X,'0'), not [F]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v3v-24 is '1' which should not equal '0' does hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '0', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-442(X,'0'), not [T]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '0', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v3v-24 is '0' which should not equal '0' does not hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-442(X,'0'), not [F]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v3v-24 is '1' which should not equal '0' does hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [F]v3d-442(X,'0'), not [F]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '1', 'v3v-24': '1', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v3v-24 is '1' which should not equal '0' does hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v3d-442': '0', 'v3v-24': '0', 'v2d-133': '0'}
+[F]dining_table(X,'1') :- not [T]ffa_2-151(X,'0'), [T]v3d-442(X,'0'), not [T]v3v-24(X,'0'), not [T]v2d-133(X,'0').
+{'ffa_2-151': '0', 'v3d-442': '0', 'v3v-24': '0', 'v2d-133': '0'}
+dining_table(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v3v-24 is '0' which should not equal '0' does not hold and
+	the value of v2d-133 is '0' which should not equal '0' does not hold 
+
+% acc 0.913 p 0 r 0.0 f1 0

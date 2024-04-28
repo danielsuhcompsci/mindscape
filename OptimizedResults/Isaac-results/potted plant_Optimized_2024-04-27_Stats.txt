@@ -1,0 +1,403 @@
+Beginning analysis on category potted plant in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.928261
+
+potted_plant(X,'1') :- not ffa_2-151(X,'0'), not v1v-307(X,'0'), not ffa_2-35(X,'0'), not v2v-239(X,'0').
+potted_plant(X,'1') :- not ffa_2-156(X,'0'), not v2v-460(X,'0'), not v3v-423(X,'0').
+potted_plant(X,'1') :- not ffa_2-156(X,'0'), v1d-367(X,'0'), not v3d-64(X,'0'), not ffa_2-92(X,'0'), not v1d-447(X,'0'), not v2v-601(X,'0').
+potted_plant(X,'1') :- not ffa_2-156(X,'0'), v1d-367(X,'0'), not v1v-334(X,'0').
+potted_plant(X,'1') :- not ffa_2-156(X,'0'), v1d-367(X,'0'), not v1v-348(X,'0'), not v1v-7(X,'0'), not v1d-533(X,'0'), v1v-92(X,'0').
+% acc 0.967 p 0.0 r 0.0 f1 0
+% #rules 5 #preds 22
+% foldrpp costs: 0:11:36.455565
+
+{'ffa_2-151': '1', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '1'}
+[F]potted_plant(X,'1') :- not [F]ffa_2-151(X,'0'), not [F]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [F]v1v-92(X,'0').
+{'ffa_2-151': '1', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '1'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-307 is '1' which should not equal '0' does hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '1' which should equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '1', 'ffa_2-92': '1', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '1', 'v1v-92': '0'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v3d-64(X,'0'), not [F]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [F]v1d-533(X,'0'), [T]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '1', 'ffa_2-92': '1', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '1', 'v1v-92': '0'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '1' which should not equal '0' does hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of ffa_2-92 is '1' which should not equal '0' does hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '1' which should not equal '0' does hold and
+	the value of v1v-92 is '0' which should equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '1', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [F]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [T]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '1', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should equal '0' does hold 
+
+{'ffa_2-151': '1', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '1', 'v1d-367': '0', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '1'}
+[F]potted_plant(X,'1') :- not [F]ffa_2-151(X,'0'), not [T]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [F]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [F]v1v-92(X,'0').
+{'ffa_2-151': '1', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '1', 'v1d-367': '0', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '1'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '1' which should not equal '0' does hold and
+	the value of v1v-307 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '1' which should equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '1'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [F]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [F]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '1'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '1' which should equal '0' does not hold 
+
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '1', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '1', 'v1v-334': '0', 'v1v-348': '1', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [F]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [F]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [T]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '1', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '1', 'v1v-334': '0', 'v1v-348': '1', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '1' which should not equal '0' does hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-348 is '1' which should not equal '0' does hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [T]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [T]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '0', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '1' which should not equal '0' does hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '0' which should equal '0' does hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '1', 'v2v-601': '1', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [F]v1d-447(X,'0'), not [F]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [T]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '1', 'v2v-601': '1', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '0', 'v1v-92': '0'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '1' which should not equal '0' does hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '1' which should not equal '0' does hold and
+	the value of v2v-601 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '1', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '1', 'v1d-533': '0', 'v1v-92': '0'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [F]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [F]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [F]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [F]v1v-7(X,'0'), not [T]v1d-533(X,'0'), [T]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '1', 'ffa_2-35': '0', 'v2v-239': '1', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '1', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '1', 'v1d-533': '0', 'v1v-92': '0'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '1' which should not equal '0' does hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '1' which should not equal '0' does hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '1' which should not equal '0' does hold and
+	the value of v1d-533 is '0' which should not equal '0' does not hold and
+	the value of v1v-92 is '0' which should equal '0' does hold 
+
+{'ffa_2-151': '0', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '1', 'v1v-92': '1'}
+[F]potted_plant(X,'1') :- not [T]ffa_2-151(X,'0'), not [T]v1v-307(X,'0'), not [T]ffa_2-35(X,'0'), not [T]v2v-239(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), not [T]v2v-460(X,'0'), not [T]v3v-423(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v3d-64(X,'0'), not [T]ffa_2-92(X,'0'), not [T]v1d-447(X,'0'), not [T]v2v-601(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-334(X,'0').
+[F]potted_plant(X,'1') :- not [T]ffa_2-156(X,'0'), [F]v1d-367(X,'0'), not [T]v1v-348(X,'0'), not [T]v1v-7(X,'0'), not [F]v1d-533(X,'0'), [F]v1v-92(X,'0').
+{'ffa_2-151': '0', 'v1v-307': '0', 'ffa_2-35': '0', 'v2v-239': '0', 'ffa_2-156': '0', 'v2v-460': '0', 'v3v-423': '0', 'v1d-367': '1', 'v3d-64': '0', 'ffa_2-92': '0', 'v1d-447': '0', 'v2v-601': '0', 'v1v-334': '0', 'v1v-348': '0', 'v1v-7': '0', 'v1d-533': '1', 'v1v-92': '1'}
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-151 is '0' which should not equal '0' does not hold and
+	the value of v1v-307 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-35 is '0' which should not equal '0' does not hold and
+	the value of v2v-239 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v2v-460 is '0' which should not equal '0' does not hold and
+	the value of v3v-423 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-92 is '0' which should not equal '0' does not hold and
+	the value of v1d-447 is '0' which should not equal '0' does not hold and
+	the value of v2v-601 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-334 is '0' which should not equal '0' does not hold 
+
+potted_plant(X,'1') does not hold because
+	the value of ffa_2-156 is '0' which should not equal '0' does not hold and
+	the value of v1d-367 is '1' which should equal '0' does not hold and
+	the value of v1v-348 is '0' which should not equal '0' does not hold and
+	the value of v1v-7 is '0' which should not equal '0' does not hold and
+	the value of v1d-533 is '1' which should not equal '0' does hold and
+	the value of v1v-92 is '1' which should equal '0' does not hold 
+
+% acc 0.967 p 0.0 r 0.0 f1 0

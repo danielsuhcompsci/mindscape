@@ -1,0 +1,180 @@
+Beginning analysis on category bed in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:20.989143
+
+bed(X,'1') :- v3d-230(X,'0'), not ffa_2-152(X,'0'), not v1v-538(X,'0'), v1v-129(X,'0').
+bed(X,'1') :- v3d-230(X,'0'), not ffa_2-152(X,'0'), not ffa_1-128(X,'0'), not ffa_1-246(X,'0'), not v1v-56(X,'0').
+% acc 0.965 p 0 r 0.0 f1 0
+% #rules 2 #preds 9
+% foldrpp costs: 0:06:13.661291
+
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [T]v1v-129(X,'0').
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [T]v1v-56(X,'0').
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [T]v1v-129(X,'0').
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [T]v1v-56(X,'0').
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [T]v1v-129(X,'0').
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [F]v1v-56(X,'0').
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [F]v1v-129(X,'0').
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [F]v1v-56(X,'0').
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '1' which should equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+{'v3d-230': '0', 'ffa_2-152': '1', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [F]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [T]v1v-129(X,'0').
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [F]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [T]v1v-56(X,'0').
+{'v3d-230': '0', 'ffa_2-152': '1', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '1' which should not equal '0' does hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '1' which should not equal '0' does hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-152': '1', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [F]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [T]v1v-129(X,'0').
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [F]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [T]v1v-56(X,'0').
+{'v3d-230': '0', 'ffa_2-152': '1', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '1' which should not equal '0' does hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '1' which should not equal '0' does hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '1', 'v1v-56': '0'}
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [F]v1v-129(X,'0').
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [F]ffa_1-246(X,'0'), not [T]v1v-56(X,'0').
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '1', 'v1v-56': '0'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '1' which should equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '1' which should not equal '0' does hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [T]v1v-129(X,'0').
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [F]v1v-56(X,'0').
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '0', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '0' which should equal '0' does hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [F]v1v-129(X,'0').
+[F]bed(X,'1') :- [F]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [T]v1v-56(X,'0').
+{'v3d-230': '1', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '0'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '1' which should equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '1' which should equal '0' does not hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '0' which should not equal '0' does not hold 
+
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]v1v-538(X,'0'), [F]v1v-129(X,'0').
+[F]bed(X,'1') :- [T]v3d-230(X,'0'), not [T]ffa_2-152(X,'0'), not [T]ffa_1-128(X,'0'), not [T]ffa_1-246(X,'0'), not [F]v1v-56(X,'0').
+{'v3d-230': '0', 'ffa_2-152': '0', 'v1v-538': '0', 'v1v-129': '1', 'ffa_1-128': '0', 'ffa_1-246': '0', 'v1v-56': '1'}
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of v1v-538 is '0' which should not equal '0' does not hold and
+	the value of v1v-129 is '1' which should equal '0' does not hold 
+
+bed(X,'1') does not hold because
+	the value of v3d-230 is '0' which should equal '0' does hold and
+	the value of ffa_2-152 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-128 is '0' which should not equal '0' does not hold and
+	the value of ffa_1-246 is '0' which should not equal '0' does not hold and
+	the value of v1v-56 is '1' which should not equal '0' does hold 
+
+% acc 0.965 p 0 r 0.0 f1 0

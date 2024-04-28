@@ -1,0 +1,342 @@
+Beginning analysis on category cow in file ../FOLDdata/subj01Modified.csv
+% load data costs: 0:00:18.622942
+
+cow(X,'1') :- v3d-442(X,'0'), not ffa_2-44(X,'0'), not ffa_2-276(X,'0'), not v1d-582(X,'0').
+cow(X,'1') :- v3d-442(X,'0'), not v2v-218(X,'0'), not v3v-158(X,'0'), v1d-151(X,'0'), not v1d-90(X,'0'), not v3d-64(X,'0'), not v2v-226(X,'0').
+cow(X,'1') :- v3d-442(X,'0'), not v2v-218(X,'0'), not v2v-544(X,'0').
+cow(X,'1') :- v3d-442(X,'0'), not v2v-218(X,'0'), not ffa_2-83(X,'0'), not v1v-81(X,'0'), not v3v-555(X,'0').
+% acc 0.983 p 0.0 r 0.0 f1 0
+% #rules 4 #preds 19
+% foldrpp costs: 0:10:38.000586
+
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '1', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '1', 'v1v-81': '0', 'v3v-555': '0'}
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [F]v1d-90(X,'0'), not [F]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [F]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '1', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '1', 'v1v-81': '0', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '1' which should not equal '0' does hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '1' which should not equal '0' does hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '1', 'v1v-81': '0', 'v3v-555': '0'}
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [F]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [F]v1d-90(X,'0'), not [T]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [F]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '1', 'v1v-81': '0', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '1' which should not equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '1' which should not equal '0' does hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '1', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '1', 'v3v-555': '0'}
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [F]v1d-90(X,'0'), not [F]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]ffa_2-83(X,'0'), not [F]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '1', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '1', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '1' which should not equal '0' does hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '0' which should not equal '0' does not hold and
+	the value of v1v-81 is '1' which should not equal '0' does hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '0', 'ffa_2-44': '1', 'ffa_2-276': '1', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '0'}
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [F]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [F]v1d-90(X,'0'), not [T]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '0', 'ffa_2-44': '1', 'ffa_2-276': '1', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '1' which should not equal '0' does hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '1' which should not equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '0' which should not equal '0' does not hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '0', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '0'}
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [F]v3v-158(X,'0'), [T]v1d-151(X,'0'), not [F]v1d-90(X,'0'), not [T]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '0', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v1d-151 is '0' which should equal '0' does hold and
+	the value of v1d-90 is '1' which should not equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '0' which should not equal '0' does not hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '1', 'v3v-555': '0'}
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [F]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [F]v1d-90(X,'0'), not [T]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]ffa_2-83(X,'0'), not [F]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '1', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '1', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '1' which should not equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '0' which should not equal '0' does not hold and
+	the value of v1v-81 is '1' which should not equal '0' does hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '0', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '0', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '1'}
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [F]v3v-158(X,'0'), [T]v1d-151(X,'0'), not [F]v1d-90(X,'0'), not [T]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [F]v3v-555(X,'0').
+{'v3d-442': '0', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '1', 'v1d-151': '0', 'v1d-90': '1', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '1'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '1' which should not equal '0' does hold and
+	the value of v1d-151 is '0' which should equal '0' does hold and
+	the value of v1d-90 is '1' which should not equal '0' does hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '0' which should not equal '0' does not hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '1' which should not equal '0' does hold 
+
+{'v3d-442': '0', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '0', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '1', 'v1v-81': '0', 'v3v-555': '0'}
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [T]v1d-90(X,'0'), not [T]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [T]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [F]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '0', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '0', 'v3d-64': '0', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '1', 'v1v-81': '0', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '0' which should not equal '0' does not hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '0' which should equal '0' does hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '1' which should not equal '0' does hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '0', 'v3d-64': '1', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '0'}
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [T]v1d-90(X,'0'), not [F]v3d-64(X,'0'), not [T]v2v-226(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]v2v-218(X,'0'), not [T]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [T]v3v-555(X,'0').
+{'v3d-442': '1', 'ffa_2-44': '1', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '0', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '0', 'v3d-64': '1', 'v2v-226': '0', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '0'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of ffa_2-44 is '1' which should not equal '0' does hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '0' which should not equal '0' does not hold and
+	the value of v3d-64 is '1' which should not equal '0' does hold and
+	the value of v2v-226 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-83 is '0' which should not equal '0' does not hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '0' which should not equal '0' does not hold 
+
+{'v3d-442': '1', 'ffa_2-44': '0', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '1', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '0', 'v3d-64': '0', 'v2v-226': '1', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '1'}
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [T]ffa_2-44(X,'0'), not [T]ffa_2-276(X,'0'), not [T]v1d-582(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]v2v-218(X,'0'), not [T]v3v-158(X,'0'), [F]v1d-151(X,'0'), not [T]v1d-90(X,'0'), not [T]v3d-64(X,'0'), not [F]v2v-226(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]v2v-218(X,'0'), not [T]v2v-544(X,'0').
+[F]cow(X,'1') :- [F]v3d-442(X,'0'), not [F]v2v-218(X,'0'), not [T]ffa_2-83(X,'0'), not [T]v1v-81(X,'0'), not [F]v3v-555(X,'0').
+{'v3d-442': '1', 'ffa_2-44': '0', 'ffa_2-276': '0', 'v1d-582': '0', 'v2v-218': '1', 'v3v-158': '0', 'v1d-151': '1', 'v1d-90': '0', 'v3d-64': '0', 'v2v-226': '1', 'v2v-544': '0', 'ffa_2-83': '0', 'v1v-81': '0', 'v3v-555': '1'}
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of ffa_2-44 is '0' which should not equal '0' does not hold and
+	the value of ffa_2-276 is '0' which should not equal '0' does not hold and
+	the value of v1d-582 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '1' which should not equal '0' does hold and
+	the value of v3v-158 is '0' which should not equal '0' does not hold and
+	the value of v1d-151 is '1' which should equal '0' does not hold and
+	the value of v1d-90 is '0' which should not equal '0' does not hold and
+	the value of v3d-64 is '0' which should not equal '0' does not hold and
+	the value of v2v-226 is '1' which should not equal '0' does hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '1' which should not equal '0' does hold and
+	the value of v2v-544 is '0' which should not equal '0' does not hold 
+
+cow(X,'1') does not hold because
+	the value of v3d-442 is '1' which should equal '0' does not hold and
+	the value of v2v-218 is '1' which should not equal '0' does hold and
+	the value of ffa_2-83 is '0' which should not equal '0' does not hold and
+	the value of v1v-81 is '0' which should not equal '0' does not hold and
+	the value of v3v-555 is '1' which should not equal '0' does hold 
+
+% acc 0.983 p 0.0 r 0.0 f1 0
